@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/interior/mv_interior.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+.tp-want__section .tp-want__thumb {
+  width: 380px;
+}
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    width: 60%;
+  }  
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 50px;
+  margin-right: 17px;
+  height: 55px;
+}
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point22.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point23.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point24.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 67px);
+}
+
+/*-----------------------
+施工実績 tp-case__section
+-----------------------*/
+.tp-case__section {
+  margin-top: 80px;
+}
+.tp-case__cont__top {
+  margin-bottom: 85px;
+}
+.tp-case__section .tp-case__ttl {
+  max-width: 194px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px;
+  border: 1px solid #9f9f9f;
+  border-radius: 100px;
+}
+.tp-case__section .tp-case__imgList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 27px;
+}
+.tp-case__section .tp-case__imgItem {
+  display: flex;
+  justify-content: space-between;
+}
+.tp-case__section .tp-case__img__wrap {
+  width: 44.3%;
+  position: relative;
+}
+.tp-case__section .tp-case__img__wrap.__before:before {
+  content: "Before";
+}
+.tp-case__section .tp-case__img__wrap.__after:before {
+  content: "After";
+}
+.tp-case__section .tp-case__img__wrap.__before:before,
+.tp-case__section .tp-case__img__wrap.__after:before {
+  display: block;
+  width: 75px;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--MAIN_WHITE);
+  background: var(--MAIN_BLACK);
+  border-radius: 0 0 12px 0;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tp-case__section .tp-case__img__wrap.__before:after {
+  content: "";
+  display: block;
+  border-left: 20px solid var(--MAIN_ORANGE);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 12.9%);
+  transform: translate(-50%,-50%);
+}
+.tp-case__section .tp-case__tbl th {
+  text-align: left;
+  padding: 0 34px 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #d37d00;
+  vertical-align: top;
+}
+.tp-case__section .tp-case__tbl td {
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  vertical-align: top;
+}
+@media screen and (max-width: 767px) {
+  .tp-case__section {
+    margin-top: 40px;
+  }
+  .tp-case__cont__top {
+    margin-bottom: 65px;
+  }
+  .tp-case__section .tp-case__ttl {
+    max-width: 155px;
+    font-size: 14px;
+    padding: 6px;
+  }
+  .tp-case__section .tp-case__imgList {
+    gap: 20px;
+    margin-bottom: 17px;
+  }
+  .tp-case__section .tp-case__imgItem {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .tp-case__section .tp-case__imgItem:last-child {
+    padding-bottom: 0;
+    border: none;
+  }
+  .tp-case__section .tp-case__img__wrap {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .tp-case__section .tp-case__img__wrap:last-of-type {
+    margin-bottom: 0;
+  }
+  .tp-case__section .tp-case__img__wrap.__before {
+    margin-bottom: 30px;
+  }
+  .tp-case__section .tp-case__img__wrap.__before:after {
+    border-left: 10px solid transparent;
+    border-top: 10px solid var(--MAIN_ORANGE);
+    border-right: 10px solid transparent;
+    border-bottom: none;
+    top: calc(100% + 15px);
+    left: 50%;
+  }
+  .tp-case__section .tp-case__tbl th {
+    width: 100px;
+    padding: 0 10px 6px 0;
+    font-size: 12px;
+  }
+  .tp-case__section .tp-case__tbl td {
+    padding-bottom: 6px;
+    font-size: 12px;
+  }  
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+:root {
+  --fnts_local: 16px;
+  --fnts_caption_min: 26px;
+  --fnts_caption_sub: 20px;
+  --fnts_section_ttl: 30px;
+}
+
+/* -------------------- sharosi-section ------------------- */
+/* -----　sharosi/index.html　衛生管理ページ用mv　----- */
+.btm-front__section.sharosi_mv {
+  background-image: url(../images/sharosi/img_mv_sharosi.png);
+}
+
+@media screen and (min-width: 768px) {
+
+  /* -----　sharosi/index.html　衛生管理　PC(min-width: 768px)用mv　----- */
+  .btm-front__section.sharosi_mv {
+    /* background-position: 50% 50%; */
+    background-position: 50% 35%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* -----　sharosi/index.html　衛生管理ページ　sp用mv　----- */
+  .btm-front__section.sharosi_mv {
+    background-image: url(../images/sharosi/sp/mv_sharosi_sp.jpg);
+    background-position: 15% 0%;
+    background-size: 130%;
+  }
+}
+
+.tp-front__section {
+  background-image: url(../images/sharosi/img_mv_sharosi.png);
+}
+
+.tp-front__ttl {
+  margin-bottom: 5px;
+}
+
+.tp-front__ttl-sm {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+  position: relative;
+}
+
+.tp-ttl__balloon__span__sm {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  color: var(--MAIN_ORANGE);
+  font-size: 16px;
+
+  &::after {
+    content: '';
+    display: none;
+  }
+}
+
+.tp-point__section .tp-point__list>li:nth-child(1)>.Ttl::before {
+  background: url(../images/common/icon_point53.png) no-repeat center center / contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(2)>.Ttl::before {
+  background: url(../images/common/icon_point54.png) no-repeat center center / contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(3)>.Ttl::before {
+  background: url(../images/common/icon_point55.png) no-repeat center center / contain;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .tp-point__section .tp-point__list>li>.Ttl:before {
+    width: 45px;
+    margin-right: 15px;
+  }
+
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .tp-ttl__balloon__span__sm {
+    width: 300px;
+  }
+
+  .tp-worries__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+    margin-top: 80px;
+  }
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+
+@media screen and (min-width: 768px) {
+  .tp-design__thumb {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/*-----------------------
+tp-reason__section
+-----------------------*/
+@media screen and (min-width: 768px) {
+  .tp-check__list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tp-reason__section {
+    margin-bottom: 100px;
+  }
+
+  .tp-reason__section .tp-want__thumb {
+    width: 100%;
+  }
+}
+
+/*-----------------------
+.tp-merit__section
+-----------------------*/
+
+
+.tp-merit-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.tp-merit__ttl {
+  color: #ffc100;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.tp-merit__ttl-num {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -130px;
+  transform: translateY(-50%);
+}
+
+.tp-merit-item:first-child .tp-merit__ttl .tp-merit__ttl-num {
+  top: 33%;
+}
+
+.tp-merit__ttl-num-lg {
+  font-size: 60px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.tp-merit__ttl-main {
+  font-size: 26px;
+  color: var(--MAIN_ORANGE);
+}
+
+.tp-merit__ttl-main-sm {
+  font-size: 14px;
+  display: block;
+}
+
+.tp-merit__txt {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.tp-merit__img {
+  width: 380px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tp-merit__ttl-num {
+    top: -64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tp-merit-item:first-child .tp-merit__ttl .tp-merit__ttl-num,
+  .tp-merit-item:last-child .tp-merit__ttl .tp-merit__ttl-num {
+    top: -33%;
+  }
+
+  .tp-merit__ttl-num-lg {
+    font-size: 40px;
+  }
+
+  .tp-merit__img {
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+/*-----------------------
+contactarea
+-----------------------*/
+
+.contactarea {
+  margin-bottom: 80px;
+}
+
+
+.u-mobile {
+  display: none;
+}
+
+.u-desktop {
+  display: block;
+}
+
+
+@media screen and (max-width:767px) {
+
+  .u-desktop {
+    display: none;
+  }
+
+  .u-mobile {
+    display: block;
+  }
+}

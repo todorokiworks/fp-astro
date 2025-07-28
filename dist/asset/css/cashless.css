@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/press-release/mv-press-release.jpg);
+}
+
+/*-----------------------
+tp-worries__section
+-----------------------*/
+.tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+.tp-want__section .tp-cash__want-text {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-cash__want-text {
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*-----------------------
+6つの特徴 tp-kinds__section
+-----------------------*/
+/* ------------------ tp-case__section -------------------- */
+.tp-kinds__list {
+  display: grid;
+  column-gap: var(--contents_gap_col);
+  row-gap: var(--contents_gap_row);
+}
+
+.tp-kinds__list > article {
+  display: flex;
+  flex-flow: column;
+}
+
+.tp-kinds__list > article .Thumb {
+  margin-bottom: 10px;
+}
+
+.tp-kinds__list > article .Caption {
+  font-size: 14px;
+}
+
+.tp-kinds__list > article .Ttl {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--MAIN_ORANGE);
+  text-align: center;
+}
+
+.tp-kinds__list > article .itemm-list {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.tp-kinds__list > article .itemm-list li::before {
+  content: "";
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  background-color: var(--TABLE_RED);
+  color: var(--MAIN_WHITE);
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .tp-kinds__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .tp-kinds__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+/*-----------------------
+6つの特徴 tp-point__section
+-----------------------*/
+
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point31.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point36.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point38.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(4) > .Ttl::before {
+  background: url(../images/common/icon_point39.png) no-repeat center center/contain;
+}
+
+/*-----------------------
+ contactarea
+-----------------------*/
+.contactarea:first-of-type {
+  margin-bottom: 80px;
+}
+
+/*-----------------------
+ imgの角丸設定
+-----------------------*/
+.rounded-corners img{
+  border-radius: 30px;
+}
+@media screen and (max-width: 767px) {
+  .rounded-corners img{
+    border-radius: 20px;
+  }
+}
+
+
+

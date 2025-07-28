@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/consultant/mv_consultant.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list>li {
+  display: block;
+}
+
+/*-----------------------
+コンサル一覧 tp-consultantList__section
+-----------------------*/
+.consultant-free_ttl {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ff5b00;
+  padding: 4px 0;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.consultant-paid_ttl {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background-color: #3c81be;
+  padding: 4px 0;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.consultant-free_box_wrapper {
+  margin-bottom: 115px;
+}
+
+.tp-consultantList__section .consultant_box {
+  padding: 38px 35px 43px;
+  border: 2px solid var(--MAIN_ORANGE);
+  border-radius: 25px;
+}
+
+.tp-consultantList__section .consultant_box:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tp-consultantList__section .consultant_box .Ttl {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.27;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.tp-consultantList__section .consultant_box .Ttl:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 1.27em;
+  background: var(--MAIN_ORANGE);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tp-consultantList__section .consultant_box .Cnt.__bottom {
+  display: none;
+  opacity: 0;
+  margin-top: 15px;
+}
+
+.tp-consultantList__section .consultant_box .Cnt.__top .Right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tp-consultantList__section .consultant_box .Flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tp-consultantList__section .consultant_box .Flex_wrap>* {
+  width: calc((100% - 20px) / 2);
+}
+
+.tp-consultantList__section .consultant_box .Img_wrap {
+  border: 1px solid var(--MAIN_ORANGE);
+  border-radius: 20px;
+  margin-right: 8px;
+}
+
+.tp-consultantList__section .consultant_box .Img_wrap img {
+  border-radius: 18px;
+}
+
+.tp-consultantList__section .consultant_box .Item__ttl {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.27;
+  padding: 0 0 10px 20px;
+  border-bottom: 1px solid var(--CONTENTS_BORDER_GRAY);
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.tp-consultantList__section .consultant_box .Item__ttl:before {
+  content: "";
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  background: var(--MAIN_ORANGE);
+  position: absolute;
+  top: 0.235em;
+  left: 0;
+}
+
+.tp-consultantList__section .consultant_box .Item__local {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/*.tp-consultantList__section .consultant_box .Item__dl dt:after {
+  content: "：";
+}*/
+
+.tp-consultantList__section .consultant_box .Item__dl.__no_colon dt:after {
+  content: none;
+}
+
+.tp-consultantList__section .consultant_box .Item__dl dd:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.tp-consultantList__section .consultant_box .Item__list li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.tp-consultantList__section .consultant_box .Item__list li:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.tp-consultantList__section .consultant_box .Item__list li:before {
+  content: "・";
+}
+
+@media screen and (max-width: 767px) {
+
+  .consultant-free_ttl {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .consultant-paid_ttl {
+    margin-bottom: 0px;
+  }
+
+  .tp-consultantList__section .consultant_box {
+    padding: 30px 0;
+    border: none;
+  }
+
+  .tp-consultantList__section .consultant_box .Ttl {
+    margin-bottom: 20px;
+  }
+
+  .tp-consultantList__section .consultant_box .Flex_wrap {
+    flex-direction: column;
+  }
+
+  .tp-consultantList__section .consultant_box .Flex_wrap>* {
+    width: 100%;
+  }
+
+  .tp-consultantList__section .consultant_box .Img_wrap {
+    margin-right: 0;
+  }
+}
+
+/* ボタン類 */
+
+
+.tp-consultantList__section .consultant_box .Btn_open__wrap {
+  margin-top: 35px;
+}
+
+.tp-consultantList__section .consultant_box .Btn_open {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 135px;
+  padding: 8px;
+  border-radius: 100px;
+  background: var(--MAIN_ORANGE);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: var(--MAIN_WHITE);
+  cursor: pointer;
+  position: relative;
+  margin-left: auto;
+  transition: .5s;
+}
+
+.tp-consultantList__section .consultant_box .Btn_open:hover,
+.tp-consultantList__section .consultant_box .Btn_open.open {
+  background: var(--MAIN_ORANGE_HOVER);
+}
+
+.tp-consultantList__section .consultant_box .Btn_open:before,
+.tp-consultantList__section .consultant_box .Btn_open:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: var(--MAIN_WHITE);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
+.tp-consultantList__section .consultant_box .Btn_open:after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.tp-consultantList__section .consultant_box .Btn_open.open:before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.tp-consultantList__section .consultant_box .Btn_open.open:after {
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.tp-consultantList__section .consultant_box .Btn_form__wrap {
+  margin-top: 45px;
+}
+
+/* 無料コンサルタント*/
+
+.tp-consultantList__section .consultant-free_box_wrapper .consultant_box .Btn_form {
+  display: block;
+  width: 200px;
+  padding: 18px;
+  border: 2px solid #ff5b00;
+  border-radius: 100px;
+  background: #ff5b00;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: var(--MAIN_WHITE);
+  position: relative;
+  margin: 0 auto;
+}
+
+.tp-consultantList__section .consultant-free_box_wrapper .consultant_box .Btn_form:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: var(--MAIN_WHITE);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
+.tp-consultantList__section .consultant-free_box_wrapper .consultant_box .Btn_form:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #ff5b00;
+  border-right: 2px solid #ff5b00;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%) rotate(45deg);
+  transition: .5s;
+}
+
+.tp-consultantList__section .consultant-free_box_wrapper .consultant_box .Btn_form:hover {
+  background: var(--MAIN_WHITE);
+  color: #ff5b00;
+}
+
+.tp-consultantList__section .consultant-free_box_wrapper .consultant_box .Btn_form:hover:before {
+  background: #ff5b00;
+}
+
+/* 有料コンサルタント*/
+
+.tp-consultantList__section .consultant-paid_box_wrapper .consultant_box .Btn_form {
+  display: block;
+  width: 200px;
+  padding: 18px;
+  border: 2px solid #3c81be;
+  border-radius: 100px;
+  background: #3c81be;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: var(--MAIN_WHITE);
+  position: relative;
+  margin: 0 auto;
+}
+
+.tp-consultantList__section .consultant-paid_box_wrapper .consultant_box .Btn_form:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: var(--MAIN_WHITE);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
+.tp-consultantList__section .consultant-paid_box_wrapper .consultant_box .Btn_form:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #3c81be;
+  border-right: 2px solid #3c81be;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%) rotate(45deg);
+  transition: .5s;
+}
+
+.tp-consultantList__section .consultant-paid_box_wrapper .consultant_box .Btn_form:hover {
+  background: var(--MAIN_WHITE);
+  color: #3c81be;
+}
+
+.tp-consultantList__section .consultant-paid_box_wrapper .consultant_box .Btn_form:hover:before {
+  background: #3c81be;
+}
+
+.tp-consultantList__section .consultant_box .Btn_form:hover:after {
+  border-top: 2px solid var(--MAIN_WHITE);
+  border-right: 2px solid var(--MAIN_WHITE);
+}
+
+@media screen and (max-width: 767px) {
+  .tp-consultantList__section .consultant_box .Btn_open {
+    margin: 0 auto;
+  }
+
+  .tp-consultantList__section .consultant_box .Btn_form__wrap {
+    margin-top: 37px;
+  }
+}
+
+/*-----------------------
+tp-bnr__section
+-----------------------*/
+.tp-bnr__section {
+  margin: -30px 0 80px;
+}
+
+.tp-bnr__section .bnr_link__wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .tp-bnr__section {
+    margin-top: 10px;
+    padding-top: 30px;
+    border-top: 2px solid var(--MAIN_ORANGE);
+  }
+}

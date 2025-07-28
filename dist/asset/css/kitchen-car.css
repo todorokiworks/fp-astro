@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/kitchen-car/mv_kitchen-car.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+フードトラックONEがおすすめな理由 tp-want__section
+-----------------------*/
+.tp-want__section .tp-want__thumb {
+  width: 394px;
+}
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    width: 100%;
+  }  
+}
+
+/*-----------------------
+6つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 64px;
+  margin-right: 14px;
+  height: 46px;
+}
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point14.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point17.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point07.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(4) > .Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(5) > .Ttl::before {
+  background: url(../images/common/icon_point09.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(6) > .Ttl::before {
+  background: url(../images/common/icon_point18.png) no-repeat center center / contain;
+  height: 40px;
+}
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 78px);
+}
+
+/*-----------------------
+開業コストが低い tp-merit01__section
+-----------------------*/
+.tp-merit01__section.tp-sec p.tp-merit01__thumb {
+  max-width: 382px;
+}
+
+/*-----------------------
+少人数で営業可能 tp-merit03__section
+-----------------------*/
+.tp-merit03__section.tp-sec p.tp-merit03__thumb {
+  max-width: 237px;
+}
+
+/*-----------------------
+出店開始までの流れ tp-flow02__section
+-----------------------*/
+.tp-flow02__section {
+  margin-top: 80px;
+}
+.tp-flow02__section .tp-flow02__container {
+  display: flex;
+  gap: 9px;
+}
+.tp-flow02__section .tp-flow02__cntnrL {
+  width: 71.3%;
+}
+.tp-flow02__section .tp-flow02__cntnrR {
+  width: calc(100% - 71.3% - 9px);
+}
+.tp-flow02__section .tp-flow02__cntnrL__top,
+.tp-flow02__section .tp-flow02__cntnrL__bottom {
+  display: flex;
+  gap: 17px;
+}
+.tp-flow02__section .tp-flow02__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 176px;
+  overflow-x: hidden;
+}
+.tp-flow02__section .tp-flow02__list li {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: var(--MAIN_ORANGE);
+  padding-right: 0.25em;
+  margin-bottom: 10px;
+  position: relative;
+}
+.tp-flow02__section .tp-flow02__list li:before {
+  content: "▼";
+  margin-right: 5px;
+}
+.tp-flow02__section .tp-flow02__list li:after {
+  content: "";
+  display: block;
+  width: 175px;
+  border-top: 0.25em var(--MAIN_ORANGE) dotted;
+  position: absolute;
+  top: 50%;
+  left: calc(100%);
+  transform: translateY(-50%);
+}
+.tp-flow02__section .tp-flow02__days {
+  width: calc(100% - (176px + 17px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 37px;
+  padding: 10px;
+  background: #ffc500;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.tp-flow02__section .tp-flow02__days .txt__s {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 7px 0 -15px;
+}
+.tp-flow02__section .tp-flow02__days:after {
+  width: 100%;
+  height: 30px;
+  content: "";
+  display: block;
+  background: url(../images/kitchen-car/arrow_kitchen-car_flow02_yellow.png) no-repeat top/100% 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.tp-flow02__section .tp-flow02__total {
+  width: 100%;
+  height: calc(100% - 37px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 37px;
+  padding: 10px;
+  background: #e0e0e0;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.tp-flow02__section .tp-flow02__total:after {
+  width: 100%;
+  height: 30px;
+  content: "";
+  display: block;
+  background: url(../images/kitchen-car/arrow_kitchen-car_flow02_gray.png) no-repeat top/100% 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .tp-flow02__section {
+    margin-top: 40px;
+  }
+  .tp-flow02__section .tp-wrapper__m {
+    width: 100%;
+  }
+  .tp-flow02__section .tp-flow02__cntnrL {
+    width: 76.1%;
+  }
+  .tp-flow02__section .tp-flow02__cntnrR {
+    width: calc(100% - 76.1% - 9px);
+  }
+  .tp-flow02__section .tp-flow02__cntnrL__top,
+  .tp-flow02__section .tp-flow02__cntnrL__bottom {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .tp-flow02__section .tp-flow02__list {
+    width: 48%;
+    overflow-x: visible;
+  }
+  .tp-flow02__section .tp-flow02__list li {
+    font-size: 14px;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .tp-flow02__section .tp-flow02__list li:before {
+    margin-right: 0;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .tp-flow02__section .tp-flow02__list li:after {
+    content: none;
+  }
+  .tp-flow02__section .tp-flow02__days {
+    width: 50%;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .tp-flow02__section .tp-flow02__days .txt__s {
+    font-size: 12px;
+    margin-top: 9px;
+  }
+  .tp-flow02__section .tp-flow02__total {
+    padding: 5px;
+    font-size: 18px;
+  }
+  .tp-flow02__section .tp-flow02__total .txt {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+  }
+}

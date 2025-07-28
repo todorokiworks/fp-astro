@@ -1,0 +1,349 @@
+<script>
+  // アコーディオン
+  $(function () {
+    $('.aside-restaurant__accordion .Ttl .Icon').click(function () {
+      $(this).parent().next('.Body').slideToggle('fast');
+      $(this).toggleClass('active');
+      $(this).parent().toggleClass('active');
+    });
+  })
+</script>
+<div class="aside-container">
+  <nav class="aside-nav">
+    <div class="aside-contact__container">
+      <h1 class="Thumb">
+        <a href="/">
+          <img src="/asset/images/top/logo.svg" alt="TENPOS Foodplace" width="189" height="66" class="imgauto">
+        </a>
+      </h1>
+      <p class="Btn">
+        <a class="click_link_aside_mail" href="/contact/">お問い合わせ</a>
+      </p>
+      <div class="Phonearea">
+        <p class="Min">
+          050-3174-1366
+        </p>
+        <p class="Sub">
+          営業時間 9:00〜18:00
+        </p>
+      </div>
+    </div>
+    <ul class="aside-navList">
+      <li>
+        <p class="aside-restaurant__Ttl Icon __haschild">
+          飲食店のお客様<span></span>
+        </p>
+        <div class="g-accordion">
+          <div class="aside-restaurant__accordion">
+            <div class="Ttl">
+              <a href="/open/">開業相談</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆開業相談+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/lp/lp_line-diagnosis.html">開業費用相談</a>
+                </li>
+                <li>
+                  <a href="/open/kitchen-car.html">キッチンカー</a>
+                </li>
+                <!-- <li>
+							<a href="">飲食店専門学校</a>
+						</li> -->
+                <li>
+                  <a href="/open/bukken.html">飲食店物件紹介</a>
+                </li>
+                <li>
+                  <a href="/open/ghost-restaurant.html">ゴーストレストラン</a>
+                </li>
+                <li>
+                  <a href="/open/interior.html">飲食店内装工事</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="Ttl">
+              <a href="/menu/">食材仕入れ</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆食材仕入れ+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="https://www.tenpos.com/food-search/" target="_blank">テンポスフードサーチ</a>
+                </li>
+                <!-- <li>
+                  <a href="/menu/ingredient.html">ビールサーバー</a>
+                </li> -->
+                <li>
+                  <a href="/menu/kakuyasu.html">業務用酒販店<br>「カクヤス」</a>
+                </li>
+                <li>
+                  <a href="/menu/micreed.html">食材通販</a>
+                  <!-- <a href="/menu/micreed.html">食材通販「ミクリード」</a> -->
+                </li>
+                <!-- <li>
+                  <a href="/menu/wain-pro.html">ワインの仕入れPRO</a>
+                </li> -->
+                <li>
+                  <a href="/lp/service/op-celebration/">開業祝い調味料セット</a>
+                </li>
+                <li>
+                  <a href="/lp/service/order_gate/">価格削減＆WEB発注</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="Ttl">
+              <a href="/telecom/">店舗インフラ</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆店舗インフラ+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/telecom/internetline.html">インターネット回線</a>
+                </li>
+                <li>
+                  <a href="/telecom/karaoke.html">カラオケ</a>
+                </li>
+                <li>
+                  <a href="/telecom/cashless.html">キャッシュレス決済</a>
+                </li>
+                <li>
+                  <a href="/telecom/cashless-machine.html">キャッシュレス<br>券売機</a>
+                </li>
+                <li>
+                  <a href="/telecom/ip-telephone.html">IP電話</a>
+                </li>
+                <li>
+                  <a href="/telecom/music.html">店舗BGM</a>
+                </li>
+                <li>
+                  <a href="/telecom/security-camera.html">防犯カメラ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="Ttl">
+              <a href="/marketing/">集客</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆集客+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/marketing/homepage/">飲食店<br>ホームページ作成</a>
+                </li>
+                <li class="__small">
+                  <a href="/marketing/gmb.html">Googleビジネス<br>プロフィール運用代行</a>
+                </li>
+                <li>
+                  <a href="/marketing/sns_update.html">SNS運用代行</a>
+                </li>
+                <li>
+                  <a href="/marketing/influencer-marketing.html">インフルエンサー集客</a>
+                </li>
+                <li>
+                  <a href="/marketing/press-release.html">プレスリリース</a>
+                </li>
+                <li>
+                  <a href="/marketing/officialline-support.html">公式LINE運用代行</a>
+                </li>
+                <li>
+                  <a href="https://support.tenpos.com/lp/service/influencer-pr/">テンポス<br>インフルエンサー</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="Ttl">
+              <a href="/promotion/">販促デザイン</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆販促デザイン+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/promotion/logo_creation/">ロゴ作成</a>
+                </li>
+                <li>
+                  <a href="/promotion/promotional_design/">販促物作成</a>
+                </li>
+                <li>
+                  <a href="/promotion/logo_creation/makemovie.html">動画作成</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="Ttl">
+              <a href="/resources/">人材・求人</a>
+              <div class="Icon __circle"><span></span></div>
+            </div> -->
+            <!-- ◆人材・求人+を開いたとき -->
+            <!-- <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/resources/job-ads.html">求人広告</a>
+                </li>
+                <li>
+                  <a href="/resources/staffing.html">人材派遣</a>
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="Ttl">
+              <a href="/hygiene/">衛生管理</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆衛生管理+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/hygiene/sanitary-rental.html">衛生用品レンタル</a>
+                </li>
+                <li>
+                  <a href="/hygiene/shop_cleaning.html">飲食店清掃</a>
+                </li>
+                <li>
+                  <a href="/hygiene/waste-oil.html">廃油無料回収</a>
+                </li>
+                <li>
+                  <a href="/hygiene/garbage-collection.html">ゴミ回収</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="Ttl">
+              <a href="/cost/">経費削減</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆経費削減+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/cost/electricity.html">電気代削減</a>
+                </li>
+                <li>
+                  <a href="/cost/gas-bill.html">ガス代削減</a>
+                </li>
+                <!-- <li>
+                  <a href="/cost/fair-rent.html">店舗賃料減額<br>交渉サービス</a>
+                </li> -->
+                <li>
+                  <a href="/cost/recipe.html">レシピ原価管理</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="__noborder Ttl">
+              <a href="/management/">店舗運営支援</a>
+              <div class="Icon __circle"><span></span></div>
+            </div>
+            <!-- ◆店舗運営支援+を開いたとき -->
+            <div class="Body">
+              <ul class="fat-accordion__list __under">
+                <li>
+                  <a href="/management/consultant.html">飲食コンサルタント<br>マッチング</a>
+                </li>
+                <li>
+                  <a href="/management/insurance.html">店舗用保険</a>
+                </li>
+                <li>
+                  <a href="/management/tax-accountant.html">飲食専門税理士紹介</a>
+                </li>
+                <!-- <li>
+                  <a href="/management/mystery-shopping.html">飲食店覆面調査</a>
+                </li> -->
+                <li>
+                  <a href="/management/q-navi.html">店舗トラブル<br>解決アプリ</a>
+                </li>
+                <li>
+                  <a href="/management/credit-card.html">テンポス<br>クレジットカード</a>
+                </li>
+                <li>
+                  <a href="/management/vendingmachine.html">自動販売機</a>
+                </li>
+                <!-- <li>
+							　　<a href="/management/credit-card.html">テンポス<br>クレジットカード発行</a>
+            　　</li> -->
+                <li>
+                  <a href="https://www.tenpos.com/joseikin/">事業再構築補助金<br>申請サポート</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <p class="aside-restaurant__Ttl Icon __beginner">
+          <a href="/before_opening.html">開業前の方</a>
+        </p>
+      </li>
+      <li>
+        <p class="aside-restaurant__Ttl Icon __veteran">
+          <a href="/after_opening.html">開業後の方</a>
+        </p>
+      </li>
+      <li>
+        <p class="aside-restaurant__Ttl __haschild">
+          企業情報
+        </p>
+        <ul class="aside-accordion__list __upper">
+          <li>
+            <a href="/company/corporate_data.html">会社概要</a>
+          </li>
+          <li>
+            <a href="/company/recruit.html">採用情報</a>
+          </li>
+          <li>
+            <a href="/company/group.html">グループ会社一覧</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p class="aside-restaurant__Ttl __haschild">
+          法人のお客様
+        </p>
+        <ul class="aside-accordion__list __upper">
+          <li>
+            <a href="/company/partner.html">協業をお考えの方</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p class="aside-restaurant__Ttl Icon __mail">
+          <a class="click_link_aside_mail" href="/contact/">お問い合わせ</a>
+        </p>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="aside-bannerarea">
+  <!-- <p>
+    <a href="" target="_blank">
+      <img src="/asset/images/top/banner01.svg" alt="IPPOME" width="260" height="110" loading="lazy" class="imgauto">
+    </a>
+  </p> -->
+  <p>
+    <a href="https://www.tenpos.com/foodmedia/" target="_blank">
+      <img src="/asset/images/top/banner02.svg" alt="TENPOS food media" width="260" height="110" loading="lazy"
+        class="imgauto">
+    </a>
+  </p>
+  <p>
+    <a href="https://www.tenposstar.com/static/tenpo-about/" target="_blank">
+      <img src="/asset/images/top/banner03.svg" alt="テンポススター" width="260" height="110" loading="lazy" class="imgauto">
+    </a>
+  </p>
+  <p>
+    <a href="https://support.tenpos.com/sptools/" target="_blank">
+      <img src="/asset/images/top/banner04.svg" alt="販促デザインで集客" width="260" height="110" loading="lazy" class="imgauto">
+    </a>
+  </p>
+  <p>
+    <a href="https://support.tenpos.com/lp/service/op-celebration/" target="_blank">
+      <img src="/asset/images/top/banner05.png" alt="開業祝い味の素" width="260" height="110" loading="lazy" class="imgauto">
+    </a>
+  </p>
+</div>

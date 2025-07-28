@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/homepage/mv_homepage.jpg);
+}
+
+/*-----------------------
+他社で作ると、10～40万円かかってしまうことも… tp-case__section
+-----------------------*/
+.tp-case__section .tp-table td {
+  flex-wrap: wrap;
+}
+
+.tp-case__section .tp-table__txt__center {
+  text-align: center;
+  width: 100%;
+}
+
+/*-----------------------
+6つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list>li:nth-child(1)>.Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center/contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(2)>.Ttl::before {
+  background: url(../images/common/icon_point07.png) no-repeat center/contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(3)>.Ttl::before {
+  background: url(../images/common/icon_point15.png) no-repeat center/contain;
+}
+
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list>li>.Ttl:before {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 60px);
+  }
+}
+
+/*-----------------------
+お好みで選べる4プラン tp-plan__section
+-----------------------*/
+.tp-plan__section .tp-table__plan tr:first-child>*:nth-child(4) {
+  background-color: #bc3a00;
+}
+
+.tp-plan__section .tp-table__plan td:nth-child(4) .Tag {
+  background-color: #f79b77;
+}
+
+.tp-plan__section .tp-table__plan tbody tr:last-child td {
+  padding-bottom: calc(2.5% + 30px + 2.5%);
+  position: relative;
+}
+
+.tp-plan__section .tp-table__plan tbody tr:last-child .Btn {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.tp-plan__section .tp-table__plan__tbodyBottom {
+  border-top: none;
+}
+
+.tp-plan__section .tp-table__plan__tbodyBottom tr:first-child>th {
+  background-color: var(--TABLE_BLUE);
+  color: var(--MAIN_WHITE);
+}
+
+.tp-plan__section .tp-table__plan__tbodyBottom tr:first-child>th .Local {
+  text-align: center;
+}
+
+.tp-plan__section .tp-table__plan__tbodyBottom td .Local:not(:last-of-type) {
+  margin-bottom: 1.7em;
+}
+
+.tp-plan__section tbody.tp-table__plan__tbodyBottom tr:last-child .Btn__wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 11;
+}
+
+.tp-plan__section tbody.tp-table__plan__tbodyBottom tr:last-child .Btn {
+  position: static;
+  transform: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tp-plan__section .tp-table__plan .tp-table__plan__tbodyBottom tr:last-child td {
+    padding-bottom: calc(2.5% + 35px + 2.5%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tp-plan__section .tp-table__plan tbody tr:last-child {
+    width: unset;
+  }
+
+  .tp-plan__section .tp-table__plan tbody:not(.tp-table__plan__tbodyBottom) tr:last-child td {
+    width: 150px;
+    padding: 25px 220px 25px 25px;
+    box-sizing: content-box;
+  }
+
+  .tp-plan__section .tp-table__plan tbody:not(.tp-table__plan__tbodyBottom) tr:last-child .Btn {
+    bottom: 50%;
+    left: unset;
+    right: 35px;
+    transform: translateY(50%);
+  }
+
+  .tp-plan__section .tp-table__plan>.tp-table__plan__tbodyBottom tr {
+    height: unset;
+  }
+
+  .tp-plan__section .tp-table__plan>.tp-table__plan__tbodyBottom tr>* {
+    border-top: none;
+    min-height: calc(650px / 4);
+  }
+
+  .tp-plan__section .tp-table__plan__tbodyBottom tr:first-child>th .Local {
+    text-align: left;
+  }
+
+  .tp-plan__section .tp-table__plan>.tp-table__plan__tbodyBottom tr:last-child {
+    width: calc(100% - 200px);
+  }
+
+  .tp-plan__section .tp-table__plan .tp-table__plan__tbodyBottom tr:last-child td {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 25px;
+  }
+
+  .tp-plan__section .tp-table__plan__tbodyBottom td .Local {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .tp-plan__section .tp-table__plan__tbodyBottom td .Local:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .tp-plan__section tbody.tp-table__plan__tbodyBottom tr:last-child .Btn__wrap {
+    gap: 30px;
+    position: static;
+    transform: none;
+  }
+}
+
+/*-----------------------
+tp-option__section
+-----------------------*/
+.tp-option__section {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .tp-option__section {
+    margin-top: 40px;
+  }
+}
+
+/*-----------------------
+制作実績または事例 tp-case__section
+-----------------------*/
+.tp-case__section .tp-case__list .Thumb {
+  border: 1px solid #a5a5a5;
+}
+
+.tp-case__section .tp-case__list .Thumb img {
+  height: unset;
+  aspect-ratio: 232 / 148;
+  object-fit: cover;
+  object-position: top;
+}
+
+.tp-case__section .tp-case__listTags>li.__mitsumori {
+  --border: var(--TABLE_BLUE);
+  --bg: var(--TABLE_BLUE);
+  --color: var(--MAIN_WHITE);
+}
+
+
+/*-----------------------
+都度払い詳細表
+-----------------------*/
+
+
+
+.detail-teigaku {
+  margin-bottom: 20px;
+}
+
+.detail-teigaku .txt-sm {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 6px;
+  display: inline-block;
+}
+
+
+
+.payment-detail-wrap table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.payment-detail-wrap table tr {
+  background-color: #fff;
+  padding: 0;
+  border-left: 1px solid #a4a4a4;
+  border-right: 1px solid #a4a4a4;
+}
+
+.payment-detail-wrap table tr:last-child {
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.payment-detail-wrap table th {
+  padding: 1px 15px;
+  border-right: 1px solid #a4a4a4;
+  font-size: 14px;
+}
+
+.payment-detail-wrap table td {
+  padding: 4px 10px;
+  border-right: 1px solid #a4a4a4;
+  text-align: center;
+  font-size: 14px;
+}
+
+.detail-teigaku table td {
+  padding: 0px 10px;
+  border-right: 1px solid #a4a4a4;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.payment-detail-wrap table thead tr {
+  background-color: #e07d00;
+  color: #fff;
+}
+
+.payment-detail-wrap table thead th {
+  padding: 0;
+  width: 50px;
+}
+
+.payment-detail-wrap table thead th.col {
+  font-size: 16px;
+}
+
+.payment-detail-wrap table thead th:first-child {
+  width: 270px;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.detail-teigaku table thead th:first-child {
+  width: 124px;
+}
+
+.payment-detail-wrap table thead th:last-child {
+  width: 170px;
+}
+
+.payment-detail-wrap table tbody th {
+  border-right: 1px solid #a4a4a4;
+  text-align: left;
+}
+
+.payment-detail-wrap table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.payment-detail-wrap table tfoot tr:last-child {
+  border: 0;
+  padding: 10px 10px 4px;
+}
+
+.payment-detail-wrap table tfoot td {
+  border: 0;
+  text-align: left;
+  font-size: 11px;
+  padding: 10px 10px 0;
+}
+
+th.non {
+  border-right: none;
+}
+
+td.rowspan-td {
+  background-color: #fff;
+  line-height: 1.2;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.txt {
+  text-align: left;
+  font-size: .85em;
+}
+
+.price {
+  color: #bd0000;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.price-lg {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.txt-taxin {
+  display: block;
+  width: 90px;
+  margin: 0 0 0 auto;
+}
+
+.red_bk {
+  background: #e81010
+}
+
+.red-txt {
+  color: #e81010
+}
+
+.btn {
+  background: #e81010;
+  border: 2px solid #e81010;
+  color: #fff;
+  padding: 1em;
+  border-radius: 20px;
+  display: block;
+  text-decoration: none;
+  font-size: .8em
+}
+
+.btn:hover {
+  background: #fff;
+  border: 2px solid #e81010;
+  color: #e81010;
+  transition: .2s;
+}
+
+.payment-detail-wrap table .btnarea td {
+  padding: .2em .5em;
+  border-right: none
+}
+
+@media screen and (max-width: 600px) {
+  .table-detail-wrapper {
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+
+  .table-detail-wrapper::-webkit-scrollbar {
+    background: #ffd89c;
+    border-radius: 25px;
+    height: 10px;
+  }
+
+  .table-detail-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ffa600;
+    border-radius: 25px;
+  }
+
+  .table-detail-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: red;
+  }
+
+  .payment-detail-wrap {
+    width: 750px;
+  }
+
+  .payment-detail-wrap table {
+    width: 750px;
+  }
+
+  .txt-taxin {
+    width: 73px;
+  }
+
+  .payment-detail-wrap table th {
+    padding: 1px 5px;
+    border-right: 1px solid #a4a4a4;
+    font-size: 14px;
+  }
+
+  .payment-detail-wrap table thead th:first-child {
+    width: 204px;
+  }
+
+  .payment-detail-wrap table tfoot td:first-child {
+    display: none;
+  }
+}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+:root{
+  --fnts_local:16px;
+  --fnts_caption_min:26px;
+  --fnts_caption_sub:20px;
+  --fnts_section_ttl:30px;
+}
+/* -------------------- section ------------------- */
+/* -----　marketing/homepage/basic_sample.html　こだわりコーステンプレート見本ページ用　----- */
+.btm-front__section.basic_sample_mv{
+  background-image: url(../images/homepage/mv_basic_sample.jpg);
+}
+.hp-sample-mgBtm{
+  margin-bottom: 0;
+}
+
+.hp-sample-ttl-y{
+  /* position: relative; */
+  background-color: var(--MAIN_YELLOW);
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.hp-sample-ttl-y p{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hp-sample__list__link{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.hp-sample__list__thumb img{
+  filter: drop-shadow(0 0 1px #e6e6e6);
+  margin-bottom: 15px;
+}
+.hp-sample__list__hover img:hover{
+  opacity: 0.8;
+}
+
+/* 注意事項 */
+.hp-sample-note{
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+}
+.hp-sample-red{
+  color: #dd5a5a;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.hp-sample-sec{
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px){
+/* -----　こだわりコーステンプレート見本ページ　PC(min-width: 768px)用mv　----- */
+.btm-front__section.basic_sample_mv{
+  background-position: 50% 35%;
+}
+}
+
+@media screen and (max-width: 767px){
+  /* -----　こだわりコーステンプレート見本ページ　sp用mv　----- */
+  .btm-front__section.basic_sample_mv{
+    background-image: url(../images/homepage/sp/mv_basic_sample.jpg);
+    background-position: 15% 0%;
+    /* background-size: 130%; */
+  }
+  /* タイトル文字 */
+  .btm-front__ttl_small{
+    font-size: 1.25rem;
+    letter-spacing: -0.15rem;
+  }
+  .hp-sample-sec{
+    padding-top: 40px;
+  }
+  .sample-ttl_left{
+    text-align: left;
+  }
+}
+
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+

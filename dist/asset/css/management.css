@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+:root {
+  --fnts_local: 16px;
+  --fnts_caption_min: 26px;
+  --fnts_caption_sub: 20px;
+  --fnts_section_ttl: 30px;
+}
+
+/* -------------------- management-section ------------------- */
+/* -----　management/index.html　店舗運営支援ページ用mv　----- */
+.btm-front__section.management_mv {
+  background-image: url(../images/management/mv_management.jpg);
+}
+
+@media screen and (min-width: 768px) {
+
+  /* -----　management/index.html　店舗運営支援　PC(min-width: 768px)用mv　----- */
+  .btm-front__section.management_mv {
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* -----　management/index.html　店舗運営支援ページ　sp用mv　----- */
+  .btm-front__section.management_mv {
+    background-image: url(../images/management/sp/mv_management_sp.jpg);
+    background-position: 50% 0%;
+    background-size: 175%;
+  }
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-ttl {
+  position: relative;
+}
+
+
+
+.tp-ttl__balloon__span__sm {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  color: var(--MAIN_ORANGE);
+  font-size: 16px;
+
+  &::after {
+    content: '';
+    display: none;
+  }
+}
+
+.tp-design__section {
+  position: relative;
+}
+
+
+
+.tp-design__thumb {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+@media screen and (min-width: 768px) {
+
+  .generalsec,
+  .tp-sec {
+    margin-bottom: 120px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tp-design__section {
+    margin-bottom: 80px;
+  }
+
+  .tp-ttl__balloon__span__sm {
+    width: 300px;
+  }
+
+
+
+  .tp-design__thumb {
+    position: relative;
+    top: 0;
+    right: 0
+  }
+}
+
+.tp-point__section .tp-point__list>li:nth-child(1)>.Ttl::before {
+  background: url(../images/common/icon_point53.png) no-repeat center center / contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(2)>.Ttl::before {
+  background: url(../images/common/icon_point59.png) no-repeat center center / contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(3)>.Ttl::before {
+  background: url(../images/common/icon_point30.png) no-repeat center center / contain;
+}
+
+/* -------------------- ------------------- */
+
+.tp-kaitori__section .tp-kaitori__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tp-kaitori__section .tp-kaitori__list .list__kaitori-ttl {
+  background: var(--MAIN_ORANGE);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 0;
+  margin-bottom: 12px;
+}
+
+.tp-kaitori__section .tp-kaitori__list .list__kaitori-img {
+  margin-bottom: 12px;
+}
+
+.tp-kaitori__section .tp-kaitori__list .list__kaitori-info {
+  margin-bottom: 20px;
+}
+
+.tp-kaitori__section .tp-kaitori__list .list__kaitori-info .list__kaitori-info-price {
+  color: #ce0000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tp-kaitori__section .tp-kaitori__list article {
+  width: 32%;
+  margin-right: 13px;
+}
+
+.tp-kaitori__section .tp-kaitori__list article:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .tp-kaitori__section .tp-kaitori__list article {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+/* -------------------- ------------------- */

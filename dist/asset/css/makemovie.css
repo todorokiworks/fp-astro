@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/makemovie/mv_makemovie.jpg);
+}
+@media screen and (max-width: 767px) {
+  .tp-front__section .tp-front__caption {
+    width: 90%;
+    margin: 0 auto var(--contents_mgb);
+  }
+}
+
+/*-----------------------
+お好みで選べる4プラン tp-plan__section
+-----------------------*/
+.tp-plan__section .tp-table__plan > tbody tr:first-child > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+}
+.tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(1) {
+  background: #ffd580;
+}
+.tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(2) {
+  background: #ffc800;
+  color: var(--MAIN_BLACK);
+}
+.tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(3) {
+  background: #ff8c00;
+}
+.tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(4) {
+  background: #dc7d00;
+}
+.tp-plan__section .tp-table__plan td:nth-child(1) .Tag {
+  background: #EDDDB3;
+}
+.tp-plan__section .tp-table__plan td:nth-child(2) .Tag {
+  background: #FFDC80;
+}
+.tp-plan__section .tp-table__plan td:nth-child(3) .Tag {
+  background: #FFBE66;
+}
+.tp-plan__section .tp-table__plan td:nth-child(4) .Tag {
+  background: #E3A06C;
+}
+.tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(2):after {
+  content: none;
+}
+.tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(4):after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/common/img_popular_01.png) no-repeat center center/contain;
+  width: calc(100% - 40px);
+  aspect-ratio: 143/32;
+}
+.tp-plan__section .tp-table__plan .Ttl {
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-size: 16px;
+}
+.tp-plan__section .tp-table__plan tr:first-child > *:nth-child(2) > .Ttl {
+  margin-top: 0;
+}
+.tp-plan__section .tp-table__plan tr:first-child > *:nth-child(4) > .Ttl {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.tp-plan__section .tp-table__plan .Local {
+  font-weight: bold;
+  font-size: 14px;
+}
+.tp-plan__section .tp-table__plan > tfoot td {
+  text-align: start;
+  font-size: 12px;
+  margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(2) {
+    margin-top: 0;
+  }
+  .tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(4) {
+    margin-top: -40px;
+  } 
+}
+@media screen and (max-width: 767px) {
+  .tp-plan__section .tp-table__plan .Ttl {
+    font-size: 18px;
+  }
+}
+
+/*-----------------------
+決済方法 tp-pay__section
+-----------------------*/
+.tp-table__pay > tbody tr > th {
+  text-align: start;
+  background: #ffc800;
+}
+.tp-table__pay__local {
+  margin-bottom: 15px;
+}
+.tp-table__pay__caution {
+  text-indent: -1em;
+  padding-left: 1em;
+  color: #b90000;
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+.tp-flow__list__top {
+  margin-bottom: 80px;
+}
+.tp-frow__section .tp-frow__ttl_child {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  display: flex;
+}
+.tp-frow__section .tp-frow__ttl_child:before {
+  content: "■";
+  margin-right: 10px;
+  color: var(--MAIN_YELLOW);
+}
+.tp-frow__section .tp-preparation__area {
+  margin: 30px 0;
+}
+.tp-frow__section .tp-preparation__ttl {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  text-align: center;
+  padding: 3px 5px;
+  background: #ddd;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }
+  .tp-flow__list__top {
+    margin-bottom: 60px;
+  }  
+  .tp-frow__section .tp-frow__ttl_child {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .tp-frow__section .tp-preparation__area {
+    margin: 20px 0;
+  }
+  .tp-frow__section .tp-preparation__ttl {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }  
+}

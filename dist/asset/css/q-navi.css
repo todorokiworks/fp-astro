@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/q-navi/mv_q-navi.jpg);
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__contents.__center .tp-design__thumb {
+  max-width: 523px;
+}
+
+/*-----------------------
+メリット1 tp-merit01__section
+-----------------------*/
+/*--- メリット1~3 共通 ---*/
+.tp-sec[class*="tp-merit"] .tp-ttl {
+  width: 75%;
+}
+@media screen and (max-width: 767px) {
+  .tp-sec[class*="tp-merit"] .tp-ttl {
+    width: 100%;
+  }  
+}
+/*--- メリット1~3 共通 end ---*/
+
+.tp-merit01__section {
+  margin-top: 80px;
+}
+.tp-merit01__section.tp-sec p.tp-merit01__thumb {
+  max-width: 334px;
+}
+@media screen and (max-width: 767px) {
+  .tp-merit01__section {
+    margin-top: 40px;
+  }  
+}
+
+/*-----------------------
+メリット2 tp-merit02__section
+-----------------------*/
+.tp-merit02__section.tp-sec p.tp-merit02__thumb {
+  max-width: 205px;
+}
+@media screen and (max-width: 767px) {
+  .tp-merit02__section.tp-sec p.tp-merit02__thumb {
+    width: 50%;
+  }  
+}
+
+/*-----------------------
+メリット3 tp-merit03__section
+-----------------------*/
+.tp-merit03__section.tp-sec p.tp-merit03__thumb {
+  max-width: 360px;
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point13.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point51.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center center / contain;
+}
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list > li > .Ttl:before {
+    width: 50px;
+    margin-right: 15px;
+  }
+  .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+    width: 55px;
+    margin-right: 10px;
+  }
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 65px);
+  }  
+}
+
+/*-----------------------
+事例 tp-service__section
+-----------------------*/
+.tp-service__section .tp-option__listTtl {
+  padding: 0;
+  border: none;
+}
+.tp-service__section .tp-option__listTtl:before {
+  display: inline-block;
+  padding: 0 18px;
+  font-size: 1.33em;
+  font-weight: bold;
+  line-height: 1.275;
+  color: var(--MAIN_ORANGE);
+  border-left: 2px solid var(--MAIN_ORANGE);
+}
+.tp-service__section .tp-option__list li:nth-child(1) .tp-option__listTtl:before {
+  content: "01";
+}
+.tp-service__section .tp-option__list li:nth-child(2) .tp-option__listTtl:before {
+  content: "02";
+}
+.tp-service__section .tp-option__list li:nth-child(3) .tp-option__listTtl:before {
+  content: "03";
+}
+.tp-service__section .tp-service__thumb img {
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .tp-service__section .tp-option__iconlist {
+    padding-left: 18px;
+  }
+  .tp-service__section .tp-option__iconlist .Local {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tp-service__section .tp-option__list {
+    gap: 50px;
+  }
+  .tp-service__section .tp-option__listTtl {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 13px;
+  }
+  .tp-service__section .tp-option__listTtl:before {
+    padding: 0 15px;
+    font-size: 1.5em;
+    margin-top: -5px;
+  }
+  .tp-service__section .tp-service__flexcontainer {
+    gap: 15px;
+  }
+  .tp-service__section .tp-option__iconlist {
+    padding: 0 15px;
+  }
+  .tp-service__section .tp-service__thumb {
+    max-height: unset;
+    padding: 0 15px;
+  }
+  .tp-service__section .tp-option__list:after {
+    content: none;
+  }
+}
+
+/*-----------------------
+料金 tp-attention__section
+-----------------------*/
+.tp-attention__section .tp-attention__price .Txt {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+}
+.tp-attention__section .tp-attention__price > .Yen:after {
+  content: none;
+}
+.tp-attention__section .tp-attention__caption > span {
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .tp-attention__section .tp-attention__caption > span {
+    padding: 0;
+  }  
+}

@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/tax-accountant/mv_tax-accountant.jpg);
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__contents .tp-local__wrap {
+  max-width: 530px;
+}
+.tp-design__section .tp-design__contents .tp-design__thumb {
+  max-width: 408px;
+  width: unset;
+  margin: 0 36px 0 auto;
+}  
+
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__contents .tp-design__thumb {
+    margin: 0 auto;
+    max-width: 300px;
+    width: 80%;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    max-width: 350px;
+    width: 80%;
+  }  
+}
+
+/*-----------------------
+tp-case__section
+-----------------------*/
+.tp-case__section .tp-table {
+  text-align: center;
+  table-layout: fixed;
+}
+.tp-table > tbody tr > * {
+  flex: none;
+  width: calc((100% - 14em) / 3);
+}
+.tp-case__section .tp-table td:nth-child(2) {
+  width: 14em;
+}
+@media screen and (max-width: 1190px) AND (min-width: 951px) {
+  .tp-table > tbody tr > * {
+    flex: 1;
+    width: unset;
+  }
+  .tp-case__section .tp-table td:nth-child(2) {
+    width: unset;
+  }  
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point19.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point29.png) no-repeat center center / contain;
+}
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list > li > .Ttl:before {
+    width: 50px;
+    margin-right: 19px;
+  }
+  .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+    width: 45px;
+    margin-right: 24px;
+  }
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 69px);
+  }  
+}
+
+/*-----------------------
+料金 tp-attention__section
+-----------------------*/
+.tp-attention__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+  margin-bottom: 80px;
+}
+.tp-attention__section .tp-attention__price .First {
+  font-size: 14px;
+  width: 5em;
+}
+.tp-attention__section .tp-attention__price > .Yen:after {
+  content: "(税別)";
+}
+.tp-attention__section .tp-attention__price.__top {
+  position: relative;
+}
+.tp-attention__section .tp-attention__price.__top .First {
+  margin-bottom: 10px
+}
+.tp-attention__section .tp-attention__price.__top .Price {
+  position: relative;
+}
+.tp-attention__section .tp-attention__price.__top .Price .Txt__s {
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  width: 100%;
+}
+.tp-attention__section .tp-attention__price.__top .BeforePrice {
+  font-size: 36px;
+  line-height: 1;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .tp-attention__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+    margin-bottom: 60px;
+  }
+  .tp-attention__section .tp-attention__price {
+    font-size: min(11.2vw,46px);
+    line-height: 1;
+  }
+  .tp-attention__section .tp-attention__price:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  .tp-attention__section .tp-attention__price .First {
+    font-size: min(3.2vw,12px);
+  }
+  .tp-attention__section .tp-attention__price > .Yen {
+    font-size: min(7.5vw,28px);
+  }
+  .tp-attention__section .tp-attention__price > .Yen:after {
+    font-size: min(2.43vw,10px);
+    white-space: nowrap;
+    bottom: 96%;
+  }
+  .tp-attention__section .tp-attention__price.__top .First {
+    margin-bottom: .5em;
+  }  
+  .tp-attention__section .tp-attention__price.__top .Price .Txt__s {
+    font-size: min(3.4vw,14px);
+  }
+  .tp-attention__section .tp-attention__price.__top .BeforePrice {
+    font-size: min(6.34vw,26px);
+    bottom: 106%;
+    margin-left: min(4.87vw,20px);
+    width: max-content;
+  }  
+}

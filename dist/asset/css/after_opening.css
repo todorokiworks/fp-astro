@@ -1,0 +1,32 @@
+@charset "utf-8";
+:root{
+  --fnts_local:16px;
+  --fnts_caption_min:26px;
+  --fnts_caption_sub:20px;
+  --fnts_section_ttl:30px;
+}
+/* -------------------- section ------------------- */
+
+
+/* -----　after_opening.html　開業後の方ページ用　----- */
+.imgLine{
+  outline: 2px solid var(--GRADATION_ORANGE);
+  outline-offset: -2px;
+  border-radius: 12px;
+}
+
+
+@media screen and (min-width: 768px){
+/* -----　after_opening.html　開業後の方ページ　PC(min-width: 768px)用　----- */
+
+}
+
+@media screen and (max-width: 767px){
+  /* -----　after_opening.html　開業後の方ページ　sp用　----- */
+  
+}
+
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+

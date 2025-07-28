@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/logo_creation/mv_logo_creation.jpg);
+}
+
+/*-----------------------
+6つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point07.png) no-repeat center/contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point08.png) no-repeat center/contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point09.png) no-repeat center/contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(4) > .Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center/contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(5) > .Ttl::before {
+  background: url(../images/common/icon_point10.png) no-repeat center/contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(6) > .Ttl::before {
+  background: url(../images/common/icon_point11.png) no-repeat center/contain;
+}
+
+/*-----------------------
+デザインイメージ tp-image__section
+-----------------------*/
+.tp-image__section .tp-image__lead_txt {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--MAIN_ORANGE);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tp-image__section .tp-image__character_list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.tp-image__section .tp-image__character_list li {
+  width: calc((100% - 10px) / 2);
+}
+@media screen and (min-width: 768px){
+  .tp-image__section .tp-image__lead_txt {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }  
+  .tp-image__section .tp-image__character_list li {
+    width: calc((100% - 30px) / 4);
+  }
+}
+
+/*-----------------------
+お好みで選べる3プラン tp-plan__section
+-----------------------*/
+.tp-plan__section .tp-table__plan tr:first-child .Local {
+  text-align: center;
+}
+@media screen and (min-width: 768px){
+  .tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(2):after {
+    width: 56%;
+  }
+}
+@media screen and (max-width: 767px){
+  .tp-plan__section .tp-table__plan > tbody tr {
+    height: 485px;
+  }
+}
+
+/*-----------------------
+オプション tp-option__section
+-----------------------*/
+@media screen and (min-width: 768px){
+  .tp-option__section .tp-option__iconlist {
+    padding-left: 0;
+  }
+}
+
+/*-----------------------
+ロゴ作成実績 tp-case__section
+-----------------------*/
+.tp-case__section .tp-case__list .Thumb {
+  border: 1px solid #a7a7a7;
+  aspect-ratio: 4 / 3;
+  padding: 5% 10%;
+}
+.tp-case__section .tp-case__list .Thumb img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/officialline-support/mv_officialline-support.jpg);
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__thumb {
+  margin-top: -80px;
+}
+@media screen and (max-width: 1270px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: -40px;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: 0;
+    width: 30%;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (min-width: 768px) {
+  .tp-want__section .tp-want__thumb {
+    width: 335px;
+  }
+}
+
+/*-----------------------
+tp-case__section
+-----------------------*/
+.tp-table > tbody tr:first-child th:not(:nth-child(1)) {
+  background-color: var(--TABLE_GRAY_01);
+  color: var(--MAIN_BLACK);
+}
+.tp-case__section .tp-table > tbody tr:first-child th:nth-child(2) {
+  color: var(--MAIN_WHITE);
+  background-color: var(--MAIN_ORANGE);
+  font-weight: bold;
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 64px;
+  margin-right: 10px;
+}
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point07.png) no-repeat center center / contain;
+  height: 46px;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point13.png) no-repeat center center / contain;
+  height: 65px;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point14.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 74px);
+}
+
+/*-----------------------
+tp-merit01__section
+-----------------------*/
+.tp-merit01__section.tp-sec p.tp-merit01__thumb {
+  width: 50%;
+  max-width: 348px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .tp-merit01__section .tp-local {
+    margin-bottom: 0;
+  }
+}
+
+/*-----------------------
+tp-merit02__section
+-----------------------*/
+.tp-merit02__section.tp-sec p.tp-merit02__thumb {
+  width: 50%;
+  max-width: 248px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.tp-merit02__section .tp-local__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.tp-merit02__section ul.tp-local li {
+  font-weight: bold;
+}
+.tp-merit02__section ul.tp-local li:before {
+  content: "・";
+}
+
+/*-----------------------
+料金 tp-attention__section
+-----------------------*/
+.tp-attention__section .tp-attention__caption {
+  font-size: 14px;
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  text-indent: -1em;
+}
+@media screen and (max-width: 767px) {
+  .tp-attention__section .tp-attention__caption {
+    width: 90%;
+  }  
+}
+
+/*-----------------------
+オプション tp-option__section
+-----------------------*/
+.tp-option__section .tp-option__caption {
+  text-indent: -1em;
+  padding-left: 1em;
+  width: calc(100% - 1em);
+}
+@media screen and (min-width: 768px){
+  .tp-option__section .tp-option__iconlist {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tp-option__section .tp-option__list:after {
+    content: none;
+  }
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (min-width: 768px) {
+  .tp-frow__section .tp-frow__listR .Local {
+    min-height: 1.7em;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}
+
+/*-----------------------
+よくある質問 tp-faq__section
+-----------------------*/
+.tp-faq__section .tp-faq__cancel_tbl__wrap {
+  width: 100%;
+  margin: 2em 0 1em;
+  display: flex;
+  line-height: 1.5;
+}
+.tp-faq__section .tp-faq__cancel_tbl__01,
+.tp-faq__section .tp-faq__cancel_tbl__02 {
+  border-collapse: collapse;
+  border-top: 1px solid var(--TABLE_BORDER_GRAY);
+  border-left: 1px solid var(--TABLE_BORDER_GRAY);
+  text-align: center;
+}
+.tp-faq__section [class*="tp-faq__cancel_tbl"] th,
+.tp-faq__section [class*="tp-faq__cancel_tbl"] td {
+  border-right: 1px solid var(--TABLE_BORDER_GRAY);
+  border-bottom: 1px solid var(--TABLE_BORDER_GRAY);
+  padding: 5px;
+}
+.tp-faq__section [class*="tp-faq__cancel_tbl"] th {
+  background: var(--TABLE_GRAY_01);
+}
+.tp-faq__section .tp-faq__cancel_tbl__01 {
+  width: calc(100% / 13 * 7);
+}
+.tp-faq__section .tp-faq__cancel_tbl__02 {
+  width: calc(100% / 13 * 6);
+  border-left: none;
+}
+.tp-faq__section .tp-faq__cancel_tbl__02 td:nth-last-child(-n+2) {
+  background: var(--MAIN_YELLOW);
+}
+@media screen and (max-width: 767px) {
+  .tp-faq__section .tp-faq__cancel_tbl__wrap {
+    display: block;
+    font-size: 14px;
+  }
+  .tp-faq__section .tp-faq__cancel_tbl__01 {
+    width: 100%;
+    margin-bottom: 1em;
+    table-layout: fixed;
+
+  }
+  .tp-faq__section .tp-faq__cancel_tbl__02 {
+    width: calc(100% / 7 * 6);
+    border-left: 1px solid var(--TABLE_BORDER_GRAY);
+    table-layout: fixed;
+  }  
+}

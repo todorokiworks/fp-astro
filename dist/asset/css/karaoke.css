@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* ■■■■■■■■■■global■■■■■■■■■■ */
+:root {
+  --NUM_ORANGE:var(--MAIN_ORANGE);
+  --TABLE_GRAY_01:#ddd;
+  --TABLE_GRAY_02:#aaa;
+  --TABLE_BORDER_GRAY:#B4B4B4;
+  --TABLE_YELLOW:var(--MAIN_YELLOW);
+  --TABLE_ORANGE:#FFA000;
+  --TABLE_RED:#F07D00;
+  --TABLE_BLUE:#508CA0;
+  --TABLE_TAG_YELLOW:#FFF092;
+  --TABLE_TAG_ORANGE:#FFD266;
+  --TABLE_TAG_RED:#F7B46C;
+  --TABLE_TAG_BLUE:#B4CED6;
+  --OPTION_YELLOW:var(--MAIN_YELLOW);
+  --OPTION_ORANGE:var(--GRADATION_ORANGE);
+  --OPTION_RED:var(--MAIN_ORANGE);
+  --ATTENTION_TAG:#787878;
+  --STEP_BORDER:#1b1616;
+  --RENTAL_QUESTION_BG:#F7F7F7;
+  --CONTACT_RED:#EB5A5A;
+  --CONTACT_BLUE:#1283C3;
+  --CONTACT_GREEN:#00AA8C;
+  --CONTACT_RED_NAVY:rgb(215, 70, 70);
+  --CONTACT_BLUE_NAVY:rgb(0, 111, 175);
+  --CONTACT_GREEN_NAVY:rgb(0, 150, 120);
+  --CONTAINER_BORDER:#FFE6AA;
+  --CONTENTS_BORDER_GRAY:#A0A0A0;
+  --ADD_TABLE_GRAY:#EDEDED;
+  --ADD_TABLE_BTN:#5B5B5B;
+  --ADD_CONTACT_GRAY:#e3e3e3;
+  --ADD_CONTACT_YELLOW:#fdc831;
+  --ADD_CONTACT_TITLE_GRAY:#9b9b9b;
+  --sp_mag:calc(1 - (375 / 816));
+  --contents_gap_col:20px;
+  --contents_gap_row:20px;
+  --TABLE_COMENT_RED:#c00000;
+}
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/press-release/mv-press-release.jpg);
+}
+
+/*-----------------------
+tp-worries__section
+-----------------------*/
+.tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+6つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list {
+  row-gap: 6px;
+}
+
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 45px;
+  margin-right: 13px;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point14.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point34.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point37.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 58px);
+}
+
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*-----------------------
+ contactarea
+-----------------------*/
+.contactarea:first-of-type {
+  margin-bottom: 80px;
+}
+
+
+
+

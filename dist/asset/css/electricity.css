@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/electricity/mv_electricity.jpg);
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__thumb {
+    max-width: 150px;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    width: 90%;
+  }  
+}
+
+/*-----------------------
+電気料金削減のメリット tp-seo__section
+-----------------------*/
+.tp-seo__section .tp-seo__list .tp-local:nth-child(1):before {
+  content: "①";
+}
+.tp-seo__section .tp-seo__list .tp-local:nth-child(2):before {
+  content: "②";
+}
+.tp-seo__section .tp-seo__list .tp-local:nth-child(3):before {
+  content: "③";
+}
+.tp-seo__section .tp-seo__list .tp-local:nth-child(4):before {
+  content: "④";
+}
+.tp-seo__section .tp-seo__list .tp-local:nth-child(5):before {
+  content: "⑤";
+}
+
+/*-----------------------
+電気料金削減事例 tp-example__section
+-----------------------*/
+.tp-example__section .tp-example__cnt {
+  border: 1px solid var(--CONTENTS_BORDER_GRAY);
+  border-radius: 20px;
+}
+.tp-example__section .tp-example__cnt:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.tp-example__section .tp-example__cntTtl__wrap {
+  padding: 20px 150px 9px 35px;
+  background: var(--MAIN_YELLOW);
+  border-radius: 18px 18px 0 0;
+  position: relative;
+}
+.tp-example__section .tp-example__cntTtl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.tp-example__section .tp-example__cntTtl .Label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--MAIN_WHITE);
+  padding: 7px 20px;
+  background: #be0000;
+  margin-right: 17px;
+}
+.tp-example__section .tp-example__cntTtl .Sub {
+  font-size: 20px;
+}
+.tp-example__section .tp-example__cntTtl__wrap .Seats {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  right: 35px;
+  bottom: 15px;
+}
+.tp-example__section .tp-example__cntBottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 35px;
+}
+.tp-example__section .tp-example__cntImg {
+  width: 35.8%;
+}
+.tp-example__section .tp-example__cntTxt {
+  width: 52.9%;
+  margin-right: 4.8%;
+}
+.tp-example__section .tp-example__cntTxt .Local {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+.tp-example__section .tp-example__cntTxt .Local.__top {
+  font-size: 20px;
+}
+.tp-example__section .tp-example__cntTxt .Local.__lead {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #be0000;
+  background-image: linear-gradient(to bottom,transparent 45%,var(--MAIN_YELLOW) 45%);
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tp-example__section .tp-example__cntTxt .Local.__lead .txt__l {
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+  .tp-example__section .tp-example__cntTtl__wrap {
+    padding: 20px 15px 15px;
+  }
+  .tp-example__section .tp-example__cntTtl {
+    font-size: 26px;
+  }
+  .tp-example__section .tp-example__cntTtl .Ttl {
+    width: 100%;
+  }
+  .tp-example__section .tp-example__cntTtl .Sub {
+    font-size: 16px;
+  }
+  .tp-example__section .tp-example__cntTtl__wrap .Seats {
+    right: 15px;
+    top: 35px;
+    bottom: unset;
+  }
+  .tp-example__section .tp-example__cntBottom {
+    display: block;
+    padding: 30px 25px 40px;
+  }
+  .tp-example__section .tp-example__cntImg {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .tp-example__section .tp-example__cntTxt {
+    width: 100%;
+    margin-right: 0;
+  }
+  .tp-example__section .tp-example__cntTxt .Local {
+    font-size: 13px;
+  }
+  .tp-example__section .tp-example__cntTxt .Local.__top {
+    font-size: 16px;
+  }
+  .tp-example__section .tp-example__cntTxt .Local.__lead {
+    font-size: 4vw;
+  }
+  .tp-example__section .tp-example__cntTxt .Local.__lead .txt__l {
+    font-size: 5.3vw;
+  }  
+}
+
+/* 棒グラフ */
+.tp-example__section .tp-example__cntGraph {
+  display: flex;
+  border-left: 1px solid var(--CONTENTS_BORDER_GRAY);
+  border-bottom: 1px solid var(--CONTENTS_BORDER_GRAY);
+  margin: 8px 0 40px;
+  padding-top: 12px;
+}
+.tp-example__section .tp-example__cntGraph .Bar {
+  position: relative;
+  margin-left: 12%;
+  text-align: center;
+}
+.tp-example__section .tp-example__cntGraph .Bar dt {
+  font-size: 16px;
+  font-weight: bold;
+  width: 5em;
+  line-height: 1;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tp-example__section .tp-example__cntGraph .Bar dd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--MAIN_WHITE);
+  height: 163px;
+}
+.tp-example__section .tp-example__cntGraph .Bar dd .txt__s {
+  font-size: 14px;
+  margin-bottom: -1px;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__before dd {
+  background: #bdbdbd;
+  padding: 10px;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after dd {
+  flex-direction: column-reverse;
+  align-items: stretch;
+  position: relative;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after dd > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Price {
+  background: #ffa600;
+  height: 73.6%;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Reduction {
+  flex-direction: column;
+  gap: 5px;
+  background: #be0000;
+  height: 26.4%;
+  padding: 4px 8px;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Label__wrap {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 8px);
+  padding: 0;
+  transform: translateY(-50%);
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Label {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: #be0000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  width: 78px;
+  height: 78px;
+  background: var(--MAIN_YELLOW);
+  border-radius: 50%;
+  z-index: 44;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Label .txt__l {
+  font-size: 25px;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Label__bg {
+  width: 82px;
+  height: 82px;
+  background: #be0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Label__arrow {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(-135deg,transparent 50%,var(--MAIN_YELLOW) 50%);
+  transform: skewX(-50deg);
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  z-index: 33;
+}
+.tp-example__section .tp-example__cntGraph .Bar.__after .Label__arrowBg {
+  width: 20px;
+  height: 19px;
+  background: linear-gradient(-135deg,transparent 50%,#be0000 50%);
+  transform: skewX(-50deg);
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -6px;
+  z-index: 22;
+}
+@media screen and (max-width: 1120px) and (min-width: 951px) {
+  .tp-example__section .tp-example__cntGraph .Bar.__before dd {
+    padding: 5px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after dd > * {
+    padding: 5px;
+  }  
+  .tp-example__section .tp-example__cntGraph .Bar dd {
+    font-size: 16px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__wrap {
+    left: calc(100% + 4px);
+  }  
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label {
+    font-size: 12px;
+    gap: 1px;
+    width: 60px;
+    height: 60px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label .txt__l {
+    font-size: 20px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__bg {
+    width: 64px;
+    height: 64px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__arrow {
+    width: 10px;
+    height: 10px;
+    left: -1px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__arrowBg {
+    width: 14px;
+    height: 14px;
+    left: -4px;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-example__section .tp-example__cntGraph {
+    margin: 12px 0 40px;
+    padding-top: 64px;
+    justify-content: center;
+    gap: 13.7%;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar {
+    margin-left: 0;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar dt {
+    font-size: 13px;
+    top: calc(100% + 6px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar dd {
+    font-size: max(3.7vw,13px);
+    height: max(35.7vw,134px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar dd .txt__s {
+    font-size: max(2.7vw,10px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__before dd {
+    padding: 7px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after dd > * {
+    padding: 7px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Price {
+    height: 70%;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Reduction {
+    height: 30%;
+    padding: 4px 7px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__wrap {
+    top: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 7px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label {
+    font-size: max(3.2vw,12px);
+    width: max(16vw,60px);
+    height: max(16vw,60px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label .txt__l {
+    font-size: max(5.3vw,20px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__bg {
+    width: max(17.1vw,64px);
+    height: max(17.1vw,64px);
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__arrow {
+    width: 12px;
+    height: 12px;
+    transform: skewY(-50deg) translateX(-100%);
+    top: unset;
+    left: 50%;
+    bottom: 12px;
+  }
+  .tp-example__section .tp-example__cntGraph .Bar.__after .Label__arrowBg {
+    width: 16px;
+    height: 16px;
+    transform: skewY(-50deg) translateX(-100%);
+    top: unset;
+    left: calc(50% + 2px);
+    bottom: 14px;
+  }  
+}

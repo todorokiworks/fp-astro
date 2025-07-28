@@ -1,0 +1,379 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+.u-mobile {
+    display: none;
+}
+
+.u-desktop {
+    display: block;
+}
+
+
+@media screen and (max-width:767px) {
+
+    .u-desktop {
+        display: none;
+    }
+
+    .u-mobile {
+        display: block;
+    }
+}
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+
+
+.tp-front__section {
+    background-image: url(../images/mobileorder/img_mv_bg.png);
+
+    @media screen and (max-width:767px) {
+        background-image: url(../images/mobileorder/img_mv_bg.png);
+    }
+
+    .tp-front__ttl {
+        @media (max-width:767px) {
+            line-height: 1.75;
+            padding: 5px 30px 10px;
+        }
+    }
+
+
+
+    h1.tp-front__ttl.font_m_plus {
+        span {}
+    }
+
+    p.tp-front__caption {
+        text-shadow:
+            3px 3px 3px rgba(255, 255, 255, 0.6),
+            -3px 3px 3px rgba(255, 255, 255, 0.6),
+            -3px -3px 3px rgba(255, 255, 255, 0.6),
+            3px -3px 3px rgba(255, 255, 255, 0.6);
+
+        @media screen and (max-width:767px) {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .tp-front__img {
+        width: 560px;
+        margin: 0 auto 40px;
+
+        @media screen and (max-width:767px) {
+            width: 100%;
+            padding: 0 4px;
+        }
+    }
+
+    p.tp-front__contact {
+        a {}
+    }
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section.tp-sec.tp-wrapper {
+    .tp-ttl {
+        text-align: center;
+    }
+
+    .tp-design__contents {
+        .tp-design__txt {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .tp-design__img {
+            width: 70%;
+            margin-inline: auto;
+        }
+    }
+}
+
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+
+.tp-want__section {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 100px;
+    }
+
+    .tp-want__thumb {
+        width: 90%;
+    }
+}
+
+/*-----------------------
+tp-reason__section
+-----------------------*/
+@media screen and (min-width: 768px) {
+    .tp-check__list {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tp-reason__section {
+        margin-bottom: 100px;
+    }
+
+    .tp-reason__section .tp-want__thumb {
+        width: 100%;
+    }
+}
+
+/*-----------------------
+.tp-merit__section
+-----------------------*/
+
+
+.tp-merit-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.tp-merit__ttl {
+    color: #ffc100;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.tp-merit__ttl-num {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: -130px;
+    transform: translateY(-50%);
+}
+
+.tp-merit-item:first-child .tp-merit__ttl .tp-merit__ttl-num {
+    top: 45%;
+}
+
+.tp-merit__ttl-num-lg {
+    font-size: 60px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.tp-merit__ttl-main {
+    font-size: 26px;
+    color: var(--MAIN_ORANGE);
+}
+
+.tp-merit__ttl-main-sm {
+    font-size: 14px;
+    display: block;
+}
+
+.tp-merit__txt {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.tp-merit-item:first-child .tp-merit__img {
+    width: 420px;
+    margin-inline: auto;
+
+    @media (max-width:767px) {
+        width: 90%;
+    }
+}
+
+.tp-merit-item:nth-child(2) .tp-merit__img {
+    width: 235px;
+    margin-inline: auto;
+
+    @media (max-width:767px) {
+        width: 200px;
+    }
+}
+
+.tp-merit-item:nth-child(3) .tp-merit__img {
+    width: 360px;
+    margin-inline: auto;
+
+    @media (max-width:767px) {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tp-merit__ttl-num {
+        top: -64%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tp-merit-item:first-child .tp-merit__ttl .tp-merit__ttl-num,
+    .tp-merit-item:last-child .tp-merit__ttl .tp-merit__ttl-num {
+        top: -33%;
+    }
+
+    .tp-merit__ttl-num-lg {
+        font-size: 40px;
+    }
+
+    .tp-merit__img {
+        width: 100%;
+        margin-inline: auto;
+    }
+}
+
+/*-----------------------
+料金
+-----------------------*/
+
+.tp-price__section.tp-sec.tp-wrapper {
+
+    .tp-price-wrapper {
+        .tp-price-lead__wrapper {
+            color: var(--MAIN_ORANGE);
+            text-align: center;
+
+            .tp-price-lead-txt {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .tp-price__monthly {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -30px;
+                margin-right: 40px;
+
+                .tp-price-circle {
+                    border: 1px solid var(--MAIN_ORANGE);
+                    border-radius: 50%;
+                    padding: 15px;
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+
+                .tp-price__monthly_main {
+                    display: flex;
+                    align-items: baseline;
+
+                    .tp-price-lg {
+                        font-size: 90px;
+                        font-weight: bold;
+                    }
+
+                    .tp-price-md {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+
+        }
+
+        .tp-price-list {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+            @media (max-width:767px) {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .tp-price-item {
+                width: 45%;
+                border: 1px solid #a4a4a4;
+                border-radius: 20px;
+
+                @media (max-width:767px) {
+                    width: 100%;
+                }
+
+                .tp-price-ttl {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border-radius: 20px 20px 0 0;
+                    padding: 10px 0;
+                    font-family: "Roboto", sans-serif;
+                }
+
+                .tp-price-main {
+                    padding: 35px 30px 40px 30px;
+
+                    .tp-price-main-ttl {
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: bold;
+                        font-family: "Roboto", sans-serif;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        .tp-price-main-ttl-lg {
+                            font-size: 50px;
+                            margin: -7px 4px 0;
+
+                        }
+
+                        .tp-price-main-ttl-sm {
+                            font-size: 25px;
+                        }
+                    }
+
+                    .tp-price-main-points {
+                        .tp-price-main-points-item {
+                            display: flex;
+                            align-items: center;
+                            font-size: 18px;
+                            margin-bottom: 10px;
+
+                            .icon-check {
+                                width: 25px;
+                                display: block;
+                                margin-right: 15px;
+
+                                img {
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:first-child {
+                    .tp-price-ttl {
+                        background: #ffbd00;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .tp-price-ttl {
+                        background: var(--MAIN_ORANGE);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tp-frow__section {
+    margin-top: 80px;
+}

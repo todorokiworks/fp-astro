@@ -1,0 +1,486 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/recipe/mv_recipe.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    max-width: 250px;
+    width: 70%;
+  }  
+}
+
+/*-----------------------
+導入効果 tp-result__section
+-----------------------*/
+.tp-result__section {
+  margin-top: 80px;
+}
+.tp-result__section .tp-result__cntTtl {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--MAIN_ORANGE);
+}
+.tp-result__section .txt__bg {
+  background: linear-gradient(transparent 20%, var(--MAIN_YELLOW) 30%);
+}
+@media screen and (max-width: 767px) {
+  .tp-result__section {
+    margin-top: 40px;
+  }
+  .tp-result__section .tp-result__cntTtl {
+    font-size: 20px;
+  }
+}
+
+/*--- .tp-result__cnt.__top ---*/
+.tp-result__section .tp-result__cnt.__top {
+  margin-bottom: 85px;
+}
+.tp-result__section .tp-result__cnt.__top .tp-result__cntTtl {
+  margin-bottom: 27px;
+}
+.tp-result__section .ShareList {
+  gap: 20px;
+}
+.tp-result__section .ShareList__txt {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .tp-result__section .tp-result__cnt.__top {
+    margin-bottom: 60px;
+  }
+  .tp-result__section .tp-result__cnt.__top .tp-result__cntTtl {
+    margin-bottom: 24px;
+  }
+  .tp-result__section .ShareList {
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tp-result__section .ShareList__txt {
+    font-size: 14px;
+  }
+  .tp-result__section .ShareList__img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+/*--- .tp-result__cnt.__bottom ---*/
+.tp-result__section .tp-result__cnt.__bottom {
+  padding: 36px;
+  border: 2px solid var(--MAIN_ORANGE);
+  border-radius: 28px;
+  position: relative;
+}
+.tp-result__section .tp-result__cnt.__bottom .tp-result__cntTtl {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: var(--MAIN_WHITE);
+  padding: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .tp-result__section .tp-result__cnt.__bottom {
+    padding: 28px 10px 48px;
+    border-radius: 26px;
+  }
+  .tp-result__section .tp-result__cnt.__bottom .tp-result__cntTtl {
+    padding: 0 10px;
+  }  
+}
+
+/* .Cost__top */
+.tp-result__section .Cost__top {
+  padding: 35px 50px;
+  background: #ffebcb;
+  border-radius: 26px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.tp-result__section .Cost__top:after {
+  content: "";
+  display: block;
+  border-top: 60px solid #ffebcb;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  transform: translateX(-50%);
+}
+.tp-result__section .Cost__txtLead {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tp-result__section .Cost__txtLead span {
+  margin: 5px 8px 0;
+  display: inline-block;
+  min-width: 6px;
+}
+.tp-result__section .Cost__txtLead span:before,
+.tp-result__section .Cost__txtLead span:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 1.3em;
+  background: var(--MAIN_BLACK);
+}
+.tp-result__section .Cost__txtLead span:first-child:before {
+  transform: rotate(-30deg);
+  margin-right: 4px;
+}
+.tp-result__section .Cost__txtLead span:first-child:after {
+  transform: rotate(-30deg);
+}
+.tp-result__section .Cost__txtLead span:last-child:before {
+  transform: rotate(30deg);
+  margin-right: 4px;
+}
+.tp-result__section .Cost__txtLead span:last-child:after {
+  transform: rotate(30deg);
+}
+.tp-result__section .Flow {
+  display: flex;
+  align-items: flex-start;
+}
+.tp-result__section .Flow__item:nth-child(1) {
+  width: 30.6%;
+  margin-right: 4.1%;
+}
+.tp-result__section .Flow__item:nth-child(1) .Flow__txt {
+  display: block;
+  width: 87%;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.42;
+}
+.tp-result__section .Flow__item:nth-child(2) {
+  width: 25.2%;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--MAIN_WHITE);
+  padding: 25px 10px;
+  background: var(--MAIN_ORANGE);
+  text-align: center;
+  margin: 30px 13.1% 0 0;
+  position: relative;
+}
+.tp-result__section .Flow__item:nth-child(2):after {
+  content: "";
+  display: block;
+  border-left: 28px solid var(--MAIN_ORANGE);
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+.tp-result__section .Flow__item:nth-child(3) {
+  width: 27%;
+  font-size: 18px;
+}
+.tp-result__section .Flow__item:nth-child(3) > * {
+  display: block;
+  text-align: center;
+}
+.tp-result__section .Flow__item:nth-child(3) .txt__strong {
+  font-weight: 900;
+  font-size: 1.78em;
+}
+.tp-result__section .Flow__item:nth-child(3) .Balloon {
+  background: var(--MAIN_BLACK);
+  color: var(--MAIN_WHITE);
+  line-height: 1;
+  padding: 22px 10px 23px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  position: relative;
+}
+.tp-result__section .Flow__item:nth-child(3) .Balloon:after {
+  content: "";
+  display: block;
+  border-top: 20px solid var(--MAIN_BLACK);
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tp-result__section .Flow__item:nth-child(3) .Local {
+  line-height: 1.15;
+}
+@media screen and (max-width: 1120px) and (min-width: 951px) {
+  .tp-result__section .Cost__top {
+    padding: 35px 20px;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-result__section .Cost__top {
+    padding: 35px 10px;
+    border-radius: 21px;
+    margin-bottom: 55px;
+  }
+  .tp-result__section .Cost__top:after {
+    border-top: 45px solid #ffebcb;
+    left: 50%;
+  }
+  .tp-result__section .Cost__txtLead {
+    margin-bottom: 30px;
+  }
+  .tp-result__section .Cost__txtLead span {
+    min-width: 8px;
+  }
+  .tp-result__section .Cost__txtLead span:first-child {
+    margin-right: 16px;
+  }
+  .tp-result__section .Cost__txtLead span:last-child {
+    margin-left: 16px;
+  }
+  .tp-result__section .Cost__txtLead span:before,
+  .tp-result__section .Cost__txtLead span:after {
+    height: 3em;
+  }
+  .tp-result__section .Cost__txtLead span:first-child:before {
+    transform: rotate(-20deg);
+    margin-right: 6px;
+  }
+  .tp-result__section .Cost__txtLead span:first-child:after {
+    transform: rotate(-20deg);
+  }
+  .tp-result__section .Cost__txtLead span:last-child:before {
+    transform: rotate(20deg);
+    margin-right: 6px;
+  }
+  .tp-result__section .Cost__txtLead span:last-child:after {
+    transform: rotate(20deg);
+  }
+  .tp-result__section .Flow {
+    align-items: center;
+    flex-direction: column;
+  }
+  .tp-result__section .Flow__item:nth-child(1) {
+    width: 100%;
+    max-width: 168px;
+    margin: 0 0 35px;
+  }
+  .tp-result__section .Flow__item:nth-child(1) .Flow__txt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .tp-result__section .Flow__item:nth-child(2) {
+    width: 100%;
+    max-width: 140px;
+    font-size: 12px;
+    padding: 25px 10px 12px;
+    margin: 0 0 53px;
+  }
+  .tp-result__section .Flow__item:nth-child(2):after {
+    border-top: 28px solid var(--MAIN_ORANGE);
+    border-right: 90px solid transparent;
+    border-left: 90px solid transparent;
+    border-bottom: none;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .tp-result__section .Flow__item:nth-child(3) {
+    width: 100%;
+    max-width: 150px;
+  }
+  .tp-result__section .Flow__item:nth-child(3) .Balloon {
+    padding: 20px 10px;
+  }
+}
+
+/* .Cost__bottom */
+.tp-result__section .Cost__bottom {
+  display: flex;
+}
+.tp-result__section .Cost__bottom > * {
+  width: 50%;
+}
+.tp-result__section .Cost__bottomLeft .Txt {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 8% 0 25%;
+  margin-bottom: 12px;
+}
+.tp-result__section .Cost__bottomRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+@media screen and (max-width: 767px) {
+  .tp-result__section {
+    margin-top: 40px;
+  }
+  .tp-result__section .Cost__bottom {
+    display: block;
+  }
+  .tp-result__section .Cost__bottom > * {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .tp-result__section .Cost__bottomLeft .Txt {
+    font-size: 15px;
+    padding: 0;
+  }
+  .tp-result__section .Cost__bottomRight {
+    margin-top: 26px;
+  }  
+}
+
+/*-----------------------
+4つのシンプルな機能 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point48.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point47.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point49.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(4) > .Ttl::before {
+  background: url(../images/common/icon_point50.png) no-repeat center center / contain;
+}
+
+/*-----------------------
+導入事例 tp-recipe_case__section
+-----------------------*/
+.tp-recipe_case__section .tp-recipe_case__listItem {
+  padding: 3px 0 0 100px;
+  position: relative;
+}
+.tp-recipe_case__section .tp-recipe_case__listItem:not(:last-child) {
+  margin-bottom: 67px;
+}
+.tp-recipe_case__section .tp-recipe_case__listTtl {
+  display: block;
+  text-align: center;
+  width: 100px;
+  border-left: 1px solid var(--MAIN_ORANGE);
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--MAIN_ORANGE);
+  padding: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.tp-recipe_case__section .tp-recipe_case__listTtl .txt__l {
+  font-size: 2em;
+  line-height: 1;
+  margin-left: 4px;
+}
+.tp-recipe_case__section .tp-recipe_case__listTxt {
+  font-size: 18px;
+  font-weight: bold;
+}
+.tp-recipe_case__section .tp-recipe_case__listArrow {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--MAIN_WHITE);
+  line-height: 1;
+  margin: 20px 0 47px;
+  padding: 18px 19px 2px;
+  background: var(--MAIN_ORANGE);
+  position: relative;
+  left: calc(50% - 50px);
+  transform: translateX(-50%);
+}
+.tp-recipe_case__section .tp-recipe_case__listArrow:after {
+  content: "";
+  display: block;
+  border-top: 32px solid var(--MAIN_ORANGE);
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .tp-recipe_case__section .tp-recipe_case__listItem {
+    padding: 0;
+  }
+  .tp-recipe_case__section .tp-recipe_case__listItem:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .tp-recipe_case__section .tp-recipe_case__listTtl {
+    width: unset;
+    padding: 0 0 0 10px;
+    text-align: left;
+    position: static;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .tp-recipe_case__section .tp-recipe_case__listTxt {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .tp-recipe_case__section .tp-recipe_case__listArrow {
+    left: 50%;
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+  .tp-recipe_case__section .tp-recipe_case__listArrow:after {
+    border-top: 20px solid var(--MAIN_ORANGE);
+  }
+}
+
+/*-----------------------
+多彩な機能 tp-function__section
+-----------------------*/
+.tp-function__section .tp-function__list {
+  gap: 30px 6px;
+}
+.tp-function__section .tp-function__listTxt {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 16px;
+  line-height: 1.25;
+}
+@media screen and (max-width: 767px) {
+}

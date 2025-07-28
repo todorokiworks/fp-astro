@@ -1,0 +1,33 @@
+@charset "utf-8";
+:root{
+  --fnts_local:16px;
+  --fnts_caption_min:26px;
+  --fnts_caption_sub:20px;
+  --fnts_section_ttl:30px;
+}
+/* -------------------- resources-section ------------------- */
+/* -----　resources/index.html　人材・求人ページ用mv　----- */
+.btm-front__section.resources_mv{
+  background-image: url(../images/resources/mv_resources.jpg);
+}
+
+@media screen and (min-width: 768px){
+/* -----　resources/index.html　人材・求人ページ　PC(min-width: 768px)用mv　----- */
+.btm-front__section.resources_mv{
+  background-position: 50% 50%;
+}
+}
+
+@media screen and (max-width: 767px){
+  /* -----　resources/index.html　人材・求人ページ　sp用mv　----- */
+  .btm-front__section.resources_mv{
+    background-image: url(../images/resources/sp/mv_resources_sp.jpg);
+    background-position: 50% 0%;
+    background-size: 175%;
+  }
+}
+
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+

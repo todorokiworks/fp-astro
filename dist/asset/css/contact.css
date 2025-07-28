@@ -1,0 +1,90 @@
+.accordion-header {
+  position: relative;
+}
+
+.accordion-header::before {
+  /* 閉じている時 */
+  content: "＋";
+  position: absolute;
+  right: 20px;
+}
+
+.accordion-header.active::before {
+  /* 開いている時 */
+  content: "－";
+}
+
+.accordion-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1em;
+}
+
+.p-contact__line__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em 1em;
+  padding: 45px 0;
+  margin-bottom: 50px;
+  border: 2px solid #f07d00;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-contact__line__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0px;
+    margin-bottom: 50px;
+    border: none;
+  }
+}
+
+.p-contact__line__qr {
+  text-align: center;
+  border-right: 1px solid #b9bbbc;
+}
+
+.p-contact__line__qr img {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.p-contact__line__btn {
+  text-align: center;
+}
+
+.p-balloon__linebtn {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-linebtn {
+  background-color: #05b702;
+  color: #fff;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 10px;
+  border-radius: 0.375rem;
+  width: 230px;
+  margin: 1.125rem auto 0;
+}
+
+.c-linebtn::before {
+  content: "";
+  background: url(/asset/images/contact/icon-line.svg) no-repeat center / contain;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}

@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/sanitary-rental/mv_sanitary-rental.jpg);
+}
+
+/*-----------------------
+tp-item__section
+-----------------------*/
+.tp-item__section .tp-item__listItem:not(:last-child) {
+  margin-bottom: 40px;
+}
+.tp-item__section .tp-item__ttl_wrap {
+  display: flex;
+  margin-bottom: 22px;
+}
+.tp-item__section .tp-item__ttl {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--MAIN_WHITE);
+  background: var(--MAIN_ORANGE);
+  width: 202px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--MAIN_ORANGE);
+  border-right: none;
+  border-radius: 25px 0 0 25px;
+}
+.tp-item__section .tp-item__ttlSub {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--MAIN_BLACK);
+  width: calc(100% - 202px);
+  padding: 23px 35px;
+  border: 2px solid var(--MAIN_ORANGE);
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+}
+.tp-item__section .tp-item__cnt {
+  display: flex;
+  justify-content: space-between;
+}
+.tp-item__section .tp-item__cntL {
+  width: 30%;
+  display: flex;
+  gap: 5px;
+}
+.tp-item__section .tp-item__img {
+  width: 52%;
+  padding: 25px 0 0;
+}
+.tp-item__section .tp-item__imgCap {
+  width: calc(48% - 5px);
+  font-size: 14px;
+  line-height: 1.57;
+}
+.tp-item__section .tp-item__cntR {
+  width: 67%;
+  display: flex;
+  gap: 16px;
+}
+.tp-item__section .tp-item__cntR_item {
+  background: #ffe6c6;
+  padding: 30px 25px 25px;
+  border-radius: 13px;
+  width: 100%;
+  min-width: calc((100% - 16px) / 2);
+}
+.tp-item__section .tp-item__cntR_ttl {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  line-height: 1.625;
+}
+.tp-item__section .tp-item__cntR_local {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+}
+@media screen and (max-width: 767px) {
+  .tp-item__section .tp-item__ttl_wrap {
+    display: block;
+    margin-bottom: 9px;
+  }
+  .tp-item__section .tp-item__ttl {
+    font-size: 16px;
+    width: 100%;
+    padding: 9px;
+    border: 2px solid var(--MAIN_ORANGE);
+    border-radius: 25px 25px 0 0;
+  }
+  .tp-item__section .tp-item__ttlSub {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 25px;
+    border: 2px solid var(--MAIN_ORANGE);
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+  }
+  .tp-item__section .tp-item__cnt {
+    display: block;
+  }
+  .tp-item__section .tp-item__cntL {
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 13px;
+  }
+  .tp-item__section .tp-item__img {
+    width: 115px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .tp-item__section .tp-item__imgCap {
+    width: 106px;
+    max-width: 100%;
+  }
+  .tp-item__section .tp-item__cntR {
+    width: 100%;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .tp-item__section .tp-item__cntR_item {
+    padding: 20px 15px 15px;
+    width: 100%;
+  }
+  .tp-item__section .tp-item__cntR_ttl {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .tp-item__section .tp-item__cntR_local {
+    font-size: 12px;
+  }  
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}
