@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/top/Layout.astro";
+import Aside from "../components/common/Aside.astro";
+import TopFrontSection from "../components/FrontPage/TopFrontSection.astro";
+import TopBannerSection from "../components/FrontPage/TopBannerSection.astro";
+import TopServiceSection from "../components/FrontPage/TopServiceSection.astro"; //人気のサービス
+import TopNewsSection from "../components/FrontPage/TopNewsSection.astro"; //お知らせ
+import TopPurposeSection from "../components/FrontPage/TopPurposeSection.astro"; //目的に合わせてサービスを選ぶ
+import ImportantNews from "../components/FrontPage/ImportantNews.astro"; //重要なお知らせ
+import AskOperator from "../components/FrontPage/AskOperator.astro"; //「オペレーターに質問する」
+
+import structuredDataMarkup from "../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.top);
+---
+
+<Layout
+	title="飲食店開業・経営・集客支援サイト | テンポスフードプレイス"
+	markup={markup}
+>
+	<main class="g-wrapper __2col">
+		<Aside />
+
+		<article id="mainarea">
+			<TopFrontSection />
+
+			<!-- 重要なお知らせ ここから -->
+			<!--<ImportantNews /> -->
+			<!-- 重要なお知らせ ここまで -->
+
+			<TopBannerSection />
+			<TopServiceSection />
+			<TopNewsSection />
+		</article>
+	</main>
+
+	<!-- 「オペレーターに質問する」非表示ここから -->
+	<!--<AskOperator /> -->
+	<!-- 「オペレーターに質問する」非表示ここまで -->
+	<TopPurposeSection />
+</Layout>
+
+<style lang="scss" is:global>
+	:root {
+		--fnts_local: 16px;
+		--fnts_caption_min: 26px;
+		--fnts_caption_sub: 20px;
+		--fnts_section_ttl: 30px;
+	}
+
+	/* トップページのスライダー */
+
+	.top-front__slider__cont {
+		position: relative;
+	}
+
+	.top-front__slider {
+		// --slider_space: 10px;
+		position: relative;
+		z-index: 2;
+		margin-top: -5%;
+		margin-left: calc(-1 * var(--slider_space));
+		width: calc(100% + (var(--slider_space) * 2));
+	}
+
+	.top-front__slider article {
+		padding: 0 var(--slider_space);
+	}
+
+	.top-front__slider__cont .slide-arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+	}
+
+	.top-front__slider__cont .swiper-button-prev {
+		top: 55%;
+		left: 0px;
+		transform: translate(-50%, -50%) rotate(180deg);
+		width: 30px;
+		height: 32px;
+		&::after {
+			content: "";
+			background: url("/asset/images/top/icon_next_slider.svg") center
+				center / contain no-repeat;
+			width: 30px;
+			height: 32px;
+		}
+	}
+
+	.top-front__slider__cont .swiper-button-next {
+		top: 55%;
+		right: 0px;
+		transform: translate(50%, -50%);
+		width: 30px;
+		height: 32px;
+		&::after {
+			content: "";
+			background: url("/asset/images/top/icon_next_slider.svg") center
+				center / contain no-repeat;
+			width: 30px;
+			height: 32px;
+		}
+	}
+	.top-front__slider__cont
+		.swiper-pagination-bullets.swiper-pagination-horizontal {
+		bottom: -32px;
+
+		@media (max-width: 768px) {
+			bottom: -25px;
+		}
+
+		.swiper-pagination-bullet {
+			margin: 0 7px;
+			width: 4.6px;
+			height: 4.6px;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: #f07d00;
+		}
+	}
+</style>

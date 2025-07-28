@@ -1,0 +1,191 @@
+<section id="about">
+    <div class="cInner">
+        <h2>About us</h2>
+        <p class="txt pc">
+            Our motto is <span>“Enjoy international exchanges"</span>,<br />so
+            we provide sightseeing tours by college students and office<br
+            />workers from all over Japan.<br />They are not professionals in
+            the field of tourism yet, but they are<br />here to help people who
+            want to enjoy their trip to Japan.<br />We hope that you will also
+            enjoy the services of our tour guides.
+        </p>
+        <p class="txt sp">
+            Our motto is <span>“Enjoy international ex-<br /></span><span
+                >changes"</span
+            >, so we provide sightseeing tours<br />by college students and
+            office workers<br />from all over Japan.<br />They are not
+            professionals in the field of<br />tourism yet, but they are here to
+            help<br />people who want to enjoy their trip to Japan.<br />We hope
+            that you will also enjoy the ser-<br />vices of our tour guides.
+        </p>
+        <a
+            class="contactBtn"
+            href="https://forms.gle/AigVVixdUn1byRKZA"
+            target="_blank"
+            >Click here to apply!
+        </a>
+        <p class="sns-ttl">Check out<br class="sp" /> our Social Media</p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/travel_tfp/" target="_blank"
+                    ><img
+                        src="/lp/japan-travel-planner/img/img_insta.png"
+                        alt=""
+                    /></a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.tiktok.com/@tenpos.tour.guide?lang=ja-JP"
+                    target="_blank"
+                    ><img
+                        src="/lp/japan-travel-planner/img/img_tiktok.png"
+                        alt=""
+                    /></a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.facebook.com/profile.php?id=61563314157379"
+                    target="_blank"
+                    ><img
+                        src="/lp/japan-travel-planner/img/img_fb.png"
+                        alt=""
+                    /></a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/@Tenpos_guidetour"
+                    target="_blank"
+                    ><img
+                        src="/lp/japan-travel-planner/img/img_yt.png"
+                        alt=""
+                    /></a
+                >
+            </li>
+        </ul>
+    </div>
+</section>
+
+<style lang="scss">
+    section#about {
+        background: url("/lp/japan-travel-planner/img/img_about_bg.png") center
+            center / cover;
+        padding: 100px 0 135px;
+        @media (max-width: 768px) {
+            padding: 40px 0 70px;
+        }
+        div.cInner {
+            @media (max-width: 768px) {
+                padding: 0 20px;
+            }
+            h2 {
+                font-size: 60px;
+                font-weight: 900;
+                text-align: center;
+                margin-bottom: 60px;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            p.txt.pc {
+                font-size: 32px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 60px;
+                span {
+                    color: var(--red);
+                }
+            }
+            p.txt.sp {
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 40px;
+                line-height: 1.75;
+                span {
+                    color: var(--red);
+                }
+            }
+            a.contactBtn {
+                display: block;
+                font-size: 32px;
+                font-weight: bold;
+                color: #fff;
+                background: var(--red);
+                position: relative;
+                width: 510px;
+                padding: 17px 10px 25px 0;
+                text-align: center;
+                border-radius: 10px;
+                margin: 0 auto 130px;
+                transition: all 0.3s;
+                @media (max-width: 768px) {
+                    width: 300px;
+                    font-size: 17px;
+                    padding: 15px 0;
+                    border-radius: 5px;
+                    margin: 0 auto 60px;
+                }
+                &:hover {
+                    background: #dd4444;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    transform: translateY(-50%);
+                    width: 19px;
+                    height: 35px;
+                    border-radius: 9999px;
+                    background: url("/lp/japan-travel-planner/img/icon_arrow.png")
+                        center center / cover no-repeat;
+                    @media (max-width: 768px) {
+                        width: 13px;
+                        height: 23px;
+                        right: 20px;
+                    }
+                }
+            }
+            p.sns-ttl {
+                font-size: 60px;
+                font-weight: 900;
+                text-align: center;
+                margin-bottom: 60px;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                    line-height: 1.15;
+                }
+            }
+            ul {
+                display: flex;
+                @media (max-width: 768px) {
+                    flex-wrap: wrap;
+                    padding-inline-start: 0px;
+                }
+                li {
+                    @media (max-width: 768px) {
+                        width: 50%;
+                    }
+                    a {
+                        width: 290px;
+                        display: block;
+                        transition: all 0.3s;
+                        @media (max-width: 768px) {
+                            width: 100%;
+                        }
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

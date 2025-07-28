@@ -1,0 +1,365 @@
+<section id="flow">
+    <div class="cInner">
+        <h2 class="h02">登録から<br class="sp" />参加までの流れ</h2>
+        <ul class="list">
+            <li class="item">
+                <p>
+                    登録フォームから<br class="pc" />申し<br class="sp" />込み。
+                </p>
+                <div class="img">
+                    <img
+                        src="/lp/tourism-volunteer/img/img_flow01-illust.png"
+                        alt=""
+                    />
+                </div>
+            </li>
+            <li class="item">
+                <p>
+                    訪日客のお客様より<br class="pc" />依<br
+                        class="sp"
+                    />頼があった際、弊社よ<br class="sp" />りご連絡いたします。
+                </p>
+                <div class="img">
+                    <img
+                        src="/lp/tourism-volunteer/img/img_flow02-illust.png"
+                        alt=""
+                    />
+                </div>
+            </li>
+            <li class="item">
+                <p>
+                    予め決まっている行程<br
+                        class="sp"
+                    />に従って、外国語でご案<br class="sp" />内！
+                </p>
+                <div class="img">
+                    <img
+                        src="/lp/tourism-volunteer/img/img_flow03-illust.png"
+                        alt=""
+                    />
+                </div>
+            </li>
+        </ul>
+        <div class="box">
+            <p>
+                観光ボランティアとして
+                <br /><span
+                    >海外からの観光客を<br
+                        class="sp"
+                    />おもてなししませんか？</span
+                >
+            </p>
+        </div>
+        <a
+            class="contactBtn"
+            href="https://forms.gle/Bs7QeupeXw559UXSA"
+            target="_blank"
+            >ご登録はこちら
+        </a>
+    </div>
+</section>
+<div class="bottom">
+    <div class="bottom-img">
+        <img src="/lp/tourism-volunteer/img/img_welcome-to-japan.png" alt="" />
+    </div>
+    <div class="bottom-img2">
+        <img src="/lp/tourism-volunteer/img/img_people.png" alt="" />
+    </div>
+</div>
+
+<style lang="scss">
+    section#flow {
+        background: #f5f6ec;
+        padding: 20px 0 350px;
+        position: relative;
+        @media (max-width: 768px) {
+            padding: 20px 0 150px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -27%;
+            left: 0px;
+            width: 100%;
+            height: 402px;
+            background: url("/lp/tourism-volunteer/img/img_flow_bg.png") center
+                center / cover no-repeat;
+            z-index: 0;
+            @media (max-width: 768px) {
+                background: url("/lp/tourism-volunteer/img/img_flow_bg-sp.png")
+                    center center / cover no-repeat;
+                height: 90px;
+                top: -9%;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -24%;
+            left: 0px;
+            width: 100%;
+            height: 363px;
+            background: url("/lp/tourism-volunteer/img/img_flow_bg02.png")
+                center center / cover no-repeat;
+            z-index: 0;
+            @media (max-width: 768px) {
+                background: url("/lp/tourism-volunteer/img/img_flow_bg02-sp.png")
+                    center center / cover no-repeat;
+                height: 80px;
+                bottom: -8%;
+            }
+        }
+        div.cInner {
+            @media (max-width: 768px) {
+                padding: 0 10px;
+            }
+            h2.h02 {
+                &::before {
+                    top: 50%;
+                    right: -145px;
+                    transform: translateY(-50%);
+                    width: 144px;
+                    height: 100px;
+                    background: url("/lp/tourism-volunteer/img/img_flow_ttl-illust.png")
+                        center center / contain no-repeat;
+                    @media (max-width: 768px) {
+                        top: -2%;
+                        right: -34px;
+                        transform: translateY(-50%);
+                        width: 40px;
+                        height: 60px;
+                    }
+                }
+            }
+            ul.list {
+                display: flex;
+                gap: 30px;
+                margin-bottom: 40px;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    padding-inline-start: 0px;
+                    gap: 12px;
+                    margin: 0 25px 30px;
+                }
+                li.item {
+                    padding: 40px 35px;
+                    border-radius: 25px;
+                    width: 33%;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                    position: relative;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                        padding: 25px 23px;
+                        .img {
+                            height: 80px;
+                            display: flex;
+                            align-items: flex-end;
+                        }
+                    }
+                    &:first-child {
+                        background: var(--lightRed);
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: -40px;
+                            transform: translateY(-50%);
+                            width: 55px;
+                            height: 102px;
+                            background: url("/lp/tourism-volunteer/img/icon_triangle-right.png")
+                                center center / contain no-repeat;
+                            z-index: 9;
+                            @media (max-width: 768px) {
+                                width: 60px;
+                                height: 45px;
+                                top: auto;
+                                bottom: -28px;
+                                left: 50%;
+                                right: auto;
+                                transform: translateX(-50%) rotate(90deg);
+                            }
+                        }
+                        .img {
+                            width: 160px;
+                            margin: 0 auto;
+                            @media (max-width: 768px) {
+                                width: 80px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        background: var(--deepYellow);
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: -40px;
+                            transform: translateY(-50%);
+                            width: 55px;
+                            height: 102px;
+                            background: url("/lp/tourism-volunteer/img/icon_triangle-right.png")
+                                center center / contain no-repeat;
+                            z-index: 9;
+                            @media (max-width: 768px) {
+                                width: 60px;
+                                height: 45px;
+                                top: auto;
+                                bottom: -28px;
+                                left: 50%;
+                                right: auto;
+                                transform: translateX(-50%) rotate(90deg);
+                            }
+                        }
+                        .img {
+                            width: 110px;
+                            margin: 0 auto;
+                            @media (max-width: 768px) {
+                                width: 60px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        background: var(--blue);
+                        .img {
+                            width: 120px;
+                            margin: 0 auto;
+                            @media (max-width: 768px) {
+                                width: 60px;
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: #fff;
+                        min-height: 180px;
+                        line-height: 1.25;
+                        text-align: justify;
+                        @media (max-width: 768px) {
+                            font-size: 16px;
+                            min-height: auto;
+                            width: 165px;
+
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+            div.box {
+                background: url("/lp/tourism-volunteer/img/img_flow_fukidashi.png")
+                    center center / cover no-repeat;
+                height: 355px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                z-index: 3;
+                position: relative;
+                @media (max-width: 768px) {
+                    background: url("/lp/tourism-volunteer/img/img_flow_fukidashi-sp.png")
+                        center center / contain no-repeat;
+                    height: 185px;
+                }
+                p {
+                    font-size: 44px;
+                    font-weight: 900;
+                    text-align: center;
+                    margin-top: 70px;
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                        margin-top: 35px;
+                    }
+                    span {
+                        color: var(--red);
+                    }
+                }
+            }
+            a.contactBtn {
+                display: block;
+                margin: 30px auto 10px;
+                font-size: 52px;
+                font-weight: 500;
+                color: #fff;
+                background: linear-gradient(
+                    -90deg,
+                    rgba(253, 100, 79, 1) 33%,
+                    rgba(230, 0, 18, 1) 100%
+                );
+                font-family: var(--kokoro);
+                letter-spacing: 5px;
+                position: relative;
+                width: 880px;
+                padding: 12px 10px 16px 0;
+                text-align: center;
+                border-radius: 50px;
+                box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+                transition: all 0.3s;
+                @media (max-width: 768px) {
+                    width: 300px;
+                    font-size: 21px;
+                    padding: 9px 10px 9px 0;
+                    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+                    margin: 20px auto 10px;
+                }
+                &:hover {
+                    box-shadow: unset;
+                    transform: translateY(10px);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 30px;
+                    transform: translateY(-50%);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 9999px;
+                    background: url("/lp/tourism-volunteer/img/icon_arrow.png")
+                        center center / cover no-repeat;
+                    @media (max-width: 768px) {
+                        width: 20px;
+                        height: 20px;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    div.bottom {
+        padding: 0 0 0px;
+        background: #fff4ad;
+        height: 660px;
+        @media (max-width: 768px) {
+            padding: 0 0 30px;
+            height: 300px;
+        }
+        div.bottom-img {
+            width: 500px;
+            margin: 0 auto 80px;
+            transform: translateY(-230px);
+            position: relative;
+            @media (max-width: 768px) {
+                width: 220px;
+                transform: translateY(-95px);
+            }
+            img {
+            }
+        }
+        div.bottom-img2 {
+            width: 840px;
+            margin: 0 auto;
+            position: relative;
+            transform: translateY(-260px);
+            @media (max-width: 768px) {
+                width: 320px;
+                transform: translateY(-130px);
+            }
+            img {
+            }
+        }
+    }
+</style>

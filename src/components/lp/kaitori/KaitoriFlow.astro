@@ -1,0 +1,136 @@
+---
+const list = [
+  {
+    url: "/lp/kaitori/img/icon_flow01.png",
+    urlsp: "/lp/kaitori/img/icon_flow01-sp.png",
+    txt: `査定依頼<br class="pc"><span class="txt-sm" style="font-size:16px">(無料)</span>`,
+    num: "/lp/kaitori/img/img_flow_num01.png",
+  },
+  {
+    url: "/lp/kaitori/img/icon_flow02-sp.png",
+    urlsp: "/lp/kaitori/img/icon_flow02-sp.png",
+    txt: `ご連絡`,
+    num: "/lp/kaitori/img/img_flow_num02.png",
+  },
+  {
+    url: "/lp/kaitori/img/icon_flow03-sp.png",
+    urlsp: "/lp/kaitori/img/icon_flow03-sp.png",
+    txt: `訪問・査定`,
+    num: "/lp/kaitori/img/img_flow_num03.png",
+  },
+  {
+    url: "/lp/kaitori/img/icon_flow04.png",
+    urlsp: "/lp/kaitori/img/icon_flow04-sp.png",
+    txt: `買取の成立`,
+    num: "/lp/kaitori/img/img_flow_num04.png",
+  },
+  {
+    url: "/lp/kaitori/img/icon_flow05.png",
+    urlsp: "/lp/kaitori/img/icon_flow05-sp.png",
+    txt: `搬出・撤去`,
+    num: "/lp/kaitori/img/img_flow_num05.png",
+  },
+  {
+    url: "/lp/kaitori/img/icon_flow06.png",
+    urlsp: "/lp/kaitori/img/icon_flow06-sp.png",
+    txt: `お支払い`,
+    num: "/lp/kaitori/img/img_flow_num06.png",
+  },
+];
+---
+
+<section id="flow">
+  <div class="contents__inner">
+    <h2 class="header_02">買取の流れ</h2>
+    <div class="flow__wrapper">
+      {
+        list.map(item => (
+          <div class="item">
+            <div class="icon">
+              <img src={item.num} alt="" />
+            </div>
+            <div class="img">
+              <picture>
+                <source media="(max-width:768px)" srcset={item.urlsp} />
+                <img src={item.url} alt="" />
+              </picture>
+            </div>
+            <p class="txt" set:html={item.txt} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  section#flow {
+    div.contents__inner {
+      padding-top: 100px;
+      @media (max-width: 768px) {
+        padding: 40px 0px 0;
+      }
+      h2.header_02 {
+      }
+      div.flow__wrapper {
+        display: flex;
+        gap: 15px;
+        background: var(--pink);
+        padding: 55px 60px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          padding: 30px 10px;
+        }
+        div.item {
+          position: relative;
+          background: #fff;
+          padding: 20px 0 20px;
+          width: 18%;
+          @media (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 14px 10px;
+          }
+          .icon {
+            position: absolute;
+            top: -20px;
+            left: 5px;
+            @media (max-width: 768px) {
+              position: relative;
+              top: 0;
+              left: 0;
+              width: 30px;
+            }
+          }
+          div.img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            @media (max-width: 768px) {
+              width: 50px;
+              height: auto;
+            }
+            img {
+              @media (max-width: 768px) {
+                width: 100%;
+              }
+            }
+          }
+          p.txt {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.25;
+            .txt-sm {
+              font-size: 16px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

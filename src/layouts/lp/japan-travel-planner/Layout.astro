@@ -1,0 +1,193 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import "@fontsource/roboto";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/900.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Google Tag Manager -->
+		<script is:inline>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NXBVCP8");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta
+			name="description"
+			content="Join our guided tours to explore Japan’s hidden gems with locals! Discover unique food spots and cultural sites not found in guidebooks. Flexible itineraries are available for Asakusa, Shibuya, and more."
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="stylesheet"
+			href="/lp/japan-travel-planner/style/reset.css"
+		/>
+		<meta name="generator" content="Astro v4.16.5" />
+		<link
+			rel="canonical"
+			href="https://support.tenpos.com/lp/japan-travel-planner/"
+		/><!--ファビコン、IOSタイコン-->
+		<link rel="icon" href="https://support.tenpos.com/asset/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://support.tenpos.com/asset/apple-touch-icon.png"
+		/>
+
+		<!-- OGP -->
+		<meta
+			property="og:title"
+			content="Authentic Japanese Experiences with Local Guides | Hidden Gems & Food Tours"
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://support.tenpos.com/lp/japan-travel-planner/"
+		/>
+		<meta
+			property="og:image"
+			content="https://support.tenpos.com/lp/japan-travel-planner/img/ogp.jpg"
+		/>
+		<meta property="og:site_name" content="テンポスフードプレイス" />
+		<meta
+			property="og:description"
+			content="Join our guided tours to explore Japan’s hidden gems with locals! Discover unique food spots and cultural sites not found in guidebooks. Flexible itineraries are available for Asakusa, Shibuya, and more."
+		/>
+		<!-- OGP Twitter共通設定 -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Authentic Japanese Experiences with Local Guides | Hidden Gems & Food Tours"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://support.tenpos.com/lp/japan-travel-planner/img/ogp.jpg"
+		/>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXBVCP8"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXBVCP8"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe></noscript
+		>
+
+		<slot />
+	</body>
+</html>
+<style is:global lang="scss">
+	:root {
+		--roboto: "Roboto", sans-serif;
+		--grey: #f7f7f7;
+		--red: #e50808;
+		--orange: #da7d2b;
+		--deepred: #942e17;
+	}
+	html {
+		font-family: var(--roboto);
+		scroll-behavior: smooth;
+	}
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+	}
+
+	.cInner {
+		max-width: 1200px;
+		margin-inline: auto;
+		@media (max-width: 768px) {
+			max-width: 100%;
+			padding: 0 35px;
+		}
+	}
+
+	.h02 {
+		font-size: 60px;
+		font-weight: 900;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		line-height: 1.25;
+		border-bottom: 4px solid var(--red);
+		width: fit-content;
+		margin: 0 auto 30px;
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
+	}
+
+	.h03 {
+		font-size: 60px;
+		font-weight: 900;
+		text-align: center;
+		line-height: 1.1;
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		span {
+			color: var(--red);
+			font-size: 28px;
+			display: block;
+			@media (max-width: 768px) {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.pc {
+		display: block;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.sp {
+		display: none;
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+</style>

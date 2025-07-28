@@ -1,0 +1,162 @@
+---
+import Footer from "../../components/common/Footer.astro";
+import Header from "../../components/common/Header.astro";
+import SpNav from "../../components/common/SpNav.astro";
+
+const { title, description, ogimage, pageUrl, markup } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+	<head
+		prefix="og://ogp.me/ns# fb: //ogp.me/ns/fb# article: //ogp.me/ns/article#"
+	>
+		<script type="application/ld+json" set:html={markup}>
+		</script>
+		<meta charset="utf-8" />
+		<!-- Google Tag Manager -->
+		<script is:inline>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NXBVCP8");
+		</script>
+		<!-- End Google Tag Manager -->
+		<!-- タイトル・ディスクリプション・キーワード -->
+		<title>{title}</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="サイトの概要を記入" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB"
+			crossorigin="anonymous"
+		/>
+		<link rel="canonical" href="https://support.tenpos.com/" />
+
+		<!--ファビコン、IOSタイコン-->
+		<link rel="icon" href="https://support.tenpos.com/asset/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://support.tenpos.com/asset/apple-touch-icon.png"
+		/>
+
+		<!-- OGP -->
+		<meta property="og:title" content={title} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://support.tenpos.com/" />
+		<meta property="og:image" content="サムネイル画像のURL" />
+		<meta property="og:site_name" content="サイト名" />
+		<meta property="og:description" content={description} />
+		<!-- OGP Twitter共通設定 -->
+		<meta name="twitter:card" content="Summary Card with Large Image" />
+
+		<!-- 下層フォント -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- 全ページ共通CSS -->
+
+		<link rel="stylesheet" href="/asset/css/jquery.fatNav.css" />
+		<link rel="stylesheet" href="/asset/css/style.css" />
+
+		<!-- 下層CSS -->
+		<link rel="stylesheet" href="/asset/css/freepage.css?0114" />
+		<!-- TOP CSS -->
+
+		<!-- フォーム自動チェック -->
+		<script is:inline>
+			// URLパラメーターを解析する関数
+			function getUrlParams() {
+				let params = {};
+				let queryString = window.location.search.substring(1);
+				let queries = queryString.split("&");
+
+				for (let i = 0; i < queries.length; i++) {
+					let pair = queries[i].split("=");
+					params[pair[0]] = pair[1];
+				}
+				return params;
+			}
+
+			// チェックボックスを制御する関数
+			function setInitialCheckboxState() {
+				let params = getUrlParams();
+				if (params.checked) {
+					// checkedパラメーターの値をカンマで分割して配列にする
+					let checkedValues = params.checked.split(",");
+
+					// 各チェックボックスを確認し、該当するものをチェックする
+					checkedValues.forEach(function (value) {
+						let checkbox = document.querySelector(
+							`input[type="checkbox"][value="${value}"]`,
+						);
+						if (checkbox) {
+							checkbox.checked = true;
+						}
+					});
+				}
+			}
+
+			// ページがロードされた後にチェックボックスを制御
+			window.onload = function () {
+				setInitialCheckboxState();
+			};
+		</script>
+	</head>
+
+	<body class="__wave">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXBVCP8"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
+		<Header />
+
+		<SpNav />
+
+		<slot />
+		<Footer />
+	</body>
+</html>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+	is:inline></script>
+<script src="/asset/js/contact.js" is:inline></script>
+<script src="/asset/js/subpage.js" is:inline></script>
+<script is:inline>
+	// ナビゲーションアコーディオン PC
+	$(function () {
+		$(".aside-restaurant__accordion .Ttl > *").click(function (e) {
+			e.preventDefault();
+			$(this).parent().next(".Body").slideToggle("fast");
+			$(this).toggleClass("active");
+			$(this).parent().toggleClass("active");
+		});
+		// ナビゲーションアコーディオン SP
+		$(".fat-restaurant__accordion .Ttl > *").click(function (e) {
+			e.preventDefault();
+			$(this).parent().next(".Body").slideToggle("fast");
+			$(this).toggleClass("active");
+			$(this).parent().toggleClass("active");
+		});
+	});
+</script>

@@ -1,0 +1,382 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.vendingmachine);
+---
+
+<Layout
+    title="自動販売機を飲食店の入り口に設置で利益をプラスする方法！｜テンポス"
+    description="【初期費用0円で設置可能】人気メーカー多数から立地条件に応じてご提案。手数料利益確保かつ社員の福利厚生でも喜ばれています。テンポスフードプレイスにお任せください。"
+    pageUrl="/management/vendingmachine/"
+    ogimage="/asset/images/vendingmachine/ogp_vendingmachine.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/management/">店舗運営支援</a></li>
+                    <li>自動販売機</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>自動販売機</span>
+                </h1>
+                <p class="tp-front__caption">
+                    利益確保に！福利厚生に！お店の敷地に自動販売機を設置するご案内が可能！<br
+                    />
+                    お店でのお食事後の購入や、照明による夜間の集客も狙えます。<br
+                    />
+                    スタッフが定期的に訪問し、在庫のチェックや商品補充を行います。
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=28"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>敷地を<span class="tp-bglg">有効的に使いたい</span></li>
+                    <li>
+                        お店の営業以外に<span class="tp-bglg"
+                            >利益を増やしたい</span
+                        >
+                    </li>
+                    <li>
+                        <span class="tp-bglg">福利厚生</span
+                        >について検討している
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスでは自動販売機を設置する<br class="pc" />
+                    ご案内をしております
+                </h2>
+                <div class="tp-design__contents tp-wrapper__s __center">
+                    <p class="tp-local">
+                        ドリンクが売れた数に応じて手数料がもらえ、負担する費用は自動販売機の電気代のみ！<br
+                        />
+                        お店でのお食事後の購入や、照明による夜間の集客も狙えます。<br
+                        />
+                        スタッフが定期的に訪問し、在庫のチェックや商品補充を行います。
+                    </p>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/vendingmachine/2x/img_vendingmachine_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/vendingmachine/img_vendingmachine_design.png"
+                                srcset="/asset/images/vendingmachine/img_vendingmachine_design.png 1x,/asset/images/vendingmachine/2x/img_vendingmachine_design@2x.png 2x"
+                                alt=""
+                                width="386"
+                                height="231"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">自動販売機設置のメリット</h2>
+                <ul class="tp-check__list tp-wrapper__l tp-mgb__s">
+                    <li>
+                        売上に応じて<span class="tp-bglg">手数料がもらえる</span
+                        >
+                    </li>
+                    <li>
+                        お店の<span class="tp-bglg">営業以外で売上の確保</span
+                        >ができる
+                    </li>
+                    <li>
+                        設置費<span class="tp-bglg">無料</span><br />
+                        （場所により電気工事等費用が発生する場合がございます）
+                    </li>
+                    <li>
+                        商品の補充・管理は全て<span class="tp-bglg"
+                            >スタッフにおまかせ</span
+                        >
+                    </li>
+                </ul>
+                <p class="tp-want__thumb width-50">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/vendingmachine/2x/img_vendingmachine_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/vendingmachine/img_vendingmachine_want.png"
+                            srcset="/asset/images/vendingmachine/img_vendingmachine_want.png 1x,/asset/images/vendingmachine/2x/img_vendingmachine_want@2x.png 2x"
+                            alt=""
+                            width="380"
+                            height="280"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    お気軽にお問い合わせフォームよりご連絡ください。初めて検討される方も、お気軽にご利用できます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">担当者よりご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    電話でお客様の情報をお伺いし、提携先に連携いたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先からのご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    お電話にて詳細をご説明いたします。<br />
+                                    その後、実際にお客様の現場を調査して、設置スペースや電気容量などの確認を行います。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">ご契約</h3>
+                            <div class="Local">
+                                <p>
+                                    設置の条件を満たしている場合は、契約に進み設置工事の日時を決定したします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">利用開始</h3>
+                            <div class="Local">
+                                <p>自動販売機を設置し利用開始になります。</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-heed__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">注意事項</span>
+                </h2>
+                <div class="tp-heed__container">
+                    <p class="tp-heed__txt">
+                        ビル等、私有地でない場所は、設置のご提案ができない場合があります。
+                    </p>
+                    <p class="tp-heed__txt">
+                        お申込みから設置まで約1ヵ月程度かかります。
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>設置の工事費は？</dt>
+                        <dd>
+                            工事費は無料です。設置場所によっては有料となる場合があります。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>近くに電源がない場合は？</dt>
+                        <dd>
+                            設置場所の状況によって可能な場合もありますので、ご相談ください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>故障したりいたずらされたら？</dt>
+                        <dd>
+                            担当が対処し、基本的に修繕費等をいただくことはありません。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>すでに自動販売機を置いているけど？</dt>
+                        <dd>
+                            今の機種は改良されており、設置してから3年以上経っている場合に月々の電気代が安くなる可能性が高いです。併設や切替が可能な場合もあるのでご相談ください。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/cost/electricity/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_electricity@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_electricity.png"
+                                        srcset="/asset/images/common/img_kanren_service_electricity.png 1x,/asset/images/common/2x/img_kanren_service_electricity@2x.png 2x"
+                                        alt="電気代削減"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">電気代削減</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/cost/gas-bill/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_gas-bill@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_gas-bill.png"
+                                        srcset="/asset/images/common/img_kanren_service_gas-bill.png 1x,/asset/images/common/2x/img_kanren_service_gas-bill@2x.png 2x"
+                                        alt="ガス代削減"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">ガス代削減</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/cost/recipe/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_recipe@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_recipe.png"
+                                        srcset="/asset/images/common/img_kanren_service_recipe.png 1x,/asset/images/common/2x/img_kanren_service_recipe@2x.png 2x"
+                                        alt="レシピ原価管理"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">レシピ原価管理</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/vendingmachine/mv_vendingmachine.jpg);
+    }
+
+    /*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+    .tp-worries__section .tp-check__list > li {
+        display: block;
+    }
+
+    /*-----------------------
+tp-design__section
+-----------------------*/
+    .tp-design__section .tp-design__contents.__center .tp-design__thumb {
+        max-width: 385px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-design__section .tp-design__contents.__center .tp-design__thumb {
+            max-width: 300px;
+        }
+    }
+
+    /*-----------------------
+tp-want__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__thumb {
+            max-width: 250px;
+            width: 60%;
+        }
+    }
+
+    /*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+    .tp-frow__section {
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-frow__section {
+            margin-top: 40px;
+        }
+    }
+</style>

@@ -1,0 +1,2570 @@
+{
+    "top": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | 会社情報",
+                "item": "https://support.tenpos.com/company/"
+            }
+        ]
+    },
+    "before_opening": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店開業に必要な準備・手順を解説！｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/before_opening/"
+            }
+        ]
+    },
+    "after_opening": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業後に必要な手配・経営で考えるポイントを解説！｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/after_opening/"
+            }
+        ]
+    },
+    "00_sitemap": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://support.tenpos.com/#website",
+        "url": "https://support.tenpos.com/",
+        "name": "株式会社テンポスフードプレイス",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://support.tenpos.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    },
+    "promotion": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            }
+        ]
+    },
+    "makemovie": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "動画作成サービス｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/makemovie/"
+            }
+        ]
+    },
+    "logoCreation": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            }
+        ]
+    },
+    "logoCreationBar": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "バー・バル ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/bar/"
+            }
+        ]
+    },
+    "logoCreationCafe": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "カフェ・喫茶 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/cafe/"
+            }
+        ]
+    },
+    "logoCreationCharacter": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/character/"
+            }
+        ]
+    },
+    "logoCreationDelivery": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "テイクアウト・移動販売 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/delivery/"
+            }
+        ]
+    },
+    "logoCreationIzakaya": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "居酒屋 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/izakaya/"
+            }
+        ]
+    },
+    "logoCreationJapanese": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "和食 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/japanese/"
+            }
+        ]
+    },
+    "logoCreationKoreanCuisine": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "韓国料理 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/korean_cuisine/"
+            }
+        ]
+    },
+    "logoCreationOthers": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "その他 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/others/"
+            }
+        ]
+    },
+    "logoCreationRamen": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "ラーメン ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/ramen/"
+            }
+        ]
+    },
+    "logoCreationSweets": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "洋菓子 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/sweets/"
+            }
+        ]
+    },
+    "logoCreationTeppanyaki": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "鉄板料理 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/teppanyaki/"
+            }
+        ]
+    },
+    "logoCreationYakiniku": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のポスター/チラシ/メニュー表などの販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "プロデザイナーに依頼できる飲食店ロゴ作成なら、年間2万件以上の新規飲食店開業支援実績のあるテンポスへ",
+                "item": "https://support.tenpos.com/promotion/logo_creation/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "飲食店ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "焼肉 ロゴ制作事例一覧 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/logo_creation/jirei/yakiniku/"
+            }
+        ]
+    },
+    "promotionalDesign": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            }
+        ]
+    },
+    "promotionalDesignJirei": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            }
+        ]
+    },
+    "promotionalDesignBusinessCard": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "名刺 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/business-card/"
+            }
+        ]
+    },
+    "promotionalDesignCoupon": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "クーポン券 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/coupon/"
+            }
+        ]
+    },
+    "promotionalDesignFloorMat": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "フロアマット | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/floor-mat/"
+            }
+        ]
+    },
+    "promotionalDesignFlyer": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "チラシ | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/flyer/"
+            }
+        ]
+    },
+    "promotionalDesignGoodwill": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "のれん | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/goodwill/"
+            }
+        ]
+    },
+    "promotionalDesignKakegami": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "掛紙 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/kakegami/"
+            }
+        ]
+    },
+    "promotionalDesignLeaflet": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "リーフレット | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/leaflet/"
+            }
+        ]
+    },
+    "promotionalDesignMenu": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "メニュー表 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/menu/"
+            }
+        ]
+    },
+    "promotionalDesignNobori": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "のぼり | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/nobori/"
+            }
+        ]
+    },
+    "promotionalDesignOther": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "その他 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/other/"
+            }
+        ]
+    },
+    "promotionalDesignPoster": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "ポスター | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/poster/"
+            }
+        ]
+    },
+    "promotionalDesignShopCard": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "ショップカード | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/shop-card/"
+            }
+        ]
+    },
+    "promotionalDesignSignboard": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "看板 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/signboard/"
+            }
+        ]
+    },
+    "promotionalDesignStampcard": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "スタンプカード | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/stampcard/"
+            }
+        ]
+    },
+    "promotionalDesignSticker": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "ステッカー | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/sticker/"
+            }
+        ]
+    },
+    "promotionalDesignTag": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "商品タグ | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/tag/"
+            }
+        ]
+    },
+    "promotionalDesignTapestry": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "販促デザイン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "販促物作成 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "販促物制作事例 | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "タペストリー | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/promotion/promotional_design/jirei/tapestry/"
+            }
+        ]
+    },
+    "gmb_contact_kantan": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | お問い合わせ",
+                "item": "https://support.tenpos.com/contact/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Googleビジネスプロフィール：登録情報用フォーム かんたんプラン | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/contact/gmb_contact_kantan/"
+            }
+        ]
+    },
+    "lpLineAircon": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のエアコン購入っていくらかかるの？10秒で分かる無料診断 | テンポス",
+                "item": "https://support.tenpos.com/lp/lp_line-aircon/"
+            }
+        ]
+    },
+    "lpLineDiagnosis": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業費用っていくらかかるの？10秒で分かる無料診断 | テンポス",
+                "item": "https://support.tenpos.com/lp/lp_line-diagnosis/"
+            }
+        ]
+    },
+    "cost": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の電気代・ガス代などの経費削減サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/"
+            }
+        ]
+    },
+    "fryerOil": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の電気代・ガス代などの経費削減サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "フライヤー油削減BBFRYのご紹介！最大1か月間無料｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/fryer-oil/"
+            }
+        ]
+    },
+    "electricity": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の電気代・ガス代などの経費削減サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店の電気代を削減・節約する方法は？今よりコストを見直しできるか無料でシミュレーション｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/electricity/"
+            }
+        ]
+    },
+    "recipe": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の電気代・ガス代などの経費削減サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "レシピ/原価管理 ｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/recipe/"
+            }
+        ]
+    },
+    "gasBill": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の電気代・ガス代などの経費削減サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ガス料金削減 ｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/cost/gas-bill/"
+            }
+        ]
+    },
+    "management": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            }
+        ]
+    },
+    "vendingmachine": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "自動販売機を飲食店の入り口に設置で利益をプラスする方法！｜テンポス",
+                "item": "https://support.tenpos.com/management/vendingmachine/"
+            }
+        ]
+    },
+    "taxAccountant": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店特化の税理士を紹介！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/tax-accountant/"
+            }
+        ]
+    },
+    "qNavi": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "店舗トラブル解決アプリ緊Qナビゲーション「Qナビ」｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/q-navi/"
+            }
+        ]
+    },
+    "insurance": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店専用保険 ｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/insurance/"
+            }
+        ]
+    },
+    "consultant": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食業界に強いコンサルタントをご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/consultant/"
+            }
+        ]
+    },
+    "kaitori": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "業務用厨房機器・店舗用品の買取 ｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/kaitori/"
+            }
+        ]
+    },
+    "sharosi": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "1年間無料の社労士紹介！｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/sharosi/"
+            }
+        ]
+    },
+    "creditCard": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "テンポスクレジットカード発行 ｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/management/credit-card/"
+            }
+        ]
+    },
+    "hygiene": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            }
+        ]
+    },
+    "wasteOil": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "廃油の無料回収業者を紹介！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/waste-oil/"
+            }
+        ]
+    },
+    "wetTowel": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店向け布おしぼりのレンタル業者を紹介！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/wet-towel/"
+            }
+        ]
+    },
+    "garbageCollection": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店向けゴミ回収業者を紹介！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/garbage-collection/"
+            }
+        ]
+    },
+    "shopCleaning": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店向け清掃業者を紹介！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/shop_cleaning/"
+            }
+        ]
+    },
+    "sanitaryRental": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店向けマット・モップのレンタルはテンポスにお任せ！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/sanitary-rental/"
+            }
+        ]
+    },
+    "waste-oil": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の店内清掃・レンタル/廃油・ゴミ回収業者のご提案｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "廃油の無料回収業者を紹介！全国対応｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/hygiene/waste-oil/"
+            }
+        ]
+    },
+    "telecom": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            }
+        ]
+    },
+    "cashlessMachine": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店向けキャッシュレス券売機｜テンポス",
+                "item": "https://support.tenpos.com/telecom/cashless-machine/"
+            }
+        ]
+    },
+    "karaoke": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店のカラオケ設置・導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/karaoke/"
+            }
+        ]
+    },
+    "ipTelephone": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "店舗向けIP電話導入支援｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/ip-telephone/"
+            }
+        ]
+    },
+    "internetline": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店の開業前準備に必須！インターネット回線｜テンポス",
+                "item": "https://support.tenpos.com/telecom/internetline/"
+            }
+        ]
+    },
+    "cashless": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "【キャッシュレス決済で効率化！】比較・手続き・導入・運用までフルサポート｜テンポス",
+                "item": "https://support.tenpos.com/telecom/cashless/"
+            }
+        ]
+    },
+    "selfOrder": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "配膳ロボット｜テンポス",
+                "item": "https://support.tenpos.com/telecom/selforder/"
+            }
+        ]
+    },
+    "mobileOrder": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "無料で使えるモバイルオーダーをご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/mobileorder/"
+            }
+        ]
+    },
+    "securityCamera": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "防犯カメラ設置｜テンポス",
+                "item": "https://support.tenpos.com/telecom/security-camera/"
+            }
+        ]
+    },
+    "music": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店のネット回線、キャッシュレス導入、BGM機器導入サポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/telecom/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "著作権フリーで安心！店舗BGMの導入をサポート｜テンポス",
+                "item": "https://support.tenpos.com/telecom/music/"
+            }
+        ]
+    },
+    "menu": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の食材仕入れ先紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/"
+            }
+        ]
+    },
+    "beerServer": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の食材仕入れ先紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ビールサーバー導入支援(アサヒ・キリン・サッポロ・サントリー) ｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/beer-server/"
+            }
+        ]
+    },
+    "kakuyasu": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の食材仕入れ先紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "業務用お酒の卸「なんでも酒やカクヤス」｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/kakuyasu/"
+            }
+        ]
+    },
+    "micreed": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の食材仕入れ先紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "業務用食材・冷凍食品の通販「ミクリード」のご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/micreed/"
+            }
+        ]
+    },
+    "wainPro": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の食材仕入れ先紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店専門のワイン仕入れサイトをご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/menu/wine-pro/"
+            }
+        ]
+    },
+    "marketing": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店に特化したホームページ、ロゴ、販促物作成｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            }
+        ]
+    },
+    "homepage": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "【飲食店特化】費用を抑えて始めるホームページ制作｜テンポス",
+                "item": "https://support.tenpos.com/marketing/homepage/"
+            }
+        ]
+    },
+    "homepageJirei": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "【飲食店特化】費用を抑えて始めるホームページ制作｜テンポス",
+                "item": "https://support.tenpos.com/marketing/homepage/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "テンポスフードプレイス | ホームページ制作事例",
+                "item": "https://support.tenpos.com/marketing/homepage/jirei/"
+            }
+        ]
+    },
+    "officialLineSupport": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "徹底解説！LINE公式アカウントの運用代行と料金形態｜テンポス",
+                "item": "https://support.tenpos.com/marketing/officialline-support/"
+            }
+        ]
+    },
+    "influencerMarketing": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "テンポスフードプレイス | 飲食店でインフルエンサー集客をするなら「テンポスフードプレイス」",
+                "item": "https://support.tenpos.com/marketing/influencer-marketing/"
+            }
+        ]
+    },
+    "pressRelease": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店向けプレスリリース記事の作成代行からPR配信代行までサポート｜テンポス",
+                "item": "https://support.tenpos.com/marketing/press-release/"
+            }
+        ]
+    },
+    "gmb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Googleビジネスプロフィール運用サポート",
+                "item": "https://support.tenpos.com/marketing/gmb/"
+            }
+        ]
+    },
+    "snsUpdate": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "初期費用0円で集客！飲食店のSNS運用支援｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/sns_update/"
+            }
+        ]
+    },
+    "mansekiReview": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/marketing/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "業界最安値！高評価口コミを増やすツール｜満席レビュー",
+                "item": "https://support.tenpos.com/marketing/manseki-review/"
+            }
+        ]
+    },
+    "open": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業相談（物件探し、内装工事、開業費用診断など）｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/"
+            }
+        ]
+    },
+    "kitchenCar": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業相談（物件探し、内装工事、開業費用診断など）｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "キッチンカー開業支援｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/kitchen-car/"
+            }
+        ]
+    },
+    "bukken": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業相談（物件探し、内装工事、開業費用診断など）｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店の居抜き・店舗物件探しをサポート｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/bukken/"
+            }
+        ]
+    },
+    "interior": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業相談（物件探し、内装工事、開業費用診断など）｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店に強い内装工事業者をご紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/interior/"
+            }
+        ]
+    },
+    "ghostRestaurant": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "飲食店の開業相談（物件探し、内装工事、開業費用診断など）｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "飲食店ゴースレストランのブランド紹介｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/open/ghost-restaurant/"
+            }
+        ]
+    },
+    "recruit": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | 会社情報",
+                "item": "https://support.tenpos.com/company/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "テンポスフードプレイス | パート求人",
+                "item": "https://support.tenpos.com/company/recruit/"
+            }
+        ]
+    },
+    "group": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | 会社情報",
+                "item": "https://support.tenpos.com/company/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "テンポスフードプレイス | グループ会社一覧",
+                "item": "https://support.tenpos.com/company/group/"
+            }
+        ]
+    },
+    "corporateData": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | 会社情報",
+                "item": "https://support.tenpos.com/company/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "テンポスフードプレイス | 会社概要",
+                "item": "https://support.tenpos.com/company/corporate_data/"
+            }
+        ]
+    },
+    "partner": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | 会社情報",
+                "item": "https://support.tenpos.com/company/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "テンポスフードプレイス | 法人のお客様",
+                "item": "https://support.tenpos.com/company/partner/"
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "プライバシーポリシー｜テンポスフードプレイス",
+                "item": "https://support.tenpos.com/privacypolicy/"
+            }
+        ]
+    }
+}

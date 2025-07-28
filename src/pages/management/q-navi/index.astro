@@ -1,0 +1,767 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.qNavi);
+---
+
+<Layout
+    title="店舗トラブル解決アプリ緊Qナビゲーション「Qナビ」｜テンポスフードプレイス"
+    description="水漏れ、漏電などの店舗トラブルの際に、アプリ１つで最短30秒で対応業者を探せる「Qナビ」をご紹介いたします。連絡もアプリ上で完結、履歴も残るため管理するのもかんたんです！"
+    pageUrl="/management/q-navi/"
+    ogimage="/asset/images/q-navi/ogp_q-navi.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/management/">店舗運営支援</a></li>
+                    <li>店舗トラブル解決アプリ</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>店舗トラブル解決アプリ</span>
+                </h1>
+                <p class="tp-front__caption">
+                    緊急のトラブル時にアプリ1つで<br />
+                    最短30秒で対応業者を探すことができます。
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=27"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        緊急のトラブル時に<span class="tp-bglg"
+                            >どこに連絡したらいいかわからない</span
+                        >
+                    </li>
+                    <li>
+                        メンテナンスをしっかりと<span class="tp-bglg"
+                            >クラウドで管理</span
+                        >していきたい
+                    </li>
+                    <li>
+                        <span class="tp-bglg">作業前に見積もりを提出</span
+                        >してくれる業者を探している
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスでは、店舗トラブル解決アプリ<br class="pc" />
+                    緊Qナビゲーションの「Qナビ」をご紹介しております
+                </h2>
+                <div class="tp-design__contents __center">
+                    <div class="tp-local__wrap">
+                        <p class="tp-local">
+                            忙しい時に限って起きる緊急トラブル、ずっと改善したかった設備の不具合。<br
+                            />
+                            どこで、誰に相談すれば良いか分からなかった店舗のお悩み。
+                        </p>
+                        <p class="tp-local">
+                            Qナビでは、内容を確認した作業員が、店舗の要望に合わせて駆け付けます。
+                        </p>
+                    </div>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/q-navi/2x/img_q-navi_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/q-navi/img_q-navi_design.png"
+                                srcset="/asset/images/q-navi/img_q-navi_design.png 1x,/asset/images/q-navi/2x/img_q-navi_design@2x.png 2x"
+                                alt=""
+                                width="523"
+                                height="167"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    店舗ならではのお悩みにQナビは寄り添います。
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l tp-mgb__s">
+                    <li>
+                        忙しいランチタイムでも<span class="tp-bglg"
+                            >業者をすぐに見つけたい！</span
+                        >
+                    </li>
+                    <li>
+                        店舗の<span class="tp-bglg">どんなトラブルでも</span
+                        >、まとめて相談したい！
+                    </li>
+                    <li>
+                        <span class="tp-bglg">とにかく早く</span
+                        >、今すぐ解決したい！！！
+                    </li>
+                </ul>
+                <p class="tp-want__thumb width-55">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/q-navi/2x/img_q-navi_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/q-navi/img_q-navi_want.png"
+                            srcset="/asset/images/q-navi/img_q-navi_want.png 1x,/asset/images/q-navi/2x/img_q-navi_want@2x.png 2x"
+                            alt=""
+                            width="401"
+                            height="229"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-merit01__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num01 tp-wrapper__m">
+                    業者が集まってくる
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    Qナビなら、トラブル内容を確認した作業員が立候補をしてきます。<br
+                    />
+                    業者を「探す」手間はなくなり、「選ぶ」ことが可能に。
+                </p>
+                <p class="tp-merit01__thumb">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/q-navi/2x/img_q-navi_merit01@2x.png"
+                        />
+                        <img
+                            src="/asset/images/q-navi/img_q-navi_merit01.png"
+                            srcset="/asset/images/q-navi/img_q-navi_merit01.png 1x,/asset/images/q-navi/2x/img_q-navi_merit01@2x.png 2x"
+                            alt=""
+                            width="335"
+                            height="178"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-merit02__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num02 tp-wrapper__m">
+                    登録料・利用料無料
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    メンテナンス業界もDX化が進み、アプリシステムの案内は多いですが、初期投資がかかるケースが多いです。<br
+                    />Qナビは、登録料は0円、費用は訪問時のみのご請求。トラブルが起きなければ０円なので、ご負担なく使用を続けられます。
+                </p>
+                <p class="tp-merit02__thumb">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/q-navi/2x/img_q-navi_merit02@2x.png"
+                        />
+                        <img
+                            src="/asset/images/q-navi/img_q-navi_merit02.png"
+                            srcset="/asset/images/q-navi/img_q-navi_merit02.png 1x,/asset/images/q-navi/2x/img_q-navi_merit02@2x.png 2x"
+                            alt=""
+                            width="205"
+                            height="207"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-merit03__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num03 tp-wrapper__m">
+                    多種多様なご依頼メニュー
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    店舗トラブルで良く起きる、水回り、電気、空調の相談はもちろん。<br
+                    />鍵の修理やガラス交換、害虫害獣駆除まで幅広く対応しております。どんな内容でも、ご相談ください！
+                </p>
+                <p class="tp-merit03__thumb">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/q-navi/2x/img_q-navi_merit03@2x.png"
+                        />
+                        <img
+                            src="/asset/images/q-navi/img_q-navi_merit03.png"
+                            srcset="/asset/images/q-navi/img_q-navi_merit03.png 1x,/asset/images/q-navi/2x/img_q-navi_merit03@2x.png 2x"
+                            alt=""
+                            width="361"
+                            height="216"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-point__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-point__ttl__span">お悩みを解決する</span>
+                    <span class="tp-ttl__balloon__span"
+                        ><span>3</span>つの特徴</span
+                    >
+                </h2>
+                <ul class="tp-point__list __1clm">
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">簡単</span>
+                        </h3>
+                        <p class="Local">
+                            誰でも簡単に操作できます。<br />
+                            業者を探す必要もなく、トラブルが発生してから平均5分で業者を見つけることができます。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">安心</span>
+                        </h3>
+                        <p class="Local">
+                            見積もりは作業前に提出するので明朗会計です。また、アプリ上で提出しますのでデータが残ります。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">対応実績</span>
+                        </h3>
+                        <p class="Local">
+                            年間5万件もの緊急トラブルの対応実績があります。また、弊社は飲食店・テナントに特化しておりますので、ご安心してお任せください。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-service__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">事&emsp;例</span>
+                </h2>
+                <ul class="tp-option__list">
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">
+                            ランチタイムの真っ最中に、厨房内が水浸し！
+                        </h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="tp-text__orange">
+                                            今すぐ解決したいトラブルにも対応します
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        大忙しのランチタイム中、排水管が詰まって辺り一面が水浸しに。続々とやってくるオーダーに誰も手を止めることができない...Qナビなら、今すぐ解決したいトラブルにもすぐに駆け付けます！
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/q-navi/sp/img_q-navi_service_01_sp.png"
+                                    />
+                                    <img
+                                        src="/asset/images/q-navi/img_q-navi_service_01.png"
+                                        srcset="/asset/images/q-navi/img_q-navi_service_01.png 1x,/asset/images/q-navi/2x/img_q-navi_service_01@2x.png 2x"
+                                        alt=""
+                                        width="222"
+                                        height="168"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">
+                            蛇口の根元からポタポタと水が止まらない！
+                        </h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="tp-text__orange">
+                                            日時指定や訪問可能時間の選択ができます
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        ポタポタなので緊急ではないけれど、気になる...昼と夜の間の準備中に来てくれる業者さんいないかな...<br
+                                        />
+                                        Qナビなら、日時指定や業者の訪問可能時間から選択していただけます！
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/q-navi/sp/img_q-navi_service_02_sp.png"
+                                    />
+                                    <img
+                                        src="/asset/images/q-navi/img_q-navi_service_02.png"
+                                        srcset="/asset/images/q-navi/img_q-navi_service_02.png 1x,/asset/images/q-navi/2x/img_q-navi_service_02@2x.png 2x"
+                                        alt=""
+                                        width="222"
+                                        height="168"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">
+                            漏電を起こしてブレーカーが落ちてしまう！
+                        </h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="tp-text__orange">
+                                            あらゆる緊急事態に対応します
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        お店の照明もエアコンも使えないし、冷蔵庫や冷凍庫も動かない...<br
+                                        />
+                                        営業できない上に、食材も無駄になって大損害...<br
+                                        />
+                                        Qナビなら、水回りから電気関連まであらゆる緊急時に対応します！
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/q-navi/sp/img_q-navi_service_03_sp.png"
+                                    />
+                                    <img
+                                        src="/asset/images/q-navi/img_q-navi_service_03.png"
+                                        srcset="/asset/images/q-navi/img_q-navi_service_03.png 1x,/asset/images/q-navi/2x/img_q-navi_service_03@2x.png 2x"
+                                        alt=""
+                                        width="222"
+                                        height="168"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-attention__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">料&emsp;金</span>
+                </h2>
+                <h3 class="tp-attention__price">
+                    <span class="Txt">アプリ登録・アカウント発行</span>
+                    <span class="First"> 利用料 </span>
+                    0
+                    <span class="Yen">円～</span>
+                </h3>
+                <p class="tp-attention__caption">
+                    <span>作業費用</span>8,800円～（税込）
+                </p>
+            </section>
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    少しでもご興味がある方はまずはお問い合わせください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">
+                                担当者よりご説明（ID、パスワード発行）
+                            </h3>
+                            <div class="Local">
+                                <p>
+                                    お問合せいただいたら、担当者より一度お打合せをさせていただき、Qナビの概要についてご説明いたします。また、Ｑナビを利用されるにあたってのＩＤ・パスワードの発行を行います。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">Qナビアプリのダウンロード</h3>
+                            <div class="Local">
+                                <p>
+                                    発行したＩＤ・パスワードを元にお手持ちのデバイスにＱナビをダウンロードしてください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">利用開始</h3>
+                            <div class="Local">
+                                <p>
+                                    アプリをダウンロードしたら利用開始となります。<br
+                                    />
+                                    トラブルが起こった際にＱナビを是非ご活用ください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>アプリの手数料はかかりますか？</dt>
+                        <dd>
+                            アプリ利用料、登録費、管理費無料です。<br />
+                            アプリを使用するにあたって費用が発生することはございません。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>どんなトラブルに対応できますか？</dt>
+                        <dd>
+                            水回りや電気、エアコンといった一般的なトラブルから、<br
+                            />
+                            建具の小修繕、鍵の交換、床の清掃など、店舗内のトラブルについては全て対応可能です。<br
+                            />
+                            なお、概算見積依頼も可能ですので、概算金額を知りたい場合も
+                            ご利用いただけます。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>アプリの操作方法が難しそう...</dt>
+                        <dd>
+                            使用前に担当者が操作方法を丁寧にご説明させていただきますのでご安心ください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>パソコンでも操作できますか？</dt>
+                        <dd>
+                            WEB版もご用意しているため、パソコンでも操作可能です。<br
+                            />
+                            依頼はもちろん、パソコンから案件を一覧で確認できるため、非常に管理がしやすくなっています。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>お支払い方法はどのような方法がありますか？</dt>
+                        <dd>
+                            請求書払いもしくはクレジットカード決済から選択いただけます。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/telecom/security-camera/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_security-camera@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_security-camera.png"
+                                        srcset="/asset/images/common/img_kanren_service_security-camera.png 1x,/asset/images/common/2x/img_kanren_service_security-camera@2x.png 2x"
+                                        alt="防犯カメラ"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">防犯カメラ</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/management/insurance/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_insurance@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_insurance.png"
+                                        srcset="/asset/images/common/img_kanren_service_insurance.png 1x,/asset/images/common/2x/img_kanren_service_insurance@2x.png 2x"
+                                        alt="店舗用保険"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">店舗用保険</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/management/tax-accountant/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_tax-accountant@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_tax-accountant.png"
+                                        srcset="/asset/images/common/img_kanren_service_tax-accountant.png 1x,/asset/images/common/2x/img_kanren_service_tax-accountant@2x.png 2x"
+                                        alt="飲食専門税理士紹介"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">飲食専門税理士紹介</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/q-navi/mv_q-navi.jpg);
+    }
+
+    /*-----------------------
+tp-design__section
+-----------------------*/
+    .tp-design__section .tp-design__contents.__center .tp-design__thumb {
+        max-width: 523px;
+    }
+
+    /*-----------------------
+メリット1 tp-merit01__section
+-----------------------*/
+    /*--- メリット1~3 共通 ---*/
+    .tp-sec[class*="tp-merit"] .tp-ttl {
+        width: 75%;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-sec[class*="tp-merit"] .tp-ttl {
+            width: 100%;
+        }
+    }
+    /*--- メリット1~3 共通 end ---*/
+
+    .tp-merit01__section {
+        margin-top: 80px;
+    }
+    .tp-merit01__section.tp-sec p.tp-merit01__thumb {
+        max-width: 334px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section {
+            margin-top: 40px;
+        }
+    }
+
+    /*-----------------------
+メリット2 tp-merit02__section
+-----------------------*/
+    .tp-merit02__section.tp-sec p.tp-merit02__thumb {
+        max-width: 205px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-merit02__section.tp-sec p.tp-merit02__thumb {
+            width: 50%;
+        }
+    }
+
+    /*-----------------------
+メリット3 tp-merit03__section
+-----------------------*/
+    .tp-merit03__section.tp-sec p.tp-merit03__thumb {
+        max-width: 360px;
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point13.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point51.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point01.png) no-repeat center
+            center / contain;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-point__section .tp-point__list > li > .Ttl:before {
+            width: 50px;
+            margin-right: 15px;
+        }
+        .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+            width: 55px;
+            margin-right: 10px;
+        }
+        .tp-point__section .tp-point__list .Ttl__txt {
+            width: calc(100% - 65px);
+        }
+    }
+
+    /*-----------------------
+事例 tp-service__section
+-----------------------*/
+    .tp-service__section .tp-option__listTtl {
+        padding: 0;
+        border: none;
+    }
+    .tp-service__section .tp-option__listTtl:before {
+        display: inline-block;
+        padding: 0 18px;
+        font-size: 1.33em;
+        font-weight: bold;
+        line-height: 1.275;
+        color: var(--MAIN_ORANGE);
+        border-left: 2px solid var(--MAIN_ORANGE);
+    }
+    .tp-service__section
+        .tp-option__list
+        li:nth-child(1)
+        .tp-option__listTtl:before {
+        content: "01";
+    }
+    .tp-service__section
+        .tp-option__list
+        li:nth-child(2)
+        .tp-option__listTtl:before {
+        content: "02";
+    }
+    .tp-service__section
+        .tp-option__list
+        li:nth-child(3)
+        .tp-option__listTtl:before {
+        content: "03";
+    }
+    .tp-service__section .tp-service__thumb img {
+        border: none;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-service__section .tp-option__iconlist {
+            padding-left: 18px;
+        }
+        .tp-service__section .tp-option__iconlist .Local {
+            padding-left: 0;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tp-service__section .tp-option__list {
+            gap: 50px;
+        }
+        .tp-service__section .tp-option__listTtl {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 13px;
+        }
+        .tp-service__section .tp-option__listTtl:before {
+            padding: 0 15px;
+            font-size: 1.5em;
+            margin-top: -5px;
+        }
+        .tp-service__section .tp-service__flexcontainer {
+            gap: 15px;
+        }
+        .tp-service__section .tp-option__iconlist {
+            padding: 0 15px;
+        }
+        .tp-service__section .tp-service__thumb {
+            max-height: unset;
+            padding: 0 15px;
+        }
+        .tp-service__section .tp-option__list:after {
+            content: none;
+        }
+    }
+
+    /*-----------------------
+料金 tp-attention__section
+-----------------------*/
+    .tp-attention__section .tp-attention__price .Txt {
+        display: block;
+        font-size: 20px;
+        line-height: 1;
+    }
+    .tp-attention__section .tp-attention__price > .Yen:after {
+        content: none;
+    }
+    .tp-attention__section .tp-attention__caption > span {
+        border: none;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-attention__section .tp-attention__caption > span {
+            padding: 0;
+        }
+    }
+</style>

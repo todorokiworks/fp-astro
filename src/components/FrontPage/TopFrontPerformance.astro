@@ -1,0 +1,88 @@
+---
+//スライダー上の円画像
+const topFrontPerformance = [
+    {
+        src: "/asset/images/top/performance01.png",
+        srcset: "/asset/images/top/performance01.png 1x,/asset/images/top/2x/performance01@2x.png 2x",
+        srcsetSp: "/asset/images/top/sp/performance01_sp.png",
+        alt: "導入実績",
+    },
+    {
+        src: "/asset/images/top/performance02.png",
+        srcset: "/asset/images/top/performance02.png 1x,/asset/images/top/2x/performance02@2x.png 2x",
+        srcsetSp: "/asset/images/top/sp/performance02_sp.png",
+        alt: "テンポスブランド",
+    },
+    {
+        src: "/asset/images/top/performance03.png",
+        srcset: "/asset/images/top/performance03.png 1x,/asset/images/top/2x/performance03@2x.png 2x",
+        srcsetSp: "/asset/images/top/sp/performance03_sp.png",
+        alt: "開業から経営まで",
+    },
+];
+---
+
+<ul class="top-front__performance flex">
+    {
+        topFrontPerformance.map((item) => (
+            <li>
+                <picture>
+                    <source media="(max-width:767px)" srcset={item.srcsetSp} />
+                    <img
+                        src={item.src}
+                        srcset={item.srcset}
+                        alt={item.alt}
+                        width="106"
+                        height="106"
+                        class="imgauto"
+                    />
+                </picture>
+            </li>
+        ))
+    }
+</ul>
+
+<style lang="scss">
+    /* -------------------- front-section ------------------- */
+    .top-front__performance {
+        margin-right: auto;
+        margin-left: auto;
+        gap: 10px;
+    }
+
+    .top-front__performance > li {
+        position: relative;
+        z-index: 1;
+        width: calc((100% - 20px) / 3);
+    }
+
+    .top-front__performance > li:after {
+        position: absolute;
+        content: "";
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        top: -5px;
+        left: -5px;
+        filter: blur(5px);
+        opacity: 0.1;
+        background-color: var(--SUB_BLACK);
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+        .top-front__performance {
+            width: 75%;
+        }
+
+        .top-front__slider .slide-arrow {
+            --arrow_pos: 5px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .top-front__slider .slide-arrow {
+            --arrow_pos: 10px;
+        }
+    }
+</style>

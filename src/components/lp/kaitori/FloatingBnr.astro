@@ -1,0 +1,102 @@
+<div class="floatingBnr__wrapper sp">
+  <div class="btn__wrapper">
+    <a href="tel:05031741366" class="btn btn-tel">
+      <div class="icon">
+        <img src="/lp/kaitori/img/icon_tel-lg.png" alt="" />
+      </div>
+      <div class="btn-txt">
+        電話<br /><span>平日 9-18時</span>
+      </div>
+    </a>
+    <a
+      href="https://tenpos0319.form.kintoneapp.com/public/fp-site"
+      class="click_btn_set_mail btn btn-mail"
+      target="_blank"
+    >
+      <div class="icon">
+        <img src="/lp/kaitori/img/icon_mail-lg.png" alt="" />
+      </div>
+      <div class="btn-txt">メール<br /><span>24時間受付</span></div>
+    </a>
+    <a
+      href="https://www.tenpos.com/kaitori/line/index.html"
+      class="click_btn_set_line btn btn-line"
+      target="_blank"
+    >
+      <div class="icon">
+        <img src="/lp/kaitori/img/icon_line-lg.png" alt="" />
+      </div>
+      <div class="btn-txt">
+        LINE
+      </div>
+    </a>
+  </div>
+</div>
+
+<style lang="scss">
+  .floatingBnr__wrapper {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    width: 77%;
+    height: 50px;
+    transform: translate(5px, 5px);
+    z-index: 999;
+      span {
+        font-size: 9px;
+      }
+    div.btn__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .btn {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        padding: 5px 5px;
+        box-shadow: none;
+        width: calc(100% / 3);
+        @media (max-width: 768px) {
+        }
+        div.icon {
+          width: 30%;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 100%;
+            max-width: 25px;
+          }
+        }
+        div.icon_02 {
+
+          img {
+            width: 80%;
+          }
+        }
+        div.btn-txt {
+          width: 80%;
+          text-align: center;
+          font-weight: bold;
+          line-height: 0.8;
+          transform: translateY(2px);
+        }
+      }
+      .btn.btn-tel {
+        display: flex;
+        background: var(--red);
+        height: 40px;
+      }
+      .btn.btn-mail {
+        background: var(--orange);
+        height: 40px;
+      }
+      .btn.btn-line {
+        background: var(--green);
+        height: 40px;
+      }
+    }
+  }
+</style>

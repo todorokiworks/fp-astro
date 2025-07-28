@@ -1,0 +1,307 @@
+---
+const slides = [
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya01.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya02.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya03.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya04.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya05.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya06.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya07.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya08.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya09.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya10.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya11.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya12.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya13.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya14.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya15.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya16.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya17.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya18.png",
+    },
+];
+
+const slides2 = [
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya18.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya17.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya16.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya15.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya14.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya13.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya12.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya11.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya10.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya09.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya08.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya07.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya06.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya05.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya04.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya03.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya02.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_shibuya01.png",
+    },
+];
+---
+
+<section id="shibuya">
+    <h3 class="h03">
+        <span class="h3sm">Option 2.</span>
+        Shibuya tour
+    </h3>
+    <div class="slider__wrapper">
+        <!-- Slider main container -->
+        <div class="slider3">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {
+                        slides.map((slide) => (
+                            <div class="swiper-slide">
+                                <img src={slide.url} alt="" />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="slider4">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {
+                        slides2.map((slide2) => (
+                            <div class="swiper-slide">
+                                <img src={slide2.url} alt="" />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-btn__wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from "swiper";
+    import { Navigation, Autoplay } from "swiper/modules";
+    // import Swiper and modules styles
+    import "swiper/css";
+    import "swiper/css/navigation";
+    import "swiper/css/effect-fade";
+
+    // init Swiper:
+    const swiper = new Swiper(".slider3 .swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Autoplay],
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        slidesPerView: 3.2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+            769: {
+                slidesPerView: 3.2,
+                spaceBetween: 15,
+            },
+        },
+    });
+    const swiper2 = new Swiper(".slider4 .swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Autoplay],
+
+        autoplay: {
+            delay: 3000,
+        },
+        loop: true,
+        slidesPerView: 3.2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+            769: {
+                slidesPerView: 3.2,
+                spaceBetween: 15,
+            },
+        },
+    });
+</script>
+
+<style lang="scss">
+    section#shibuya {
+        background: var(--grey);
+        padding: 60px 0;
+        .slider__wrapper {
+            position: relative;
+            width: 100%;
+            .swiper-btn__wrapper {
+                width: 1300px;
+                height: 100%;
+                position: absolute;
+                top: 48%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0 auto;
+                z-index: 9999;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    top: 45%;
+                }
+                .swiper-button-prev {
+                    width: 80px;
+                    height: 80px;
+                    &::after {
+                        content: "";
+                        background: url("/lp/japan-travel-planner/img/icon_prev.png")
+                            center center / cover no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        @media (max-width: 768px) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+                .swiper-button-next {
+                    width: 80px;
+                    height: 80px;
+                    &::after {
+                        content: "";
+                        background: url("/lp/japan-travel-planner/img/icon_next.png")
+                            center center / cover no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        @media (max-width: 768px) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        div.slider3 {
+            margin-bottom: 15px;
+            @media (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+            div.swiper {
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+        div.slider4 {
+            transform: translateX(-280px);
+            @media (max-width: 768px) {
+                transform: translateX(-130px);
+            }
+            div.swiper {
+                overflow: unset !important;
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

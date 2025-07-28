@@ -1,0 +1,417 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.micreed);
+---
+
+<Layout
+    title="業務用食材・冷凍食品の通販「ミクリード」のご紹介 | テンポス"
+    description="業務用食材・冷凍食品探しはテンポスにご相談ください。常時4,000点以上の品揃えの「ミクリード」をご紹介。仕込みいらずで食材ロス削減にもつながります。"
+    pageUrl="/menu/micreed/"
+    ogimage="/asset/images/micreed/ogp_micreed.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/menu/">食材仕入れ</a></li>
+                    <li>食材通販「ミクリード」</li>
+                </ol>
+            </nav>
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>食材通販「ミクリード」</span>
+                </h1>
+                <p class="tp-front__caption">
+                    メニュー開発、原価削減に！<br />
+                    食材業者もテンポスがご紹介いたします！
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=30"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        <span class="tp-bglg">新しいメニュー</span>を載せたい
+                    </li>
+                    <li><span class="tp-bglg">食材ロス</span>が目立ってきた</li>
+                    <li>
+                        原価が高く食材会社自体を<span class="tp-bglg"
+                            >再検討したい</span
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">使い勝手抜群！食材ロス削減にも</h2>
+                <div class="tp-design__contents flex">
+                    <div class="tp-local__wrap">
+                        <p class="tp-local">
+                            小分けされた冷凍食品をメインで扱っており、仕込みいらずでロスの出にくい仕様になっております。<br
+                            />肉・魚・野菜・揚げ物・串・調味料・スイーツ・消耗品など…
+                            、常時4,000点以上の品ぞろえで、必要な時や困った時に最短翌日着で食材が発注できます。
+                        </p>
+                        <p class="tp-local">
+                            近所のスーパーで仕入れるといつも同じ食材があるとは限らない上に、値段もその日で異なる可能性が高く、買出しに行く手間がかかります。<br
+                            />仕入れ業者からの仕入れだと、商品ごとに見積りが必要で、エリアによっては配送頻度が少ない場合があります。
+                        </p>
+                    </div>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/micreed/2x/img_micreed_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/micreed/img_micreed_design.png"
+                                srcset="/asset/images/micreed/img_micreed_design.png 1x,/asset/images/micreed/2x/img_micreed_design@2x.png 2x"
+                                alt=""
+                                width="280"
+                                height="215"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    ミクリードなら登録料・<br class="sp" />年会費無料！
+                </h2>
+                <div class="tp-want__txt__wrap tp-wrapper__l">
+                    <p class="tp-want__txt">
+                        今ならサンプル2品が無料で<span class="tp-bglg"
+                            >注文可能！</span
+                        >
+                    </p>
+                    <p class="tp-want__txt">
+                        ぜひ1度お試しください！お問い合わせ後、ミクリードよりメールにて会員登録のご案内をお送りいたします。
+                    </p>
+                    <p class="tp-want__txt__caution">
+                        ※送料が別途かかります。ウェブからのご注文の場合、680円（税別）～
+                        です。
+                    </p>
+                    <p class="tp-want__txt__caution">
+                        ※ご希望の方はお問い合わせフォームにて送付先のご住所を必ずご入力ください。
+                    </p>
+                </div>
+                <p class="tp-want__thumb">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/micreed/2x/img_micreed_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/micreed/img_micreed_want.png"
+                            srcset="/asset/images/micreed/img_micreed_want.png 1x,/asset/images/micreed/2x/img_micreed_want@2x.png 2x"
+                            alt=""
+                            width="280"
+                            height="390"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お申込み</h3>
+                            <div class="Local">
+                                <p>
+                                    少しでも興味がある方はお問い合わせフォームより申込みください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">会員登録のご案内</h3>
+                            <div class="Local">
+                                <p>
+                                    ミクリードよりメールにて会員登録のご案内をさせていだきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">会員登録手続き</h3>
+                            <div class="Local">
+                                <p>
+                                    ミクリードから届いた案内メールからサイトにアクセスし、会員登録手続きを行ってください。<br
+                                    />
+                                    メールにはキャンペーンコードが記載されておりますので、入力の上ご登録ください。<br
+                                    />
+                                    ※キャンペーンコードの入力がない場合、サンプル2品無料の特典が付与されませんので、ご注意ください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">ご利用開始</h3>
+                            <div class="Local">
+                                <p>
+                                    ミクリードにログインいただき、サンプル2品無料の特典をご利用ください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>会員登録しなくても買えるの？</dt>
+                        <dd>
+                            商品の購入やサンプル注文の際には必ず会員登録が必要です。登録料や年会費は無料なので、お気軽にご登録ください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>カタログはないの？</dt>
+                        <dd>
+                            4,000品以上掲載のカタログがございます。会員登録し、サンプル注文や商品をご購入いただくと同梱でお送りいたします。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>登録の前にどんな商品があるか見たいんだけど？</dt>
+                        <dd>
+                            WEB上で見られるデジタルカタログもございます。お問い合わせ後にお送りするメールにもご案内が記載されていますのでご確認ください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>注文方法は？</dt>
+                        <dd>
+                            会員登録の上、ご注文ください。<br />
+                            商品やサービス（お届け時間やお支払方法等）に関するお問い合わせはご遠慮なくミクリード受注センターまでお電話ください。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article class="__kakuyasu">
+                        <a href="/menu/kakuyasu/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/kaigyousoudan/sp/purchase05.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/kaigyousoudan/purchase05.jpg"
+                                        srcset="/asset/images/kaigyousoudan/purchase05.jpg 1x,/asset/images/kaigyousoudan/2x/purchase05.jpg 2x"
+                                        alt="「なんでも酒やカクヤス」"
+                                        width="109"
+                                        height="42"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">カクヤス</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a
+                            href="https://support.tenpos.com/lp/service/op-celebration/"
+                            target="_blank"
+                        >
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_op-celebration@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_op-celebration.png"
+                                        srcset="/asset/images/common/img_kanren_service_op-celebration.png 1x,/asset/images/common/2x/img_kanren_service_op-celebration@2x.png 2x"
+                                        alt="味の素　開業祝セット"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">味の素　開業祝セット</h3>
+                        </a>
+                    </article>
+                    <!--
+						<article>
+							<a href="https://support.tenpos.com/menu/beer-server/" target="_blank">
+								<p class="Thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/common/2x/img_kanren_service_order_gate@2x.png">
+										<img src="/asset/images/common/img_kanren_service_order_gate.png"
+											srcset="/asset/images/common/img_kanren_service_order_gate.png 1x,/asset/images/common/2x/img_kanren_service_order_gate@2x.png 2x"
+											alt="食材仕入れ価格削減" width="304" height="231" loading="lazy" class="imgauto">
+									</picture>
+								</p>
+								<h3 class="Ttl">
+									食材仕入れ価格削減
+								</h3>
+							</a>
+						</article>
+						-->
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/micreed/mv_micreed.jpg);
+    }
+
+    /*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+    .tp-worries__section .tp-check__list > li {
+        display: block;
+    }
+
+    /*-----------------------
+ミクリードなら登録料・年会費無料！ tp-want__section
+-----------------------*/
+    .tp-want__section .tp-want__txt__wrap {
+        margin-bottom: 35px;
+    }
+    .tp-want__section .tp-want__txt {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .tp-want__section .tp-want__txt__caution {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.875;
+        color: var(--CAUTION_TXT_RED);
+    }
+    .tp-want__section .tp-want__txt:last-of-type {
+        margin: 10px 0 0;
+    }
+    .tp-want__section .tp-want__thumb {
+        width: 280px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__txt__wrap {
+            margin-bottom: 25px;
+        }
+        .tp-want__section .tp-want__txt {
+            font-size: 16px;
+        }
+        .tp-want__section .tp-want__txt__caution {
+            font-size: 12px;
+        }
+        .tp-want__section .tp-want__thumb {
+            width: 80%;
+        }
+    }
+
+    /*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+    .tp-frow__section {
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-frow__section {
+            margin-top: 40px;
+        }
+    }
+
+    /*-----------------------
+受注センター tp-order__section
+-----------------------*/
+    .tp-order__section .tp-order__container {
+        border: 1px solid #9b9b9b;
+        padding: 35px 75px;
+    }
+    .tp-order__section .tp-order__txt__lead {
+        font-weight: bold;
+        color: var(--MAIN_ORANGE);
+        line-height: 1.75;
+    }
+    .tp-order__section .tp-order__container dl {
+        display: flex;
+    }
+    .tp-order__section .tp-order__container dt {
+        line-height: 1.75;
+    }
+    .tp-order__section .tp-order__container dt:after {
+        content: "：";
+    }
+    .tp-order__section .tp-order__container dd {
+        line-height: 1.75;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-order__section .tp-order__container {
+            padding: 20px;
+        }
+        .tp-order__section .tp-order__container dt {
+            width: 5em;
+            margin-right: 5px;
+        }
+        .tp-order__section .tp-order__container dd {
+            width: calc(100% - 5em - 5px);
+        }
+    }
+
+    /*-----------------------
+その他関連サービス tp-others__section
+-----------------------*/
+    .tp-others__list article.__kakuyasu .Thumb img {
+        object-fit: contain;
+    }
+</style>

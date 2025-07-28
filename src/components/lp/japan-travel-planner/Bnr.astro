@@ -1,0 +1,67 @@
+<a
+    class="fixedContactBtn"
+    href="https://forms.gle/AigVVixdUn1byRKZA"
+    target="_blank"
+    >Click here to apply!
+</a>
+
+<script is:inline>
+    //スクロール時のイベントを追加
+    window.addEventListener("scroll", function () {
+        //すべての.itemを取得
+        const item = document.querySelectorAll(".fixedContactBtn");
+
+        //querySelectorAll('.item')は配列になるので、for構文で取得
+        //配列は0から始まるのでi = 0
+        //i < item.lengthで配列の要素よりも数が小さい時　i++(インクリメント)1つずつ増加
+        for (let i = 0; i < item.length; i++) {
+            //.itemのオフセットの高さを取得
+            var targetTop = item[i].offsetTop;
+
+            //画面のスクロール量 + 300px > .itemのオフセットの高さを取得
+            if (window.scrollY + 300 > targetTop) {
+                //書くitemにクラスshowを追加
+                item[i].classList.add("show");
+            } else {
+                item[i].classList.remove("show");
+            }
+        }
+    });
+</script>
+
+<style lang="scss">
+    a.fixedContactBtn {
+        display: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        background: var(--red);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 10px 15px 0;
+        text-align: center;
+        z-index: 9999;
+        opacity: 0;
+        transition: all 0.3s;
+        @media (max-width: 768px) {
+            display: block;
+        }
+        &.show {
+            opacity: 1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 30px;
+            border-radius: 9999px;
+            background: url("/lp/japan-travel-planner/img/icon_arrow.png")
+                center center / cover no-repeat;
+        }
+    }
+</style>

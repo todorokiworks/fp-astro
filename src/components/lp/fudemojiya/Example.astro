@@ -1,0 +1,156 @@
+<section id="example">
+    <div class="cInner">
+        <h3>筆文字ロゴ使用イメージ</h3>
+        <div class="list">
+            <div class="item">
+                <a
+                    href="/lp/fudemojiya/img/img_image01.png"
+                    data-lightbox="image-1"
+                    ><img src="/lp/fudemojiya/img/img_image01.png" alt="" /></a
+                >
+            </div>
+            <div class="item">
+                <a
+                    href="/lp/fudemojiya/img/img_image02.png"
+                    data-lightbox="image-2"
+                    ><img src="/lp/fudemojiya/img/img_image02.png" alt="" /></a
+                >
+            </div>
+            <div class="item group-vertical">
+                <a
+                    href="/lp/fudemojiya/img/img_image03.png"
+                    data-lightbox="image-3"
+                    ><img src="/lp/fudemojiya/img/img_image03.png" alt="" /></a
+                >
+                <a
+                    href="/lp/fudemojiya/img/img_image04.png"
+                    data-lightbox="image-4"
+                    ><img src="/lp/fudemojiya/img/img_image04.png" alt="" /></a
+                >
+            </div>
+            <div class="item">
+                <a
+                    href="/lp/fudemojiya/img/img_image05.png"
+                    data-lightbox="image-5"
+                    ><img src="/lp/fudemojiya/img/img_image05.png" alt="" /></a
+                >
+            </div>
+            <div class="item group-horizonal">
+                <a
+                    href="/lp/fudemojiya/img/img_image06.png"
+                    data-lightbox="image-6"
+                    ><img src="/lp/fudemojiya/img/img_image06.png" alt="" /></a
+                >
+                <a
+                    href="/lp/fudemojiya/img/img_image07.png"
+                    data-lightbox="image-7"
+                    ><img src="/lp/fudemojiya/img/img_image07.png" alt="" /></a
+                >
+            </div>
+            <div class="item">
+                <a
+                    href="/lp/fudemojiya/img/img_image08.png"
+                    data-lightbox="image-8"
+                    ><img src="/lp/fudemojiya/img/img_image08.png" alt="" /></a
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    section#example {
+        background: #000;
+        position: relative;
+        padding: 100px 0 120px;
+        @media (max-width: 768px) {
+            padding: 60px 0 80px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -119px;
+            left: 0;
+            width: 100%;
+            height: 311px;
+            background: url("/lp/fudemojiya/img/img_image_bg.png") center center /
+                cover no-repeat;
+            z-index: 0;
+            @media (max-width: 768px) {
+                background: url("/lp/fudemojiya/img/img_image_bg-sp.png") center
+                    center / contain no-repeat;
+                height: 71px;
+                top: -25px;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            width: 100%;
+            height: 311px;
+            background: url(/lp/fudemojiya/img/img_image_bg02.png) center center /
+                cover no-repeat;
+            z-index: 0;
+            @media (max-width: 768px) {
+                background: url("/lp/fudemojiya/img/img_image_bg02-sp.png")
+                    center center / contain no-repeat;
+                height: 80px;
+                bottom: -26px;
+            }
+        }
+        div.cInner {
+            @media (max-width: 768px) {
+                padding: 0 10px;
+            }
+            h3 {
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 100px;
+                position: relative;
+                color: #fff;
+                letter-spacing: 4px;
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    margin-bottom: 50px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 800px;
+                    height: 8px;
+                    background: #fff;
+                    @media (max-width: 768px) {
+                        width: 250px;
+                        height: 4px;
+                        bottom: -20px;
+                    }
+                }
+            }
+            div.list {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                z-index: 1;
+                div.item {
+                    width: 50%;
+                    &.group-vertical {
+                        display: flex;
+                        a {
+                            width: 50%;
+                        }
+                    }
+                    img {
+                    }
+                }
+            }
+        }
+    }
+</style>
+
+<script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script is:inline src="/lp/fudemojiya/js/lightbox.js"></script>

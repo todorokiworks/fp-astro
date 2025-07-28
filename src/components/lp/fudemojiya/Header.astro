@@ -1,0 +1,82 @@
+<header>
+    <div class="cInner">
+        <div class="logo">
+            <img src="/lp/fudemojiya/img/img_logo.png" alt="" />
+        </div>
+        <a class="contactBtn" href="#contact">ご依頼・お問い合わせ</a>
+    </div>
+</header>
+
+<style lang="scss">
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        z-index: 9999;
+        div.cInner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            @media (max-width: 768px) {
+                padding: 10px 10px;
+            }
+            div.logo {
+                width: 185px;
+                @media (max-width: 768px) {
+                    width: 100px;
+                    margin-left: 10px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .contactBtn {
+                display: block;
+                font-size: 20px;
+                font-weight: 500;
+                color: #fff;
+                background: var(--red);
+                border-left: 20px solid var(--orange);
+                position: relative;
+                width: 310px;
+                padding: 15px 10px 19px 0;
+                text-align: center;
+                @media (max-width: 768px) {
+                    width: 180px;
+                    font-size: 12px;
+                    padding: 4px 10px 7px 0;
+                    border-left: 10px solid var(--orange);
+                }
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 1px);
+                    right: 20px;
+                    width: 10px;
+                    height: 2px;
+                    border-radius: 9999px;
+                    background-color: #ffffff;
+                    transform-origin: calc(100% - 1px) 50%;
+                    @media (max-width: 768px) {
+                        width: 7px;
+                        height: 1px;
+                        right: 10px;
+                    }
+                }
+
+                &::before {
+                    transform: rotate(45.5deg);
+                }
+
+                &::after {
+                    transform: rotate(-45.5deg);
+                }
+            }
+        }
+    }
+</style>

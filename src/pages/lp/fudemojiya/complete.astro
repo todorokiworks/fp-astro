@@ -1,0 +1,111 @@
+---
+import Layout from "../../../layouts/lp/fudemojiya/Layout.astro";
+import Header from "../../../components/lp/fudemojiya/Header.astro";
+import Mv from "../../../components/lp/fudemojiya/Mv.astro";
+import Sample from "../../../components/lp/fudemojiya/Sample.astro";
+import Example from "../../../components/lp/fudemojiya/Example.astro";
+import Price from "../../../components/lp/fudemojiya/Price.astro";
+import Contact from "../../../components/lp/fudemojiya/Contact.astro";
+import Footer from "../../../components/lp/fudemojiya/Footer.astro";
+import Flow from "../../../components/lp/fudemojiya/Flow.astro";
+---
+
+<Layout title="お問合せ完了｜筆文字屋">
+    <Header />
+    <div class="complete">
+        <div class="cInner">
+            <p class="ttl">お問い合わせ<br />ありがとうございます。</p>
+            <p class="txt">
+                この度は筆文字ロゴ・メニュー表作成に関してお問い合わせいただきありがとうございます。<br
+                /><br />
+                後日担当よりご連絡いたしましすので、今しばらくお待ちくださいませ。<br
+                />
+                今後ともなにとぞよろしくお願い申し上げます。
+            </p>
+            <a href="/fudemojiya/">トップに戻る</a>
+        </div>
+    </div>
+    <Footer />
+</Layout>
+
+<style lang="scss">
+    div.complete {
+        background: url("/img/img_mv_bg.png") center center / contain;
+        padding: 160px 0 160px;
+        width: 100%;
+        div.cInner {
+            p.ttl {
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+                font-family: var(--mincho);
+                line-height: 1.25;
+                margin-bottom: 60px;
+                @media (max-width: 768px) {
+                    font-size: 25px;
+                    margin-bottom: 40px;
+                }
+            }
+            p.txt {
+                text-align: center;
+                margin-bottom: 80px;
+                font-size: 24px;
+                font-weight: 300;
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                    margin-bottom: 60px;
+                }
+            }
+            a {
+                font-size: 30px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: #000;
+                background: #fff;
+                position: relative;
+                width: 620px;
+                padding: 30px 0;
+                text-align: center;
+                box-shadow: 10px 10px 0 #000;
+                border: 1px solid #000;
+                display: block;
+                margin: 0 auto;
+                transition: all 0.3s;
+                @media (max-width: 768px) {
+                    width: 300px;
+                    font-size: 15px;
+                    padding: 15px 0;
+                    box-shadow: 5px 5px 0 #000;
+                }
+                &:hover {
+                    box-shadow: unset;
+                    transform: translateY(10px);
+                }
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 1px);
+                    left: 40px;
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 9999px;
+                    background-color: #000;
+                    transform-origin: calc(100% - 1px) 50%;
+                    @media (max-width: 768px) {
+                        left: 20px;
+                        width: 10px;
+                    }
+                }
+
+                &::before {
+                    transform: rotate(135.5deg);
+                }
+
+                &::after {
+                    transform: rotate(-135.5deg);
+                }
+            }
+        }
+    }
+</style>

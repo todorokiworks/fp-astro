@@ -1,0 +1,227 @@
+---
+const list = [
+  {
+    url: "/lp/kaitori/img/img_kaitorilist01.png",
+    name: "縦型冷凍冷蔵庫",
+    detail: `ホシザキ<br>2021/HRF-120AFT`,
+    price: "150,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist02.png",
+    name: "冷蔵リーチインショーケース",
+    detail: `フクシマガリレイ<br>2022_MSS-090GHWSR`,
+    price: "110,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist03.png",
+    name: "冷凍冷蔵コールドテーブル",
+    detail: `大和冷機<br>2021/5041S-B`,
+    price: "150,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist04.png",
+    name: "ガスフライヤー18L",
+    detail: `マルゼン<br>2024/MGF-18K`,
+    price: "40,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist05.png",
+    name: `スチームコンベクション<br>オーブン`,
+    detail: `ラショナル<br>2018_SCCWE61`,
+    price: "180,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist06.png",
+    name: "冷凍ストッカー",
+    detail: `サンデン<br>2021/HRF-120AFT`,
+    price: "150,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist07.png",
+    name: "スパイラルミキサー",
+    detail: `愛工舎<br>IS20T2V`,
+    price: "80,000",
+  },
+  {
+    url: "/lp/kaitori/img/img_kaitorilist08.png",
+    name: "券売機",
+    detail: `芝浦自販機<br>2022/KB-172NNS2`,
+    price: "180,000",
+  },
+];
+---
+
+<section id="kaitori-list">
+  <div class="contents__inner">
+    <h2 class="header_02">厨房機器 高価買取中！</h2>
+    <div class="pc">
+      <div class="list">
+        {
+          list.map(item => (
+            <div class="item">
+              <div class="img">
+                <img src={item.url} alt="" />
+              </div>
+              <div class="txt">
+                <p class="name" set:html={item.name} />
+                <p class="detail" set:html={item.detail} />
+              </div>
+              <div class="price">
+                {item.price}
+                <span class="yen">円</span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="sp">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          {
+            list.map(item => (
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="img">
+                    <img src={item.url} alt="" />
+                  </div>
+                  <div class="txt">
+                    <p class="name" set:html={item.name} />
+                    <p class="detail" set:html={item.detail} />
+                  </div>
+                  <div class="price">
+                    {item.price}
+                    <span class="yen">円</span>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import Swiper from "swiper";
+  import { Autoplay, Navigation, Pagination } from "swiper/modules";
+  import "swiper/css/bundle";
+  import "swiper/css/effect-fade";
+  export const swiperConfig = {
+    modules: [Autoplay, Navigation, Pagination],
+    // Optional parameters
+    speed: 1500,
+    loop: true,
+    autoplay: { delay: 2000 },
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  };
+
+  const swiper = new Swiper(".swiper", swiperConfig);
+</script>
+
+<style lang="scss">
+  section#kaitori-list {
+    div.contents__inner {
+      padding-top: 100px;
+      @media (max-width: 768px) {
+        padding-top: 40px;
+      }
+      h2.header_02 {
+      }
+    }
+  }
+
+  div.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  div.item {
+    width: 23%;
+    border: 2px solid #dddddd;
+    padding: 10px 10px 5px;
+    @media (max-width: 768px) {
+      width: 100%;
+      border: 1px solid #dddddd;
+      padding: 10px 10px 5px;
+    }
+    div.img {
+      img {
+      }
+    }
+    div.txt {
+      min-height: 105px;
+      @media (max-width: 768px) {
+        min-height: 95px;
+      }
+      p.name {
+        font-size: 18px;
+        font-weight: bold;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      p.detail {
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
+      }
+    }
+    div.price {
+      font-size: 30px;
+      font-weight: bold;
+      color: var(--red);
+      text-align: right;
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
+      span.yen {
+        font-size: 16px;
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: -30px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--red);
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+      font-family: swiper-icons;
+      font-size: var(--swiper-navigation-size);
+      text-transform: none !important;
+      letter-spacing: 0;
+      font-variant: initial;
+      line-height: 1;
+      color: #d02d26;
+      font-size: 22px;
+      font-weight: 700
+  }
+</style>

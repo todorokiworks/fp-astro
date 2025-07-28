@@ -1,0 +1,965 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.selfOrder);
+---
+
+<Layout
+    title="配膳ロボット｜テンポス"
+    description="配膳ロボットを導入して、人手不足を解消しませんか？テンポスでは全国対応かつ可能無料トライアルができる配膳ロボットをご提案！"
+    pageUrl="/telecom/selforder"
+    ogimage="/asset/images/selforder/img_selforder_ogp.png"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/telecom/">店舗インフラ</a></li>
+                    <li>配膳ロボット</li>
+                </ol>
+            </nav>
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>配膳ロボット</span>
+                </h1>
+                <p class="tp-front__caption">
+                    配膳ロボットを導入して、<br
+                        class="u-mobile"
+                    />人手不足を解消しませんか？
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=54"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <!-- こんなお悩みありませんか？ -->
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        <span class="tp-bglg">スタッフの人手不足</span
+                        >が続いている
+                    </li>
+                    <li>
+                        <span class="tp-bglg">人件費が高く</span
+                        >経営がひっ迫している
+                    </li>
+                    <li>
+                        配膳ロボットの導入を検討しているが、どこも<span
+                            class="tp-bglg">料金が高い</span
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    お店に最適な配膳ロボットを提案いたします！
+                </h2>
+                <div class="tp-design__contents">
+                    <div class="tp-design__txt">
+                        飲食店が抱える課題として多いのが慢性的な人手不足。<br />
+                        アフターコロナで売上は回復したものの、人材が集まらないという<br
+                        />
+                        飲食店も少なくありません。<br /><br />
+
+                        配膳ロボットを導入することで、少ない人員でお店を回せるようになります。<br
+                        />
+                        また、シフトの管理も楽になりますので、導入を検討ください！
+                    </div>
+                    <div class="tp-design__img">
+                        <img
+                            src="../asset/images/selforder/img_intro.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3つの特徴 -->
+            <section class="tp-point__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-point__ttl__span">ロボット配膳の</span>
+                    <span class="tp-ttl__balloon__span"
+                        >サービス<span>の</span>特徴</span
+                    >
+                </h2>
+                <ul class="tp-point__list __1clm">
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >人手不足や人件費高騰などの課題を解決</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            配膳ロボットは疲れ知らずのシフト1本分の労働力。<br
+                            />
+                            シフトが安定するので、店舗運営が楽になり、安心して運営できます。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >接客に集中してリピーターを獲得</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            配膳・下げ膳はロボットに任せて、スタッフは接客に注力できます。<br
+                            />
+                            ロボットはお客様に大人気、会話も弾み、お店の雰囲気も良くなります。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >お客様のニーズに対応した配膳ロボットをご提案</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            お店の席数や業態に合った配膳ロボットをご提案いたします。<br
+                            />
+                            導入から運用まで全国の営業・エンジニアがサポートしますので、ご安心ください。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 商品概要 -->
+            <section class="tp-installation__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">導入事例</span>
+                </h2>
+                <div class="tp-installation-wrapper">
+                    <p>
+                        席数約100席でホールスタッフはこれまで7名で<br
+                            class="u-mobile"
+                        />回していたレストランの場合
+                    </p>
+                    <div class="tp-installation-img">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/selforder/img_installation_sp.png"
+                            />
+                            <img
+                                src="/asset/images/selforder/img_installation.png"
+                                srcset="/asset/images/selforder/img_installation.png 1x,/asset/images/selforder/img_installation.png 2x"
+                                alt="防犯カメラ"
+                                width="304"
+                                height="231"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <!-- ご利用までの流れ -->
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    ご相談は無料です。まずはプランや料金を知りたいなど、少しでも興味があればお気軽に問合せください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">フードプレイスよりご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    電話でお客様の相談内容をヒアリングいたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先からのご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    電話や現地への訪問を通してお客様のお店に最適な配膳ロボットを提案いたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">無料トライアル</h3>
+                            <div class="Local">
+                                <p>
+                                    無料トライアルを希望される場合は配膳ロボットを店舗にお持ちし、<br
+                                    />
+                                    走行の性能やオペレーションを確認いただけます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">契約・利用開始</h3>
+                            <div class="Local">
+                                <p>
+                                    トライアル後、サービス内容や料金体系に相違がなければ契約・利用開始になります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- よくある質問 -->
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>料金はいくらでしょうか？</dt>
+                        <dd>
+                            レンタルプランと買取りプランがございます。<br />
+                            機種や購入台数によっても変わりますので、まずはお気軽に問い合わせください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>対応エリアはどこになりますか？</dt>
+                        <dd>
+                            全国訪問対応が可能でございます。(オンラインでのお打ち合わせも可能です。)
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>お試しで導入することは可能でしょうか？</dt>
+                        <dd>
+                            可能でございます。無料のトライアル期間が原則7日間とさせていただいております。<br
+                            />
+                            それ以上の期間を希望される場合は営業担当にご相談ください。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- その他関連サービス -->
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/telecom/cashless/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_cashless@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_cashless.png"
+                                        srcset="/asset/images/common/img_kanren_service_cashless.png 1x,/asset/images/common/2x/img_kanren_service_cashless@2x.png 2x"
+                                        alt="キャッシュレス決済"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">キャッシュレス決済</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/telecom/internetline/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_internetline@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_internetline.png"
+                                        srcset="/asset/images/common/img_kanren_service_internetline.png 1x,/asset/images/common/2x/img_kanren_service_internetline@2x.png 2x"
+                                        alt="インターネット回線"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">インターネット回線</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/telecom/security-camera/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_security-camera@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_security-camera.png"
+                                        srcset="/asset/images/common/img_kanren_service_security-camera.png 1x,/asset/images/common/2x/img_kanren_service_security-camera@2x.png 2x"
+                                        alt="防犯カメラ"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">防犯カメラ</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "UTF-8";
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/selforder/img_mv_bg.png);
+    }
+
+    .tp-front__caption,
+    .add-front__caption {
+        text-shadow:
+            3px 3px 6px #fff,
+            -3px 3px 6px #fff,
+            -3px -3px 6px #fff,
+            3px -3px 6px #fff;
+    }
+
+    /*-----------------------
+tp-oil-introduction__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .tp-ttl {
+            width: 100%;
+        }
+    }
+    .tp-oil-introduction__section .content {
+        margin-top: 64px;
+        margin-top: 4rem;
+        border: 3px var(--MAIN_ORANGE) solid;
+        border-radius: 20px;
+        padding: 30px;
+        position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .content {
+            margin-top: 3rem;
+            border: 0;
+            padding: 0px;
+        }
+    }
+    .tp-oil-introduction__section .content .tp-ttl {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -25px;
+        width: 28rem;
+        z-index: 500;
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .content .tp-ttl {
+            position: relative;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare01 {
+        background-color: var(--BG_GRAY);
+        border-radius: 20px;
+        display: flex;
+        padding: 3rem 2rem 3rem 2rem;
+        position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare01 {
+            flex-direction: column;
+            padding: 2rem 2rem 3rem 2rem;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare01::before {
+        background-color: var(--MAIN_ORANGE);
+        bottom: 20px;
+        content: "";
+        display: block;
+        height: 2.3rem;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: 4.5rem;
+    }
+
+    .tp-oil-introduction__section .merit-compare01::after {
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-style: solid;
+        border-width: 30px 60px 0 60px;
+        bottom: -1rem;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: 0;
+    }
+
+    .tp-oil-introduction__section .merit-compare01 .imgBox {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare01 .imgBox {
+            width: 100%;
+            order: 2;
+            margin-top: 1.5rem;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare02 .imgBox {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare02 .imgBox {
+            width: 100%;
+            order: 2;
+            margin-top: 1.5rem;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare .imgBox img {
+        -o-object-fit: contain;
+        -o-object-position: center;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+    }
+
+    .tp-oil-introduction__section .merit-compare .imgBox img.__width85 {
+        width: 85%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare .imgBox img.__width85 {
+            width: 100%;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare01 .txtBox {
+        flex: 1;
+        margin-left: 2rem;
+    }
+
+    .tp-oil-introduction__section .merit-compare02 .txtBox {
+        flex: 1;
+        margin-left: 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare01 .txtBox {
+            margin-left: 0;
+        }
+        .tp-oil-introduction__section .merit-compare02 .txtBox {
+            margin-left: 0;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare .txtTtl {
+        background-color: var(--MAIN_ORANGE);
+        border-radius: 10px;
+        color: #fff;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare .txtTtl {
+            font-size: 1rem;
+            padding: 0.6rem 2rem;
+            text-align: center;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare01 .txtTtl {
+        background-color: var(--TTL_BG_GRAY);
+        color: #fff;
+    }
+
+    .tp-oil-introduction__section .merit-compare .txtDescrip {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+        text-indent: -1em;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare .txtDescrip {
+            font-size: 1rem;
+            line-height: 1.7;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+    }
+    .tp-oil-introduction__section .merit-compare02 {
+        background-color: var(--BG_ORANGE);
+        border-radius: 10px;
+        display: flex;
+        margin-top: 2rem;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare02 {
+            flex-direction: column;
+            padding: 2rem;
+        }
+    }
+    .tp-oil-introduction__section .tp-bglg {
+        background: var(--MAIN_YELLOW);
+    }
+
+    /*-----------------------
+SDGsの実現
+-----------------------*/
+    .tp-merit01__section .SDGs_flowBox {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_flowBox {
+            flex-wrap: wrap;
+        }
+    }
+    .tp-merit01__section .SDGs_card {
+        position: relative;
+        width: 20%;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_card {
+            width: calc(50% - 0.5rem);
+            margin-bottom: 1rem;
+        }
+    }
+    .tp-merit01__section .SDGs_ttl {
+        position: relative;
+        background-color: var(--MAIN_ORANGE);
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_ttl {
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
+    }
+    .tp-merit01__section .SDGs_ttl::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        margin: auto;
+        border-style: solid;
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-width: 5px 5px 0 5px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_flowBox::before {
+            display: none;
+        }
+        .tp-merit01__section .SDGs_flowBox::after {
+            display: none;
+        }
+    }
+    .tp-merit01__section .SDGs_card:not(:first-of-type) {
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_card:not(:first-of-type) {
+            margin-left: 0px;
+        }
+        .tp-merit01__section .SDGs_card:nth-child(2n) {
+            margin-left: 1rem;
+        }
+    }
+    .tp-merit01__section .SDGs_imgBox {
+        width: 100%;
+    }
+
+    .tp-merit01__section .SDGs_imgBox img {
+        -o-object-fit: cover;
+        -o-object-position: center;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    /*-----------------------
+ tp-storage__section
+-----------------------*/
+    .tp-storage__section .trnsctin-flow {
+        margin-top: 64px;
+        margin-top: 4rem;
+    }
+
+    .tp-storage__section .strageBox01 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageBox01 {
+            flex-wrap: wrap;
+        }
+    }
+    .tp-storage__section .strageBox01::before {
+        background-color: var(--MAIN_ORANGE);
+        bottom: -2rem;
+        content: "";
+        display: block;
+        height: 3.2rem;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: 10rem;
+    }
+
+    .tp-storage__section .strageBox01::after {
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-style: solid;
+        border-width: 3rem 7rem 0 7rem;
+        bottom: -5rem;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: 0;
+    }
+
+    .tp-storage__section .strageCard {
+        width: 480px;
+        width: 30rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageCard {
+            width: calc(50% - 0.5rem);
+            margin-bottom: 1rem;
+        }
+    }
+    .tp-storage__section .strageCard:not(:first-of-type) {
+        margin-left: 0.7rem;
+    }
+
+    .tp-storage__section .strageCard .strage_ttl {
+        background-color: var(--MAIN_ORANGE);
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageCard .strage_ttl {
+            font-size: 0.8rem;
+            padding: 0.2rem 0;
+        }
+    }
+    .tp-storage__section .strageCard .imgBox {
+        width: 100%;
+    }
+
+    .tp-storage__section .strageCard .imgBox img {
+        -o-object-fit: cover;
+        -o-object-position: center;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    .tp-storage__section .strageCard .strageTxt {
+        color: #666;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .tp-storage__section .strageArrowTxt {
+        color: #fff;
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 88px;
+        margin-top: 3.3rem;
+        position: relative;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .tp-storage__section .truckImg01 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        width: 25rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .truckImg01 {
+            width: 90%;
+        }
+    }
+    .tp-storage__section .truckImg01 img {
+        -o-object-fit: cover;
+        -o-object-position: center;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    .tp-storage__section .strageBox02 {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        position: relative;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageBox02 {
+            width: 100%;
+        }
+    }
+    .tp-storage__section .strageBox02::before {
+        background-color: var(--MAIN_ORANGE);
+        bottom: -48px;
+        bottom: -2rem;
+        content: "";
+        display: block;
+        height: 3.2rem;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: 10rem;
+    }
+
+    .tp-storage__section .strageBox02::after {
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-style: solid;
+        border-width: 3rem 7rem 0 7rem;
+        bottom: -5rem;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        width: 0;
+    }
+
+    .tp-design__section .tp-local__wrap {
+        gap: 1em;
+        margin-bottom: 50px;
+    }
+
+    .tp-check__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*-----------------------
+ 紹介
+-----------------------*/
+    .tp-design__contents {
+        display: flex;
+    }
+
+    .tp-design__img {
+        width: 208px;
+    }
+    @media (max-width: 767px) {
+        .tp-design__img {
+            margin-inline: auto;
+        }
+    }
+
+    .tp-design__item {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    /*-----------------------
+ contactarea
+-----------------------*/
+    .contactarea {
+        margin-bottom: 80px;
+    }
+
+    /*-----------------------
+導入事例
+-----------------------*/
+    .tp-installation-wrapper p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 767px) {
+        .tp-installation-wrapper .tp-installation-img {
+            padding: 0 20px;
+        }
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-ttl {
+        position: relative;
+    }
+
+    .tp-ttl__balloon__span > span {
+        font-size: 24px;
+    }
+
+    .tp-ttl__balloon__span__sm {
+        position: absolute;
+        top: -36px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        color: var(--MAIN_ORANGE);
+        font-size: 16px;
+    }
+    .tp-ttl__balloon__span__sm::after {
+        content: "";
+        display: none;
+    }
+
+    .tp-design__section {
+        position: relative;
+    }
+
+    .tp-design__thumb {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        .generalsec,
+        .tp-sec {
+            margin-bottom: 120px;
+            position: relative;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tp-design__section {
+            margin-bottom: 80px;
+        }
+        .tp-ttl__balloon__span__sm {
+            width: 300px;
+        }
+        .tp-ttl__balloon__span__sm {
+            top: -59px;
+        }
+        .tp-design__thumb {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point32.png) no-repeat ce n
+            ter center/contain;
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point73.png) no-repeat ce n
+            ter center/contain;
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point74.png) no-repeat ce n
+            ter center/contain;
+    }
+
+    .u-mobile {
+        display: none;
+    }
+
+    .u-desktop {
+        display: block;
+    }
+
+    @media screen and (max-width: 767px) {
+        .u-desktop {
+            display: none;
+        }
+        .u-mobile {
+            display: block;
+        }
+    } /*# sourceMappingURL=selforder.css.map */
+</style>

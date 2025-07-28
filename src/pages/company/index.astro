@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import structuredDataMarkup from "../../data/data.json";
+---
+
+<Layout
+    title="テンポスフードプレイス | 会社情報"
+    description=""
+    pageUrl="/company/"
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/company/">企業情報</a></li>
+                </ol>
+            </nav>
+            <section class="add-front__section">
+                <h1 class="add-front__simple">会社情報</h1>
+            </section>
+            <section class="add-contents__section g-wrapper btm-sec">
+                <ul class="add-contents__list">
+                    <li>
+                        <a href="/company/corporate_data.html">
+                            <p>会社概要</p>
+                            <p>詳しく見る</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/company/recruit.html">
+                            <p>採用情報</p>
+                            <p>詳しく見る</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/company/group.html">
+                            <p>グループ会社一覧</p>
+                            <p>詳しく見る</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+</Layout>

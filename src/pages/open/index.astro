@@ -1,0 +1,310 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import structuredDataMarkup from "../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.open);
+---
+
+<Layout
+    title="飲食店の開業相談（物件探し、内装工事、開業費用診断など）｜テンポスフードプレイス"
+    description="飲食店の開業に必要な物件探し、内装工事をサポートしております。厨房機器の選定や設置もお任せください。クラウドキッチンやキッチンカーなどの開業サポートも行っています。"
+    pageUrl="/open/"
+    ogimage=""
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/open/">開業相談</a></li>
+                </ol>
+            </nav>
+            <section class="btm-front__section open_mv">
+                <h1 class="btm-front__ttl font_m_plus">
+                    <span>開業相談</span>
+                </h1>
+            </section>
+            <section class="kg-open__section btm-sec tp-wrapper">
+                <p class="kg-open__caption">
+                    飲食店を始めようと考えている方や<br class="pc" />
+                    物件探し、内装工事業者を探している方へ<br class="pc" />
+                    さまざまなサポートを行っています。
+                </p>
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span">開業費用診断</span>
+                </h2>
+                <div class="kg-flex__contents">
+                    <p class="kg-flex__contents__thumb open">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/open/sp/img_open01.jpg"
+                            />
+                            <img
+                                src="/asset/images/open/img_open01.jpg"
+                                srcset="/asset/images/open/img_open01.jpg 1x,/asset/images/open/2x/img_open01.jpg 2x"
+                                alt="開業費用診断"
+                                width="300"
+                                height="180"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                    <p class="kg-flex__contents__txt">
+                        開業に必要な費用を30秒で無料診断！<br />
+                        どんな業態のお店にするのか、物件は居抜きかスケルトンかによって開業に必要な費用が変わります。診断後、さらに詳細を聞きたい方はそのままLINEでお問い合わせも可能です。
+                    </p>
+                </div>
+                <div class="kg-link">
+                    <a href="/lp/lp_line-diagnosis/">
+                        <p class="kg-link__thumb">
+                            <picture>
+                                <source
+                                    media="(max-width:767px)"
+                                    srcset="/asset/images/open/sp/banner_line.jpg"
+                                />
+                                <img
+                                    src="/asset/images/open/banner_line.jpg"
+                                    srcset="/asset/images/open/banner_line.jpg 1x,/asset/images/open/2x/banner_line.jpg 2x"
+                                    alt=""
+                                    width="300"
+                                    height="132"
+                                    loading="lazy"
+                                    class="imgauto"
+                                />
+                            </picture>
+                        </p>
+                        <h3 class="kg-link__caption sp-center">
+                            LINEで簡単 開業費用診断
+                        </h3>
+                        <p class="btm-link">詳しく見る</p>
+                    </a>
+                </div>
+            </section>
+            <!-- <section class="kg-support__section btm-sec tp-wrapper">
+					<h2 class="kg-ttl">
+						<span class="tp-ttl__balloon__span">開業支援</span>
+					</h2>
+					<div class="kg-flex__contents">
+						<p class="kg-flex__contents__thumb support">
+							<picture>
+								<source media="(max-width:767px)" srcset="/asset/images/open/sp/img_open02.jpg">
+								<img src="/asset/images/open/img_open02.jpg"
+									srcset="/asset/images/open/img_open02.jpg 1x,/asset/images/open/2x/img_open02.jpg 2x"
+									alt="開業支援" width="300" height="180" loading="lazy" class="imgauto">
+							</picture>
+						</p>
+						<p class="kg-flex__contents__txt">
+							まずは初期費用を抑えて開業したい、デリバリー業態に興味がある等、コストを下げて出店したいという方にクラウドキッチンやゴーストレストランなどのご提案も行っております。<br>
+							その前に飲食店経営のノウハウやメニュー作りの知識をつけたい、という方に飲食店専門学校のご紹介も行っています。
+						</p>
+					</div>
+					<ul class="kg-link__list  purchase-thumb02">
+						<li>
+						<a href="">
+							<p class="kg-link__thumb">
+								<picture>
+									<source media="(max-width:767px)" srcset="/asset/images/open/sp/img_open03.jpg">
+									<img src="/asset/images/open/img_open03.jpg" srcset="/asset/images/open/img_open03.jpg 1x,/asset/images/open/2x/img_open03.jpg 2x" alt="クラウドキッチン開業" width="113" height="113" loading="lazy" class="imgauto-h">
+								</picture>
+							</p>
+							<div class="kg-link__container">
+								<h3 class="kg-link__caption">クラウドキッチン<br class="sp">開業</h3>
+								<p class="btm-link">
+									詳しく見る
+								</p>
+							</div>
+						</a>
+					</li>
+						<li>
+							<a href="/open/kitchen-car/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)" srcset="/asset/images/open/sp/img_open04.jpg">
+										<img src="/asset/images/open/img_open04.jpg"
+											srcset="/asset/images/open/img_open04.jpg 1x,/asset/images/open/2x/img_open04.jpg 2x"
+											alt="キッチンカー" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">キッチンカー</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+						<a href="">
+							<p class="kg-link__thumb">
+								<picture>
+									<source media="(max-width:767px)" srcset="/asset/images/open/sp/img_open05.jpg">
+									<img src="/asset/images/open/img_open05.jpg" srcset="/asset/images/open/img_open05.jpg 1x,/asset/images/open/2x/img_open05.jpg 2x" alt="飲食店専門学校" width="113" height="113" loading="lazy" class="imgauto-h">
+								</picture>
+							</p>
+							<div class="kg-link__container">
+								<h3 class="kg-link__caption">飲食店<br class="sp">専門学校</h3>
+								<p class="btm-link">
+									詳しく見る
+								</p>
+							</div>
+						</a>
+					</li>
+						<li>
+							<a href="/open/ghost-restaurant/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)" srcset="/asset/images/open/sp/img_open06.jpg">
+										<img src="/asset/images/open/img_open06.jpg"
+											srcset="/asset/images/open/img_open06.jpg 1x,/asset/images/open/2x/img_open06.jpg 2x"
+											alt="ゴーストレストラン" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">ゴースト<br class="sp">レストラン</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section> -->
+            <section class="kg-property__section tp-wrapper">
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span">物件探し・内装工事</span
+                    >
+                </h2>
+                <div class="kg-flex__contents">
+                    <p class="kg-flex__contents__thumb property">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/open/sp/img_open07.jpg"
+                            />
+                            <img
+                                src="/asset/images/open/img_open07.jpg"
+                                srcset="/asset/images/open/img_open07.jpg 1x,/asset/images/open/2x/img_open07.jpg 2x"
+                                alt="物件探し・内装工事"
+                                width="300"
+                                height="180"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                    <p class="kg-flex__contents__txt">
+                        居抜きやスケルトン等の物件情報を出店場所・業種・こだわりたい条件などを伺いご提案いたします。<br
+                        />
+                        また、内装工事業者のご紹介も行っています。コスト削減のため、DIYで自分の手で内装づくりを行う場合は専門家である元大工さんをご紹介いたします。
+                    </p>
+                </div>
+                <ul class="kg-link__list purchase-thumb02">
+                    <li>
+                        <a
+                            href="https://www.tenpos.com/bukken-search/"
+                            target="_blank"
+                        >
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/open/sp/img_open08.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/open/img_open08.jpg"
+                                        srcset="/asset/images/open/img_open08.jpg 1x,/asset/images/open/2x/img_open08.jpg 2x"
+                                        alt="飲食店物件紹介"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">飲食店物件紹介</h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.tenpos.com/diy_interior/"
+                            target="_blank"
+                        >
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/open/sp/img_open09.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/open/img_open09.jpg"
+                                        srcset="/asset/images/open/img_open09.jpg 1x,/asset/images/open/2x/img_open09.jpg 2x"
+                                        alt="飲食店内装工事"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">飲食店内装工事</h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+    :root {
+        --fnts_local: 16px;
+        --fnts_caption_min: 26px;
+        --fnts_caption_sub: 20px;
+        --fnts_section_ttl: 30px;
+    }
+    /* -------------------- resources-section ------------------- */
+    /* -----　open/index.html　開業相談ページ用mv　----- */
+    .btm-front__section.open_mv {
+        background-image: url(/asset/images/open/mv_open.jpg);
+    }
+
+    /* sp版電話アイコン（icon_phone_white.svg）の線を消す */
+    .sp-header__iconlist > li.__blue > a > img {
+        border: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        /* -----　open/index.html　開業相談ページ　PC(min-width: 768px)用mv　----- */
+        .btm-front__section.open_mv {
+            background-position: 50% 50%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        /* -----　open/index.html　開業相談ページ　sp用mv　----- */
+        .btm-front__section.open_mv {
+            background-image: url(/asset/images/open/sp/mv_open_sp.jpg);
+            background-position: 50% 0%;
+            /* background-size: 175%; */
+        }
+        .purchase-thumb03 img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--GRADATION_ORANGE);
+            border-radius: 10px;
+        }
+    }
+
+    /* -------------------- ------------------- */
+    /* -------------------- ------------------- */
+    /* -------------------- ------------------- */
+</style>

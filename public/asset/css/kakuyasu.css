@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/kakuyasu/mv_kakuyasu.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__thumb {
+  margin-top: -45px;
+}
+@media screen and (max-width: 1270px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: 0;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__thumb {
+    width: 40%;
+  }  
+}
+
+/*-----------------------
+5つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 57px;
+  margin-right: 13px;
+}
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point25.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point26.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point22.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(4) > .Ttl::before {
+  background: url(../images/common/icon_point27.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(5) > .Ttl::before {
+  background: url(../images/common/icon_point28.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 70px);
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}

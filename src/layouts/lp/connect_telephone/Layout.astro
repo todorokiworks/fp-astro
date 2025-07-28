@@ -1,0 +1,109 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+	<head
+		prefix="og: //ogp.me/ns# fb: //ogp.me/ns/fb# article: //ogp.me/ns/article#"
+	>
+		<meta charset="UTF-8" />
+		<title>
+			{title}
+		</title>
+		<meta
+			name="description"
+			content="商談後の通電率70％アップ！相手のスマートフォンで名刺のQRコードを読み取ってもらい、ボタン1つで連絡帳に自分の情報を登録することができます。"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<!--OGP-->
+		<meta
+			property="og:url"
+			content="https://support.tenpos.com/lp/connect_telephone/"
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="商談後の成約率アップ！相手のスマホに自分の情報を7秒で登録「つながるテレフォン」"
+		/>
+		<meta
+			property="og:description"
+			content="商談後の通電率70％アップ！相手のスマートフォンで名刺のQRコードを読み取ってもらい、ボタン1つで連絡帳に自分の情報を登録することができます。"
+		/>
+		<meta
+			property="og:site_name"
+			content="商談後の成約率アップ！相手のスマホに自分の情報を7秒で登録「つながるテレフォン」"
+		/>
+		<meta
+			property="og:image"
+			content="https://support.tenpos.com/lp/connect_telephone/img/ogp.jpg"
+		/>
+		<!--OGP end-->
+		<link
+			rel="canonical"
+			href="https://support.tenpos.com/lp/connect_telephone/"
+		/>
+		<link rel="icon" href="https://support.tenpos.com/asset/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://support.tenpos.com/asset/apple-touch-icon.png"
+		/>
+		<link
+			href="/lp/connect_telephone/css/reset.css"
+			rel="stylesheet"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			href="/lp/connect_telephone/css/style.css"
+			rel="stylesheet"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			href="/lp/connect_telephone/css/top.css"
+			rel="stylesheet"
+			type="text/css"
+			media="all"
+		/>
+		<!-- Google Tag Manager -->
+		<script is:inline>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NXBVCP8");
+		</script>
+		<!-- End Google Tag Manager -->
+	</head>
+
+	<body id="top">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXBVCP8"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
+		<slot />
+	</body>
+</html>

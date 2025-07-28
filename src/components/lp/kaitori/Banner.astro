@@ -1,0 +1,223 @@
+<div class="banner">
+  <div class="contents__inner">
+    <p class="txt"><span class="line">査定無料</span> まずはご相談ください</p>
+    <div class="btn__wrapper">
+      <div class="pc">
+        <div class="btn btn-tel">
+          <div class="icon">
+            <img src="/lp/kaitori/img/icon_tel-lg.png" alt="" />
+          </div>
+          <div class="btn-txt">
+            <span class="txt-sm">お急ぎの方はお電話で！</span>
+            <div class="txt-group">
+              <span class="txt-md">050-3174-1366</span>
+              <span class="txt-xs">9:00~18:00（平日）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp">
+        <a href="tel:05031741366" class="btn btn-tel">
+          <div class="icon">
+            <img src="/lp/kaitori/img/icon_tel-lg.png" alt="" />
+          </div>
+          <div class="btn-txt">
+            <span class="txt-sm">お急ぎの方は<br />お電話で！</span>
+            <div class="txt-group">
+              <span class="txt-md">050-3174-1366</span>
+              <span class="txt-xs">9:00~18:00（平日）</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <a
+        href="https://tenpos0319.form.kintoneapp.com/public/fp-site"
+        class="click_btn_set_mail btn btn-mail"
+        target="_blank"
+      >
+        <div class="icon">
+          <img src="/lp/kaitori/img/icon_mail-lg.png" alt="" />
+        </div>
+        <div class="btn-txt">
+          <span class="txt-md">メールで買取依頼</span>
+          <span class="txt-sm">（24時間365日受付）</span>
+        </div>
+      </a>
+      <a
+        href="https://www.tenpos.com/kaitori/line/index.html"
+        class="click_btn_set_line btn btn-line"
+        target="_blank"
+      >
+        <div class="icon">
+          <img src="/lp/kaitori/img/icon_line-lg.png" alt="" />
+        </div>
+        <div class="btn-txt">
+          <span class="txt-md">LINEで<br class="pc" />かんたん見積</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  div.banner {
+    background: #eeeeee;
+    padding: 60px 0;
+    @media (max-width: 768px) {
+      padding: 40px 10px;
+    }
+    div.contents__inner {
+      p.txt {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        color: #003761;
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 680px;
+          height: 57px;
+          background: url("/lp/kaitori/img/img_banner_bg.png") center center / cover
+            no-repeat;
+          z-index: 1;
+          @media (max-width: 768px) {
+            width: 340px;
+            height: 30px;
+            background: url("/lp/kaitori/img/img_banner_bg.png") center center / contain
+              no-repeat;
+          }
+        }
+        span.line {
+          width: fit-content;
+          position: relative;
+          z-index: 1;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: var(--yellow);
+            z-index: -1;
+            @media (max-width: 768px) {
+              height: 10px;
+            }
+          }
+        }
+      }
+      div.btn__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+        .btn {
+          color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          min-width: 365px;
+          height: 90px;
+          padding: 0 25px;
+          border-radius: 10px;
+          box-shadow: 0 3px 1px #7f7f82;
+          transition: all 0.3s;
+          @media (max-width: 768px) {
+            width: 100%;
+            min-width: 355px;
+            max-width: 360px;
+            padding: 0 12px;
+            height: 60px;
+            border-radius: 6px;
+          }
+
+          &:hover {
+            box-shadow: unset;
+            transform: translateY(4px);
+          }
+          div.icon {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            @media (max-width: 768px) {
+              width: 36px;
+            }
+            img {
+              width: 100%;
+            }
+          }
+          div.btn-txt {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 1.1;
+            @media (max-width: 768px) {
+              flex-direction: row;
+              width: 85%;
+              justify-content: center;
+            }
+            &:has(.txt-group) {
+              @media (max-width: 768px) {
+                justify-content: space-around;
+                span.txt-sm {
+                  font-size: 13px;
+                }
+                span.txt-md {
+                  font-size: 23px;
+                }
+              }
+            }
+            .txt-group {
+              @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+            }
+            span.txt-sm {
+              font-size: 18px;
+              display: block;
+              @media (max-width: 768px) {
+                font-size: 13px;
+              }
+            }
+            span.txt-xs {
+              font-size: 13px;
+              display: block;
+            }
+            span.txt-md {
+              font-size: 26px;
+              font-weight: bold;
+              display: block;
+              @media (max-width: 768px) {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .btn.btn-tel {
+          display: flex;
+          background: var(--red);
+        }
+        .btn.btn-mail {
+          background: var(--orange);
+        }
+        .btn.btn-line {
+          background: var(--green);
+        }
+      }
+    }
+  }
+</style>

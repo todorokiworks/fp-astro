@@ -1,0 +1,430 @@
+@charset "utf-8";
+
+:root {
+  --fnts_local: 16px;
+  --fnts_caption_min: 26px;
+  --fnts_caption_sub: 20px;
+  --fnts_section_ttl: 30px;
+}
+
+.u-mobile {
+  display: none;
+}
+
+.u-desktop {
+  display: block;
+}
+
+
+@media screen and (max-width:767px) {
+
+  .u-desktop {
+    display: none;
+  }
+
+  .u-mobile {
+    display: block;
+  }
+}
+
+/* -------------------- menu-section ------------------- */
+/* ----- ★　/menu/index.html 新着情報一覧ページsp用 ここから ----- */
+
+/* for PC */
+@media screen and (min-width: 768px) {}
+
+/* for SP */
+@media screen and (max-width: 767px) {
+
+  /* --------------------★sp用 img_オレンジ線ここから-------------------- */
+  .purchase-thumb03 img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--GRADATION_ORANGE);
+    border-radius: 10px;
+  }
+}
+
+
+.tp-front__section {
+  background-image: url(../images/wine-pro/mv-wine-pro.png);
+}
+
+/*-----------------------
+MV
+-----------------------*/
+
+.tp-front__ttl,
+.btm-front__ttl,
+.add-front__ttl {
+  padding: 10px 40px 20px;
+  line-height: 1.4;
+}
+
+.tp-f-sm {
+  display: block;
+  font-size: 25px;
+  background: transparent !important;
+}
+
+@media screen and (max-width:767px) {
+
+  .tp-front__ttl,
+  .btm-front__ttl,
+  .add-front__ttl {
+    padding: 10px 40px 20px;
+    line-height: 1.4;
+  }
+
+  .tp-f-sm {
+    font-size: 14px;
+  }
+}
+
+/*-----------------------
+おすすめ
+-----------------------*/
+
+.tp-design__section .tp-ttl {
+  text-align: center;
+}
+
+.tp-design__img {
+  width: 90%;
+  margin: 0 auto 40px;
+}
+
+.tp-design__txt .tp-design__txt-lg {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tp-design__txt .tp-design__txt-lg-orange {
+  color: #ff8000;
+}
+
+.tp-design__txt-md {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.tp-design__bnr {
+  background: linear-gradient(0deg, rgba(189, 67, 69, 1) 27%, rgba(250, 151, 13, 1) 100%);
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 30px 0 100px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.tp-design__bnr::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/wine-pro/img-wine-illust.png) center center / contain no-repeat;
+  width: 600px;
+  height: 104px;
+}
+
+
+
+
+@media screen and (max-width:767px) {
+
+  .tp-design__txt .tp-design__txt-lg {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .tp-design__txt .tp-design__txt-lg-orange {
+    color: #ff8000;
+  }
+
+  .tp-design__txt-md {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .tp-design__img {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .tp-design__bnr {
+    background: linear-gradient(0deg, rgba(189, 67, 69, 1) 27%, rgba(250, 151, 13, 1) 100%);
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30px 0 100px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .tp-design__bnr::before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/wine-pro/img-wine-illust.png) center center / contain no-repeat;
+    width: 90%;
+    height: 104px;
+  }
+}
+
+/*-----------------------
+サービスの特徴
+-----------------------*/
+
+.tp-service__content {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.tp-service__content .tp-service-ttl {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tp-service__content .tp-service__item {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.tp-service__txt {
+  font-size: 14px;
+}
+
+.tp-service__txt-checklist {
+  display: flex;
+  align-items: center;
+}
+
+.tp-service__txt-checklist:first-child {
+  margin-bottom: 10px;
+}
+
+.tp-service__txt-checklist .icon-check {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.tp-service__content:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.tp-service__content:nth-child(2) .tp-service__item .tp-service__img {
+  width: 280px;
+}
+
+.tp-service__content:nth-child(3) .tp-service__item .tp-service__img {
+  width: 240px;
+  margin-top: -45px;
+}
+
+.tp-service__content:nth-child(3) .tp-service__item .tp-service__img img {
+  width: 170px;
+  margin-inline: auto;
+  display: block;
+}
+
+.tp-service__section .tp-ttl-header3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: -20px;
+}
+
+.tp-service__section .tp-ttl-header3 .tp-ttl-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.tp-service__section .tp-ttl-header3 .tp-service-ttl-lg {
+  font-size: 55px;
+  padding: 0 5px;
+}
+
+.tp-service__section .tp-ttl-header3 .tp-service-ttl-md {
+  font-size: 24px;
+}
+
+
+@media screen and (max-width:767px) {
+  .tp-service__section .tp-ttl-header3 {
+    display: grid;
+    line-height: 1.25;
+    margin-top: 30px !important;
+  }
+
+  .tp-service__section .tp-ttl-header3 .tp-ttl-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .tp-service__section .tp-ttl-header3 .tp-service-ttl-lg {
+    font-size: 46px;
+  }
+
+  .tp-service__section .tp-ttl-header3 .tp-service-ttl-md {
+    font-size: 22px;
+  }
+
+  .tp-service__content {
+    width: 96%;
+    margin-inline: auto;
+  }
+
+  .tp-service__content .tp-service-ttl {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .tp-service__content .tp-service__item {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tp-service__txt {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .tp-service__txt-checklist {
+    display: flex;
+    align-items: center;
+  }
+
+  .tp-service__txt-checklist .icon-check {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .tp-service__content:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  .tp-service__content:nth-child(2) .tp-service__item .tp-service__img {
+    width: 280px;
+  }
+
+  .tp-service__content:nth-child(3) .tp-service__item .tp-service__img {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .tp-service__content:nth-child(3) .tp-service__item .tp-service__img img {
+    width: 170px;
+    margin-inline: auto;
+    display: block;
+  }
+}
+
+/*-----------------------
+こんなお悩みありませんか？
+-----------------------*/
+
+.tp-check__list>li {
+  display: block;
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+  position: relative;
+}
+
+.tp-ttl__balloon__span__sm {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  color: var(--MAIN_ORANGE);
+  font-size: 16px;
+
+  &::after {
+    content: '';
+    display: none;
+  }
+}
+
+.tp-point__section .tp-point__list>li:nth-child(1)>.Ttl::before {
+  background: url(../images/common/icon_point56.png) no-repeat center center / contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(2)>.Ttl::before {
+  background: url(../images/common/icon_point09.png) no-repeat center center / contain;
+}
+
+.tp-point__section .tp-point__list>li:nth-child(3)>.Ttl::before {
+  background: url(../images/common/icon_point58.png) no-repeat center center / contain;
+}
+
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list>li>.Ttl:before {
+    width: 45px;
+    margin-right: 15px;
+  }
+
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .tp-ttl__balloon__span__sm {
+    width: 300px;
+  }
+
+  .tp-service__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+    margin-top: 80px;
+  }
+}
+
+/*-----------------------
+contactarea
+-----------------------*/
+
+.contactarea {
+  margin-bottom: 80px;
+}
+
+
+.tp-others__list>article:nth-child(3) .Thumb img {
+  border-radius: 20px;
+  border: 2px solid var(--GRADATION_ORANGE);
+  aspect-ratio: 304 / 231;
+  object-fit: contain;
+  object-position: center;
+}

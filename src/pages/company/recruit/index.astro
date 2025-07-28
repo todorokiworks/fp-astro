@@ -1,0 +1,843 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.recruit);
+---
+
+<Layout
+    title="テンポスフードプレイス | パート求人"
+    description=""
+    pageUrl="/company/recruit/"
+    ogimage=""
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/company/">企業情報</a></li>
+                    <li><a href="/company/recruit/">採用情報</a></li>
+                </ol>
+            </nav>
+            <section class="add-front__section talent">
+                <h1 class="add-front__ttl">
+                    <span>パート求人</span>
+                </h1>
+            </section>
+            <section class="add-contents__section g-wrapper new-sec">
+                <div class="add-front__subttl">
+                    飲食店の開業から繁盛店になるまでを<br class="pc" />
+                    一緒にサポートできるメンバーを募集中！
+                </div>
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span">仕事内容</span>
+                </h2>
+                <p class="add-front__local">
+                    飲食店に特化した開業、繁盛店支援のための無形サービス（ホームページ作成、経費削減、キャッシュレス
+                    サービスの提案など）を飲食店オーナー様へ提案するお仕事です。
+                    <span>※研修制度あります。</span>
+                </p>
+            </section>
+            <section class="add-recruitment__section g-wrapper ba-sec">
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span">募集要項</span>
+                </h2>
+                <table class="add-recruitment__table">
+                    <tr>
+                        <th>お仕事1</th>
+                        <td>
+                            データ入力事務作業<br />
+                            午前中だけに集中して働きたい方向け
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>仕事内容</th>
+                        <td>
+                            <ul>
+                                <li>サービス申込み書のデータ入力</li>
+                                <li>外注先への入力振り分け</li>
+                                <li>管理業務</li>
+                                <li>申込み内容確認連絡　など</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>応募資格・条件</th>
+                        <td>パソコンの文字入力ができる方</td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td>週4日 9:00～14:00内 3時間以上</td>
+                    </tr>
+                    <tr>
+                        <th>給　与</th>
+                        <td>時給1,163円～ 経験・能力に応じます。</td>
+                    </tr>
+                    <tr>
+                        <th>必要な経験等</th>
+                        <td
+                            >知識技能など不問<br
+                                class="sp"
+                            />［パソコン業務経験者優遇］</td
+                        >
+                    </tr>
+                </table>
+                <table class="add-recruitment__table">
+                    <tr>
+                        <th>お仕事2</th>
+                        <td>
+                            飲食店のインターネット集客をお手伝いするカスタマーサポート<br
+                            />
+                            週4日以上でガッツリ働きたい方向け
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>仕事内容</th>
+                        <td>
+                            <ul>
+                                <li>電話での顧客対応・サポート</li>
+                                <li>WEBサービスの顧客データ入力・管理</li>
+                                <li>
+                                    資料手配や請求先・支払先登録（データ入力）
+                                    など
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>応募資格・条件</th>
+                        <td
+                            >コールセンターの経験がある方<br
+                                class="sp"
+                            />［HTML・CSSなどを勉強中の方優遇]</td
+                        >
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td>週4日以上 9:00～18:00内 4時間以上</td>
+                    </tr>
+                    <tr>
+                        <th>給　与</th>
+                        <td>時給1,163円～ 経験・能力に応じます。</td>
+                    </tr>
+                    <tr>
+                        <th>必要な経験等</th>
+                        <td
+                            >知識技能など不問<br
+                                class="sp"
+                            />［コールセンター職、接客経験者優遇］</td
+                        >
+                    </tr>
+                </table>
+                <table class="add-recruitment__table">
+                    <tr>
+                        <th>お仕事3</th>
+                        <td>
+                            キャッシュレスサービスの顧客サポート・データ入力事務<br
+                            />
+                            人と話すのが好きで明るい人向け
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>仕事内容</th>
+                        <td>
+                            <ul>
+                                <li>既存顧客のサポート業務・顧客対応</li>
+                                <li>データ入力・管理</li>
+                                <li>清算業務</li>
+                            </ul>
+                            <p>
+                                グループ会社のお客様にキャッシュレス決済を、<br
+                                    class="pc"
+                                />
+                                電話やメールでおススメするお仕事です。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>応募資格・条件</th>
+                        <td>
+                            決済会社、またはコールセンター勤務経験がある方<br />
+                            ［電話営業・営業事務経験者優遇］
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td>週3日以上 9:00～18:00内 3時間以上</td>
+                    </tr>
+                    <tr>
+                        <th>給　与</th>
+                        <td>時給1,163円～ 経験・能力に応じます。</td>
+                    </tr>
+                    <tr>
+                        <th>必要な経験等</th>
+                        <td
+                            >知識技能など不問<br
+                                class="sp"
+                            />［コールセンター職、<br
+                                class="sp"
+                            />営業事務職経験者優遇］</td
+                        >
+                    </tr>
+                </table>
+                <table class="add-recruitment__table">
+                    <tr>
+                        <th>お仕事4</th>
+                        <td>
+                            WEBデザイナー・コーダー<br />
+                            経験スキルを活かして働きたい方向け
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>仕事内容</th>
+                        <td>
+                            <ul>
+                                <li>飲食店のホームページ作成</li>
+                                <li>既存ページのリニューアル</li>
+                                <li>
+                                    当社が運用しているグループ会社のWebサイトの更新、編集業務
+                                </li>
+                                <li>新規サイトの構築、企業サイトの作成 など</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>応募資格・条件</th>
+                        <td>
+                            <p><span>★必須スキル★</span></p>
+                            <div>
+                                <p><span>◎デザイナー</span></p>
+                                <ul>
+                                    <li>WEBデザイナーとして実務2年以上</li>
+                                    <li>
+                                        illustrator、Photoshopを使用した経験が2年以上
+                                    </li>
+                                </ul>
+                                <p>※職業訓練校の在籍期間を除く</p>
+                            </div>
+                            <div>
+                                <p><span>コーダー</span></p>
+                                <ul>
+                                    <li>WEBコーダーとして実務経験2年以上</li>
+                                    <li>
+                                        HTML、css、JavaScript、Wordpressを使用した経験が2年以上
+                                    </li>
+                                    <li>
+                                        Wordpressのカスタマイズ（カスタム投稿等）が出来る方
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p><span>★歓迎スキル★</span></p>
+                                <ul>
+                                    <li>
+                                        企業の広告案件の企画・ディレクションのご経験がある方
+                                    </li>
+                                    <li>
+                                        SEOを意識したサイト制作を経験された方
+                                    </li>
+                                    <li>
+                                        futureshop、楽天、Yahoo!等の通販サイトデザイン経験
+                                    </li>
+                                    <li>nth-child等の疑似クラスが使える</li>
+                                    <li>javascript、jqueryが使える</li>
+                                </ul>
+                            </div>
+                            <p>
+                                普段はフリーランスだが安定した収入が欲しい方も大歓迎です。ご経験を活かして勤務いただけます！
+                            </p>
+                            <p>
+                                選考の際は、ポートフォリオや制作実績が分かるサイト等をご提出いただきます。履歴書・職務履歴書とともにご準備をお願い致します。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td>週3日以上 9:00～18:00内</td>
+                    </tr>
+                    <tr>
+                        <th>給　与</th>
+                        <td>時給1,200円～ 経験・能力に応じます。</td>
+                    </tr>
+                    <tr>
+                        <th>必要な経験等</th>
+                        <td
+                            >WEBデザイナー、またはWEBコーダー実務経験2年以上<br
+                            />※職業訓練校在籍年数を除く</td
+                        >
+                    </tr>
+                </table>
+                <table class="add-recruitment__table">
+                    <tr>
+                        <th>共通項目</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>勤務地</th>
+                        <td>
+                            東京都大田区東蒲田2丁目30-17サンユー東蒲田ビル６F
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>福利厚生</th>
+                        <td>
+                            <ul>
+                                <li>健康保険あり</li>
+                                <li>厚生年金あり</li>
+                                <li>雇用保険あり</li>
+                                <li>労災保険あり</li>
+                                <li>産休・育休制度利用実績あり</li>
+                                <li>お弁当持参OK</li>
+                                <li>休憩スペースあり</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            テンポスフード<br />
+                            プレイスの特徴
+                        </th>
+                        <td>
+                            <p>
+                                試用期間：2ヶ月間あるので、自分に合う合わないも見極めることができます。
+                            </p>
+                            <p>
+                                学歴は不問！未経験者でも歓迎いたします。<br />
+                                久々の社会復帰でブランクが心配な方も歓迎！<br />
+                                パート・アルバイトでも 有休アリ/賞与アリ<br />
+                                正社員登用もアリだからやりがいも◎
+                            </p>
+                            <p>
+                                子育てママのサポートも充実！<br />
+                                お子様の急な体調不良やお迎えなどの急なお休みや早退も柔軟に対応できます。<br
+                                />
+                                学校行事や長期休暇などお子様を優先してシフトを調整できるので安心して働くことができます。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>在宅勤務について</th>
+                        <td>
+                            <p>
+                                お仕事1のデータ入力事務作業<br />
+                                お仕事4のWEBデザイナー・コーダー職の2種類は在宅も可能。
+                            </p>
+                            <p>
+                                在宅勤務を考えているという方も大歓迎です！<br />
+                                打合せなどはズームを通して行います。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>雇用形態</th>
+                        <td>パート・アルバイト</td>
+                    </tr>
+                    <tr>
+                        <th>備考</th>
+                        <td>
+                            内定前に3日間のトライアルあり<br />
+                            ※在宅希望でも出勤して実際に業務を行えます。
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="add-application__section g-wrapper ba-sec">
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span">応募フォーム</span>
+                </h2>
+                <form
+                    action="https://business.form-mailer.jp/fm/service/Forms/confirm"
+                    method="post"
+                    name="form1"
+                    enctype="multipart/form-data"
+                    accept-charset="UTF-8"
+                >
+                    <input type="hidden" name="key" value="715bf8ac132897" />
+                    <table class="add-contents__form">
+                        <tr>
+                            <th>
+                                <p>募集職種<span>必須</span></p>
+                            </th>
+                            <td class="radio">
+                                <p>
+                                    <input
+                                        id="radio01"
+                                        name="field_2914334"
+                                        type="radio"
+                                        value="0"
+                                    /><label for="radio01"
+                                        >データ入力事務作業</label
+                                    >
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio02"
+                                        name="field_2914334"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio02"
+                                        >カスタマーサポート</label
+                                    >
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio03"
+                                        name="field_2914334"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio03"
+                                        >データ入力事務、<br
+                                            class="sp"
+                                        />顧客のサポート営業</label
+                                    >
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio04"
+                                        name="field_2914334"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio04"
+                                        >WEBデザイナー・コーダー</label
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お名前<span>必須</span></p>
+                            </th>
+                            <td>
+                                <div class="add-part__box">
+                                    <span>姓</span><input
+                                        class="not-wide"
+                                        name="field_2214910_sei"
+                                        type="text"
+                                        placeholder="姓"
+                                    />
+                                    <span>名</span><input
+                                        class="not-wide"
+                                        name="field_2214910_mei"
+                                        type="text"
+                                        placeholder="名"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>フリガナ<span>必須</span></p>
+                            </th>
+                            <td>
+                                <div class="add-part__box">
+                                    <span>セイ</span><input
+                                        class="not-wide"
+                                        name="field_2214916_sei"
+                                        type="text"
+                                        placeholder="姓"
+                                    />
+                                    <span>メイ</span><input
+                                        class="not-wide"
+                                        name="field_2214916_sei"
+                                        type="text"
+                                        placeholder="名"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>生年月日<span>必須</span></p>
+                            </th>
+                            <td>
+                                <div class="add-part__box--block">
+                                    <div>
+                                        <input
+                                            name="field_2214913_y"
+                                            class="not-wide"
+                                            type="text"
+                                            maxlength="4"
+                                        /><span>年</span>
+                                        <select name="field_2214913_m">
+                                            <option value="">------</option>
+                                            <option value="0">1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                            <option value="4">5</option>
+                                            <option value="5">6</option>
+                                            <option value="6">7</option>
+                                            <option value="7">8</option>
+                                            <option value="8">9</option>
+                                            <option value="9">10</option>
+                                            <option value="10">11</option>
+                                            <option value="11">12</option>
+                                        </select>
+                                        <span>月</span>
+                                    </div>
+                                    <div>
+                                        <select name="field_2214913_d">
+                                            <option value="">------</option>
+                                            <option value="0">1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                            <option value="4">5</option>
+                                            <option value="5">6</option>
+                                            <option value="6">7</option>
+                                            <option value="7">8</option>
+                                            <option value="8">9</option>
+                                            <option value="9">10</option>
+                                            <option value="10">11</option>
+                                            <option value="11">12</option>
+                                            <option value="12">13</option>
+                                            <option value="13">14</option>
+                                            <option value="14">15</option>
+                                            <option value="15">16</option>
+                                            <option value="16">17</option>
+                                            <option value="17">18</option>
+                                            <option value="18">19</option>
+                                            <option value="19">20</option>
+                                            <option value="20">21</option>
+                                            <option value="21">22</option>
+                                            <option value="22">23</option>
+                                            <option value="23">24</option>
+                                            <option value="24">25</option>
+                                            <option value="25">26</option>
+                                            <option value="26">27</option>
+                                            <option value="27">28</option>
+                                            <option value="28">29</option>
+                                            <option value="29">30</option>
+                                            <option value="30">31</option>
+                                        </select>
+                                        <span>日</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>性別<span>必須</span></p>
+                            </th>
+                            <td class="radio">
+                                <p>
+                                    <input
+                                        id="radio05"
+                                        name="field_2214912"
+                                        type="radio"
+                                        value="0"
+                                    /><label for="radio05">男性</label>
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio06"
+                                        name="field_2214912"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio06">女性</label>
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio07"
+                                        name="field_2214912"
+                                        type="radio"
+                                        value="2"
+                                    /><label for="radio07">その他</label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>現住所<span>必須</span></p>
+                            </th>
+                            <td>
+                                <div class="add-part__box--block">
+                                    <span>郵便番号</span>
+                                    <div>
+                                        <span>〒</span>
+                                        <input
+                                            class="not-wide"
+                                            name="field_2214914_zip1"
+                                            type="text"
+                                            maxlength="3"
+                                            placeholder="000"
+                                        />
+                                        <span>-</span>
+                                        <input
+                                            class="not-wide"
+                                            name="field_2214914_zip2"
+                                            type="text"
+                                            maxlength="4"
+                                            placeholder="0000"
+                                        />
+                                    </div>
+                                    <span>都道府県</span>
+                                    <div>
+                                        <select name="field_2214914_pref">
+                                            <option value="">------</option>
+                                            <option value="北海道"
+                                                >北海道</option
+                                            >
+                                            <option value="青森県"
+                                                >青森県</option
+                                            >
+                                            <option value="岩手県"
+                                                >岩手県</option
+                                            >
+                                            <option value="宮城県"
+                                                >宮城県</option
+                                            >
+                                            <option value="秋田県"
+                                                >秋田県</option
+                                            >
+                                            <option value="山形県"
+                                                >山形県</option
+                                            >
+                                            <option value="福島県"
+                                                >福島県</option
+                                            >
+                                            <option value="茨城県"
+                                                >茨城県</option
+                                            >
+                                            <option value="栃木県"
+                                                >栃木県</option
+                                            >
+                                            <option value="群馬県"
+                                                >群馬県</option
+                                            >
+                                            <option value="埼玉県"
+                                                >埼玉県</option
+                                            >
+                                            <option value="千葉県"
+                                                >千葉県</option
+                                            >
+                                            <option value="東京都"
+                                                >東京都</option
+                                            >
+                                            <option value="神奈川県"
+                                                >神奈川県</option
+                                            >
+                                            <option value="新潟県"
+                                                >新潟県</option
+                                            >
+                                            <option value="富山県"
+                                                >富山県</option
+                                            >
+                                            <option value="石川県"
+                                                >石川県</option
+                                            >
+                                            <option value="福井県"
+                                                >福井県</option
+                                            >
+                                            <option value="山梨県"
+                                                >山梨県</option
+                                            >
+                                            <option value="長野県"
+                                                >長野県</option
+                                            >
+                                            <option value="岐阜県"
+                                                >岐阜県</option
+                                            >
+                                            <option value="静岡県"
+                                                >静岡県</option
+                                            >
+                                            <option value="愛知県"
+                                                >愛知県</option
+                                            >
+                                            <option value="三重県"
+                                                >三重県</option
+                                            >
+                                            <option value="滋賀県"
+                                                >滋賀県</option
+                                            >
+                                            <option value="京都府"
+                                                >京都府</option
+                                            >
+                                            <option value="大阪府"
+                                                >大阪府</option
+                                            >
+                                            <option value="兵庫県"
+                                                >兵庫県</option
+                                            >
+                                            <option value="奈良県"
+                                                >奈良県</option
+                                            >
+                                            <option value="和歌山県"
+                                                >和歌山県</option
+                                            >
+                                            <option value="鳥取県"
+                                                >鳥取県</option
+                                            >
+                                            <option value="島根県"
+                                                >島根県</option
+                                            >
+                                            <option value="岡山県"
+                                                >岡山県</option
+                                            >
+                                            <option value="広島県"
+                                                >広島県</option
+                                            >
+                                            <option value="山口県"
+                                                >山口県</option
+                                            >
+                                            <option value="徳島県"
+                                                >徳島県</option
+                                            >
+                                            <option value="香川県"
+                                                >香川県</option
+                                            >
+                                            <option value="愛媛県"
+                                                >愛媛県</option
+                                            >
+                                            <option value="高知県"
+                                                >高知県</option
+                                            >
+                                            <option value="福岡県"
+                                                >福岡県</option
+                                            >
+                                            <option value="佐賀県"
+                                                >佐賀県</option
+                                            >
+                                            <option value="長崎県"
+                                                >長崎県</option
+                                            >
+                                            <option value="熊本県"
+                                                >熊本県</option
+                                            >
+                                            <option value="大分県"
+                                                >大分県</option
+                                            >
+                                            <option value="宮崎県"
+                                                >宮崎県</option
+                                            >
+                                            <option value="鹿児島県"
+                                                >鹿児島県</option
+                                            >
+                                            <option value="沖縄県"
+                                                >沖縄県</option
+                                            >
+                                            <option value="その他"
+                                                >その他</option
+                                            >
+                                        </select>
+                                    </div>
+                                    <span>市町村番地</span>
+                                    <input
+                                        class="not-wide"
+                                        name="field_2214914_addr1"
+                                        type="text"
+                                        placeholder="市町村番地"
+                                    />
+                                    <span>マンション・ビル名</span>
+                                    <input
+                                        class="not-wide"
+                                        name="field_2214914_addr2"
+                                        type="text"
+                                        placeholder="マンション・ビル名"
+                                    />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>連絡先<span>必須</span></p>
+                            </th>
+                            <td>
+                                <div class="add-part__box--block">
+                                    <div>
+                                        <input
+                                            class="not-wide"
+                                            name="field_2214915_1"
+                                            type="text"
+                                            maxlength="4"
+                                            placeholder="090"
+                                        />
+                                        <span>-</span>
+                                        <input
+                                            class="not-wide"
+                                            name="field_2214915_2"
+                                            type="text"
+                                            maxlength="4"
+                                            placeholder="0000"
+                                        />
+                                        <span>-</span>
+                                        <input
+                                            class="not-wide"
+                                            name="field_2214915_3"
+                                            type="text"
+                                            maxlength="4"
+                                            placeholder="0000"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>メールアドレス<span>必須</span></p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_2214911"
+                                    type="text"
+                                    size="30"
+                                    placeholder="info@example.com"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>離職状況<span>必須</span></p>
+                            </th>
+                            <td class="radio">
+                                <p>
+                                    <input
+                                        id="radio08"
+                                        name="field_2214919"
+                                        type="radio"
+                                        value="0"
+                                    /><label for="radio08">在職中</label>
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio09"
+                                        name="field_2214919"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio09">離職中</label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>備考</p>
+                            </th>
+                            <td
+                                ><textarea
+                                    name="field_2214922"
+                                    cols="30"
+                                    rows="5"></textarea></td
+                            >
+                        </tr>
+                    </table>
+                    <input
+                        class="contact-btn"
+                        name="submit"
+                        type="submit"
+                        value="確認画面へ"
+                    />
+                    <input type="hidden" name="code" value="utf8" />
+                </form>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+</style>

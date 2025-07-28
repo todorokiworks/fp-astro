@@ -1,0 +1,79 @@
+<!-- header -->
+<header id="header">
+    <div class="inner">
+        <div class="header__box">
+            <div class="header__logo">
+                <a href="/lp/connect_telephone/"
+                    ><img
+                        src="/lp/connect_telephone/img/logo_01.png"
+                        alt="つながるテレフォン"
+                        width="360"
+                        height="45.29"
+                    /></a
+                >
+            </div>
+            <div class="header__info pc">
+                <ul class="header__info_list">
+                    <li class="header__info_item">
+                        <a
+                            href="/lp/connect_telephone/consultation/"
+                            class="btn_02">無料で相談</a
+                        >
+                    </li>
+                    <!--<li class="header__info_item">
+              <a href="/lp/connect_telephone/contact/" class="btn_02 btn_02__contact">お申込みはこちら</a>
+            </li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="btn_fixed__wrap pc">
+            <a href="/lp/connect_telephone/consultation/" class="btn_fixed"
+                ><img
+                    src="/lp/connect_telephone/img/btn_consultation_fixed.png"
+                    alt=""
+                    width="73"
+                    height="241"
+                /></a
+            >
+        </div>
+    </div>
+</header>
+<!-- /header -->
+
+<style>
+    #header .header__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    #header .header__logo {
+        max-width: 360px;
+        display: flex;
+        align-items: center;
+    }
+    #header .header__info_list {
+        display: flex;
+        padding-bottom: 13px;
+        gap: 18px;
+    }
+    #header .btn_fixed {
+        display: block;
+        width: 73px;
+        position: fixed;
+        top: 183px;
+        right: -17px;
+        transition: 0.2s;
+        z-index: 99;
+    }
+    #header .btn_fixed:hover {
+        right: -7px;
+    }
+    @media screen and (max-width: 767px) {
+        #header .header__box {
+            justify-content: center;
+            height: 80px;
+        }
+        #header .header__logo {
+            max-width: 306px;
+        }
+    }
+</style>

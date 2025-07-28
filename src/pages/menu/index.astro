@@ -1,0 +1,344 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import structuredDataMarkup from "../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.menu);
+---
+
+<Layout
+    title="飲食店の食材仕入れ先紹介｜テンポスフードプレイス"
+    description="ビールサーバーから業務用食材通販、酒販店をご紹介。小分けされた食品を仕入れることができるミクリードやプレミアムモルツ・角ハイボールなどを提供するサントリーのご紹介が可能です。"
+    pageUrl="/menu/"
+    ogimage=""
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/menu/">食材仕入れ</a></li>
+                </ol>
+            </nav>
+
+            <!-- mv画像・カテゴリ名部分ここから -->
+            <section class="btm-front__section menu">
+                <h1 class="btm-front__ttl font_m_plus">
+                    <span>食材仕入れ</span>
+                </h1>
+            </section>
+            <!-- mv画像・カテゴリ名部分ここまで -->
+
+            <section class="kg-open__section btm-sec tp-wrapper">
+                <!-- <p class="kg-open__caption">
+					飲食店を始めようと考えている方や<br class="pc">
+					物件探し、内装工事業者を探している方へ<br class="pc">
+					さまざまなサポートを行っています。
+				    </p> -->
+                <p class="kg-open__caption">
+                    飲食店を運営する上で、食材やお酒の仕入れ先選びは非常に重要です。<br
+                        class="pc"
+                    />
+                    当社では、調理の手間を省きたい方に最適な冷凍食品通販「ミクリード」をご紹介しています。<br
+                        class="pc"
+                    />
+                    また、お酒の仕入れ先をお探しの方には、「カクヤス」をはじめ、全国各地の信頼できる酒販店をご案内いたします。<br
+                        class="pc"
+                    /><br class="pc" />
+
+                    さらに、味の素の調味料セットやワイン通販サイトでご利用いただけるクーポン券など、仕入れに役立つ特典もご用意しています。
+                </p>
+
+                <!-- <p class="kg-purchase__ttl"><span><span>食材仕入れ</span></span></p> -->
+                <section class="kg-purchase__section tp-wrapper">
+                    <h3 class="kg-ttl">
+                        <span class="tp-ttl__balloon__span"
+                            >仕入れ業者を探す</span
+                        >
+                    </h3>
+
+                    <!-- リンクここから -->
+                    <ul class="kg-link__list">
+                        <!-- <li>
+								<a href="/menu/ingredient/">
+									<p class="kg-link__thumb purchase-thumb">
+										<picture>
+											<source media="(max-width:767px)"
+												srcset="/asset/images/kaigyousoudan/sp/purchase03.jpg">
+											<img src="/asset/images/kaigyousoudan/purchase03.jpg"
+												srcset="/asset/images/kaigyousoudan/purchase03.jpg 1x,/asset/images/kaigyousoudan/2x/purchase03.jpg 2x"
+												alt="サントリー" width="109" height="82" loading="lazy" class="imgauto-h">
+										</picture>
+									</p>
+									<div class="kg-link__container">
+										<h3 class="kg-link__caption">サントリー</h3>
+										<p class="btm-link">
+											詳しく見る
+										</p>
+									</div>
+								</a>
+							</li> -->
+                        <li>
+                            <a href="/menu/micreed/">
+                                <p class="kg-link__thumb purchase-thumb03">
+                                    <!-- <p class="kg-link__thumb purchase-thumb"> -->
+                                    <picture>
+                                        <source
+                                            media="(max-width:767px)"
+                                            srcset="/asset/images/kaigyousoudan/sp/purchase06.jpg"
+                                        />
+                                        <img
+                                            src="/asset/images/kaigyousoudan/purchase06.jpg"
+                                            srcset="/asset/images/kaigyousoudan/purchase06.jpg 1x,/asset/images/kaigyousoudan/2x/purchase06.jpg 2x"
+                                            alt="食材通販"
+                                            width="109"
+                                            height="42"
+                                            loading="lazy"
+                                            class="imgauto-h"
+                                        />
+                                    </picture>
+                                </p>
+                                <div class="kg-link__container">
+                                    <h3 class="kg-link__caption">
+                                        食材通販「ミクリード」
+                                    </h3>
+                                    <p class="btm-link">詳しく見る</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/menu/kakuyasu/">
+                                <p class="kg-link__thumb purchase-thumb">
+                                    <picture>
+                                        <source
+                                            media="(max-width:767px)"
+                                            srcset="/asset/images/kaigyousoudan/sp/purchase05.jpg"
+                                        />
+                                        <img
+                                            src="/asset/images/kaigyousoudan/purchase05.jpg"
+                                            srcset="/asset/images/kaigyousoudan/purchase05.jpg 1x,/asset/images/kaigyousoudan/2x/purchase05.jpg 2x"
+                                            alt="「なんでも酒やカクヤス」"
+                                            width="109"
+                                            height="42"
+                                            loading="lazy"
+                                            class="imgauto-h"
+                                        />
+                                    </picture>
+                                </p>
+                                <div class="kg-link__container">
+                                    <h3 class="kg-link__caption">
+                                        業務用酒販店<br />｢カクヤス｣
+                                    </h3>
+                                    <p class="btm-link">詳しく見る</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://support.tenpos.com/lp/service/op-celebration/"
+                            >
+                                <!-- <p class="kg-link__thumb purchase-thumb"> -->
+                                <p class="kg-link__thumb purchase-thumb03">
+                                    <picture>
+                                        <source
+                                            media="(max-width:767px)"
+                                            srcset="/asset/images/kaigyousoudan/sp/purchase07_sp.jpg"
+                                        />
+                                        <img
+                                            src="/asset/images/kaigyousoudan/purchase07.jpg"
+                                            srcset="/asset/images/kaigyousoudan/purchase07.jpg 1x,/asset/images/kaigyousoudan/2x/purchase07.jpg 2x"
+                                            alt="味の素開業祝セット"
+                                            width="109"
+                                            height="42"
+                                            loading="lazy"
+                                            class="imgauto-h"
+                                        />
+                                    </picture>
+                                </p>
+                                <div class="kg-link__container">
+                                    <h3 class="kg-link__caption">
+                                        「味の素」<br />開業祝い調味料セット
+                                    </h3>
+                                    <p class="btm-link">詳しく見る</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/menu/beer-server/">
+                                <!-- <p class="kg-link__thumb purchase-thumb"> -->
+                                <p class="kg-link__thumb purchase-thumb03">
+                                    <picture>
+                                        <source
+                                            media="(max-width:767px)"
+                                            srcset="/asset/images/kaigyousoudan/sp/purchase10_sp.png"
+                                        />
+                                        <img
+                                            src="/asset/images/kaigyousoudan/purchase10.png"
+                                            srcset="/asset/images/kaigyousoudan/purchase10.png 1x,/asset/images/kaigyousoudan/2x/purchase10.png 2x"
+                                            alt="食材仕入れ価格削減"
+                                            width="109"
+                                            height="42"
+                                            loading="lazy"
+                                            class="imgauto-h"
+                                        />
+                                    </picture>
+                                </p>
+                                <div class="kg-link__container">
+                                    <h3 class="kg-link__caption">
+                                        ビールサーバー導入支援
+                                    </h3>
+                                    <p class="btm-link">詳しく見る</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/menu/wain-pro/">
+                                <!-- <p class="kg-link__thumb purchase-thumb"> -->
+                                <p class="kg-link__thumb purchase-thumb03">
+                                    <picture>
+                                        <source
+                                            media="(max-width:767px)"
+                                            srcset="/asset/images/kaigyousoudan/sp/purchase11.jpg"
+                                        />
+                                        <img
+                                            src="/asset/images/kaigyousoudan/purchase11.jpg"
+                                            srcset="/asset/images/kaigyousoudan/purchase11.jpg 1x,/asset/images/kaigyousoudan/2x/purchase11.jpg 2x"
+                                            alt="食材仕入れ価格削減"
+                                            width="109"
+                                            height="42"
+                                            loading="lazy"
+                                            class="imgauto-h"
+                                        />
+                                    </picture>
+                                </p>
+                                <div class="kg-link__container">
+                                    <h3 class="kg-link__caption">
+                                        ワイン通販<br />「ワインの仕入れPRO」
+                                    </h3>
+                                    <p class="btm-link">詳しく見る</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- リンクここからまで -->
+                </section>
+            </section>
+        </div>
+    </article></Layout
+>
+
+<style>
+    @charset "utf-8";
+
+    :root {
+        --fnts_local: 16px;
+        --fnts_caption_min: 26px;
+        --fnts_caption_sub: 20px;
+        --fnts_section_ttl: 30px;
+    }
+
+    /* -------------------- menu-section ------------------- */
+    /* ----- ★　/menu/index.html 新着情報一覧ページsp用 ここから ----- */
+
+    /* for PC */
+    @media screen and (min-width: 768px) {
+    }
+
+    /* for SP */
+    @media screen and (max-width: 767px) {
+        /* --------------------★sp用 img_オレンジ線ここから-------------------- */
+        .purchase-thumb03 img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--GRADATION_ORANGE);
+            border-radius: 10px;
+        }
+    }
+
+    .tp-front__section {
+        background-image: url(/asset/images/menu/front.png);
+    }
+
+    /*-----------------------
+こんなお悩みありませんか？
+-----------------------*/
+
+    .tp-check__list > li {
+        display: block;
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+        position: relative;
+    }
+
+    .tp-ttl__balloon__span__sm {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        color: var(--MAIN_ORANGE);
+        font-size: 16px;
+
+        &::after {
+            content: "";
+            display: none;
+        }
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point56.png) no-repeat center
+            center / contain;
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point09.png) no-repeat center
+            center / contain;
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point58.png) no-repeat center
+            center / contain;
+    }
+
+    @media screen and (min-width: 768px) {
+        .tp-point__section .tp-point__list > li > .Ttl:before {
+            width: 45px;
+            margin-right: 15px;
+        }
+
+        .tp-point__section .tp-point__list .Ttl__txt {
+            width: calc(100% - 60px);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-ttl__balloon__span__sm {
+            width: 300px;
+        }
+
+        .tp-point__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+            margin-top: 80px;
+        }
+    }
+
+    /*-----------------------
+contactarea
+-----------------------*/
+
+    .contactarea {
+        margin-bottom: 80px;
+    }
+
+    .tp-others__list > article:nth-child(3) .Thumb img {
+        border-radius: 20px;
+        border: 2px solid var(--GRADATION_ORANGE);
+        aspect-ratio: 304 / 231;
+        object-fit: contain;
+        object-position: center;
+    }
+</style>

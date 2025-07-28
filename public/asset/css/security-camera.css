@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/security-camera/mv_security-camera.jpg);
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__thumb {
+  margin-top: -118px;
+}
+@media screen and (max-width: 1080px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: 0;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__thumb {
+    max-width: 120px;
+    width: 30%;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    width: 80%;
+  }  
+}
+
+/*-----------------------
+他社比較 tp-comparison__section
+-----------------------*/
+.tp-comparison__section .tp-scroll__container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+.tp-scroll__container::-webkit-scrollbar {
+  height: 10px;
+}
+.tp-scroll__container::-webkit-scrollbar-thumb {
+  background: var(--TABLE_ORANGE);
+  border-radius: 5px;
+}
+.tp-scroll__container::-webkit-scrollbar-track {
+  background: var(--CONTAINER_BORDER);
+  border-radius: 5px;
+}
+.tp-comparison__section .tp-comparison__tbl {
+  font-feature-settings: "palt";
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-top: 2px solid var(--TABLE_BORDER_GRAY);
+  border-left: 2px solid var(--TABLE_BORDER_GRAY); 
+}
+.tp-comparison__section .tp-comparison__tbl th,
+.tp-comparison__section .tp-comparison__tbl td {
+  font-weight: 400;
+  vertical-align: middle;
+  padding: 2px 1.5px;
+  border-bottom: 2px solid var(--TABLE_BORDER_GRAY);
+  border-right: 2px solid var(--TABLE_BORDER_GRAY); 
+}
+.tp-comparison__section .tp-comparison__tbl .__padding_l {
+  padding: 7px 1.5px;
+}
+.tp-comparison__section .tp-comparison__tbl th {
+  line-height: 1.3;
+}
+.tp-comparison__section .tp-comparison__tbl td {
+  text-align: center;
+  line-height: 1.3;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__01 {
+  width: 58px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__02 {
+  width: 125px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__03 {
+  width: 155px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__04 {
+  width: 110px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__05 {
+  width: 85px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__06 {
+  width: 100px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl_col__07 {
+  width: 100px;
+}
+.tp-comparison__section .tp-comparison__tbl thead th {
+  font-size: 14px;
+  padding: 12px 1.5px;
+}
+.tp-comparison__section .tp-comparison__tbl thead th:not(:nth-child(1)) {
+  background: var(--TABLE_GRAY_01);
+}
+.tp-comparison__section .tp-comparison__tbl tbody {
+  font-size: 12px;
+}
+.tp-comparison__section .tp-comparison__tbl tbody th {
+  background: #ede8d1;
+}
+.tp-comparison__section .tp-comparison__tbl tbody td.__focus {
+  position: relative;
+}
+.tp-comparison__section .tp-comparison__tbl tbody td.__focus:after {
+  content: "";
+  display: block;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border: 3px solid var(--TABLE_RED);
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  pointer-events: none;
+}
+.tp-comparison__section .tp-comparison__tbl tbody td .txt__s {
+  font-size: 10px;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl__cost_wrap {
+  position: relative;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl__cost_wrap:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ffc500;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.tp-comparison__section .tp-comparison__tbl .tbl__cost_wrap th {
+  background: #ffdd80;
+}
+.tp-comparison__section .tp-comparison__tbl thead th.__col_focus {
+  font-weight: bold;
+  background: var(--TABLE_RED);
+  color: var(--MAIN_WHITE); 
+}
+.tp-comparison__section .tp-comparison__tbl tbody td.__col_focus {
+  font-weight: bold;
+  color: var(--TABLE_RED); 
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point35.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point36.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point14.png) no-repeat center center / contain;
+}
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list > li > .Ttl:before {
+    width: 57px;
+    margin-right: 13px;
+  }
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 70px);
+  }  
+}
+
+/*-----------------------
+メリット1 tp-merit01__section
+-----------------------*/
+.tp-merit01__section.tp-sec p.tp-merit01__thumb {
+  max-width: 195px;
+}
+@media screen and (max-width: 767px) {
+  .tp-merit01__section.tp-sec p.tp-merit01__thumb {
+    max-width: 150px;
+  }  
+}
+
+/*-----------------------
+メリット2 tp-merit02__section
+-----------------------*/
+.tp-merit02__section.tp-sec p.tp-merit02__thumb {
+  max-width: 343px;
+}
+@media screen and (max-width: 767px) {
+  .tp-merit02__section.tp-sec p.tp-merit02__thumb {
+    max-width: 300px;
+  }  
+}
+
+/*-----------------------
+価格 tp-attention__section
+-----------------------*/
+.tp-attention__section .tp-attention__price .plan {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+}
+.tp-attention__section .tp-attention__caption {
+  font-size: 14px;
+  color: var(--ATTENTION_TAG);
+}
+.tp-attention__section .tp-attention__caption .price {
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--MAIN_BLACK);
+  margin: 0;
+  padding: 0;
+}
+.tp-attention__section .tp-attention__caption .price .txt__l {
+  font-size: 20px;
+}
+.tp-attention__section .tp-attention__caption.txt__orange {
+  color: var(--MAIN_ORANGE);
+  font-weight: 400;
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}

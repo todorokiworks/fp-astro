@@ -1,0 +1,247 @@
+<div id="mv">
+    <div class="inner">
+        <div class="mv__ttl_wrap">
+            <p class="mv__ttl_sub">
+                商談相手のスマートフォンに<br />自分の情報を<span
+                    class="txt_l txt_yellow">7秒</span
+                >で登録
+            </p>
+            <h1 class="mv__ttl txt__yellow">つながるテレフォン</h1>
+        </div>
+        <div class="mv__img_area">
+            <div class="mv__img_wrap mv__img_01">
+                <img
+                    src="/lp/connect_telephone/img/img_mv_01.png"
+                    alt=""
+                    class="mv__img"
+                    width="215"
+                    height="220"
+                />
+            </div>
+            <div class="mv__img_wrap mv__img_02">
+                <img
+                    src="/lp/connect_telephone/img/img_mv_02.png"
+                    alt=""
+                    class="mv__img"
+                    width="269"
+                    height="368"
+                />
+            </div>
+            <div class="mv__img_wrap mv__img_03">
+                <img
+                    src="/lp/connect_telephone/img/img_mv_03.png"
+                    alt=""
+                    class="mv__img"
+                    width="256"
+                    height="341"
+                />
+            </div>
+        </div>
+        <div class="btn_area_01">
+            <div class="btn_01__wrap">
+                <a href="/lp/connect_telephone/consultation/" class="btn_01"
+                    >無料で相談</a
+                >
+            </div>
+            <!--<div class="btn_01__wrap">
+            <a href="/lp/connect_telephone/contact/" class="btn_01 btn_01__contact">お申込み</a>
+          </div>-->
+        </div>
+    </div>
+</div>
+
+<style>
+    #mv {
+        background: url(/lp/connect_telephone/img/bg_mv.gif);
+        overflow: hidden;
+        padding-top: 35px;
+        text-align: center;
+    }
+    #mv .inner {
+        position: relative;
+    }
+    #mv .mv__ttl_wrap {
+        margin-bottom: 26px;
+    }
+    #mv .mv__ttl_sub {
+        font-size: 45px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.44;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #fcff00;
+        text-underline-offset: 15px;
+        margin-bottom: 27px;
+    }
+    #mv .mv__ttl {
+        color: #fcff00;
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    #mv .mv__ttl:before {
+        content: "“";
+    }
+    #mv .mv__ttl:after {
+        content: "”";
+    }
+    #mv .mv__ttl__02 {
+        color: #fff;
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    #mv .mv__img_area {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        margin-bottom: -28px;
+    }
+    #mv .mv__img_01 {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        width: 215px;
+    }
+    #mv .mv__img_02 {
+        margin-right: 20px;
+        width: 269px;
+    }
+    #mv .mv__img_03 {
+        width: 256px;
+    }
+    #mv .btn_area_01 {
+        position: absolute;
+        bottom: 52px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #mv .btn_area_01 .btn_01__wrap {
+        margin-right: 44px;
+    }
+    #mv .btn_area_01 .btn_01__wrap:last-child {
+        margin-right: 0;
+    }
+    @media screen and (max-width: 990px) {
+        #mv .mv__img_area {
+            align-items: flex-start;
+        }
+        #mv .mv__img_01 {
+            position: static;
+            width: 25vw;
+            order: 1;
+        }
+        #mv .mv__img_02 {
+            margin-right: -1.625vw;
+            width: 29.125vw;
+            order: 0;
+        }
+        #mv .mv__img_03 {
+            width: 27.75vw;
+            order: 2;
+            margin-left: -1vw;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        #mv {
+            padding: 20px 0 30px;
+        }
+        #mv .mv__ttl_wrap {
+            margin-bottom: 15px;
+        }
+        #mv .mv__ttl_sub {
+            font-size: 6.3vw;
+            text-underline-offset: 6px;
+            margin-bottom: 15px;
+        }
+        #mv .mv__ttl {
+            font-size: 8.55vw;
+        }
+        #mv .mv__ttl__02 {
+            font-size: 8vw;
+        }
+        #mv .mv__img_area {
+            margin-bottom: 13px;
+            align-items: flex-end;
+        }
+        #mv .mv__img_01 {
+            width: 43vw;
+        }
+        #mv .btn_area_01 {
+            position: static;
+            transform: translateX(0);
+        }
+        #mv .btn_area_01 .btn_01__wrap {
+            margin: 0 0 10px;
+        }
+        #mv .btn_area_01 .btn_01__wrap:last-child {
+            margin: 0;
+        }
+        #mv .btn_01 {
+            padding: 17px 22px 17px 5px;
+        }
+    }
+
+    /*--- consultation, contactページMV ---*/
+    #consultation #mv,
+    #contact #mv {
+        padding: 60px 0 48px;
+    }
+    #consultation #mv .inner,
+    #contact #mv .inner {
+        position: relative;
+    }
+    #consultation #mv .mv__ttl_wrap,
+    #contact #mv .mv__ttl_wrap {
+        margin: 0;
+        z-index: 22;
+        position: relative;
+    }
+    #consultation #mv .mv__ttl,
+    #contact #mv .mv__ttl {
+        margin-bottom: 35px;
+        font-size: 55px;
+    }
+    #consultation #mv .mv__img_area,
+    #contact #mv .mv__img_area {
+        position: static;
+        margin: 0;
+    }
+    #consultation #mv .mv__img_02,
+    #contact #mv .mv__img_02 {
+        width: 180px;
+        position: absolute;
+        left: 0;
+        bottom: -75px;
+        z-index: 11;
+    }
+    #consultation #mv .mv__img_03,
+    #contact #mv .mv__img_03 {
+        width: 160px;
+        position: absolute;
+        right: 0;
+        bottom: -60px;
+        z-index: 11;
+    }
+    @media screen and (max-width: 767px) {
+        #consultation #mv,
+        #contact #mv {
+            padding: 25px 0 30px;
+        }
+        #consultation #mv .mv__ttl,
+        #contact #mv .mv__ttl {
+            margin-bottom: 17px;
+            font-size: 8.5vw;
+        }
+        #consultation #mv .mv__img_02,
+        #contact #mv .mv__img_02 {
+            display: none;
+        }
+        #consultation #mv .mv__img_03,
+        #contact #mv .mv__img_03 {
+            display: none;
+        }
+    }
+</style>

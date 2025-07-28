@@ -1,0 +1,602 @@
+@charset "UTF-8";
+div.sp-contactArea {
+  padding: 45px 20px 0;
+}
+div.sp-contactArea .txt {
+  text-align: center;
+  font-size: 16px;
+}
+div.sp-contactArea div.Phonearea {
+  text-align: center;
+}
+div.sp-contactArea div.Phonearea p.Sub {
+  font-size: 20px;
+  font-weight: bold;
+}
+div.sp-contactArea div.Phonearea p.Min {
+  font-size: 30px;
+  font-weight: bold;
+}
+div.sp-contactArea div.Phonearea p.Min::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  aspect-ratio: 1/1;
+  background: url(../images/top/icon_phone_2409.png) no-repeat center center/contain;
+}
+div.sp-contactArea p.Btn {
+  padding: 0;
+  width: 245px;
+  margin-right: auto;
+  margin-left: auto;
+}
+div.sp-contactArea p.Btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5500;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.5em 0;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  position: relative;
+}
+div.sp-contactArea p.Btn a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: block;
+  width: 25px;
+  aspect-ratio: 1/1;
+  margin-right: 10px;
+  background: url(../images/top/icon_mail_blue.svg) no-repeat center center/contain;
+}
+div.sp-contactArea p.Btn a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  z-index: 9;
+  background: url(../images/top/icon_arrow_sp-contactbtn.png) no-repeat center center/contain;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 998;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.hamburger.active {
+  background-color: var(--MAIN_WHITE);
+}
+
+@media screen and (min-width: 1021px) {
+  .hamburger {
+    right: 5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .hamburger {
+    right: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hamburger {
+    right: 3%;
+  }
+}
+body.no-scroll::before {
+  background: rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.7s;
+}
+
+.hamburger__icon {
+  position: relative;
+}
+
+.hamburger__icon,
+.hamburger__icon:before,
+.hamburger__icon:after {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--MAIN_WHITE);
+  transition-property: background-color, transform;
+  transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger__icon,
+  .hamburger__icon:before,
+  .hamburger__icon:after {
+    right: 0%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hamburger__icon,
+  .hamburger__icon:before,
+  .hamburger__icon:after {
+    right: 0%;
+  }
+}
+.hamburger.active .hamburger__icon {
+  width: 30px !important;
+}
+
+.hamburger.active .hamburger__icon:before {
+  width: 30px !important;
+}
+
+.hamburger.active .hamburger__icon:after {
+  width: 30px !important;
+}
+
+.hamburger__icon:before,
+.hamburger__icon:after {
+  position: absolute;
+  content: "";
+}
+
+.hamburger__icon:before {
+  top: -9px;
+}
+
+.hamburger__icon:after {
+  top: 9px;
+}
+
+.hamburger.active .hamburger__icon {
+  background-color: transparent;
+}
+
+.hamburger.active .hamburger__icon:before,
+.hamburger.active .hamburger__icon:after {
+  background-color: #ffffff;
+}
+
+.hamburger.active .hamburger__icon:before {
+  transform: translateY(9px) rotate(45deg);
+  background-color: var(--GRADATION_ORANGE);
+}
+
+.hamburger.active .hamburger__icon:after {
+  transform: translateY(-9px) rotate(-45deg);
+  background-color: var(--GRADATION_ORANGE);
+}
+
+.fat-nav {
+  --fnts_phone: 24px;
+  --fnts_ttl: 18px;
+  --fnts_caption: 16px;
+  --fnts_under: 14px;
+  --icon_square_size: 30px;
+  --border: 1px solid var(--MAIN_WHITE);
+  max-width: 375px;
+  right: 0;
+  top: 0;
+  z-index: 996;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: var(--MAIN_GRADATION);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.fat-nav__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 60px 0% 50px;
+  max-width: 1100px;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fat-nav.active {
+  transform: scale(1);
+}
+
+.fat-contact__container .Thumb {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fat-contact__container .Phonearea {
+  text-align: center;
+}
+
+.fat-contact__container .Phonearea .Min {
+  font-size: var(--fnts_phone);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.fat-contact__container .Phonearea .Min::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  aspect-ratio: 1/1;
+  background: url(../images/top/icon_phone.svg) no-repeat center center/contain;
+}
+
+.fat-contact__container .Phonearea .Sub {
+  font-size: var(--fnts_caption);
+}
+
+.fat-navList {
+  padding: 0px 20px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.fat-restaurant__Ttl {
+  font-size: var(--fnts_ttl);
+  font-weight: bold;
+}
+
+.fat-restaurant__Ttl:not(.__haschild) a {
+  display: block;
+  padding: 30px 0;
+}
+
+.fat-restaurant__Ttl.__haschild {
+  padding: 30px 0 0;
+}
+
+.fat-restaurant__Ttl.__haschild a {
+  display: block;
+  position: relative;
+}
+
+.fat-restaurant__Ttl.Icon.__hamburger a > span {
+  content: "";
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-left: 2em;
+  width: 1em;
+  height: 2px;
+  background-color: var(--MAIN_WHITE);
+}
+
+.fat-restaurant__Ttl.Icon.__hamburger a > span:after,
+.fat-restaurant__Ttl.Icon.__hamburger a > span:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  display: block;
+  width: 1em;
+  height: 2px;
+  background-color: var(--MAIN_WHITE);
+}
+
+.fat-restaurant__Ttl.Icon.__hamburger a > span:after {
+  top: -6px;
+}
+
+.fat-restaurant__Ttl.Icon.__hamburger a > span:before {
+  top: 6px;
+}
+
+.fat-restaurant__Ttl.Icon a {
+  position: relative;
+}
+
+.fat-restaurant__Ttl.Icon a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: block;
+  width: var(--icon_square_size);
+  aspect-ratio: 1/1;
+  transition: 0.4s;
+}
+
+.fat-restaurant__Ttl.Icon.__beginner a:after {
+  background: url(../images/top/icon_beginner.svg) no-repeat center center/contain;
+}
+
+.fat-restaurant__Ttl.Icon.__veteran a:after {
+  background: url(../images/top/icon_veteran.svg) no-repeat center center/contain;
+}
+
+.fat-restaurant__Ttl.Icon.__mail a:after {
+  background: url(../images/top/icon_mail.svg) no-repeat center center/contain;
+}
+
+.fat-restaurant__accordion .Ttl {
+  font-size: var(--fnts_caption);
+}
+
+.fat-navList > li:last-child {
+  padding: 0px 20px;
+}
+
+.fat-navList > li:not(:last-child) {
+  border-bottom: var(--border);
+  padding: 0px 20px;
+}
+
+.fat-navList > li:first-child {
+  border-bottom: var(--border);
+}
+
+.fat-restaurant__accordion .Ttl a,
+.fat-accordion__list > li {
+  display: flex;
+  align-items: center;
+}
+
+.fat-restaurant__accordion .Ttl .accordion__ttl::before,
+.fat-restaurant__accordion .Ttl a::before,
+.fat-accordion__list > li a::before {
+  content: "■";
+  display: block;
+  color: var(--MAIN_WHITE);
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.fat-restaurant__accordion .fat-accordion__list > li:not(.__small) {
+  font-size: var(--fnts_under);
+}
+
+.fat-restaurant__accordion .fat-accordion__list > li.__small {
+  font-size: 13px;
+}
+
+.fat-restaurant__accordion .Body {
+  position: relative;
+  background-color: var(--MAIN_WHITE);
+  width: calc(100% + 80px);
+  margin-left: -40px;
+}
+
+.fat-accordion__list.__under {
+  padding-left: 40px;
+}
+
+.fat-restaurant__accordion .Ttl {
+  position: relative;
+}
+
+.fat-restaurant__accordion .Ttl:not(.__noborder):not(.active)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #fff 0px, #fff 1px, transparent 2px, transparent 3px);
+  background-size: 3px 1.5px;
+  background-repeat: repeat-x;
+}
+
+.fat-restaurant__accordion .Ttl a {
+  padding: 13px 0;
+}
+
+.fat-restaurant__accordion .Ttl .accordion__ttl {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+}
+
+.fat-accordion__list > li {
+  position: relative;
+}
+
+.fat-accordion__list.__under > li:first-child a {
+  padding: 13px 0;
+  font-weight: bold;
+}
+
+.fat-accordion__list.__under > li:not(:first-child) a {
+  padding: 13px 0;
+  font-weight: bold;
+}
+
+.fat-accordion__list.__under > li a {
+  position: relative;
+  display: flex;
+  width: calc(100% - 30px);
+}
+
+.fat-accordion__list.__under > li a {
+  position: relative;
+  display: flex;
+  width: calc(100% - 40px);
+  padding: 13px 0;
+}
+
+.fat-accordion__list:not(.__under) > li a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 13px 0;
+  align-items: center;
+}
+
+.fat-accordion__list:not(.__under) > li a:after,
+.fat-accordion__list.__under > li a::after {
+  aspect-ratio: 1/1;
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.fat-accordion__list:not(.__under) > li a:after {
+  width: var(--icon_circle_size);
+  background: url(../images/top/icon_next.svg) no-repeat center center/contain;
+}
+
+.fat-accordion__list.__under > li a::after {
+  width: 1em;
+  background: url(../images/top/icon_next_gray.svg) no-repeat center center/contain;
+}
+
+.fat-accordion__list.__under > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, var(--MAIN_BLACK) 0px, var(--MAIN_BLACK) 1px, transparent 2px, transparent 3px);
+  background-size: 3px 1.5px;
+  background-repeat: repeat-x;
+}
+
+.fat-accordion__list.__upper > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, var(--MAIN_WHITE) 0px, var(--MAIN_WHITE) 1px, transparent 2px, transparent 3px);
+  background-size: 3px 1.5px;
+  background-repeat: repeat-x;
+}
+
+.fat-restaurant__accordion .Icon.__circle {
+  position: absolute;
+  font-size: inherit;
+  padding: 5px;
+  aspect-ratio: 1/1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.fat-restaurant__accordion .Icon.__circle > span {
+  display: block;
+  width: var(--icon_circle_size);
+  aspect-ratio: 1/1;
+  background-color: var(--MAIN_WHITE);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.fat-restaurant__accordion .Icon.__circle::after,
+.fat-restaurant__accordion .Icon.__circle::before {
+  position: absolute;
+  content: "";
+  background-color: var(--MAIN_ORANGE);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fat-restaurant__accordion .Icon.__circle::after {
+  width: calc(var(--icon_circle_size) - 10px);
+  height: 1px;
+}
+
+.fat-restaurant__accordion .Icon.__circle:not(.active):before {
+  height: calc(var(--icon_circle_size) - 10px);
+  width: 1px;
+}
+
+.fat-bannerarea img {
+  aspect-ratio: 260/110;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fat-bannerarea > p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .fat-contact__container .Thumb {
+    margin-bottom: 20px;
+  }
+  .fat-container {
+    margin-bottom: 10px;
+  }
+  .fat-restaurant__Ttl a:hover {
+    color: var(--MAIN_ORANGE);
+  }
+  .fat-restaurant__Ttl.Icon.__beginner a:hover:after {
+    background: url(../images/top/icon_beginner_active.svg) no-repeat center center/contain;
+  }
+  .fat-restaurant__Ttl.Icon.__veteran a:hover:after {
+    background: url(../images/top/icon_veteran_active.svg) no-repeat center center/contain;
+  }
+  .fat-restaurant__Ttl.Icon.__mail a:hover:after {
+    background: url(../images/top/icon_mail_active.svg) no-repeat center center/contain;
+  }
+  .fat-restaurant__accordion .Ttl a:hover {
+    color: var(--MAIN_ORANGE);
+    font-weight: bold;
+  }
+  .fat-accordion__list:not(.__under) > li a:hover {
+    font-weight: bold;
+    color: var(--MAIN_ORANGE);
+  }
+  .fat-accordion__list:not(.__under) > li a:hover:after {
+    right: -5px;
+    background: url(../images/top/icon_next_active.svg) no-repeat center center/contain;
+  }
+  .fat-accordion__list.__under > li a:hover::after {
+    background: url(../images/top/icon_next_active.svg) no-repeat center center/contain;
+  }
+  .fat-restaurant__accordion .Icon.__circle:hover > span {
+    background-color: var(--MAIN_ORANGE);
+  }
+  .fat-restaurant__accordion .Icon.__circle:hover::after,
+  .fat-restaurant__accordion .Icon.__circle:hover::before {
+    background-color: var(--MAIN_WHITE);
+  }
+}
+@media screen and (max-width: 767px) {
+  .fat-contact__container .Thumb {
+    margin-bottom: 20px;
+  }
+  .fat-container {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=jquery.fatNav.css.map */

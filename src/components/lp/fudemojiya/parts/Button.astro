@@ -1,0 +1,56 @@
+<a class="contactBtn" href="#contact">ご依頼・お問い合わせ</a>
+
+<style lang="scss">
+    .contactBtn {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #fff;
+        background: var(--red);
+        border-left: 30px solid var(--orange);
+        position: relative;
+        width: 620px;
+        padding: 35px 0;
+        text-align: center;
+        box-shadow: 10px 10px 0 var(--deepred);
+        display: block;
+        margin: 0 auto;
+        transition: all 0.3s;
+        @media (max-width: 768px) {
+            width: 300px;
+            font-size: 15px;
+            padding: 18px 0;
+            border-left: 15px solid var(--orange);
+            box-shadow: 5px 5px 0 var(--deepred);
+        }
+        &:hover {
+            box-shadow: unset;
+            transform: translateY(10px);
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 1px);
+            right: 40px;
+            width: 20px;
+            height: 2px;
+            border-radius: 9999px;
+            background-color: #ffffff;
+            transform-origin: calc(100% - 1px) 50%;
+            @media (max-width: 768px) {
+                right: 20px;
+                width: 10px;
+                height: 1.5px;
+            }
+        }
+
+        &::before {
+            transform: rotate(45.5deg);
+        }
+
+        &::after {
+            transform: rotate(-45.5deg);
+        }
+    }
+</style>

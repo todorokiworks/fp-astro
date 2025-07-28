@@ -1,0 +1,182 @@
+---
+const slides = [
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal01.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal02.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal03.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal04.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal05.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal06.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal07.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal08.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal09.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_animal10.png",
+    },
+];
+---
+
+<section id="animal">
+    <h3 class="h03">
+        <span class="h3sm">Option 3.</span>
+        Animal cafe tour
+    </h3>
+    <div class="slider__wrapper">
+        <!-- Slider main container -->
+        <div class="slider5">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {
+                        slides.map((slide) => (
+                            <div class="swiper-slide">
+                                <img src={slide.url} alt="" />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-btn__wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from "swiper";
+    import { Navigation, Autoplay } from "swiper/modules";
+    // import Swiper and modules styles
+    import "swiper/css";
+    import "swiper/css/navigation";
+    import "swiper/css/effect-fade";
+
+    // init Swiper:
+    const swiper = new Swiper(".slider5 .swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Autoplay],
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        slidesPerView: 3.2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+            769: {
+                slidesPerView: 3.2,
+                spaceBetween: 15,
+            },
+        },
+    });
+</script>
+
+<style lang="scss">
+    section#animal {
+        background: var(--grey);
+        padding: 0 0 120px;
+        @media (max-width: 768px) {
+            padding: 0 0 50px;
+        }
+        .slider__wrapper {
+            position: relative;
+            width: 100%;
+            .swiper-btn__wrapper {
+                width: 1300px;
+                height: 100%;
+                position: absolute;
+                bottom: -100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0 auto;
+                z-index: 9999;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    bottom: -92%;
+                }
+                .swiper-button-prev {
+                    width: 80px;
+                    height: 80px;
+                    &::after {
+                        content: "";
+                        background: url("/lp/japan-travel-planner/img/icon_prev.png")
+                            center center / cover no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        @media (max-width: 768px) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+                .swiper-button-next {
+                    width: 80px;
+                    height: 80px;
+                    &::after {
+                        content: "";
+                        background: url("/lp/japan-travel-planner/img/icon_next.png")
+                            center center / cover no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        @media (max-width: 768px) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        div.slider5 {
+            div.swiper {
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+        div.slider4 {
+            height: 250px;
+            transform: translateX(-195px);
+            div.swiper {
+                overflow: unset !important;
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

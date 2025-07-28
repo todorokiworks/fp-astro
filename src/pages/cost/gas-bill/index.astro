@@ -1,0 +1,366 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.gasBill);
+---
+
+<Layout
+    title="ガス料金削減 | テンポスフードプレイス"
+    description="飲食店の光熱費の一つ、ガス料金を削減して経費削減しませんか？テンポスが飲食店に合ったガス会社をご紹介！"
+    pageUrl="/cost/gas-bil/"
+    ogimage="/asset/images/gas-bill/ogp_gas-bill.jpg"
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/cost/">経費削減</a></li>
+                    <li>ガス代削減</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>ガス代削減</span>
+                </h1>
+                <p class="tp-front__caption">
+                    お店の光熱費の一つ、ガス料金を見直して<br />
+                    経費削減しませんか？
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=22"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        ガス使用料金を<span class="tp-bglg">削減したい</span>
+                    </li>
+                    <li>
+                        数社見積りをとっているが、<span class="tp-bglg"
+                            >どこがいいか分からない</span
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    そんな飲食店さまの経費削減を<br class="pc" />
+                    テンポスがお手伝いします！
+                </h2>
+                <div class="tp-design__contents flex">
+                    <div class="tp-local__wrap">
+                        <p class="tp-local">
+                            ガスを多く使用する中華料理店や居酒屋、ラーメン店、鍋物や揚げ物を取り扱うお店は必見！<br
+                            />
+                            会社を切り替えることで料金を削減し、利益を確保することができます。
+                        </p>
+                        <p class="tp-local">
+                            電気とセットでさらにお得に削減可能で、支払いをまとめることで手間も減らせます。
+                        </p>
+                    </div>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/gas-bill/2x/img_gas-bill_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/gas-bill/img_gas-bill_design.png"
+                                srcset="/asset/images/gas-bill/img_gas-bill_design.png 1x,/asset/images/gas-bill/2x/img_gas-bill_design@2x.png 2x"
+                                alt=""
+                                width="222"
+                                height="225"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">安心・低価格のガスをご提供</h2>
+                <ul class="tp-check__list tp-wrapper__l tp-mgb__s">
+                    <li>
+                        ガスは<span class="tp-bglg"
+                            >現在お使いのものをそのまま使用</span
+                        >するため安心
+                    </li>
+                    <li>
+                        ガス自体も<span class="tp-bglg">品質に変わりなく</span
+                        >安心
+                    </li>
+                    <li>
+                        申込書のみで、<span class="tp-bglg"
+                            >工事や立ち会いも不要</span
+                        >で簡単切替可能
+                    </li>
+                </ul>
+                <p class="tp-want__thumb width-75">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/gas-bill/2x/img_gas-bill_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/gas-bill/img_gas-bill_want.png"
+                            srcset="/asset/images/gas-bill/img_gas-bill_want.png 1x,/asset/images/gas-bill/2x/img_gas-bill_want@2x.png 2x"
+                            alt=""
+                            width="540"
+                            height="155"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    ご相談は無料です。<br />
+                                    ガス代が今よりどのくらい削減できるかのシミュレーションも無料でおこなうことが出来ます。<br
+                                    />
+                                    まずはお気軽にお問い合わせください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携会社より連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    サービスの内容やプランのご説明をいたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">無料削減シミュレーション</h3>
+                            <div class="Local">
+                                <p>
+                                    事前に1ヵ月分のガス利用明細、もしくは現在の契約会社や料金プランなどの情報をご用意いただくとスムーズです。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お申込み</h3>
+                            <div class="Local">
+                                <p>
+                                    お客様情報や支払い方法など、お申込みに必要な情報をお伝えします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">切り替え</h3>
+                            <div class="Local">
+                                <p>
+                                    お申込み後、専用のガスメーターへ切り替えがあります。<br
+                                    />
+                                    無料で、お立ち合いも不要なので手間はかかりません。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">利用開始</h3>
+                            <div class="Local">
+                                <p>
+                                    完了後、新しいプランにて利用開始となります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>ガスは供給会社が変わるの？</dt>
+                        <dd>
+                            ガスの供給元は変更ありません。請求先のみ切り替わります。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>どれくらい安くなるの？</dt>
+                        <dd>
+                            現在の使用料金から最大10%削減可能です。<br />
+                            お客様の利用プランと使用料により変わります。<br />
+                            詳しくはご相談ください。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/hygiene/waste-oil/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_waste-oil@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_waste-oil.png"
+                                        srcset="/asset/images/common/img_kanren_service_waste-oil.png 1x,/asset/images/common/2x/img_kanren_service_waste-oil@2x.png 2x"
+                                        alt="廃油無料回収"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">廃油無料回収</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/cost/electricity/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_electricity@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_electricity.png"
+                                        srcset="/asset/images/common/img_kanren_service_electricity.png 1x,/asset/images/common/2x/img_kanren_service_electricity@2x.png 2x"
+                                        alt="電気代削減"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">電気代削減</h3>
+                        </a>
+                    </article>
+                    <!-- <article>
+							<a href="/cost/recipe/">
+								<p class="Thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/common/2x/img_kanren_service_recipe@2x.png">
+										<img src="/asset/images/common/img_kanren_service_recipe.png"
+											srcset="/asset/images/common/img_kanren_service_recipe.png 1x,/asset/images/common/2x/img_kanren_service_recipe@2x.png 2x"
+											alt="レシピ原価管理" width="304" height="231" loading="lazy" class="imgauto">
+									</picture>
+								</p>
+								<h3 class="Ttl">
+									レシピ原価管理
+								</h3>
+							</a>
+						</article> -->
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/gas-bill/mv_gas-bill.jpg);
+    }
+
+    /*-----------------------
+tp-design__section
+-----------------------*/
+    .tp-design__section .tp-design__thumb {
+        margin-top: -75px;
+    }
+    @media screen and (max-width: 1080px) {
+        .tp-design__section .tp-design__thumb {
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tp-design__section .tp-design__thumb {
+            max-width: 150px;
+            width: 40%;
+        }
+    }
+
+    /*-----------------------
+tp-want__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__thumb {
+            max-width: 400px;
+            width: 90%;
+        }
+    }
+
+    /*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+    .tp-frow__section {
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-frow__section {
+            margin-top: 40px;
+        }
+    }
+</style>

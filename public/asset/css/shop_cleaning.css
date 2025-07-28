@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/shop_cleaning/mv_shop_cleaning.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    max-width: 250px;
+    width: 60%;
+  }  
+}
+
+/*-----------------------
+サービス内容 tp-service__section
+-----------------------*/
+.tp-service__section .tp-service__flexcontainer {
+  align-items: flex-start;
+}
+.tp-service__section .tp-option__iconlist .Local {
+  font-weight: 400;
+}
+.tp-service__section .tp-option__iconlist .Local .txt__b {
+  font-weight: bold;
+}
+.tp-service__section .tp-service__thumb img {
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .tp-service__section .tp-service__thumb {
+    aspect-ratio: 443 / 334;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-service__section .tp-option__list:after {
+    content: none;
+  }
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}

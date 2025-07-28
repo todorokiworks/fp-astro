@@ -1,0 +1,80 @@
+---
+const list = [
+  { url: "/lp/kaitori/img/img_kaitorhinmoku01.png", name: "冷蔵庫・冷凍庫" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku02.png", name: "製氷機" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku03.png", name: "ショーケース" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku04.png", name: "コールドテーブル" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku05.png", name: "フライヤー" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku06.png", name: "冷凍ストッカー" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku07.png", name: "2槽シンク" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku08.png", name: "ミキサー" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku09.png", name: "ガスレンジ" },
+  {
+    url: "/lp/kaitori/img/img_kaitorhinmoku10.png",
+    name: "スチームコンベクション",
+  },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku11.png", name: "券売機" },
+  { url: "/lp/kaitori/img/img_kaitorhinmoku12.png", name: "真空包装機" },
+];
+---
+
+<section id="hinmoku">
+  <div class="contents__inner">
+    <h2 class="header_02">買取品目</h2>
+    <div class="list">
+      {
+        list.map(item => (
+          <div class="item">
+            <div class="img">
+              <img src={item.url} alt="" />
+            </div>
+            <h3 class="name" set:html={item.name} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  section#hinmoku {
+    div.contents__inner {
+      padding: 100px 0;
+      @media (max-width: 768px) {
+        padding: 40px 10px 40px;
+      }
+      h2.header_02 {
+      }
+      div.list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media (max-width: 768px) {
+          gap: 10px;
+        }
+        div.item {
+          width: 23%;
+          border: 2px solid #dddddd;
+          @media (max-width: 768px) {
+            width: 48%;
+            border: 1px solid #dddddd;
+          }
+          div.img {
+            img {
+            }
+          }
+          h3.name {
+            background: #dddddd;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            @media (max-width: 768px) {
+              padding: 8px 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

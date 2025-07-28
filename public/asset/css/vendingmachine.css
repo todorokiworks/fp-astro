@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/vendingmachine/mv_vendingmachine.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__contents.__center .tp-design__thumb {
+  max-width: 385px;
+}  
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__contents.__center .tp-design__thumb {
+    max-width: 300px;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    max-width: 250px;
+    width: 60%;
+  }  
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}
+

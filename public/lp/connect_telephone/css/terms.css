@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/*=======================================
+common
+=======================================*/
+.main_content {
+  line-height: 1.56;
+  padding: 80px 0 85px;
+}
+.main_content .txt__top {
+  margin-bottom: 45px;
+}
+.main_content .ttl_terms_01 {
+  font-size: 23px;
+  margin-bottom: 17px;
+  display: flex;
+}
+.main_content .ttl_terms_01__num {
+  white-space: nowrap;
+  margin-right: 5px;
+}
+.main_content .ttl_terms_02 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.main_content .list {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px){
+  .main_content {
+    padding: 45px 0 55px;
+  }
+  .main_content .txt__top {
+    margin-bottom: 42px;
+    font-size: 15px;
+  }
+  .main_content .ttl_terms_01 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .main_content .ttl_terms_02 {
+    font-size: 16px;
+  }
+  .main_content .list {
+    margin-bottom: 30px;
+  }  
+}
+
+/*=======================================
+MV
+=======================================*/
+#mv {
+  padding: 35px 0;
+}
+@media screen and (max-width: 767px){
+  #mv {
+    padding: 25px 0;
+  }  
+}
+
+/*=======================================
+sec_scope
+=======================================*/
+#sec_scope .list__item {
+  margin-bottom: 10px;
+  display: flex;
+}
+#sec_scope .list__item:last-child {
+  margin-bottom: 0;
+}
+#sec_scope .list__item:before {
+  margin-right: 20px;
+}
+#sec_scope .list__item:nth-child(1):before {
+  content: "1.";
+}
+#sec_scope .list__item:nth-child(2):before {
+  content: "2.";
+}
+@media screen and (max-width: 767px){
+  #sec_scope .list__item:before {
+    margin-right: 8px;
+  }  
+}
+
+/*=======================================
+sec_personal
+=======================================*/
+#sec_personal .ttl_terms_02 {
+  display: flex;
+}
+#sec_personal .ttl_terms_02:before {
+  margin-right: 5px;
+}
+#sec_personal .ttl_terms_02:nth-of-type(1):before {
+  content: "1.";
+}
+#sec_personal .ttl_terms_02:nth-of-type(2):before {
+  content: "2.";
+}
+#sec_personal .list__item {
+  padding-left: 2.0625em; 
+  position: relative;
+}
+#sec_personal .list__item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#sec_personal .list__item:nth-child(1):before {
+  content: "(1)";
+}
+#sec_personal .list__item:nth-child(2):before {
+  content: "(2)";
+}
+#sec_personal .list__item:nth-child(3):before {
+  content: "(3)";
+}
+#sec_personal .list__item:nth-child(4):before {
+  content: "(4)";
+}
+#sec_personal .list__item:nth-child(5):before {
+  content: "(5)";
+}
+#sec_personal .list__item:nth-child(6):before {
+  content: "(6)";
+}
+#sec_personal .list__item:nth-child(7):before {
+  content: "(7)";
+}
+#sec_personal .list__item:nth-child(8):before {
+  content: "(8)";
+}
+#sec_personal .list__item:nth-child(9):before {
+  content: "(9)";
+}
+#sec_personal .list__item:nth-child(10):before {
+  content: "(10)";
+}
+#sec_personal .list__item:nth-child(11):before {
+  content: "(11)";
+}
+@media screen and (max-width: 767px){
+  #sec_personal .list__item {
+    padding-left: 2.357em; 
+  }
+}

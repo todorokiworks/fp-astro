@@ -1,0 +1,898 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import structuredDataMarkup from "../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.contact);
+---
+
+<Layout
+    title="テンポスフードプレイス | お問い合わせ"
+    description=""
+    pageUrl="/contact/"
+    ogimage=""
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/contact/">お問い合わせ</a></li>
+                </ol>
+            </nav>
+            <section class="add-front__section">
+                <h1 class="add-front__simple">お問い合わせ</h1>
+            </section>
+            <section class="add-contents__section g-wrapper add-sec">
+                <div class="add-front__caption">
+                    まずはお気軽にご相談ください。<br />
+                    ※1営業日以内に担当者よりご連絡いたします。
+                </div>
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span"
+                        >メールでのお問合わせ</span
+                    >
+                </h2>
+                <form
+                    action="https://business.form-mailer.jp/fm/service/Forms/confirm"
+                    method="post"
+                    name="form1"
+                    enctype="multipart/form-data"
+                    accept-charset="UTF-8"
+                >
+                    <input type="hidden" name="key" value="59bd08b7271275" />
+                    <table class="add-contents__form">
+                        <tr>
+                            <th>
+                                <p>営業中or新規開業<span>必須</span></p>
+                            </th>
+                            <td class="radio">
+                                <p>
+                                    <input
+                                        id="radio01"
+                                        name="field_4575172"
+                                        type="radio"
+                                        value="0"
+                                    /><label for="radio01">営業中</label>
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio02"
+                                        name="field_4575172"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio02">新規開業</label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>店舗名・屋号</p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4575173"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="店舗名・屋号"
+                                />
+                                <p>
+                                    ※店舗名が未定の場合は「未定」とご入力ください。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お名前<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4575175"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="例）山田 太郎"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>連絡先電話番号<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4575177"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    minlength="1"
+                                    placeholder="例）0123456789"
+                                />
+                                <p>※半角数字、ハイフンなしでご入力ください。</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>メールアドレス<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4575178"
+                                    type="text"
+                                    size="30"
+                                    placeholder="info@example.com"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お店の都道府県<span>必須</span></p>
+                            </th>
+                            <td>
+                                <select name="field_4575179">
+                                    <option value="">------</option>
+                                    <option value="0">北海道</option>
+                                    <option value="1">青森県</option>
+                                    <option value="2">岩手県</option>
+                                    <option value="3">宮城県</option>
+                                    <option value="4">秋田県</option>
+                                    <option value="5">山形県</option>
+                                    <option value="6">福島県</option>
+                                    <option value="7">茨城県</option>
+                                    <option value="8">栃木県</option>
+                                    <option value="9">群馬県</option>
+                                    <option value="10">埼玉県</option>
+                                    <option value="11">千葉県</option>
+                                    <option value="12">東京都</option>
+                                    <option value="13">神奈川県</option>
+                                    <option value="14">新潟県</option>
+                                    <option value="15">富山県</option>
+                                    <option value="16">石川県</option>
+                                    <option value="17">福井県</option>
+                                    <option value="18">山梨県</option>
+                                    <option value="19">長野県</option>
+                                    <option value="20">岐阜県</option>
+                                    <option value="21">静岡県</option>
+                                    <option value="22">愛知県</option>
+                                    <option value="23">三重県</option>
+                                    <option value="24">滋賀県</option>
+                                    <option value="25">京都府</option>
+                                    <option value="26">大阪府</option>
+                                    <option value="27">兵庫県</option>
+                                    <option value="28">奈良県</option>
+                                    <option value="29">和歌山県</option>
+                                    <option value="30">鳥取県</option>
+                                    <option value="31">島根県</option>
+                                    <option value="32">岡山県</option>
+                                    <option value="33">広島県</option>
+                                    <option value="34">山口県</option>
+                                    <option value="35">徳島県</option>
+                                    <option value="36">香川県</option>
+                                    <option value="37">愛媛県</option>
+                                    <option value="38">高知県</option>
+                                    <option value="39">福岡県</option>
+                                    <option value="40">佐賀県</option>
+                                    <option value="41">長崎県</option>
+                                    <option value="42">熊本県</option>
+                                    <option value="43">大分県</option>
+                                    <option value="44">宮崎県</option>
+                                    <option value="45">鹿児島県</option>
+                                    <option value="46">沖縄県</option>
+                                    <option value="47">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お店の市区町村・番地<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4575180"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="市区町村・番地"
+                                />
+                                <p>
+                                    ※まだ物件が決まっていない場合は目安のご住所をご入力ください。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>ご希望のサービス<span>必須</span></p>
+                            </th>
+                            <td class="checkbox">
+                                <div>
+                                    <p class="band accordion-header service-01">
+                                        開業相談
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check57"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="57"
+                                            /><label for="check57"
+                                                >すべての開業相談</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check03"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="3"
+                                            /><label for="check03"
+                                                >飲食店物件紹介</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check05"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="5"
+                                            /><label for="check05"
+                                                >飲食店内装工事</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check01" name="field_4575181" type="checkbox" value="1" /><label
+                          for="check01">キッチンカー</label>
+                      </p>
+                      <p>
+                        <input id="check04" name="field_4575181" type="checkbox" value="4" /><label
+                          for="check04">ゴーストレストラン</label>
+                      </p>
+                      <p>
+                        <input id="check00" name="field_4575181" type="checkbox" value="0" /><label
+                          for="check00">クラウドキッチン開業支援</label>
+                      </p>
+                      <p>
+                        <input id="check02" name="field_4575181" type="checkbox" value="2" /><label
+                          for="check02">飲食店専門学校</label>
+                      </p> -->
+                                    </div>
+
+                                    <p class="band accordion-header service-02">
+                                        食材仕入れ
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check58"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="58"
+                                            /><label for="check58"
+                                                >すべての食材仕入れ</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check30"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="30"
+                                            /><label for="check30"
+                                                >食材通販「ミクリード」</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check38"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="38"
+                                            /><label for="check38"
+                                                >業務用酒販店「カクヤス」</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check48"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="48"
+                                            /><label for="check48"
+                                                >ビールサーバー</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check46"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="46"
+                                            /><label for="check46"
+                                                >ワイン通販</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check45"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="45"
+                                            /><label for="check45"
+                                                >味の素　開業祝セット</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check47" name="field_4575181" type="checkbox" value="47" /><label
+                          for="check47">食材仕入れ価格削減</label>
+                      </p> -->
+                                    </div>
+
+                                    <p class="band accordion-header service-03">
+                                        店舗インフラ
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check59"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="59"
+                                            /><label for="check59"
+                                                >すべての店舗インフラ</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check07"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="7"
+                                            /><label for="check07"
+                                                >インターネット回線</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check08"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="8"
+                                            /><label for="check08"
+                                                >カラオケ</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check09"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="9"
+                                            /><label for="check09"
+                                                >キャッシュレス決済</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check42"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="42"
+                                            /><label for="check42"
+                                                >キャッシュレス券売機</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check55"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="55"
+                                            /><label for="check55"
+                                                >モバイルオーダー</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check54" name="field_4575181" type="checkbox" value="54" /><label
+                          for="check54">配膳ロボット</label>
+                      </p> -->
+                                        <p>
+                                            <input
+                                                id="check25"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="25"
+                                            /><label for="check25"
+                                                >防犯カメラ</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check31" name="field_4575181" type="checkbox" value="31" /><label
+                          for="check31">電話自動応答</label>
+                      </p> -->
+                                        <p>
+                                            <input
+                                                id="check34"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="34"
+                                            /><label for="check34"
+                                                >店舗BGM</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check43" name="field_4575181" type="checkbox" value="43" /><label
+                          for="check43">POSシステム</label>
+                      </p> -->
+                                        <p>
+                                            <input
+                                                id="check37"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="37"
+                                            /><label for="check37">IP電話</label
+                                            >
+                                        </p>
+                                    </div>
+
+                                    <p class="band accordion-header service-04">
+                                        集客
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check60"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="60"
+                                            /><label for="check60"
+                                                >すべての集客</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check10"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="10"
+                                            /><label for="check10"
+                                                >ホームぺージ作成</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check11"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="11"
+                                            /><label for="check11"
+                                                >Googleビジネスプロフィール運用サポート</label
+                                            >
+                                        </p>
+                                        <!--<p>
+                        <input id="check12" name="field_4575181" type="checkbox" value="12" /><label
+                          for="check12">SNS運用サポート</label>
+                      </p>-->
+                                        <!-- <p>
+                        <input id="check13" name="field_4575181" type="checkbox" value="13" /><label
+                          for="check13">インフルエンサー集客</label>
+                      </p>
+                      <p>
+                        <input id="check14" name="field_4575181" type="checkbox" value="14" /><label
+                          for="check14">プレスリリース</label>
+                      </p>
+                      <p>
+                        <input id="check15" name="field_4575181" type="checkbox" value="15" /><label
+                          for="check15">公式LINE運用代行</label>
+                      </p> -->
+                                        <p>
+                                            <input
+                                                id="check56"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="56"
+                                            /><label for="check56"
+                                                >満席レビュー</label
+                                            >
+                                        </p>
+                                        <!-- <p><input id="check66" name="field_4575181" type="checkbox" value="66"><label
+                          for="check66">集客あんしんサポート</label></p> -->
+                                    </div>
+
+                                    <p class="band accordion-header service-05">
+                                        販促デザイン
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check61"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="61"
+                                            /><label for="check61"
+                                                >すべての販促デザイン</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check17"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="17"
+                                            /><label for="check17"
+                                                >ロゴ作成</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check16"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="16"
+                                            /><label for="check16"
+                                                >販促物作成</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check18" name="field_4575181" type="checkbox" value="18" /><label
+                          for="check18">動画作成</label>
+                      </p> -->
+                                    </div>
+                                    <!-- 
+                    <p class="band accordion-header service-06">人材・求人</p>
+                    <div class="accordion-content">
+                      <p>
+                        <input id="check62" name="field_4575181" type="checkbox" value="62" /><label
+                          for="check62">すべての人材・求人</label>
+                      </p>
+                      <p>
+                        <input id="check39" name="field_4575181" type="checkbox" value="39" /><label
+                          for="check39">求人広告</label>
+                      </p>
+                      <p>
+                        <input id="check40" name="field_4575181" type="checkbox" value="40" /><label
+                          for="check40">人材派遣</label>
+                      </p>
+                      <p>
+                        <input id="check53" name="field_4575181" type="checkbox" value="53" /><label
+                          for="check53">Web・SNSチェック</label>
+                      </p>
+                    </div> -->
+
+                                    <p class="band accordion-header service-07">
+                                        衛生管理
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check63"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="63"
+                                            /><label for="check63"
+                                                >すべての衛生管理</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check19"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="19"
+                                            /><label for="check19"
+                                                >衛生用品レンタル</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check20"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="20"
+                                            /><label for="check20"
+                                                >飲食店清掃</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check35"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="35"
+                                            /><label for="check35"
+                                                >廃油無料回収</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check36"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="36"
+                                            /><label for="check36"
+                                                >ゴミ回収</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check49" name="field_4575181" type="checkbox" value="49" /><label
+                          for="check49">布おしぼりレンタル</label>
+                      </p> -->
+                                    </div>
+
+                                    <p class="band accordion-header service-08">
+                                        経費削減
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check64"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="64"
+                                            /><label for="check64"
+                                                >すべての経費削減</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check21"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="21"
+                                            /><label for="check21"
+                                                >電気代削減</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check22"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="22"
+                                            /><label for="check22"
+                                                >ガス代削減</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check41" name="field_4575181" type="checkbox" value="41" /><label
+                          for="check41">レシピ/原価管理</label>
+                      </p> -->
+                                        <!--<p><input id="check29" name="field_4575181" type="checkbox" value="29"><label
+												for="check29">店舗賃料減額交渉サービス</label></p>-->
+                                        <p>
+                                            <input
+                                                id="check51"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="51"
+                                            /><label for="check51"
+                                                >フライヤー油削減</label
+                                            >
+                                        </p>
+                                    </div>
+
+                                    <p class="band accordion-header service-09">
+                                        店舗運営支援
+                                    </p>
+                                    <div class="accordion-content">
+                                        <p>
+                                            <input
+                                                id="check65"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="65"
+                                            /><label for="check65"
+                                                >すべての店舗運営支援</label
+                                            >
+                                        </p>
+                                        <p>
+                                            <input
+                                                id="check23"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="23"
+                                            /><label for="check23"
+                                                >店舗用保険</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check52" name="field_4575181" type="checkbox" value="52" /><label
+                          for="check52">社労士紹介</label>
+                      </p> -->
+                                        <p>
+                                            <input
+                                                id="check24"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="24"
+                                            /><label for="check24"
+                                                >飲食専門税理士紹介</label
+                                            >
+                                        </p>
+                                        <!-- <p>
+                        <input id="check26" name="field_4575181" type="checkbox" value="26" /><label
+                          for="check26">覆面踏査</label>
+                      </p>
+                      <p>
+                        <input id="check27" name="field_4575181" type="checkbox" value="27" /><label
+                          for="check27">店舗トラブル解決アプリ</label>
+                      </p>
+                      <p>
+                        <input id="check44" name="field_4575181" type="checkbox" value="44" /><label
+                          for="check44">テンポスクレジットカード</label>
+                      </p>
+                      <p>
+                        <input id="check28" name="field_4575181" type="checkbox" value="28" /><label
+                          for="check28">自動販売機</label>
+                      </p> -->
+                                        <p>
+                                            <input
+                                                id="check50"
+                                                name="field_4575181"
+                                                type="checkbox"
+                                                value="50"
+                                            /><label for="check50"
+                                                >厨房機器買取</label
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>※複数選択可能</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>
+                                    お役立ち情報の<br
+                                        class="pc"
+                                    />お知らせメールを希望<span>必須</span>
+                                </p>
+                            </th>
+                            <td class="radio">
+                                <p>
+                                    <input
+                                        id="radio03"
+                                        name="field_4575186"
+                                        type="radio"
+                                        value="0"
+                                        checked="checked"
+                                    /><label for="radio03">希望する</label>
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio04"
+                                        name="field_4575186"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio04">希望しない</label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>
+                                    お問い合わせ内容<br class="pc" /><span
+                                        >必須</span
+                                    >
+                                </p>
+                            </th>
+                            <td>
+                                <textarea
+                                    name="field_4575183"
+                                    cols="30"
+                                    rows="5"
+                                    placeholder="お問い合わせ内容をご入力ください。"
+                                ></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <input
+                        class="contact-btn"
+                        name="submit"
+                        type="submit"
+                        value="確認画面へ"
+                    />
+                    <input type="hidden" name="code" value="utf8" />
+                </form>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style lang="scss">
+    .accordion-header {
+        position: relative;
+    }
+
+    .accordion-header::before {
+        /* 閉じている時 */
+        content: "＋";
+        position: absolute;
+        right: 20px;
+    }
+
+    .accordion-header.active::before {
+        /* 開いている時 */
+        content: "－";
+    }
+
+    .accordion-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em 1em;
+    }
+
+    .p-contact__line__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em 1em;
+        padding: 45px 0;
+        margin-bottom: 50px;
+        border: 2px solid #f07d00;
+        border-radius: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .p-contact__line__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+            padding: 0px;
+            margin-bottom: 50px;
+            border: none;
+        }
+    }
+
+    .p-contact__line__qr {
+        text-align: center;
+        border-right: 1px solid #b9bbbc;
+    }
+
+    .p-contact__line__qr img {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .p-contact__line__btn {
+        text-align: center;
+    }
+
+    .p-balloon__linebtn {
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c-linebtn {
+        background-color: #05b702;
+        color: #fff;
+        font-size: 1.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 25px 10px;
+        border-radius: 0.375rem;
+        width: 230px;
+        margin: 1.125rem auto 0;
+    }
+
+    .c-linebtn::before {
+        content: "";
+        background: url(/asset/images/contact/icon-line.svg) no-repeat center /
+            contain;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+</style>

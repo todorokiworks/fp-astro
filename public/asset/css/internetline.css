@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/internetline/mv_internetline.jpg);
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+.tp-design__section .tp-design__thumb {
+  margin-top: -125px;
+}
+@media screen and (max-width: 1050px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: 0;
+  }  
+}
+@media screen and (max-width: 950px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: -125px;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__thumb {
+    margin-top: 0;
+    width: 60%;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+.tp-want__section .tp-check__list > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .tp-want__section .tp-want__thumb {
+    max-width: 463px;
+    width: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-check__list {
+    margin-bottom: 30px;
+  }  
+  .tp-want__section .tp-want__thumb {
+    width: 80%;
+  }
+}
+
+/*-----------------------
+料金 tp-attention__section
+-----------------------*/
+.tp-attention__section [class*="attention__cont__"]:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.tp-attention__section .tp-attention__price {
+  margin-bottom: 0;
+}
+.tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .tp-attention__price {
+  display: inline-block;
+  padding-left: calc(16px * 4.8);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  line-height: 1.5;
+}
+.tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .First {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .price_bk {
+  display: block;
+}
+.tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .Yen {
+  font-size: 0.5em;
+  position: relative;
+}
+.tp-attention__section .tp-attention__price .Yen:after {
+  content: "(税抜)";
+  font-size: 0.43em;
+  position: absolute;
+  left: 0;
+  bottom: calc(100% - 18%);
+  white-space: nowrap;
+}
+.tp-attention__section .tp-attention__price .price_type {
+  font-size: 0.5em;
+}
+.tp-attention__section .tp-attention__cont__01 .price_type {
+  margin-left: 7px;
+}
+.tp-attention__section .tp-attention__cont__02 .price_type {
+  margin-right: 7px;
+}
+.tp-attention__section .tp-attention__caption {
+  font-size: 16px;
+}
+.tp-attention__section .tp-attention__txt {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .tp-attention__price {
+    padding-left: calc(14px * 4.8);
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .price_bk:not(:last-of-type) {
+    margin-bottom: 15px;
+  }  
+  .tp-attention__section .price_type,
+  .tp-attention__section .price {
+    display: inline-block;
+  }
+  .tp-attention__section .tp-attention__caption {
+    font-size: 14px;
+  }
+  .tp-attention__section [class*="attention__cont__"]:not(.tp-attention__cont__03) .tp-attention__price .Yen:after {
+    line-height: 1.5;
+    font-size: 0.7em;
+  }
+  .tp-attention__section .tp-attention__txt {
+    font-size: 16px;
+  }  
+}

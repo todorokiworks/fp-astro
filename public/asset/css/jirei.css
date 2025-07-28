@@ -1,0 +1,36 @@
+@charset "utf-8";
+:root{
+  --fnts_local:16px;
+  --fnts_caption_min:26px;
+  --fnts_caption_sub:20px;
+  --fnts_section_ttl:30px;
+}
+/* -------------------- section ------------------- */
+/* -----　marketing/homepage/jirei/index.html　制作事例ページ用　----- */
+.hp-case__list__information2 div:has(span) dt{
+  min-height: 60px;
+}
+
+.hp-case__list__information div.shop{
+  min-height: 60px;
+  padding: 0px;
+}
+
+.hp-case__list__thumb img{
+  border: 1px solid #e6e6e6;
+}
+
+@media screen and (min-width: 768px){
+/* -----　marketing/homepage/jirei/index.html　制作事例ページ　PC(min-width: 768px)用mv　----- */
+
+}
+
+@media screen and (max-width: 767px){
+  /* -----　marketing/homepage/jirei/index.html　制作事例ページ　sp用mv　----- */
+
+}
+
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+/* -------------------- ------------------- */
+

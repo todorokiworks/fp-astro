@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/micreed/mv_micreed.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+ミクリードなら登録料・年会費無料！ tp-want__section
+-----------------------*/
+.tp-want__section .tp-want__txt__wrap {
+  margin-bottom: 35px;
+}
+.tp-want__section .tp-want__txt {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.tp-want__section .tp-want__txt__caution {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.875;
+  color: var(--CAUTION_TXT_RED);
+}
+.tp-want__section .tp-want__txt:last-of-type {
+  margin: 10px 0 0;
+}
+.tp-want__section .tp-want__thumb {
+  width: 280px;
+}
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__txt__wrap {
+    margin-bottom: 25px;
+  }
+  .tp-want__section .tp-want__txt {
+    font-size: 16px;
+  }
+  .tp-want__section .tp-want__txt__caution {
+    font-size: 12px;
+  }
+  .tp-want__section .tp-want__thumb {
+    width: 80%;
+  }
+}
+
+/*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+.tp-frow__section {
+  margin-top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .tp-frow__section {
+    margin-top: 40px;
+  }  
+}
+
+/*-----------------------
+受注センター tp-order__section
+-----------------------*/
+.tp-order__section .tp-order__container {
+  border: 1px solid #9b9b9b;
+  padding: 35px 75px;
+}
+.tp-order__section .tp-order__txt__lead {
+  font-weight: bold;
+  color: var(--MAIN_ORANGE);
+  line-height: 1.75;
+}
+.tp-order__section .tp-order__container dl {
+  display: flex;
+}
+.tp-order__section .tp-order__container dt {
+  line-height: 1.75;
+}
+.tp-order__section .tp-order__container dt:after {
+  content: "：";
+}
+.tp-order__section .tp-order__container dd {
+  line-height: 1.75;
+}
+@media screen and (max-width: 767px) {
+  .tp-order__section .tp-order__container {
+    padding: 20px;
+  }
+  .tp-order__section .tp-order__container dt {
+    width: 5em;
+    margin-right: 5px;
+  }
+  .tp-order__section .tp-order__container dd {
+    width: calc(100% - 5em - 5px);
+  }
+}

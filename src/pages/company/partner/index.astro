@@ -1,0 +1,183 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.partner);
+---
+
+<Layout
+    title="テンポスフードプレイス | 法人のお客様"
+    description=""
+    pageUrl="/company/partner/"
+    ogimage=""
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/company/partner/">法人をお客様</a></li>
+                </ol>
+            </nav>
+            <section class="add-front__section">
+                <h1 class="add-front__simple">協業をお考えの方</h1>
+            </section>
+            <section class="add-contents__section g-wrapper add-sec">
+                <p class="add-front__caption">
+                    テンポスフードプレイスでは飲食店の開業を目指す方や<br
+                        class="pc"
+                    />
+                    経営中の皆様を支えるにあたって、互いに得意な分野を活かし<br
+                        class="pc"
+                    />
+                    ともに成長するパートナーを幅広く募集しています。
+                </p>
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span"
+                        >メールでのお問合わせ</span
+                    >
+                </h2>
+                <form
+                    action="https://business.form-mailer.jp/fm/service/Forms/confirm"
+                    method="post"
+                    name="form1"
+                    enctype="multipart/form-data"
+                    accept-charset="UTF-8"
+                >
+                    <input type="hidden" name="key" value="d5e66785199772" />
+                    <table class="add-contents__form">
+                        <tr>
+                            <th>
+                                <p>会社名<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_3356909"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="会社名"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>業種<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_3356910"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="業種"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>所在地<span>必須</span></p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_3356911"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="所在地"
+                                /></td
+                            >
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お名前<span>必須</span></p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_3356912"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="お名前"
+                                /></td
+                            >
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>電話番号<span>必須</span></p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_3356913"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    minlength="1"
+                                    placeholder="半角数字、ハイフンなしでご入力ください"
+                                /></td
+                            >
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>FAX番号</p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_3356914"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    minlength="1"
+                                    placeholder="半角数字、ハイフンなしでご入力ください"
+                                /></td
+                            >
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>メールアドレス<span>必須</span></p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_3356915"
+                                    type="text"
+                                    size="30"
+                                    placeholder=""
+                                /></td
+                            >
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>
+                                    お問い合わせ内容<br class="pc" /><span
+                                        >必須</span
+                                    >
+                                </p>
+                            </th>
+                            <td
+                                ><textarea
+                                    name="field_3356916"
+                                    cols="30"
+                                    rows="5"></textarea></td
+                            >
+                        </tr>
+                    </table>
+                    <input
+                        class="contact-btn"
+                        name="submit"
+                        type="submit"
+                        value="確認画面へ"
+                    />
+                    <input type="hidden" name="code" value="utf8" />
+                </form>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+</style>

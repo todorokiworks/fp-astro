@@ -1,0 +1,849 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.group);
+---
+
+<Layout
+	title="テンポスフードプレイス | グループ会社一覧"
+	description=""
+	pageUrl="/company/group/"
+	ogimage=""
+	markup={markup}
+>
+	<article id="mainarea">
+		<div class="tp-border sans">
+			<nav class="tp-nav">
+				<ol class="tp-nav__list flex">
+					<li><a href="/">トップページ</a></li>
+					<li><a href="/company/">企業情報</a></li>
+					<li><a href="/company/group/">グループ会社一覧</a></li>
+				</ol>
+			</nav>
+			<section class="add-front__section group">
+				<h1 class="add-front__ttl">
+					<span>グループ会社一覧</span>
+				</h1>
+			</section>
+
+			<!-- 24/04/15 add -->
+			<section class="add-company__section g-wrapper new-sec">
+				<!-- <h2 class="add-company__list__ttl">◆◆◆◆◆</h2> -->
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_tenpos.png"
+								/>
+								<img
+									src="/asset/images/company/logo_tenpos.png"
+									srcset="/asset/images/company/logo_tenpos.png 1x,/asset/images/company/2x/logo_tenpos.png 2x"
+									alt="株式会社テンポスバスターズ"
+									width="160"
+									height="127"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.tenpos.co.jp/"
+									>株式会社テンポスホールディングス</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒144-0031 東京都大田区東蒲田2-30-17 <br
+										class="sp"
+									/>サンユー東蒲田ビル7F<br />
+									<span
+										>TEL：03-3736-0319　FAX：03-5744-0910</span
+									>
+								</p>
+							</div>
+							<!-- <div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									◆◆◆◆◆
+								</p>
+							</div> -->
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- 24/04/15 add// -->
+
+			<section class="add-company__section g-wrapper new-sec">
+				<h2 class="add-company__list__ttl">
+					厨房機器（食器・調理道具）販売
+				</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_tenpos.png"
+								/>
+								<img
+									src="/asset/images/company/logo_tenpos.png"
+									srcset="/asset/images/company/logo_tenpos.png 1x,/asset/images/company/2x/logo_tenpos.png 2x"
+									alt="株式会社テンポスバスターズ"
+									width="160"
+									height="127"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://tenposbusters.co.jp/"
+									>株式会社テンポスバスターズ</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒144-0031 東京都大田区東蒲田2-30-17 <br
+										class="sp"
+									/>サンユー東蒲田ビル7F<br />
+									<span
+										>TEL：03-3736-0319　FAX：03-5744-0910</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									中古新品の厨房機器・家具・食器調理道具の販売
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_kitchen-tecno.png?ver=20240415"
+								/>
+								<img
+									src="/asset/images/company/logo_kitchen-tecno.png?ver=20240415"
+									srcset="/asset/images/company/logo_kitchen-tecno.png?ver=20240415 1x,/asset/images/company/2x/logo_kitchen-tecno.png?ver=20240415 2x"
+									alt="キッチンテクノ株式会社"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.kitchen-t.co.jp/"
+									>キッチンテクノ株式会社</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒162-0052 東京都新宿区戸山3-15-1 <br
+										class="sp"
+									/>日本駐車ビル1階<br />
+									<span
+										>TEL：03-5285-3301　FAX：03-5285-3309</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									大手外食企業向け厨房機器の設計・販売・メンテナンス業務
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_tenpos.png"
+								/>
+								<img
+									src="/asset/images/company/logo_tenpos.png"
+									srcset="/asset/images/company/logo_tenpos.png 1x,/asset/images/company/2x/logo_tenpos.png 2x"
+									alt="株式会社テンポスドットコム"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.tenpos.com/"
+									>株式会社テンポスドットコム</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒144-0035 東京都大田区南蒲田1-1-25 <br
+										class="sp"
+									/>蒲田東日本ビル7階<br />
+									<span
+										>TEL：050-3174-1366　FAX：03-6682-0044</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									業務用厨房機器通販サイト「テンポスドットコム」運営
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb"></p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								ウエスト厨機株式会社
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒063-0836 北海道札幌市西区発寒16-4<br />
+									<span>TEL：011-669-8484</span>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									厨房機器販売及びメンテナンス。キッチンテクノ(株)子会社
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="add-company__section g-wrapper ba-sec">
+				<h2 class="add-company__list__ttl">
+					居抜き物件紹介・サブリース
+				</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_tenpos.png"
+								/>
+								<img
+									src="/asset/images/company/logo_tenpos.png"
+									srcset="/asset/images/company/logo_tenpos.png 1x,/asset/images/company/2x/logo_tenpos.png 2x"
+									alt="株式会社テンポスフィナンシャルトラスト"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.tenpos-ft.com/"
+									>株式会社テンポス<br
+										class="sp"
+									/>フィナンシャルトラスト</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒110-0006 東京都台東区秋葉原3-4 <br
+										class="sp"
+									/>秋葉原倉庫ビル4F（テンポスアキバ店内）<br
+									/>
+									<span
+										>TEL：03-3525-4070　FAX：03-3525-4503</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									物件仲介・資金調達・クレジットカード決済代行
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="add-company__section g-wrapper ba-sec">
+				<h2 class="add-company__list__ttl">内装</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_s10.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_s10.gif"
+									srcset="/asset/images/company/logo_s10.gif 1x,/asset/images/company/2x/logo_s10.gif 2x"
+									alt="株式会社スタジオテンポス"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://studio-tenpos.com/"
+									>株式会社スタジオテンポス</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒110-0006 東京都台東区秋葉原3-4 <br
+										class="sp"
+									/>秋葉原倉庫ビル4F（テンポスアキバ店内）<br
+									/>
+									<span
+										>TEL：03-3525-4502　FAX：03-3525-4503</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									飲食店専門の内装デザイン・設計・施工管理
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section class="add-company__section g-wrapper ba-sec">
+				<h2 class="add-company__list__ttl">
+					POSシステム・情報機器販売
+				</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_jouhoukan.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_jouhoukan.gif"
+									srcset="/asset/images/company/logo_jouhoukan.gif 1x,/asset/images/company/2x/logo_jouhoukan.gif 2x"
+									alt="株式会社テンポス情報館"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="http://www.tenpos.jp/"
+									>株式会社テンポス情報館</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒144-0031 東京都大田区東蒲田2-30-17 <br
+										class="sp"
+									/>サンユー東蒲田ビル8F<br />
+									<span
+										>TEL：03-5714-1493　FAX：03-3734-9780</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									POSシステム情報機器販売・販促支援
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_sper.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_sper.gif"
+									srcset="/asset/images/company/logo_sper.gif 1x,/asset/images/company/2x/logo_sper.gif 2x"
+									alt="エスパー株式会社（関連会社）"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="http://www.sper.jp/company-outline/"
+									>エスパー株式会社（関連会社）</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒507-0041 岐阜県多治見市太平町 6-88-1<br />
+									<span
+										>TEL：0572-23-9061　FAX：0572-23-9064</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									ソフトウェアの開発及び販売<br />
+									※2018年にテンポス情報館と資本・業務提携
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="add-company__section g-wrapper ba-sec">
+				<h2 class="add-company__list__ttl">人材支援</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_dspark.png"
+								/>
+								<img
+									src="/asset/images/company/logo_dspark.png"
+									srcset="/asset/images/company/logo_dspark.png 1x,/asset/images/company/2x/logo_dspark.png 2x"
+									alt="株式会社ディースパーク"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.d-spark.com/"
+									>株式会社ディースパーク</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒542-0081 大阪府大阪市中央区<br
+										class="sp"
+									/>南船場4-11-28 南船場ビル3F<br />
+									<span
+										>TEL：06-6245-7228　FAX：06-6245-6639</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									飲食・アパレル等のサービス業界に特化した人材派遣
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="add-company__section g-wrapper ba-sec">
+				<h2 class="add-company__list__ttl">飲食事業</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_asakuma.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_asakuma.gif"
+									srcset="/asset/images/company/logo_asakuma.gif 1x,/asset/images/company/2x/logo_asakuma.gif 2x"
+									alt="株式会社あさくま"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.asakuma.co.jp/"
+									>株式会社あさくま</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒468-0058 愛知県名古屋市天白区<br
+										class="sp"
+									/>植田西2-1410<br />
+									<span
+										>TEL：052-800-7781　FAX：052-805-5241</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									「ステーキのあさくま」東海・関東を中心に展開
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">通販サイト</p>
+								<p class="add-company__list__store">
+									<a href="https://www.asakuma.farm/">
+										<picture>
+											<source
+												media="(max-width:767px)"
+												srcset="/asset/images/company/sp/asakumafarm_logo.png"
+											/>
+											<img
+												src="/asset/images/company/asakumafarm_logo.png"
+												srcset="/asset/images/company/asakumafarm_logo.png 1x,/asset/images/company/2x/asakumafarm_logo.png 2x"
+												alt="あさくまファーム"
+												width="229"
+												height="59"
+												loading="lazy"
+												class="imgauto"
+											/>
+										</picture>
+									</a>
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- 24/04/15 add -->
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_yamato_sp.jpg?ver=20240416"
+								/>
+								<img
+									src="/asset/images/company/logo_yamato.jpg"
+									srcset="/asset/images/company/logo_yamato.jpg 1x,/asset/images/company/2x/logo_yamato.jpg 2x"
+									alt="ヤマトサカナ株式会社"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://yamato-sakana.co.jp/"
+									>ヤマトサカナ株式会社</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__local">
+									2024年4月に社名変更しました<br
+										class="sp"
+									/>（旧社名：株式会社ヤマト）
+								</p>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒296-0101 千葉県鴨川市北⼩町1444-8<br />
+									<span>TEL：04-7097-1431</span>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									魚の卸事業、寿司店の運営、観光事業
+								</p>
+							</div>
+						</div>
+					</li>
+					<!-- 24/04/15 add// -->
+
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_dreamdining.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_dreamdining.gif"
+									srcset="/asset/images/company/logo_dreamdining.gif 1x,/asset/images/company/2x/logo_dreamdining.gif 2x"
+									alt="株式会社ドリームダイニング"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="http://www.dr-dining.com/"
+									>株式会社ドリームダイニング</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒542-0081 大阪府大阪市中央区<br
+										class="sp"
+									/>南船場4-11-28 南船場ビル3F<br />
+									<span
+										>TEL：06-6245-7228　FAX：06-6120-2570</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									関西エリアを中心に「海鮮王」「とろ家」の飲食店を運営。(株)ディースパーク子会社
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section class="add-company__section g-wrapper ba-sec">
+				<h2 class="add-company__list__ttl">関連・関係会社</h2>
+				<ul class="add-company__list">
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_office-busters.jpg?ver=20240415"
+								/>
+								<img
+									src="/asset/images/company/logo_office-busters.jpg?ver=20240415"
+									srcset="/asset/images/company/logo_office-busters.jpg?ver=20240415 1x,/asset/images/company/2x/logo_office-busters.jpg?ver=20240415 2x"
+									alt="株式会社オフィスバスターズ"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="https://www.officebusters.com/"
+									>株式会社オフィスバスターズ</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒103-0022 東京都中央区日本橋室町1-5-3 <br
+										class="sp"
+									/>三越前福島ビル2F<br />
+									<span
+										>TEL：03-6262-3155　FAX：03-6262-3341</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									中古事務機器の販売
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_handsholdings.gif?ver=20240415"
+								/>
+								<img
+									src="/asset/images/company/logo_handsholdings.gif?ver=20240415"
+									srcset="/asset/images/company/logo_handsholdings.gif?ver=20240415 1x,/asset/images/company/2x/logo_handsholdings.gif?ver=20240415 2x"
+									alt="ハンズホールディングス株式会社"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								ハンズホールディングス株式会社
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒101-0021　東京都千代田区外神田3-12-8　<br
+									/>
+									住友不動産秋葉原ビル17階<br />
+									<span>TEL：03-5289-0061</span>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									商業施設建築、内装工事業、作業請負業、人材派遣業
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_bido.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_bido.gif"
+									srcset="/asset/images/company/logo_bido.gif 1x,/asset/images/company/2x/logo_bido.gif 2x"
+									alt="株式会社美道"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								<a href="http://www.tenpo-rescue.jp/"
+									>株式会社美道</a
+								>
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒162-0052 東京都新宿区戸山3-15-1 <br
+										class="sp"
+									/>日本駐車ビル1F<br />
+									<span
+										>TEL：03-3232-8867　FAX：03-3232-8868</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									店舗清掃・害虫駆除・衛生検査
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="add-company__list__thumb">
+							<picture>
+								<source
+									media="(max-width:767px)"
+									srcset="/asset/images/company/sp/logo_totalt.gif"
+								/>
+								<img
+									src="/asset/images/company/logo_totalt.gif"
+									srcset="/asset/images/company/logo_totalt.gif 1x,/asset/images/company/2x/logo_totalt.gif 2x"
+									alt="株式会社トータルテンポス"
+									width="160"
+									height="127"
+									loading="lazy"
+									class="imgauto"
+								/>
+							</picture>
+						</p>
+						<div class="add-company__list__container">
+							<h3 class="add-company__list__name">
+								株式会社トータルテンポス
+							</h3>
+							<div>
+								<p class="add-company__list__tag">
+									所在地・連絡先
+								</p>
+								<p class="add-company__list__local">
+									〒984-0003 宮城県仙台市若林区<br
+										class="sp"
+									/>6丁目北町3-1<br />
+									<span
+										>TEL：022-290-6441　FAX：022-290-6442</span
+									>
+								</p>
+							</div>
+							<div>
+								<p class="add-company__list__tag">事業内容</p>
+								<p class="add-company__list__local">
+									内装デザイン・設計・施工管理
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</article>
+</Layout>

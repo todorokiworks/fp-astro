@@ -1,0 +1,79 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.contact);
+---
+
+<Layout
+    title="お問い合わせ完了 | テンポスフードプレイス"
+    description=""
+    pageUrl="/contact/thanks/"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/contact/">お問い合わせ</a></li>
+                </ol>
+            </nav>
+
+            <section class="add-front__section">
+                <h1 class="add-front__simple">お問い合わせ</h1>
+            </section>
+            <section class="add-contents__section g-wrapper add-sec">
+                <div class="add-front__caption">
+                    <span class="thanksTitle">お問合わせ完了致しました。</span>
+                    この度はお問い合わせいただき、誠にありがとうございます。<br
+                    />
+                    ※1営業日以内に担当者よりご連絡いたします。<br />
+                    （営業時間: 平日 9:00〜18:00）<br /><br />
+
+                    また、LINEでもお気軽にご質問やご相談が可能です！<br />
+                    お役立ち情報も随時配信しておりますので、ぜひ友だち追加をお願いいたします。
+                </div>
+
+                <h2 class="kg-ttl">
+                    <span class="tp-ttl__balloon__span">友だち登録はこちら</span
+                    >
+                </h2>
+
+                <div class="p-contact__line__container">
+                    <div class="p-contact__line__qr pc">
+                        <p>PCの場合はこちら</p>
+                        <img
+                            src="/asset/images/contact/img-contact-qr.png"
+                            alt="LINE友だち追加"
+                            width="180"
+                            height="180"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </div>
+                    <div class="p-contact__line__btn">
+                        <p class="pc">スマートフォンの場合はこちら</p>
+                        <p class="sp">
+                            下のボタンをタップすると<br />LINEへジャンプします。
+                        </p>
+                        <div class="p-balloon__linebtn">
+                            <a
+                                href="https://liff-gateway.lineml.jp/landing?follow=%40393qkbvw&lp=tjpkjb&liff_id=1654276915-81EQqQvj"
+                                class="c-linebtn">友だち追加</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- <h2 class="kg-ttl">
+						<span class="tp-ttl__balloon__span">トップへ戻る</span>
+					</h2> -->
+                <p class="tp-btn __gray">
+                    <a href="/">トップへ戻る</a>
+                </p>
+
+                <div class="thanksHight"></div>
+            </section>
+        </div>
+    </article>
+</Layout>

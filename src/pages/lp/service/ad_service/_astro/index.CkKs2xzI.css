@@ -1,0 +1,865 @@
+@charset "UTF-8";
+
+img {
+    max-width: 100%;
+}
+
+section[data-astro-cid-yz5a4n3r]#mv {
+    background: url(../images/img_mv.png) center center/cover no-repeat;
+    width: 100%;
+    height: 540px;
+    margin-top: 90px
+}
+
+@media (max-width: 768px) {
+    section[data-astro-cid-yz5a4n3r]#mv {
+        background: url(../images/img_mv-sp.png) center center/cover no-repeat;
+        margin-top: 64px
+    }
+}
+
+section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto
+}
+
+@media (max-width: 768px) {
+    section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner {
+        width: 100%
+    }
+}
+
+section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r] {
+    width: 940px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 85px 0 50px 80px;
+    background: url(../images/img_mvtxt_bg.png) center center/cover no-repeat
+}
+
+@media (max-width: 768px) {
+    section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r] {
+        bottom: -10px;
+        left: 0;
+        width: 362px;
+        height: 245px;
+        padding: 50px 0 0 20px;
+        line-height: 2;
+        border-radius: 0;
+        background: url(../images/img_mvtxt_bg-sp.png) center center/cover no-repeat
+    }
+}
+
+section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r]:before {
+    content: "";
+    width: 564px;
+    height: 247px;
+    position: absolute;
+    bottom: -45px;
+    right: -235px;
+    background: url(../images/img_mv_sm.png) center center/cover no-repeat
+}
+
+@media (max-width: 768px) {
+    section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r]:before {
+        background: url(../images/img_mv_sm-sp.png) center center/cover no-repeat;
+        width: 260px;
+        height: 100px;
+        bottom: -115px;
+        right: auto;
+        left: 25px
+    }
+}
+
+section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r] h1[data-astro-cid-yz5a4n3r].header__01 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding: 0 40px;
+    margin-bottom: 20px
+}
+
+@media (max-width: 768px) {
+    section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r] h1[data-astro-cid-yz5a4n3r].header__01 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        padding: 0
+    }
+}
+
+section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r] p[data-astro-cid-yz5a4n3r].mv-txt {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 2
+}
+
+@media (max-width: 768px) {
+    section[data-astro-cid-yz5a4n3r]#mv div[data-astro-cid-yz5a4n3r].mv__inner .mv__main[data-astro-cid-yz5a4n3r] p[data-astro-cid-yz5a4n3r].mv-txt {
+        font-size: 14px;
+        padding: 0
+    }
+}
+
+.btn[data-astro-cid-ormwpee5] {
+    display: block;
+    width: 650px;
+    background: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-inline: auto;
+    border-radius: 80px;
+    padding: 34px 0 20px;
+    position: relative
+}
+
+@media (max-width: 768px) {
+    .btn[data-astro-cid-ormwpee5] {
+        width: 96%;
+        font-size: 17px;
+        padding: 18px 0 10px;
+    }
+}
+
+.btn[data-astro-cid-ormwpee5]:before {
+    content: "";
+    position: absolute;
+    top: 46%;
+    right: 50px;
+    transform: translateY(-50%);
+    background: url(../images/common/icon-arrow.png) center center/cover no-repeat;
+    width: 10px;
+    height: 20px
+}
+
+@media (max-width: 768px) {
+    .btn[data-astro-cid-ormwpee5]:before {
+        width: 10px;
+        height: 10px
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] {
+    padding: 120px 0 200px
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] {
+        padding: 175px 0 100px
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] {
+    max-width: 835px;
+    margin: 60px auto 80px
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] {
+        margin: 35px auto 40px
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item {
+    display: flex;
+    align-items: center
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item {
+        flex-direction: column
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item:not(:last-child) {
+    margin-bottom: 60px
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item:not(:last-child) {
+        margin-bottom: 30px
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-num {
+    width: 90px;
+    margin-right: 40px
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-num {
+        width: 60px;
+        margin-right: 0;
+        margin-bottom: 30px
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-num img[data-astro-cid-ezsi7upz] {
+    width: 100%
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-main h3[data-astro-cid-ezsi7upz] {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-main h3[data-astro-cid-ezsi7upz] {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.75
+    }
+}
+
+#feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-main p[data-astro-cid-ezsi7upz] {
+    font-size: 16px;
+    line-height: 1.75
+}
+
+@media (max-width: 768px) {
+    #feature[data-astro-cid-ezsi7upz] .feature-list[data-astro-cid-ezsi7upz] div[data-astro-cid-ezsi7upz].feature-item div[data-astro-cid-ezsi7upz].item-main p[data-astro-cid-ezsi7upz] {
+        font-size: 13px;
+        text-align: center
+    }
+}
+
+.publish[data-astro-cid-2viko5w5]#publish-banner {
+    background: #f6f3f0;
+    padding: 175px 0 75px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5]#publish-banner {
+        padding: 175px 0 50px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5]#publish-article {
+    background: #fff;
+    padding: 120px 0 75px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5]#publish-article {
+        padding: 60px 0 50px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5]#publish-article .ex__inner[data-astro-cid-2viko5w5] {
+    background: #f7f6f6
+}
+
+.publish[data-astro-cid-2viko5w5]#publish-mailmagazine {
+    padding: 125px 0 75px;
+    background: #f6f3f0;
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5]#publish-mailmagazine {
+        padding: 60px 0 50px;
+        background: #f6f3f0;
+    }
+}
+
+.publish[data-astro-cid-2viko5w5]#publish-line {
+    padding: 125px 0 75px;
+    background: #fff
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5]#publish-line {
+        padding: 60px 0 50px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5]#publish-line .ex__inner[data-astro-cid-2viko5w5] {
+    background: #f7f6f6
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner {
+    position: relative
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner div[data-astro-cid-2viko5w5].publish__nav {
+    position: absolute;
+    top: -215px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner div[data-astro-cid-2viko5w5].publish__nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 20px;
+        top: -200px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner div[data-astro-cid-2viko5w5].publish__nav .nav__link[data-astro-cid-2viko5w5] {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width: 270px;
+    padding: 15px 0 28px;
+    border-radius: 20px;
+    border: 5px solid #6d6865;
+    box-shadow: 0 5px 1px #6d6865
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner div[data-astro-cid-2viko5w5].publish__nav .nav__link[data-astro-cid-2viko5w5] {
+        width: 47%;
+        font-size: 18px;
+        padding: 8px 0 17px;
+        border: 3px solid #6d6865;
+        box-shadow: 0 2px 1px #6d6865;
+        border-radius: 15px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner div[data-astro-cid-2viko5w5].publish__nav .nav__link[data-astro-cid-2viko5w5]:before {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 18px;
+    height: 20px;
+    background: url(../images/common/icon-arrow-orange.png) center center/cover no-repeat
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner div[data-astro-cid-2viko5w5].publish__nav .nav__link[data-astro-cid-2viko5w5]:before {
+        bottom: 8px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 10px;
+        height: 12px;
+        background: url(../images/common/icon-arrow-orange.png) center center/contain no-repeat
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example h3[data-astro-cid-2viko5w5] {
+    text-align: center;
+    font-size: 40px;
+    margin: 80px auto 40px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example h3[data-astro-cid-2viko5w5] {
+        font-size: 20px;
+        line-height: 1.75;
+        margin: 0 auto 20px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] {
+    background: #fff;
+    border-radius: 80px;
+    padding: 75px 65px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] {
+        border-radius: 50px;
+        padding: 50px 10px 60px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex01 {
+    margin-bottom: 120px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex01 {
+        margin-bottom: 60px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex01 h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+    content: "(2024年実績)";
+    left: -10%
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex02 {
+    margin-bottom: 60px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex02 h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+    content: "(2024年実績)";
+    left: -20%
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex03 {
+    margin-bottom: 60px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex03 h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+    content: "(2024年実績)";
+    left: -50%
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex04 {
+    margin-bottom: 60px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex04 h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+    content: "(2025年1月実績)";
+    left: -50%
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex05 {
+    margin-bottom: 60px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5].ex05 h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+    content: "（2024年7月時点）";
+    left: -160%
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 50px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] {
+        font-size: 24px;
+        margin-bottom: 30px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].num {
+    display: block;
+    width: 90px;
+    margin-right: 30px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].num {
+        width: 50px;
+        margin-right: 15px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].num img[data-astro-cid-2viko5w5] {
+    width: 100%
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg {
+    font-size: 60px;
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg {
+        font-size: 36px;
+        margin-bottom: 7px;
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    font-size: 16px;
+    color: var(--orange);
+    font-weight: 700;
+    min-width: 105px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] h4[data-astro-cid-2viko5w5] span[data-astro-cid-2viko5w5].lg:before {
+        font-size: 12px;
+        bottom: -11px;
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper {
+        flex-direction: column
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.magazine-upper {
+    gap: 50px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.magazine-upper .image[data-astro-cid-2viko5w5] {
+    padding: 0 20px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.magazine-upper .image[data-astro-cid-2viko5w5] {
+        padding: 0;
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.line-upper {
+    flex-direction: column;
+    margin-bottom: 40px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.line-upper .box[data-astro-cid-2viko5w5] {
+    margin-bottom: 20px;
+    background: #fff
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.line-upper .line-list[data-astro-cid-2viko5w5] {
+    display: flex;
+    gap: 30px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.line-upper .line-list[data-astro-cid-2viko5w5] {
+        flex-direction: column
+    }
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper.line-upper .line-list[data-astro-cid-2viko5w5] .line-item[data-astro-cid-2viko5w5] {
+        width: 220px;
+        margin: 0 auto
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper div[data-astro-cid-2viko5w5].left div[data-astro-cid-2viko5w5].image {
+    margin-bottom: 20px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper div[data-astro-cid-2viko5w5].right p[data-astro-cid-2viko5w5] {
+    text-align: center;
+    margin-top: 15px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper .box[data-astro-cid-2viko5w5] {
+    font-size: 24px;
+    font-weight: 700;
+    border: 4px solid var(--orange);
+    color: var(--orange);
+    text-align: center;
+    padding: 15px 0 2px;
+    margin-bottom: 40px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper .box[data-astro-cid-2viko5w5] {
+        font-size: 16px;
+        padding: 12px 0 3px;
+        margin-bottom: 20px;
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper ul[data-astro-cid-2viko5w5] {
+    list-style: none;
+    padding-inline-start: 0px;
+    width: 300px;
+    margin: 0 auto 50px
+}
+
+@media (max-width: 768px) {
+    .publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper ul[data-astro-cid-2viko5w5] {
+        width: 270px;
+        margin: 0 auto 30px
+    }
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper ul[data-astro-cid-2viko5w5] li[data-astro-cid-2viko5w5] {
+    margin-bottom: 20px
+}
+
+.publish[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].contents__inner section[data-astro-cid-2viko5w5].publish-example .ex__inner[data-astro-cid-2viko5w5] div[data-astro-cid-2viko5w5].ex__main div[data-astro-cid-2viko5w5].main-upper .banner-ttl[data-astro-cid-2viko5w5] {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .main-upper[data-astro-cid-2viko5w5]:not(.magazine-upper) .right[data-astro-cid-2viko5w5] .image[data-astro-cid-2viko5w5] {
+        width: 70%;
+        margin-inline: auto
+    }
+}
+
+.detail {
+    width: 100%;
+}
+
+.detail-ttl {
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 0 1px;
+    background: #fcebe0;
+    font-size: 17px;
+    position: relative;
+}
+
+.detail-ttl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0% 0%, 0 100%, 0 25%, 75% 25%, 75% 75%, 75% 100%, 100% 100%, 100% 0%);
+    background-color: #ff6547;
+    width: 25px;
+    height: 25px;
+}
+
+.detail-ttl::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0%, 0 100%, 0 25%, 75% 25%, 75% 75%, 75% 100%, 100% 100%, 100% 0%);
+    background-color: #ff6547;
+    width: 25px;
+    height: 25px;
+    transform: rotate(270deg);
+}
+
+
+@media (max-width: 768px) {
+    .detail-ttl {
+        font-size: 14px;
+        padding: 11px 0 3px;
+    }
+
+    .detail-ttl::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .detail-ttl::after {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.detail-table {
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+
+
+.detail-table::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(0% 0%, 0 100%, 0 25%, 75% 25%, 75% 75%, 75% 100%, 100% 100%, 100% 0%);
+    background-color: #ff6547;
+    width: 25px;
+    height: 25px;
+    transform: rotate(90deg);
+}
+
+.detail-table::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0% 0%, 0 100%, 0 25%, 75% 25%, 75% 75%, 75% 100%, 100% 100%, 100% 0%);
+    background-color: #ff6547;
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.detail-table tr th[colspan="2"] {
+    text-align: center;
+    background: #ffe04a;
+    padding: 10px 0 0;
+    border-top: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    width: 200px;
+    height: 100%;
+    font-size: 17px;
+    width: calc(100% / 6 * 1);
+}
+
+
+@media (max-width: 768px) {
+    .detail-table::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .detail-table::before {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .detail-table tr th[colspan="2"] {
+        font-size: 13px;
+        padding: 7px 0 0;
+        width: calc(100% / 6 * 2);
+    }
+
+    /* .detail-table tr:first-child th {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 53px;
+        border-bottom: 0px solid #aaaaaa;
+    }*/
+}
+
+.detail-table tr td[colspan="4"] {
+    padding: 12px 40px 3px;
+    border-top: 1px solid #aaaaaa;
+    background: #fff;
+    font-weight: 500;
+    width: calc(100% / 6 * 4);
+}
+
+.detail-table tr td[colspan="4"] a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    .detail-table tr td[colspan="4"] {
+        font-size: 13px;
+        padding: 7px 10px 0;
+        width: calc(100% / 6 * 4);
+    }
+
+    .detail-table tr td[colspan="4"].url {
+        font-size: 11px;
+    }
+}
+
+.detail-table td:last-child {
+    border-bottom: 1px solid #aaaaaa;
+}
+
+#qanda[data-astro-cid-vf5xx4p4] {
+    padding: 125px 0 100px;
+    background: #f5f5f5
+}
+
+@media (max-width: 768px) {
+    #qanda[data-astro-cid-vf5xx4p4] {
+        padding: 65px 0 75px
+    }
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list {
+    margin-bottom: 80px
+}
+
+@media (max-width: 768px) {
+    #qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list {
+        margin-bottom: 60px
+    }
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item {
+    background: #fff;
+    border-radius: 25px;
+    padding: 40px 0;
+    display: block
+}
+
+@media (max-width: 768px) {
+    #qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item {
+        border-radius: 15px;
+        padding: 15px 0
+    }
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item:not(:last-child) {
+    margin-bottom: 20px
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] {
+    width: 780px;
+    margin: 0 auto
+}
+
+@media (max-width: 768px) {
+    #qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] {
+        width: 100%;
+        padding: 0 10px
+    }
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].q {
+    font-size: 22px;
+    font-weight: 700;
+    color: #616161;
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 0 2px 0 8px
+}
+
+@media (max-width: 768px) {
+    #qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].q {
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 10px;
+    }
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].q span[data-astro-cid-vf5xx4p4].q-ttl {
+    color: var(--txtPink);
+    margin-right: 5px
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].a {
+    font-size: 22px;
+    font-weight: 700;
+    background: #ffeed8;
+    padding: 12px 2px 1px 10px;
+    line-height: 1.75;
+    width: fit-content
+}
+
+@media (max-width: 768px) {
+    #qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].a {
+        font-size: 14px
+    }
+}
+
+#qanda[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].qanda-list div[data-astro-cid-vf5xx4p4].qanda-item .item__wrapper[data-astro-cid-vf5xx4p4] div[data-astro-cid-vf5xx4p4].a span[data-astro-cid-vf5xx4p4].a-ttl {
+    margin-right: 5px
+}

@@ -1,0 +1,181 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import "@fontsource-variable/noto-serif-jp";
+import "@fontsource-variable/noto-sans-jp";
+import "@fontsource/roboto";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			type="text/partytown"
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-XW0R2VP53J"
+		></script>
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-XW0R2VP53J");
+		</script>
+		<!-- Google Tag Manager -->
+		<script is:inline>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NXBVCP8");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta
+			name="description"
+			content="書きの筆文字で温かみとダイナミックさを表現！楷書・行書・草書から選べるデザインで、店名やメニュー表を制作。今なら書道歴13年の準師範取得者による本格的な筆文字を特別価格でご案内可能！"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/lp/fudemojiya/style/reset.css" />
+		<link rel="stylesheet" href="/lp/fudemojiya/style/lightbox.css" />
+		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="canonical"
+			href="https://support.tenpos.com/lp/fudemojiya/"
+		/>
+
+		<!--ファビコン、IOSタイコン-->
+		<link rel="icon" href="https://support.tenpos.com/asset/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://support.tenpos.com/asset/apple-touch-icon.png"
+		/>
+
+		<!-- OGP -->
+		<meta
+			property="og:title"
+			content="筆文字で唯一無二の店名・メニュー表作成！キャンペーン実施中"
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://support.tenpos.com/lp/fudemojiya/"
+		/>
+		<meta
+			property="og:image"
+			content="https://support.tenpos.com/lp/fudemojiya/img/ogp.jpg"
+		/>
+		<meta property="og:site_name" content="テンポスフードプレイス" />
+		<meta
+			property="og:description"
+			content="書きの筆文字で温かみとダイナミックさを表現！楷書・行書・草書から選べるデザインで、店名やメニュー表を制作。今なら書道歴13年の準師範取得者による本格的な筆文字を特別価格でご案内可能！"
+		/>
+		<!-- OGP Twitter共通設定 -->
+		<meta name="twitter:card" content="Summary Card with Large Image" />
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXBVCP8"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
+		<slot />
+	</body>
+</html>
+<style is:global lang="scss">
+	:root {
+		--mincho: "Noto Serif JP Variable", serif;
+		--notosans: "Noto Sans JP Variable", sans-serif;
+		--roboto: "Roboto", sans-serif;
+		--red: #cb3f20;
+		--orange: #da7d2b;
+		--deepred: #942e17;
+	}
+	html {
+		font-family: var(--notosans);
+		scroll-behavior: smooth;
+	}
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+	}
+
+	.cInner {
+		max-width: 1200px;
+		margin-inline: auto;
+		@media (max-width: 768px) {
+			max-width: 100%;
+			padding: 0 35px;
+		}
+	}
+
+	.h02 {
+		font-size: 60px;
+		font-weight: bold;
+		font-family: var(--mincho);
+		text-align: center;
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 1;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		line-height: 1.25;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -84px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1480px;
+			height: 310px;
+			background: url("/lp/fudemojiya/img/img_mvtxt_bg.png") center center /
+				contain no-repeat;
+			z-index: -1;
+		}
+	}
+
+	.pc {
+		display: block;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.sp {
+		display: none;
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+</style>

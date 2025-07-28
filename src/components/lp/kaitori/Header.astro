@@ -1,0 +1,150 @@
+<header id="header">
+  <div class="header__inner">
+    <div class="logo"><img src="/lp/kaitori/img/img_logo.png" alt="" /></div>
+    <div class="btn__wrapper">
+      <div class="pc">
+        <div class="btn btn-tel">
+          <div class="icon">
+            <img src="/lp/kaitori/img/icon_tel.png" alt="" />
+          </div>
+          <div class="txt">
+            <span class="txt-sm">お急ぎの方はお電話で！</span>
+            <span class="txt-lg">050-3174-1366</span>
+            <span class="txt-sm">9:00~18:00（平日）</span>
+          </div>
+        </div>
+      </div>
+      <div class="sp">
+        <a href="tel:05031741366" class="btn btn-tel">
+          <div class="icon">
+            <img src="/lp/kaitori/img/icon_tel.png" alt="" />
+          </div>
+          <div class="txt">
+            <span class="txt-sm">お急ぎの方はお電話で！</span>
+            <span class="txt-md">050-3174-1366</span>
+            <span class="txt-xl">9:00~18:00（平日）</span>
+          </div>
+        </a>
+      </div>
+      <a
+        href="https://tenpos0319.form.kintoneapp.com/public/fp-site"
+        class="click_btn_set_mail btn btn-mail"
+      >
+        <div class="icon">
+          <img src="/lp/kaitori/img/icon_mail.png" alt="" />
+        </div>
+        <div class="txt">
+          <span class="txt-md">メールで買取依頼</span>
+          <span class="txt-sm">（24時間365日受付）</span>
+        </div>
+      </a>
+      <a
+        href="https://www.tenpos.com/kaitori/line/index.html"
+        class="click_btn_set_line btn btn-line"
+        target="_blank"
+      >
+        <div class="icon">
+          <img src="/lp/kaitori/img/icon_line.png" alt="" />
+        </div>
+        <div class="txt">
+          <span class="txt-md">LINEで<br class="pc" />かんたん見積</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <style lang="scss">
+    header#header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid var(--red);
+      background-color: #fff;
+      z-index: 999;
+      @media (max-width: 768px) {
+        border-bottom: 1px solid var(--red);
+      }
+      div.header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        @media (max-width: 768px) {
+          padding: 10px;
+          height: 50px;
+        }
+        div.logo {
+          @media (max-width: 768px) {
+            width: 54px;
+          }
+          img {
+          }
+        }
+        div.btn__wrapper {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+          .btn {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 200px;
+            height: 60px;
+            padding: 0 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 1px #7f7f82;
+            transition: all 0.3s;
+            &:hover {
+              box-shadow: unset;
+              transform: translateY(4px);
+            }
+            div.icon {
+              width: 20%;
+              display: flex;
+              justify-content: center;
+              img {
+              }
+            }
+            div.txt {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              line-height: 1.1;
+              width: 80%;
+              span.txt-sm {
+                font-size: 11px;
+                display: block;
+              }
+              span.txt-lg {
+                font-size: 19px;
+                font-weight: bold;
+                display: block;
+              }
+              span.txt-md {
+                font-size: 16px;
+                font-weight: bold;
+                display: block;
+              }
+            }
+          }
+          .btn.btn-tel {
+            display: flex;
+            background: var(--red);
+          }
+          .btn.btn-mail {
+            background: var(--orange);
+          }
+          .btn.btn-line {
+            background: var(--green);
+          }
+        }
+      }
+    }
+  </style>
+</header>

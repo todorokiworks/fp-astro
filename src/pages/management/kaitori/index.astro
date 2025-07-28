@@ -1,0 +1,46 @@
+---
+import Layout from "../../../layouts/lp/kaitori/Layout.astro";
+import Header from "../../../components/lp/kaitori/Header.astro";
+import Mv from "../../../components/lp/kaitori/Mv.astro";
+import Banner from "../../../components/lp/kaitori/Banner.astro";
+import KaitoriPoint from "../../../components/lp/kaitori/KaitoriPoint.astro";
+import KaitoriFlow from "../../../components/lp/kaitori/KaitoriFlow.astro";
+import KaitoriHinmoku from "../../../components/lp/kaitori/KaitoriHinmoku.astro";
+import Maker from "../../../components/lp/kaitori/Maker.astro";
+import QandA from "../../../components/lp/kaitori/QandA.astro";
+import Footer from "../../../components/lp/kaitori/Footer.astro";
+import FloatingBnr from "../../../components/lp/kaitori/FloatingBnr.astro";
+import PC from "../../../components/lp/kaitori/Pc.astro";
+import SP from "../../../components/lp/kaitori/Sp.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.kaitori);
+---
+
+<Layout
+  title="業務用厨房機器・店舗用品の買取 | テンポスドットコム"
+  description="テンポスドットコムは、業務用厨房機器・店舗用品の買取を行っています。"
+  pageUrl="/management/kaitori/"
+  markup={markup}
+>
+  <Header />
+  <Mv />
+  <PC />
+  <SP />
+  <Banner />
+  <KaitoriPoint />
+  <KaitoriFlow />
+  <KaitoriHinmoku />
+  <Banner />
+  <Maker />
+  <QandA />
+  <Banner />
+  <Footer />
+  <FloatingBnr />
+</Layout>
+
+<style lang="scss">
+  main {
+    h1 {
+    }
+  }
+</style>

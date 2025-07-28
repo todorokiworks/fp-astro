@@ -1,0 +1,91 @@
+---
+const list = [
+  {
+    url: "/lp/kaitori/img/img_kairoripoint01.png",
+    header: `付属品や説明書を<br class="pc">揃えておく`,
+    txt: `購入時についてきた備品や細かい部品、説明書があるかないかで見積金額が大きく変わります。`,
+  },
+  {
+    url: "/lp/kaitori/img/img_kairoripoint02.png",
+    header: `フィルターの詰まりや汚れを<br class="pc">落としておく`,
+    txt: `日頃のお手入れを大切にし、出来るだけ汚れが残らないようにしておきましょう。`,
+  },
+  {
+    url: "/lp/kaitori/img/img_kairoripoint03.png",
+    header: `ガスや電気が入る状態に<br class="pc">しておく`,
+    txt: `見積の際は、実際に厨房機器を動かして正常に作動するか確認をします。スタッフが来る前にご準備をお願いいたします。 `,
+  },
+];
+---
+
+<section id="point">
+  <div class="contents__inner">
+    <h2 class="header_02">高価買取のポイント</h2>
+    <div class="list">
+      {
+        list.map(item => (
+          <div class="item">
+            <div class="img">
+              <img src={item.url} alt="" />
+            </div>
+            <p class="header" set:html={item.header} />
+            <p class="txt" set:html={item.txt} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  section#point {
+    div.contents__inner {
+      padding-top: 100px;
+      @media (max-width: 768px) {
+        padding: 40px 10px 0;
+      }
+      h2.header_02 {
+      }
+      div.list {
+        display: flex;
+        gap: 40px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+        div.item {
+          width: 33%;
+          border: 4px solid #dddddd;
+          padding: 15px;
+          @media (max-width: 768px) {
+            width: 100%;
+            border: 2px solid #dddddd;
+          }
+          div.img {
+            margin-bottom: 20px;
+            img {
+              width: 100%;
+            }
+          }
+          p.header {
+            color: #003761;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.25;
+            @media (max-width: 768px) {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+          }
+          p.txt {
+            font-size: 16px;
+            @media (max-width: 768px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

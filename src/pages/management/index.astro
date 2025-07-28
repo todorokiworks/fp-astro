@@ -1,0 +1,407 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import structuredDataMarkup from "../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.management);
+---
+
+<Layout
+    title="飲食店の保険/税理士/経営コンサルタントのご紹介｜テンポスフードプレイス"
+    description="飲食店の光熱費の一つ、ガス料金を削減して経費削減しませんか？テンポスが飲食店に合ったガス会社をご紹介！"
+    pageUrl="/management/"
+    ogimage="/asset/images/management/ogp_management.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/management/">店舗運営支援</a></li>
+                </ol>
+            </nav>
+            <section class="btm-front__section management_mv">
+                <h1 class="btm-front__ttl font_m_plus">
+                    <span>店舗運営支援</span>
+                </h1>
+            </section>
+            <section class="kg-open__section btm-sec tp-wrapper">
+                <p class="kg-open__caption">
+                    飲食店を運営していくには、お客様に料理で<br class="pc" />
+                    満足していただくだけでなく、業務の効率化も欠かせません。<br
+                        class="pc"
+                    />
+                    また、飲食店で起こりうるリスクにも備える必要があります。<br
+                        class="pc"
+                    />
+                    店舗を運営していく上で必要なサービスをご紹介しています。
+                </p>
+            </section>
+            <section class="kg-support__section btm-sec tp-wrapper">
+                <ul class="kg-link__list purchase-thumb02">
+                    <li>
+                        <a href="/management/tax-accountant/">
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/management/sp/img_management01.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/management/img_management01.jpg"
+                                        srcset="/asset/images/management/img_management01.jpg 1x,/asset/images/management/2x/img_management01.jpg 2x"
+                                        alt="飲食専門税理士紹介"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">
+                                    飲食専門<br />税理士紹介
+                                </h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/management/consultant/">
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/management/sp/img_management02.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/management/img_management02.jpg"
+                                        srcset="/asset/images/management/img_management02.jpg 1x,/asset/images/management/2x/img_management02.jpg 2x"
+                                        alt="飲食コンサルタントマッチング"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">
+                                    飲食<br class="sp" />コンサルタント<br
+                                    />マッチング
+                                </h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li>
+							<a href="/management/credit-card/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/management/sp/img_management03.jpg">
+										<img src="/asset/images/management/img_management03.jpg"
+											srcset="/asset/images/management/img_management03.jpg 1x,/asset/images/management/2x/img_management03.jpg 2x"
+											alt="テンポスクレジットカード" width="113" height="113" loading="lazy"
+											class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">テンポス<br>クレジットカード</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li> -->
+
+                    <li>
+                        <a href="/management/insurance/">
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/management/sp/img_management04.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/management/img_management04.jpg"
+                                        srcset="/asset/images/management/img_management04.jpg 1x,/asset/images/management/2x/img_management04.jpg 2x"
+                                        alt="店舗用保険"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">店舗用保険</h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+							<a href="/management/sharosi/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/management/sp/img_management09.png">
+										<img src="/asset/images/management/img_management09.png"
+											srcset="/asset/images/management/img_management09.png 1x,/asset/images/management/2x/img_management09.png 2x"
+											alt="店舗用保険" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">社労士紹介</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li> -->
+
+                    <!-- <li>
+							<a href="/management/q-navi/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/management/sp/img_management05.jpg">
+										<img src="/asset/images/management/img_management05.jpg"
+											srcset="/asset/images/management/img_management05.jpg /asset/images/management/2x/img_management05.jpg 2x"
+											alt="店舗トラブル解決アプリ" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">店舗トラブル解決アプリ</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li> -->
+
+                    <!-- <li>
+							<a href="/management/vendingmachine/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/management/sp/img_management06.jpg">
+										<img src="/asset/images/management/img_management06.jpg"
+											srcset="/asset/images/management/img_management06.jpg 1x,/asset/images/management/2x/img_management06.jpg 2x"
+											alt="自動販売機" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">自動販売機</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li> -->
+
+                    <!-- <li>
+							<a href="https://www.tenpos.com/joseikin/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/management/sp/img_management07.jpg">
+										<img src="/asset/images/management/img_management07.jpg"
+											srcset="/asset/images/management/img_management07.jpg 1x,/asset/images/management/2x/img_management07.jpg 2x"
+											alt="自動販売機" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">事業再構築補助金<br>申請サポート</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li> -->
+
+                    <li>
+                        <a href="/management/kaitori/">
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/management/sp/img_management08.png"
+                                    />
+                                    <img
+                                        src="/asset/images/management/img_management08.png"
+                                        srcset="/asset/images/management/img_management08.png 1x,/asset/images/management/2x/img_management08.png 2x"
+                                        alt="自動販売機"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">厨房機器買取</h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    :root {
+        --fnts_local: 16px;
+        --fnts_caption_min: 26px;
+        --fnts_caption_sub: 20px;
+        --fnts_section_ttl: 30px;
+    }
+
+    /* -------------------- management-section ------------------- */
+    /* -----　management/index.html　店舗運営支援ページ用mv　----- */
+    .btm-front__section.management_mv {
+        background-image: url(/asset/images/management/mv_management.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        /* -----　management/index.html　店舗運営支援　PC(min-width: 768px)用mv　----- */
+        .btm-front__section.management_mv {
+            background-position: 50% 50%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        /* -----　management/index.html　店舗運営支援ページ　sp用mv　----- */
+        .btm-front__section.management_mv {
+            background-image: url(/asset/images/management/sp/mv_management_sp.jpg);
+            background-position: 50% 0%;
+            background-size: 175%;
+        }
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-ttl {
+        position: relative;
+    }
+
+    .tp-ttl__balloon__span__sm {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        color: var(--MAIN_ORANGE);
+        font-size: 16px;
+
+        &::after {
+            content: "";
+            display: none;
+        }
+    }
+
+    .tp-design__section {
+        position: relative;
+    }
+
+    .tp-design__thumb {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        .generalsec,
+        .tp-sec {
+            margin-bottom: 120px;
+            position: relative;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-design__section {
+            margin-bottom: 80px;
+        }
+
+        .tp-ttl__balloon__span__sm {
+            width: 300px;
+        }
+
+        .tp-design__thumb {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point53.png) no-repeat center
+            center / contain;
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point59.png) no-repeat center
+            center / contain;
+    }
+
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point30.png) no-repeat center
+            center / contain;
+    }
+
+    /* -------------------- ------------------- */
+
+    .tp-kaitori__section .tp-kaitori__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tp-kaitori__section .tp-kaitori__list .list__kaitori-ttl {
+        background: var(--MAIN_ORANGE);
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        padding: 4px 0;
+        margin-bottom: 12px;
+    }
+
+    .tp-kaitori__section .tp-kaitori__list .list__kaitori-img {
+        margin-bottom: 12px;
+    }
+
+    .tp-kaitori__section .tp-kaitori__list .list__kaitori-info {
+        margin-bottom: 20px;
+    }
+
+    .tp-kaitori__section
+        .tp-kaitori__list
+        .list__kaitori-info
+        .list__kaitori-info-price {
+        color: #ce0000;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .tp-kaitori__section .tp-kaitori__list article {
+        width: 32%;
+        margin-right: 13px;
+    }
+
+    .tp-kaitori__section .tp-kaitori__list article:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-kaitori__section .tp-kaitori__list article {
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+
+    /* -------------------- ------------------- */
+</style>

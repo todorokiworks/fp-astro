@@ -1,0 +1,20 @@
+---
+import Intro from "../kaitori/Intro.astro";
+import KaitoriList from "../kaitori/KaitoriList.astro";
+import KaitoriSobaPc from "../kaitori/KaitoriSobaPc.astro";
+---
+
+<div class="pc">
+  <Intro />
+  <KaitoriList />
+  <KaitoriSobaPc />
+</div>
+
+<style lang="scss">
+  .pc {
+    display: block;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+</style>

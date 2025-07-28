@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* ■■■■■■■■■■global■■■■■■■■■■ */
+:root {
+  --NUM_ORANGE:var(--MAIN_ORANGE);
+  --TABLE_GRAY_01:#ddd;
+  --TABLE_GRAY_02:#aaa;
+  --TABLE_BORDER_GRAY:#B4B4B4;
+  --TABLE_YELLOW:var(--MAIN_YELLOW);
+  --TABLE_ORANGE:#FFA000;
+  --TABLE_RED:#F07D00;
+  --TABLE_BLUE:#508CA0;
+  --TABLE_TAG_YELLOW:#FFF092;
+  --TABLE_TAG_ORANGE:#FFD266;
+  --TABLE_TAG_RED:#F7B46C;
+  --TABLE_TAG_BLUE:#B4CED6;
+  --OPTION_YELLOW:var(--MAIN_YELLOW);
+  --OPTION_ORANGE:var(--GRADATION_ORANGE);
+  --OPTION_RED:var(--MAIN_ORANGE);
+  --ATTENTION_TAG:#787878;
+  --STEP_BORDER:#1b1616;
+  --RENTAL_QUESTION_BG:#F7F7F7;
+  --CONTACT_RED:#EB5A5A;
+  --CONTACT_BLUE:#1283C3;
+  --CONTACT_GREEN:#00AA8C;
+  --CONTACT_RED_NAVY:rgb(215, 70, 70);
+  --CONTACT_BLUE_NAVY:rgb(0, 111, 175);
+  --CONTACT_GREEN_NAVY:rgb(0, 150, 120);
+  --CONTAINER_BORDER:#FFE6AA;
+  --CONTENTS_BORDER_GRAY:#A0A0A0;
+  --ADD_TABLE_GRAY:#EDEDED;
+  --ADD_TABLE_BTN:#5B5B5B;
+  --ADD_CONTACT_GRAY:#e3e3e3;
+  --ADD_CONTACT_YELLOW:#fdc831;
+  --ADD_CONTACT_TITLE_GRAY:#9b9b9b;
+  --sp_mag:calc(1 - (375 / 816));
+  --contents_gap_col:20px;
+  --contents_gap_row:20px;
+  --TABLE_COMENT_RED:#c00000;
+}
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/press-release/mv-press-release.jpg);
+}
+
+/* ====================================== 
+tp-design__section
+=========================================
+*/
+.tp-design__section .fit-content {
+  height: fit-content;
+}
+/*-----------------------
+6つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list {
+  row-gap: 6px;
+}
+
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 45px;
+  margin-right: 13px;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point20.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point21.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point07.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 58px);
+}
+
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*-----------------------
+ tp-seo__section
+-----------------------*/
+.price-table__head-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--MAIN_ORANGE);
+  text-align: center;
+}
+
+/** テーブル関連 **/
+
+@media screen and (max-width: 767px) {
+  .tp-scroll__container {
+      white-space: nowrap;
+  }
+}
+
+.tp-table__pay02 {
+  width: 104%;
+  margin-left: -2%;
+  border-collapse: collapse;
+}
+
+@media screen and (max-width: 767px) {
+  .tp-table__pay02 {
+    width: 100%;
+    margin-left: 0;
+    border-collapse: collapse;
+  }
+}
+
+.tp-table__pay02 tbody th,
+.tp-table__pay02 tbody td {
+  border: 1px solid var(--TABLE_BORDER_GRAY);
+}
+
+.tp-table__pay02 tbody td {
+  padding: 20px;
+  width:calc(100%/4)
+}
+.tp-table__pay02 .color-gray {
+  background-color: var(--TABLE_GRAY_01);
+}
+.tp-table__pay02 .color-yellow {
+  font-weight: bold;
+  background-color: var(--MAIN_YELLOW);
+}
+.tp-table__pay02 .price-main {
+  font-weight: bold;
+  background-color: var(--MAIN_YELLOW);
+  font-size: 24px;
+}
+.tp-table__pay02 .price-sub {
+  font-size: 24px;  
+}
+.tp-table__pay02 .yen {
+  font-size: 15px;  
+}
+
+@media screen and (max-width: 767px) {
+  .tp-table__pay02 tbody td img {
+    width: 50%;
+  }
+}
+
+.tp-table__pay02 .coment-red {
+  color:var(--TABLE_COMENT_RED);
+}
+
+/*-----------------------
+ tp-attention__section
+-----------------------*/
+.tp-attention__price > .text {
+  font-size: 28px;  
+}
+
+/*-----------------------
+ contactarea
+-----------------------*/
+.contactarea:first-of-type {
+  margin-bottom: 80px;
+}
+
+
+
+

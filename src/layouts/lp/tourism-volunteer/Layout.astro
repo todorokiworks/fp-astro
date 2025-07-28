@@ -1,0 +1,420 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import "@fontsource-variable/noto-sans-jp";
+import "@fontsource/roboto";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/900.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Google Tag Manager -->
+		<script is:inline>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NXBVCP8");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta
+			name="description"
+			content="英語を使って訪日外国人に観光案内をしませんか？経験不要で、学生、主婦、シニアも大歓迎！空いた時間を活用して異文化交流を楽しみながら、英語力を活かせるボランティア活動です。"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/lp/tourism-volunteer/style/reset.css" />
+		<meta name="generator" content="Astro v4.16.5" />
+		<link
+			rel="canonical"
+			href="https://support.tenpos.com/lp/tourism-volunteer/"
+		/><!--ファビコン、IOSタイコン-->
+		<link rel="icon" href="https://support.tenpos.com/asset/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://support.tenpos.com/asset/apple-touch-icon.png"
+		/>
+
+		<!-- OGP -->
+		<meta property="og:title" content="" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://support.tenpos.com/lp/tourism-volunteer/"
+		/>
+		<meta
+			property="og:image"
+			content="https://support.tenpos.com/lp/tourism-volunteer/img/ogp.jpg"
+		/>
+		<meta property="og:site_name" content="テンポスフードプレイス" />
+		<meta
+			property="og:description"
+			content="英語を使って訪日外国人に観光案内をしませんか？経験不要で、学生、主婦、シニアも大歓迎！空いた時間を活用して異文化交流を楽しみながら、英語力を活かせるボランティア活動です。"
+		/>
+		<!-- OGP Twitter共通設定 -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="" />
+		<meta
+			name="twitter:image"
+			content="https://support.tenpos.com/lp/tourism-volunteer/img/ogp.jpg"
+		/>
+		<script is:inline>
+			(function (d) {
+				var config = {
+						kitId: "htj5pzx",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") +
+							" wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<script>
+	import { gsap } from "gsap";
+	import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+	/*gsap.fromTo(
+		"#intro .h02",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#intro", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);*/
+	gsap.fromTo(
+		"#intro .list__wrapper",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#intro .list__wrapper", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#intro .list__wrapper",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#intro .list__wrapper", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#intro .txt",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#intro .txt", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#point .h02",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#point .h02", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#point .list",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#point .list", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#flow .h02",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#flow .h02", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#flow .list",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#flow .list", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#flow .box",
+		{
+			autoAlpha: 0, // 要素を隠す
+			y: 20, // 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			y: 0, // 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#flow .box", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		"#flow .contactBtn",
+		{
+			autoAlpha: 0, // 要素を隠す 縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション// 縦方向0に
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: "#flow .contactBtn", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		".bottom-img",
+		{
+			autoAlpha: 0, // 要素を隠す
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: ".bottom-img", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+	gsap.fromTo(
+		".bottom-img2",
+		{
+			autoAlpha: 0, // 要素を隠す縦方向に+20px
+		},
+		{
+			autoAlpha: 1, // 要素を表示
+			duration: 1, // 1秒かけてアニメーション
+			scrollTrigger: {
+				// scrollTriggerの設定
+				trigger: ".bottom-img2", // ターゲットとなる要素を指定
+				start: "top center", // アニメーションの開始位置を設定。
+			},
+		},
+	);
+</script>
+
+<style is:global lang="scss">
+	:root {
+		--noto: "Noto Sans JP Variable", sans-serif;
+		--roboto: "Roboto", sans-serif;
+		--kokoro: "ab-kokoro-no3", sans-serif;
+		--grey: #f7f7f7;
+		--red: #e60012;
+		--lightRed: #f34537;
+		--yellow: #fedc5e;
+		--deepYellow: #f5b00c;
+		--blue: #2272a5;
+	}
+	html {
+		font-family: var(--noto);
+		scroll-behavior: smooth;
+	}
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body {
+		position: relative;
+	}
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+	}
+
+	.cInner {
+		max-width: 1200px;
+		margin-inline: auto;
+		@media (max-width: 768px) {
+			max-width: 100%;
+			padding: 0 35px;
+		}
+	}
+
+	.h02 {
+		font-size: 64px;
+		font-weight: 400;
+		font-family: var(--kokoro);
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		line-height: 1.25;
+		letter-spacing: -2px;
+		width: fit-content;
+		margin: 0 auto 50px;
+		@media (max-width: 768px) {
+			font-size: 30px;
+			margin: 0 auto 20px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+		}
+	}
+
+	.h03 {
+		font-size: 60px;
+		font-weight: 900;
+		text-align: center;
+		line-height: 1.1;
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		span {
+			color: var(--red);
+			font-size: 28px;
+			display: block;
+			@media (max-width: 768px) {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.pc {
+		display: block;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.sp {
+		display: none;
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+</style>

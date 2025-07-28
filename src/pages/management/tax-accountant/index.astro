@@ -1,0 +1,643 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.taxAccountant);
+---
+
+<Layout
+    title="飲食店特化の税理士を紹介！全国対応｜テンポスフードプレイス"
+    description="飲食店に特化した税理士サービスをご紹介。記帳代行や確定申告などの会計・税務業務をプロにお任せ。"
+    pageUrl="/management/tax-accountant/"
+    ogimage="/asset/images/tax-accountant/ogp_tax-accountant.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/management/">店舗運営支援</a></li>
+                    <li>飲食専門税理士紹介</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>飲食専門税理士紹介</span>
+                </h1>
+                <p class="tp-front__caption">飲食店特化の税理士をご紹介！</p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=24"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        <span class="tp-bglg"
+                            >税理士と契約するか自分でやるか</span
+                        >悩んでいる
+                    </li>
+                    <li>
+                        日々の会計業務や税務申告を<span class="tp-bglg"
+                            >自分でやるのが大変</span
+                        >
+                    </li>
+                    <li>
+                        契約中の税理士に<span class="tp-bglg"
+                            >不満や不安を感じている</span
+                        >
+                    </li>
+                    <li>
+                        少しでも<span class="tp-bglg">支払う税金を抑えたい</span
+                        >
+                    </li>
+                    <li>
+                        <span class="tp-bglg">融資や補助金</span
+                        >などの相談に乗って欲しい
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">飲食店専門の税理士サービスをご紹介可能！</h2>
+                <div class="tp-design__contents">
+                    <div class="tp-local__wrap">
+                        <p class="tp-local">
+                            テンポスでは飲食店特化の税理士サービスをご紹介しております。<br
+                            />
+                            会計業務や税務申告を税理士に任せることで、集客や接客など日々の業務に集中することができ、顧客満足度UPに繋がります。
+                        </p>
+                        <p class="tp-local">
+                            また、融資や補助金などお金回りで不安なことがあれば気軽に相談することができるため安心です！
+                        </p>
+                    </div>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/tax-accountant/2x/img_tax-accountant_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/tax-accountant/img_tax-accountant_design.png"
+                                srcset="/asset/images/tax-accountant/img_tax-accountant_design.png 1x,/asset/images/tax-accountant/2x/img_tax-accountant_design@2x.png 2x"
+                                alt=""
+                                width="408"
+                                height="212"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスがご紹介する税理士サービスのメリット
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l tp-mgb__s">
+                    <li>会計業務、税務申告業務を丸投げすることができる</li>
+                    <li>飲食店経営の専門家による経営サポートを受けられる</li>
+                    <li>LINEで気軽に相談することができる</li>
+                </ul>
+                <p class="tp-want__thumb width-65">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/tax-accountant/2x/img_tax-accountant_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/tax-accountant/img_tax-accountant_want.png"
+                            srcset="/asset/images/tax-accountant/img_tax-accountant_want.png 1x,/asset/images/tax-accountant/2x/img_tax-accountant_want@2x.png 2x"
+                            alt=""
+                            width="482"
+                            height="250"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-case__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">税理士サービス比較表</h2>
+                <div class="tp-scroll__container">
+                    <table class="tp-table price-mgb">
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <td>テンポスが紹介する税理士</td>
+                                <td>税理士（一般）</td>
+                                <td>税理士（スポット）</td>
+                            </tr>
+                            <tr>
+                                <th>費用（顧問料）</th>
+                                <td>-</td>
+                                <td>10,000～30,000円/月</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>費用（月次決算）</th>
+                                <td>0円</td>
+                                <td>10,000円/月</td>
+                                <td>×</td>
+                            </tr>
+                            <tr>
+                                <th>費用（記帳量）</th>
+                                <td>
+                                    <span
+                                        ><s>15,000円~</s><br
+                                        />テンポス特別価格<br />10,000円~</span
+                                    >
+                                </td>
+                                <td>10,000～30,000円/月</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>費用（税務申告）</th>
+                                <td
+                                    >100,000円〜/年<br
+                                    />※従業員の年末調整・法定調書作成、所得税/法人税、消費税、償却資産税、を含む</td
+                                >
+                                <td
+                                    >100,000円～/年<br
+                                    />※一部の税目のみ、対応範囲が限定的かつ別途追加費用が発生</td
+                                >
+                                <td>100,000～200,000円/年</td>
+                            </tr>
+                            <tr>
+                                <th>専門性</th>
+                                <td>
+                                    ◎<br />
+                                    ※飲食店専門
+                                </td>
+                                <td>×</td>
+                                <td>×</td>
+                            </tr>
+                            <tr>
+                                <th>コミュニケーション方法</th>
+                                <td>
+                                    LINE or 電話 or Zoom<br />
+                                    ※回数制限なし
+                                </td>
+                                <td>
+                                    対面or電話<br />
+                                    ※回数制限あり
+                                </td>
+                                <td>
+                                    電話<br />
+                                    ※回数制限あり
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>付加サービス</th>
+                                <td>
+                                    〇<br />
+                                    ※各種相談は無償
+                                </td>
+                                <td>
+                                    △<br />
+                                    ※別途費用発生
+                                </td>
+                                <td>×</td>
+                            </tr>
+                            <tr>
+                                <th>その他</th>
+                                <td>融資、補助金等も相談可</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="tp-point__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-point__ttl__span"
+                        >フードプレイス税理士紹介の</span
+                    >
+                    <span class="tp-ttl__balloon__span"
+                        ><span>3</span>つの特徴</span
+                    >
+                </h2>
+                <ul class="tp-point__list __1clm">
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">月次決算書の作成</span>
+                        </h3>
+                        <p class="Local">
+                            月次決算書の作成や銀行・融資元対策はお任せください。<br
+                            />
+                            毎月の経営状態の把握も簡単、銀行への対策も万全になります！
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">オンラインツールの活用</span>
+                        </h3>
+                        <p class="Local">
+                            電話だけでなく、LINEやweb商談ツールを活用することで、<br
+                            />
+                            皆さまのご都合に柔軟に対応しながらご相談いただくことが可能です。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">飲食店特化</span>
+                        </h3>
+                        <p class="Local">
+                            会計・税務はもちろん集客や補助金など飲食店経営に関する様々な<br
+                            />
+                            相談に対応することが可能です。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-attention__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">料&emsp;金</span>
+                </h2>
+                <h3 class="tp-attention__price __top">
+                    <span class="First">
+                        記帳<br />代行<br />費用
+                    </span>
+                    <span class="Price">
+                        <span class="Txt__s">テンポス特別価格</span>
+                        <span>10,000</span>
+                    </span>
+                    <span class="Yen">円～<br class="sp" /> /月額</span>
+                    <span class="BeforePrice"><s>15,000円〜</s></span>
+                </h3>
+                <h3 class="tp-attention__price __bottom">
+                    <span class="First">
+                        税務<br />申告<br />費用
+                    </span>
+                    100,000
+                    <span class="Yen">円～<br class="sp" /> /年間</span>
+                </h3>
+            </section>
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">無料相談・お問合せ</h3>
+                            <div class="Local">
+                                <p>
+                                    ご相談は無料です。税理士についてよくわからないといった場合も、まずはお気軽にお問い合わせください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">フードプレイスよりご連絡</h3>
+                            <div class="Local">
+                                <p>電話でお客様の相談内容をお伺いします。</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先からのご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    電話や面談を通してサービスの内容や料金プランをお客様に提案します。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">ご契約</h3>
+                            <div class="Local">
+                                <p>
+                                    相性や条件など、お客様のご要望と相違がなければ、税理士と契約になります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">利用開始</h3>
+                            <div class="Local">
+                                <p>
+                                    契約が完了しましたら、税理士サービスの利用開始となります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">アフターサポート</h3>
+                            <div class="Local">
+                                <p>
+                                    何か分からないことがございましたら、LINEにて気軽に相談することが可能です。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>
+                            税理士と直接会って相談したいが、店舗に来てもらうことは可能か？
+                        </dt>
+                        <dd>
+                            基本的にはオンラインでのご相談となりますが、事務所が都内のため、来所であれば税理士と対面でご相談可能です。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>契約期間はどうなりますか？</dt>
+                        <dd>
+                            適切な会計処理と税務申告をセットで行うことを前提としておりますので、1年間での契約とさせていただいております。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>とりあえず話だけ聞いてみてもいいですか？</dt>
+                        <dd>
+                            もちろん可能です。契約前のお打ち合わせの中で、確定申告までの流れや新規開業に関する相談などは無料で対応させていただきます。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/management/consultant/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_consultant@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_consultant.png"
+                                        srcset="/asset/images/common/img_kanren_service_consultant.png 1x,/asset/images/common/2x/img_kanren_service_consultant@2x.png 2x"
+                                        alt="飲食コンサルタントマッチング"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">
+                                飲食コンサルタント<br />マッチング
+                            </h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/management/insurance/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_insurance@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_insurance.png"
+                                        srcset="/asset/images/common/img_kanren_service_insurance.png 1x,/asset/images/common/2x/img_kanren_service_insurance@2x.png 2x"
+                                        alt="店舗用保険"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">店舗用保険</h3>
+                        </a>
+                    </article>
+                    <!-- <article>
+							<a href="/management/q-navi/">
+								<p class="Thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/common/2x/img_kanren_service_q-navi@2x.png">
+										<img src="/asset/images/common/img_kanren_service_q-navi.png"
+											srcset="/asset/images/common/img_kanren_service_q-navi.png 1x,/asset/images/common/2x/img_kanren_service_q-navi@2x.png 2x"
+											alt="店舗トラブル解決アプリ" width="304" height="231" loading="lazy" class="imgauto">
+									</picture>
+								</p>
+								<h3 class="Ttl">
+									店舗トラブル解決アプリ
+								</h3>
+							</a>
+						</article> -->
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/tax-accountant/mv_tax-accountant.jpg);
+    }
+
+    /*-----------------------
+tp-design__section
+-----------------------*/
+    .tp-design__section .tp-design__contents .tp-local__wrap {
+        max-width: 530px;
+    }
+    .tp-design__section .tp-design__contents .tp-design__thumb {
+        max-width: 408px;
+        width: unset;
+        margin: 0 36px 0 auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-design__section .tp-design__contents .tp-design__thumb {
+            margin: 0 auto;
+            max-width: 300px;
+            width: 80%;
+        }
+    }
+
+    /*-----------------------
+tp-want__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__thumb {
+            max-width: 350px;
+            width: 80%;
+        }
+    }
+
+    /*-----------------------
+tp-case__section
+-----------------------*/
+    .tp-case__section .tp-table {
+        text-align: center;
+        table-layout: fixed;
+    }
+    .tp-table > tbody tr > * {
+        flex: none;
+        width: calc((100% - 14em) / 3);
+    }
+    .tp-case__section .tp-table td:nth-child(2) {
+        width: 14em;
+    }
+    @media screen and (max-width: 1190px) AND (min-width: 951px) {
+        .tp-table > tbody tr > * {
+            flex: 1;
+            width: unset;
+        }
+        .tp-case__section .tp-table td:nth-child(2) {
+            width: unset;
+        }
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point01.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point19.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point29.png) no-repeat center
+            center / contain;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-point__section .tp-point__list > li > .Ttl:before {
+            width: 50px;
+            margin-right: 19px;
+        }
+        .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+            width: 45px;
+            margin-right: 24px;
+        }
+        .tp-point__section .tp-point__list .Ttl__txt {
+            width: calc(100% - 69px);
+        }
+    }
+
+    /*-----------------------
+料金 tp-attention__section
+-----------------------*/
+    .tp-attention__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+        margin-bottom: 80px;
+    }
+    .tp-attention__section .tp-attention__price .First {
+        font-size: 14px;
+        width: 5em;
+    }
+    .tp-attention__section .tp-attention__price > .Yen:after {
+        content: "(税別)";
+    }
+    .tp-attention__section .tp-attention__price.__top {
+        position: relative;
+    }
+    .tp-attention__section .tp-attention__price.__top .First {
+        margin-bottom: 10px;
+    }
+    .tp-attention__section .tp-attention__price.__top .Price {
+        position: relative;
+    }
+    .tp-attention__section .tp-attention__price.__top .Price .Txt__s {
+        font-size: 18px;
+        line-height: 1;
+        position: absolute;
+        top: -0.5em;
+        left: 0;
+        width: 100%;
+    }
+    .tp-attention__section .tp-attention__price.__top .BeforePrice {
+        font-size: 36px;
+        line-height: 1;
+        position: absolute;
+        bottom: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media screen and (max-width: 767px) {
+        .tp-attention__section .tp-ttl:not(.__mgb):not(.tp-ttl__balloon__span) {
+            margin-bottom: 60px;
+        }
+        .tp-attention__section .tp-attention__price {
+            font-size: min(11.2vw, 46px);
+            line-height: 1;
+        }
+        .tp-attention__section .tp-attention__price:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+        .tp-attention__section .tp-attention__price .First {
+            font-size: min(3.2vw, 12px);
+        }
+        .tp-attention__section .tp-attention__price > .Yen {
+            font-size: min(7.5vw, 28px);
+        }
+        .tp-attention__section .tp-attention__price > .Yen:after {
+            font-size: min(2.43vw, 10px);
+            white-space: nowrap;
+            bottom: 96%;
+        }
+        .tp-attention__section .tp-attention__price.__top .First {
+            margin-bottom: 0.5em;
+        }
+        .tp-attention__section .tp-attention__price.__top .Price .Txt__s {
+            font-size: min(3.4vw, 14px);
+        }
+        .tp-attention__section .tp-attention__price.__top .BeforePrice {
+            font-size: min(6.34vw, 26px);
+            bottom: 106%;
+            margin-left: min(4.87vw, 20px);
+            width: max-content;
+        }
+    }
+</style>

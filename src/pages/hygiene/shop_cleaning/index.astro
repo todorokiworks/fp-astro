@@ -1,0 +1,558 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.shopCleaning);
+---
+
+<Layout
+    title="飲食店向け清掃業者を紹介！全国対応｜テンポスフードプレイス"
+    description="飲食店の厨房やエアコン清掃はもちろん、害虫駆除・防除も対応している会社をご紹介。新規出店・営業中店舗問わず全国対応。"
+    pageUrl="/hygiene/shop_cleaning/"
+    ogimage="/asset/images/shop_cleaning/ogp_shop_cleaning.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/hygiene/">衛生管理</a></li>
+                    <li>飲食店清掃</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>飲食店清掃</span>
+                </h1>
+                <p class="tp-front__caption">
+                    毎日の清掃だけではどうしても行き届かない部分があります。<br
+                    />
+                    知らず知らずのうちに汚れて美観を損ない、お客様に悪い印象を<br
+                    />
+                    与えてしまうことになりかねません！清掃サービスを利用し、店内を清潔に保ちましょう！
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=20"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        掃除に<span class="tp-bglg">時間がかかっている</span>
+                    </li>
+                    <li>
+                        <span class="tp-bglg">自分ではきれいにできない</span
+                        >箇所がある
+                    </li>
+                    <li>掃除道具の<span class="tp-bglg">管理が大変</span></li>
+                </ul>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスでは清掃サービスをご案内しています！
+                </h2>
+                <p class="tp-want__thumb width-60">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/shop_cleaning/2x/img_shop_cleaning_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/shop_cleaning/img_shop_cleaning_want.png"
+                            srcset="/asset/images/shop_cleaning/img_shop_cleaning_want.png 1x,/asset/images/shop_cleaning/2x/img_shop_cleaning_want@2x.png 2x"
+                            alt=""
+                            width="418"
+                            height="330"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-service__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">サービス内容</span>
+                </h2>
+                <ul class="tp-option__list">
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">エアコン清掃</h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">
+                                            天井カセット/天井吊下げタイプ
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        プロによる分解洗浄でしっかり汚れを落とし、エアコン内部の<span
+                                            class="txt__b"
+                                            >ホコリやカビを徹底的に洗浄</span
+                                        >します。
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">壁掛けタイプ</p>
+                                    </div>
+                                    <p class="Local">
+                                        エアコン内部のほこりやカビを徹底的に洗浄します。わずか<span
+                                            class="txt__b"
+                                            >1時間程のスピード洗浄</span
+                                        >です。
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/shop_cleaning/2x/img_shop_cleaning_service_01@2x.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/shop_cleaning/img_shop_cleaning_service_01.jpg"
+                                        srcset="/asset/images/shop_cleaning/img_shop_cleaning_service_01.jpg 1x,/asset/images/shop_cleaning/2x/img_shop_cleaning_service_01@2x.jpg 2x"
+                                        alt=""
+                                        width="221"
+                                        height="167"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">トイレ清掃</h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">
+                                            便器のお掃除（小便器・大便器）
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        洋式、和式、男性用小便器の縁など、<span
+                                            class="txt__b"
+                                            >見えない部分まで徹底的にキレイ</span
+                                        >にします。
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">
+                                            防汚コーティングサービス
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        優れたコーティング剤を便器表面に塗布し、表面に<span
+                                            class="txt__b"
+                                            >「撥水効果」を与え、尿石やカビ、水あかなどの付着を防ぎます</span
+                                        >。
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">トイレまるごとお掃除</p>
+                                    </div>
+                                    <p class="Local">
+                                        便器の清掃に加え、手洗い場などの水周りや鏡に付いた<span
+                                            class="txt__b"
+                                            >水あかや黄ばみ、床の清掃も含めてトイレ空間全体をきれいに</span
+                                        >仕上げます。
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/shop_cleaning/2x/img_shop_cleaning_service_02@2x.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/shop_cleaning/img_shop_cleaning_service_02.jpg"
+                                        srcset="/asset/images/shop_cleaning/img_shop_cleaning_service_02.jpg 1x,/asset/images/shop_cleaning/2x/img_shop_cleaning_service_02@2x.jpg 2x"
+                                        alt=""
+                                        width="221"
+                                        height="167"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">厨房清掃サービス</h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">
+                                            グリスフィルター・フード・排気ダクト
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        グリスフィルターおよびフードを<span
+                                            class="txt__b"
+                                            >徹底的に清掃しガンコな油汚れやホコリによる目詰まりを解消します。排気ダクトの清掃</span
+                                        >も可能です。
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">
+                                            グリストラップ・排水管・側溝
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        グリストラップ内の油脂や残渣をきれいに取り除き、<span
+                                            class="txt__b"
+                                            >油脂や汚泥の腐敗による悪臭や排水管詰まりを防ぎます</span
+                                        >。
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">調理台・調理器具</p>
+                                    </div>
+                                    <p class="Local">
+                                        調理台やコンロに付着した汚れをはじめ、<span
+                                            class="txt__b"
+                                            >食器洗浄機、業務用冷蔵庫などの厨房機器も徹底的に洗浄</span
+                                        >します。
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">
+                                            厨房床（コンクリート・タイル）
+                                        </p>
+                                    </div>
+                                    <p class="Local">
+                                        厨房などに多い<span class="txt__b"
+                                            >コンクリートやタイル床の油汚れ、黒ずみなどを徹底的に洗浄</span
+                                        >します。
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/shop_cleaning/2x/img_shop_cleaning_service_03@2x.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/shop_cleaning/img_shop_cleaning_service_03.jpg"
+                                        srcset="/asset/images/shop_cleaning/img_shop_cleaning_service_03.jpg 1x,/asset/images/shop_cleaning/2x/img_shop_cleaning_service_03@2x.jpg 2x"
+                                        alt=""
+                                        width="221"
+                                        height="167"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="__red">
+                        <h3 class="tp-option__listTtl">害虫防除システム</h3>
+                        <div class="tp-service__flexcontainer">
+                            <ul class="tp-option__iconlist">
+                                <li>
+                                    <div class="Ttl flex">
+                                        <p class="Min">害虫防除システム</p>
+                                    </div>
+                                    <p class="Local">
+                                        薬剤を噴霧する駆除とは異なり、生息調査及びベイト剤を塗布するため、<span
+                                            class="txt__b"
+                                            >営業時間中の施工が可能</span
+                                        >です。
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="tp-service__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/shop_cleaning/2x/img_shop_cleaning_service_04@2x.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/shop_cleaning/img_shop_cleaning_service_04.jpg"
+                                        srcset="/asset/images/shop_cleaning/img_shop_cleaning_service_04.jpg 1x,/asset/images/shop_cleaning/2x/img_shop_cleaning_service_04@2x.jpg 2x"
+                                        alt=""
+                                        width="221"
+                                        height="167"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    様々な清掃に対応しておりますので、<br />
+                                    少しでもご興味がある方はまずはお問い合わせください。<br
+                                    />
+                                    担当スタッフがお電話にてヒアリングさせていただきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先よりご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    サービスの内容をご案内し、お客様に合ったプランをご提案します。<br
+                                    />
+                                    検討する際のお見積り作成も対応可能です。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">プランの確認</h3>
+                            <div class="Local">
+                                <p>
+                                    清掃箇所や期間などプランの確認をさせていただきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">ご契約</h3>
+                            <div class="Local">
+                                <p>
+                                    ご契約後、プランに応じたサービスを提供いたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>月1回や単発だけの清掃は可能でしょうか？</dt>
+                        <dd>
+                            可能です。1回だけの単発清掃から定期的な清掃までお客様のご要望に応じて対応しております。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>見積は無料でしょうか？</dt>
+                        <dd>
+                            無料でございます。現地調査をした上で、お見積りをいたします。<br
+                            />
+                            まずはお気軽に問い合わせください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>作業時に立ち合いは必要でしょうか？</dt>
+                        <dd>
+                            作業開始時や作業終了時の確認の際に立ち合いをお願いしております。<br
+                            />
+                            立ち合いが出来ない場合はご相談ください。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>深夜早朝の清掃は可能でしょうか？</dt>
+                        <dd>
+                            深夜早朝の対応は可能でございます。ただし、割り増し料金をいただく場合がございます。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>土日、祝日の清掃は可能でしょうか？</dt>
+                        <dd>土日、祝日も対応可能でございます。</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/hygiene/sanitary-rental/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_sanitary-rental@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_sanitary-rental.png"
+                                        srcset="/asset/images/common/img_kanren_service_sanitary-rental.png 1x,/asset/images/common/2x/img_kanren_service_sanitary-rental@2x.png 2x"
+                                        alt="衛生用品レンタル"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">衛生用品レンタル</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/hygiene/waste-oil/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_waste-oil@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_waste-oil.png"
+                                        srcset="/asset/images/common/img_kanren_service_waste-oil.png 1x,/asset/images/common/2x/img_kanren_service_waste-oil@2x.png 2x"
+                                        alt="廃油無料回収"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">廃油無料回収</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/hygiene/garbage-collection/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_garbage-collection@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_garbage-collection.png"
+                                        srcset="/asset/images/common/img_kanren_service_garbage-collection.png 1x,/asset/images/common/2x/img_kanren_service_garbage-collection@2x.png 2x"
+                                        alt="ゴミ回収"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">ゴミ回収</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/shop_cleaning/mv_shop_cleaning.jpg);
+    }
+
+    /*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+    .tp-worries__section .tp-check__list > li {
+        display: block;
+    }
+
+    /*-----------------------
+tp-want__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__thumb {
+            max-width: 250px;
+            width: 60%;
+        }
+    }
+
+    /*-----------------------
+サービス内容 tp-service__section
+-----------------------*/
+    .tp-service__section .tp-service__flexcontainer {
+        align-items: flex-start;
+    }
+    .tp-service__section .tp-option__iconlist .Local {
+        font-weight: 400;
+    }
+    .tp-service__section .tp-option__iconlist .Local .txt__b {
+        font-weight: bold;
+    }
+    .tp-service__section .tp-service__thumb img {
+        object-fit: cover;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-service__section .tp-service__thumb {
+            aspect-ratio: 443 / 334;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tp-service__section .tp-option__list:after {
+            content: none;
+        }
+    }
+
+    /*-----------------------
+ご利用までの流れ tp-frow__section
+-----------------------*/
+    .tp-frow__section {
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-frow__section {
+            margin-top: 40px;
+        }
+    }
+</style>

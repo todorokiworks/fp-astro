@@ -1,0 +1,208 @@
+---
+const list = [
+  {
+    q: `出張見積の場合、費用はどのくらい<br class="sp">かかりますか？`,
+    a: `無料でお見積りいたしますので、<br class="sp">ご安心ください。`,
+  },
+  {
+    q: `10年前に購入した厨房機器は買取<br class="sp">できますか？`,
+    a: `状態や商品によっても異なります。<br class="sp">一度ご相談ください。`,
+  },
+  {
+    q: `売れない商品の廃棄もお願いでき<br class="sp">ますか？`,
+    a: `別途引取料が必要となりますが、<br class="sp">お見積の現場調査の際スタッフへお声がけください。`,
+  },
+  {
+    q: `売る前に品物の買い取り価格を教<br class="sp">えてくれますか？`,
+    a: `品物の状態や年式、店舗の在庫状況などにより、買い取り価格が異なることがございますので、現状を見させていただき、お見積を作成いたします。`,
+  },
+  {
+    q: `居抜きで次のテナント探してくれ<br class="sp">るの？`,
+    a: `探します！テンポスにはこれからお店を始めたいと思っている方、2店舗目3店舗目を開きたいと思っている方が毎月5,000件いらっしゃいます。そういった具体的に出店を検討している方に直接物件情報をお届けします。`,
+  },
+];
+---
+
+<section id="qanda">
+  <div class="contents__inner">
+    <h2 class="header_02">よくある質問</h2>
+    <ul class="qanda-list">
+      {
+        list.map(item => (
+          <li>
+            <div class="Q_box js-QandA">
+              <div class="Q_wrppr">
+                <div class="mark_Q">Q.</div>
+                <p class="text_Q" set:html={item.q} />
+              </div>
+            </div>
+            <div class="A_box" style="display: none;">
+              <div class="A_wrppr">
+                <div class="mark_A">A.</div>
+                <p class="text_A" set:html={item.a} />
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script is:inline>
+  jQuery(function ($) {
+    $(".js-QandA").on("click", function () {
+      if ($(this).hasClass("accodion_open")) {
+        $(this).siblings(".A_box").slideUp();
+        $(this).removeClass("accodion_open");
+      } else {
+        $(this).siblings(".A_box").slideDown();
+        $(this).addClass("accodion_open");
+      }
+    });
+  });
+</script>
+
+<style lang="scss">
+  /*============================
+#qanda
+============================*/
+  section#qanda {
+    div.contents__inner {
+      padding: 100px 0;
+      @media (max-width: 768px) {
+        padding: 40px 10px 40px;
+      }
+      h2.header_02 {
+      }
+    }
+    ul {
+      padding-inline-start: 0px;
+    }
+    li {
+      background-color: #ffffff;
+      padding: 0 28px;
+      border: 1px solid #dddddd;
+    }
+
+    @media screen and (max-width: 767px) {
+      li {
+        padding: 0 16px;
+      }
+    }
+
+    li:not(:first-of-type) {
+      margin-top: 16px;
+    }
+
+    .Q_box {
+      position: relative;
+    }
+
+    .Q_box::before {
+      position: absolute;
+      top: 50%;
+      bottom: auto;
+      left: auto;
+      right: 0;
+      transform: translate(0, -50%);
+      display: block;
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-color: #001f7a;
+    }
+
+    .Q_box::after {
+      position: absolute;
+      top: 50%;
+      bottom: auto;
+      left: auto;
+      right: 7px;
+      transform: translate(0, -50%);
+      display: block;
+      content: "";
+      height: 16px;
+      width: 2px;
+      background-color: #001f7a;
+      transition: transform 0.3s ease-out;
+    }
+
+    .Q_box.accodion_open::after {
+      transform: translate(0, -50%) rotate(90deg);
+    }
+
+    .Q_wrppr {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      padding: 16px 0px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .Q_wrppr {
+        column-gap: 12px;
+        padding: 16px 32px 16px 0;
+      }
+    }
+
+    .mark_Q {
+      color: #001f7a;
+      font-weight: bold;
+      font-size: 20px;
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    .text_Q {
+      flex: 1;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #001f7a;
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+
+    .A_box {
+      display: none;
+    }
+
+    .A_wrppr {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 25px;
+      padding: 16px 0;
+      border-top: 1px solid #cccccc;
+    }
+
+    @media screen and (max-width: 767px) {
+      .A_wrppr {
+        column-gap: 12px;
+        padding: 16px 0;
+        align-items: center;
+      }
+    }
+
+    .mark_A {
+      color: #bb000c;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .text_A {
+      flex: 1;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: 0.04em;
+      color: #242424;
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+  }
+</style>

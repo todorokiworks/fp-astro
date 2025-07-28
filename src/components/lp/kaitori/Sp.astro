@@ -1,0 +1,20 @@
+---
+import Intro from "../kaitori/Intro.astro";
+import KaitoriList from "../kaitori/KaitoriList.astro";
+import KaitoriSobaSp from "../kaitori/KaitoriSobaSp.astro";
+---
+
+<div class="sp">
+  <KaitoriList />
+  <KaitoriSobaSp />
+  <Intro />
+</div>
+
+<style lang="scss">
+  .sp {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+</style>

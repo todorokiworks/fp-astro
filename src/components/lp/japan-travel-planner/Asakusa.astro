@@ -1,0 +1,312 @@
+---
+const slides = [
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa01.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa02.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa03.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa04.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa05.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa06.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa07.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa08.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa09.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa10.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa11.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa12.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa13.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa14.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa15.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa16.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa17.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa18.png",
+    },
+];
+
+const slides2 = [
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa18.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa17.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa16.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa15.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa14.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa13.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa12.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa11.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa10.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa09.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa08.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa07.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa06.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa05.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa04.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa03.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa02.png",
+    },
+    {
+        url: "/lp/japan-travel-planner/img/img_slide_asakusa01.png",
+    },
+];
+---
+
+<section id="asakusa">
+    <h3 class="h03">
+        <span class="h3sm">Option 1.</span>
+        Asakusa tour
+    </h3>
+    <div class="slider__wrapper">
+        <!-- Slider main container -->
+        <div class="slider1">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {
+                        slides.map((slide) => (
+                            <div class="swiper-slide">
+                                <img src={slide.url} alt="" />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="slider2">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {
+                        slides2.map((slide) => (
+                            <div class="swiper-slide">
+                                <img src={slide.url} alt="" />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-btn__wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from "swiper";
+    import { Navigation, Autoplay } from "swiper/modules";
+    // import Swiper and modules styles
+    import "swiper/css";
+    import "swiper/css/navigation";
+    import "swiper/css/effect-fade";
+
+    // init Swiper:
+    const swiper = new Swiper(".slider1 .swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Autoplay],
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        slidesPerView: 3.2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+            769: {
+                slidesPerView: 3.2,
+                spaceBetween: 15,
+            },
+        },
+    });
+    const swiper2 = new Swiper(".slider2 .swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Autoplay],
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        slidesPerView: 3.2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+            769: {
+                slidesPerView: 3.2,
+                spaceBetween: 15,
+            },
+        },
+    });
+</script>
+
+<style lang="scss">
+    section#asakusa {
+        background: var(--grey);
+        @media (max-width: 768px) {
+            padding: 40px 0 0;
+        }
+        .slider__wrapper {
+            position: relative;
+            width: 100%;
+            .swiper-btn__wrapper {
+                width: 1300px;
+                height: 100%;
+                position: absolute;
+                top: 48%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0 auto;
+                z-index: 9999;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    top: 45%;
+                }
+                .swiper-button-prev {
+                    width: 80px;
+                    height: 80px;
+                    &::after {
+                        content: "";
+                        background: url("/lp/japan-travel-planner/img/icon_prev.png")
+                            center center / cover no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        @media (max-width: 768px) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+                .swiper-button-next {
+                    width: 80px;
+                    height: 80px;
+                    &::after {
+                        content: "";
+                        background: url("/lp/japan-travel-planner/img/icon_next.png")
+                            center center / cover no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        @media (max-width: 768px) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        div.slider1 {
+            margin-bottom: 15px;
+            position: relative;
+            width: 100%;
+            @media (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+            div.swiper {
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        height: 100%;
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+        div.slider2 {
+            transform: translateX(-280px);
+            @media (max-width: 768px) {
+                transform: translateX(-130px);
+            }
+            div.swiper {
+                overflow: unset !important;
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

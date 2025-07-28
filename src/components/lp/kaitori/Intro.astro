@@ -1,0 +1,109 @@
+<section id="intro">
+  <div class="contents__inner">
+    <div class="item">
+      <div class="icon"><img src="/lp/kaitori/img/img_intro01.png" alt="" /></div>
+      <div class="txt__wrapper">
+        <div class="header">全国対応</div>
+        <div class="txt">
+          全国に65ヵ所の買取拠点があるため、<br
+            class="pc"
+          />全国対応可能です。<br />
+          <span class="pc"
+            >近くにテンポスのお店がなくても<br />ご相談ください。</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="icon"><img src="/lp/kaitori/img/img_intro02.png" alt="" /></div>
+      <div class="txt__wrapper">
+        <div class="header">業界NO.1の実績</div>
+        <div class="txt">
+          年間11万件以上の厨房買取を行っており、<br
+            class="pc"
+          />業界NO.1の取引実績です。<br class="pc" />
+          安心してお任せください。
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="icon"><img src="/lp/kaitori/img/img_intro03.png" alt="" /></div>
+      <div class="txt__wrapper">
+        <div class="header">選べる買取方法</div>
+        <div class="txt">
+          出張買取はもちろん、<br
+            class="pc"
+          />全国65拠点の実店舗に持ち込みも可能。<br class="pc" />
+          一括買取・回収や居抜き売却も<br class="pc" />対応いたします。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  section#intro {
+    background: var(--pink);
+    div.contents__inner {
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 45px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 15px;
+      }
+      div.item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 32%;
+        @media (max-width: 768px) {
+          width: 100%;
+          flex-direction: row;
+          gap: 10px;
+        }
+        div.icon {
+          margin-bottom: 20px;
+
+          @media (max-width: 768px) {
+            margin-bottom: 0px;
+            width: 70px;
+          }
+          img {
+          }
+        }
+        .txt__wrapper {
+          @media (max-width: 768px) {
+            width: calc(100% - 70px);
+          }
+        }
+        div.header {
+          font-size: 30px;
+          font-weight: bold;
+          border-bottom: 2px solid var(--red);
+          width: 100%;
+          margin-bottom: 10px;
+          color: var(--red);
+          @media (max-width: 768px) {
+            border-bottom: 1px solid var(--red);
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 5px;
+          }
+        }
+        div.txt {
+          @media (max-width: 768px) {
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+</style>

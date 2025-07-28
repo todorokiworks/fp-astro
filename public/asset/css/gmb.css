@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/* ■■■■■■■■■■global■■■■■■■■■■ */
+:root {
+  --NUM_ORANGE:var(--MAIN_ORANGE);
+  --TABLE_GRAY_01:#ddd;
+  --TABLE_GRAY_02:#aaa;
+  --TABLE_BORDER_GRAY:#B4B4B4;
+  --TABLE_YELLOW:var(--MAIN_YELLOW);
+  --TABLE_ORANGE:#FFA000;
+  --TABLE_RED:#F07D00;
+  --TABLE_BLUE:#508CA0;
+  --TABLE_TAG_YELLOW:#FFF092;
+  --TABLE_TAG_ORANGE:#FFD266;
+  --TABLE_TAG_RED:#F7B46C;
+  --TABLE_TAG_BLUE:#B4CED6;
+  --OPTION_YELLOW:var(--MAIN_YELLOW);
+  --OPTION_ORANGE:var(--GRADATION_ORANGE);
+  --OPTION_RED:var(--MAIN_ORANGE);
+  --ATTENTION_TAG:#787878;
+  --STEP_BORDER:#1b1616;
+  --RENTAL_QUESTION_BG:#F7F7F7;
+  --CONTACT_RED:#EB5A5A;
+  --CONTACT_BLUE:#1283C3;
+  --CONTACT_GREEN:#00AA8C;
+  --CONTACT_RED_NAVY:rgb(215, 70, 70);
+  --CONTACT_BLUE_NAVY:rgb(0, 111, 175);
+  --CONTACT_GREEN_NAVY:rgb(0, 150, 120);
+  --CONTAINER_BORDER:#FFE6AA;
+  --CONTENTS_BORDER_GRAY:#A0A0A0;
+  --ADD_TABLE_GRAY:#EDEDED;
+  --ADD_TABLE_BTN:#5B5B5B;
+  --ADD_CONTACT_GRAY:#e3e3e3;
+  --ADD_CONTACT_YELLOW:#fdc831;
+  --ADD_CONTACT_TITLE_GRAY:#9b9b9b;
+  --sp_mag:calc(1 - (375 / 816));
+  --contents_gap_col:20px;
+  --contents_gap_row:20px;
+  --TABLE_COMENT_RED:#c00000;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --margin_template_s:40px;
+    --margin_template_l:80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --margin_template_s:20px;
+    --margin_template_l:60px;
+  }
+}
+.red-text {
+  color: var(--TABLE_COMENT_RED);
+}
+
+@media screen and (max-width: 374px) {
+  .display_none__374 {
+    display: none;
+  }
+}
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/gmb/mv_gmb.jpg);
+}
+
+/*-----------------------
+tp-design__section 
+-----------------------*/
+.tp-design__section .fit-content {
+  height: fit-content;
+}
+/*-----------------------
+サービスの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list {
+  row-gap: 6px;
+}
+
+.tp-point__section .tp-point__list > li > .Ttl:before {
+  width: 45px;
+  margin-right: 13px;
+}
+
+.tp-point__section.first-sec .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point19.png) no-repeat center center/contain;
+}
+
+.tp-point__section.first-sec .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center center/contain;
+}
+
+.tp-point__section.first-sec .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point06.png) no-repeat center center/contain;
+}
+
+.tp-point__section .tp-point__list .Ttl__txt {
+  width: calc(100% - 58px);
+}
+
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*-----------------------
+サービスの特徴 tp-point__section second-sec
+-----------------------*/
+.tp-point__section.first-sec .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point19.png) no-repeat center center/contain;
+}
+
+.tp-point__section.first-sec .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point01.png) no-repeat center center/contain;
+}
+
+.tp-point__section.first-sec .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point06.png) no-repeat center center/contain;
+}
+
+/*-----------------------
+デザインイメージ tp-plan__section
+-----------------------*/
+.tp-table__plan > tfoot td {
+  text-align: left;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px){
+  .tp-plan__section .tp-table__plan {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tp-plan__section .tp-table__plan > tbody tr:first-child > *:nth-child(2):after {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767px){
+  .tp-plan__section .tp-table__plan > tbody tr {
+    height: 430px;
+  }
+}
+
+
+/*-----------------------
+デザインイメージ tp-option__section
+-----------------------*/
+
+.tp-option__section .box_cmn_items .balloon_layout:not(:last-child) {
+
+}
+.tp-option__section .box_cmn_items .balloon_layout:last-child {
+  margin-bottom: 4rem;
+}
+
+.tp-option__section .box_cmn_01 {
+  margin-right: auto;
+}
+.tp-option__section .box_cmn_02 {
+  margin-left: auto;
+}
+.tp-option__section .box_cmn_01,
+.tp-option__section .box_cmn_02 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 72.4%;
+  justify-content: space-between;
+}
+  @media screen and (max-width: 767px) {
+    .tp-option__section .box_cmn_01,
+    .tp-option__section .box_cmn_02 {
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+  }
+}
+.tp-option__section .box_cmn_01 .box_txt,
+.tp-option__section .balloon1-left,
+.tp-option__section .balloon1-right {
+  width: 20.5rem;
+}
+@media screen and (max-width: 767px) {
+  .tp-option__section .balloon1-left,
+  .tp-option__section .balloon1-right {
+    width: 100%;
+  }
+}
+.tp-option__section .balloon1-left p,
+.tp-option__section .balloon1-right p {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.tp-option__section .box_cmn_01 .balloon1-right {
+  position: relative;
+  display: inline-block;
+  padding: 50px 30px;
+  border-radius: 20px;
+  border: 1px solid var(--GRADATION_ORANGE);
+}
+.tp-option__section .box_cmn_01 .balloon1-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -38px;
+  margin-top: -13px;
+  border: 13px solid transparent;
+  border-right: 25px solid #fff;
+  z-index: 2;
+}
+.tp-option__section .box_cmn_01 .balloon1-right:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -41px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-right: 26px solid var(--GRADATION_ORANGE);
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .tp-option__section .box_cmn_01 .balloon1-right:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -38px;
+    top: auto;
+    margin-left: -13px;
+    border: 13px solid transparent;
+    border-top: 25px solid #fff;
+    z-index: 2;
+  }
+  .tp-option__section .box_cmn_01 .balloon1-right:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -41px;
+    top: auto;
+    margin-left: -14px;
+    border: 14px solid transparent;
+    border-top: 26px solid var(--GRADATION_ORANGE);
+    z-index: 1;
+  }
+}
+.tp-option__section .box_cmn_02 .balloon1-left {
+  position: relative;
+  display: inline-block;
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 1px solid var(--GRADATION_ORANGE);
+}
+.tp-option__section .box_cmn_02 .balloon1-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -38px;
+  margin-top: -13px;
+  border: 13px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 2;
+}
+.tp-option__section .box_cmn_02 .balloon1-left:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -41px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-left: 26px solid var(--GRADATION_ORANGE);
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .tp-option__section .box_cmn_02 .balloon1-left {
+    margin-top: 50px;
+  }
+  .tp-option__section .box_cmn_02 .balloon1-left:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: -38px;
+    top: auto;
+    margin-left: -13px;
+    border: 13px solid transparent;
+    border-top: 25px solid #fff;
+    z-index: 2;
+  }
+  .tp-option__section .box_cmn_02 .balloon1-left:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: -41px;
+    top: auto;
+    margin-left: -14px;
+    border: 14px solid transparent;
+    border-top: 26px solid var(--GRADATION_ORANGE);
+    z-index: 1;
+  }
+}
+.tp-option__section .box_cmn_01 .box_image {
+  width: 138px;
+}
+@media screen and (max-width: 767px) {
+  .tp-option__section .box_cmn_01 .box_image {
+    margin:0 auto;
+    order: 2;
+  }
+  .tp-option__section .box_cmn_01 .box_txt {
+    order: 1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.tp-option__section .box_cmn_02 .box_image {
+  width: 148px;
+}
+@media screen and (max-width: 767px) {
+  .tp-option__section .box_cmn_02 .box_image {
+    margin: 0 auto;
+    order: 2;
+  } 
+  .tp-option__section .box_cmn_02 .box_txt {
+    order: 1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.tp-option__section .btn_blue {
+  margin-bottom: 4rem;
+}
+
+.tp-option__section .box_cmn_02 img {
+  width: 100%;
+  height: auto;
+}
+.tp-plan__section__btn {
+  margin-top: 30px;
+}

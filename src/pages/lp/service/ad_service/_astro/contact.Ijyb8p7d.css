@@ -1,0 +1,331 @@
+#contactForm[data-astro-cid-svshx33u] {
+    padding: 10px 0 250px;
+    margin-top: 180px
+}
+
+@media (max-width: 768px) {
+    #contactForm[data-astro-cid-svshx33u] {
+        padding: 40px 0 150px;
+        margin-top: 65px
+    }
+}
+
+.add-contents__form[data-astro-cid-svshx33u] {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 850px;
+    margin: 0 auto;
+    padding-bottom: 250px
+}
+
+.add-contents__table[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] span[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] span[data-astro-cid-svshx33u] {
+    background-color: #fff;
+    color: #d70025;
+    border: 1px solid #d70025;
+    padding-inline: .25em
+}
+
+.add-contents__table[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u],
+.add-contents__table[data-astro-cid-svshx33u] select[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] select[data-astro-cid-svshx33u],
+.add-contents__table[data-astro-cid-svshx33u] textarea[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] textarea[data-astro-cid-svshx33u] {
+    font-size: 16px
+}
+
+.add-contents__table[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] {
+    padding-block: 1em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u][type=radio],
+.add-contents__form[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u][type=checkbox],
+.add-contents__form[data-astro-cid-svshx33u] label[data-astro-cid-svshx33u][for*=radio],
+.add-contents__form[data-astro-cid-svshx33u] label[data-astro-cid-svshx33u][for*=check] {
+    cursor: pointer
+}
+
+.add-contents__form[data-astro-cid-svshx33u] tr[data-astro-cid-svshx33u] {
+    display: flex;
+    align-items: center
+}
+
+.add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] {
+    background-color: #ffe04a;
+    font-weight: 500;
+    color: #000;
+    border-block: 1px solid #fff;
+    border-left: 1px solid #fff;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.add-contents__form[data-astro-cid-svshx33u] tr:first-child th[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] tr:last-child th[data-astro-cid-svshx33u] {
+    align-items: flex-start;
+}
+
+.add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] p[data-astro-cid-svshx33u] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 5px;
+    font-weight: 700
+}
+
+.add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] span[data-astro-cid-svshx33u] {
+    font-size: 12px;
+    display: inline-block;
+    background: #d70025;
+    color: #fff;
+    margin: 0 0 9px 5px;
+    border-radius: 2px;
+    padding: 6px 8px 0;
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] {
+    flex: 1;
+    padding-block: 1.75em;
+    height: 100%;
+    padding-inline: 2.5em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u]:not(:has(.add-part__box)):not(.radio) {
+    display: flex;
+    justify-content: center;
+    flex-flow: column
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] tr[data-astro-cid-svshx33u]:last-child td[data-astro-cid-svshx33u] {
+    border-bottom: 1px solid #b1b1b1
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u]:not(.radio):not(.checkbox) p[data-astro-cid-svshx33u] {
+    font-size: 12px;
+    padding-bottom: .5em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] p[data-astro-cid-svshx33u] {
+    color: var(--ATTENTION_TAG)
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].radio label[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox label[data-astro-cid-svshx33u] {
+    color: #000
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox>div[data-astro-cid-svshx33u] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em 1em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox p[data-astro-cid-svshx33u] {
+    display: flex;
+    align-items: center
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox p[data-astro-cid-svshx33u]:not(:last-child) {
+    margin-bottom: 10px
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox p[data-astro-cid-svshx33u].band {
+    width: 100%;
+    padding: .25em 1em;
+    background-color: var(--ADD_CONTACT_GRAY);
+    margin-top: 1em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox input[data-astro-cid-svshx33u] {
+    width: 15px;
+    aspect-ratio: 1;
+    margin-top: 3px;
+    margin-right: 5px;
+    display: inline-block
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].radio p[data-astro-cid-svshx33u] {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].checkbox label[data-astro-cid-svshx33u] {
+    display: inline-block;
+    width: fit-content;
+    padding: 9px 0 0px;
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u]:not([type=radio]):not([type=checkbox]):not(.not-wide),
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] textarea[data-astro-cid-svshx33u],
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] select[data-astro-cid-svshx33u] {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+    padding: .5em 1em 0;
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u]:not([type=radio]):not([type=checkbox]):not(.not-wide).input__s {
+    width: 30%;
+    min-width: 80px
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u].not-wide {
+    border-radius: 0;
+    border: 1px solid #b1b1b1;
+    padding: .5em 1em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] input[data-astro-cid-svshx33u]::placeholder {
+    opacity: .4
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] .blk[data-astro-cid-svshx33u]:not(:last-child) {
+    margin-bottom: .5em
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] .row_blk[data-astro-cid-svshx33u]>[data-astro-cid-svshx33u]:not(:last-child) {
+    margin-right: 25px
+}
+
+.add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].name label[data-astro-cid-svshx33u] {
+    display: inline-block;
+    width: 2em;
+    margin-right: 3px
+}
+
+.contact-btn__wrapper[data-astro-cid-svshx33u] {
+    width: 500px;
+    max-width: 400px;
+    margin-inline: auto;
+    position: relative
+}
+
+@media (max-width: 768px) {
+    .contact-btn__wrapper[data-astro-cid-svshx33u] {
+        width: 100%;
+        max-width: 375px;
+        margin-inline: auto;
+        position: relative
+    }
+}
+
+.contact-btn__wrapper[data-astro-cid-svshx33u] .contact-btn[data-astro-cid-svshx33u] {
+    display: block;
+    color: var(--orange);
+    border: 3px solid var(--orange);
+    background: #fff;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .8s;
+    padding: 20px 0 9px;
+    position: relative
+}
+
+@media (max-width: 768px) {
+    .contact-btn__wrapper[data-astro-cid-svshx33u] .contact-btn[data-astro-cid-svshx33u] {
+        width: 96%;
+        max-width: 335px;
+        margin: 0 auto;
+        font-size: 17px;
+        padding: 18px 0 10px;
+    }
+}
+
+.contact-btn__wrapper[data-astro-cid-svshx33u]:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 38px;
+    transform: translateY(-50%);
+    background: url(../images/common/icon-arrow-orange2.png) center center/cover no-repeat;
+    width: 9px;
+    height: 15px;
+    z-index: 9
+}
+
+@media (max-width: 768px) {
+    .contact-btn__wrapper[data-astro-cid-svshx33u]:before {
+        width: 10px;
+        height: 10px;
+        right: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] {
+        width: 30%;
+        padding: 1.5em 2em;
+        height: 100%
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] tbody[data-astro-cid-svshx33u] {
+        display: grid
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] {
+        border-top: 1px solid #dfdfdf;
+        border-right: 1px solid #dfdfdf
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] {
+        margin-bottom: 60px
+    }
+}
+
+@media (max-width: 768px) {
+    .add-contents__form[data-astro-cid-svshx33u] {
+        width: 96%
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] tr[data-astro-cid-svshx33u] {
+        flex-flow: column
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] {
+        width: 100%;
+        border-inline: 1px solid #dfdfdf;
+        padding: 18px 15px 8px
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] {
+        width: 100%;
+        border-inline: 1px solid #dfdfdf;
+        padding-block: .75em;
+        height: 100%;
+        padding-inline: 1em
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] th[data-astro-cid-svshx33u] span[data-astro-cid-svshx33u] {
+        padding-left: .8em
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] {
+        margin-bottom: 40px
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] .row_blk[data-astro-cid-svshx33u]>[data-astro-cid-svshx33u] {
+        display: block
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u] .row_blk[data-astro-cid-svshx33u]>[data-astro-cid-svshx33u]:not(:last-child) {
+        margin: 0 0 .5em
+    }
+
+    .add-contents__form[data-astro-cid-svshx33u] td[data-astro-cid-svshx33u].name input[data-astro-cid-svshx33u]:not([type=radio]):not([type=checkbox]):not(.not-wide) {
+        width: calc(100% - 2em - 3px)
+    }
+}

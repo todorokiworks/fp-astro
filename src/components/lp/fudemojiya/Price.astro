@@ -1,0 +1,336 @@
+---
+import Button from "./parts/Button.astro";
+---
+
+<section id="price">
+    <div class="cInner">
+        <h2><img src="/lp/fudemojiya/img/img_price-txt.png" alt="" /></h2>
+        <div class="content">
+            <div class="mark">期間限定</div>
+            <div class="item">
+                <p class="txt">筆文字店名</p>
+                <div class="ttl">特別キャンペーン価格</div>
+                <div class="item-price">
+                    <div class="price-left">
+                        <span class="lg">55,000</span><span class="md">円</span
+                        ><span class="sm">(税込)</span>
+                    </div>
+                    <div class="price-right">
+                        <span class="lg">27,500</span><span class="md">円</span
+                        ><span class="sm">(税込)</span>
+                    </div>
+                </div>
+                <div class="condition">
+                    <div class="left">※キャンペーン条件※</div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                ・当社サイトで事例として紹介させていただきます。
+                            </li>
+                            <li>・店名での作成限定となります。</li>
+                            <li>・5文字：50,000円（税抜）～</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="txt">さらに</p>
+                <div class="ttl">
+                    筆文字メニュー表<span class="ttl-sm">も!</span>
+                </div>
+                <div class="item-price">
+                    <div class="price-left">
+                        <span class="lg">110,000</span><span class="md">円</span
+                        ><span class="sm">(税込)</span>
+                    </div>
+                    <div class="price-right">
+                        <span class="lg">88,000</span><span class="md">円</span
+                        ><span class="sm">(税込)</span>
+                    </div>
+                </div>
+                <div class="condition">
+                    <div class="left">※キャンペーン条件※</div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                ・当社サイトで事例として紹介させていただきます。
+                            </li>
+                            <li>・A4またはA3サイズの両面1枚のみとなります。</li>
+                            <li>・印刷は別途費用となります。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <Button />
+    </div>
+</section>
+
+<style lang="scss">
+    section#price {
+        background: url("/lp/fudemojiya/img/img_mv_bg02.png") center center /
+            contain repeat-y;
+        padding: 200px 0;
+        @media (max-width: 768px) {
+            padding: 80px 0 100px;
+            background: url("/lp/fudemojiya/img/img_mv_bg02-sp.png") center
+                center / contain;
+        }
+        div.cInner {
+            @media (max-width: 768px) {
+                padding: 0 0;
+            }
+            h2 {
+                width: 438px;
+                margin: 0 auto 45px;
+                @media (max-width: 768px) {
+                    width: 170px;
+                    margin: 0 auto 20px;
+                }
+                img {
+                }
+            }
+            div.content {
+                background: #fff;
+                padding: 70px 110px;
+                margin-bottom: 60px;
+                box-shadow: 5px -5px 2px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                @media (max-width: 768px) {
+                    padding: 25px 0px;
+                    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.1);
+                    border-radius: 0px;
+                    margin-bottom: 40px;
+                }
+                div.mark {
+                    background: var(--red);
+                    width: 260px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-family: var(--mincho);
+                    letter-spacing: 6px;
+                    margin: 0 auto 40px;
+                    padding: 5px 0 8px 0;
+                    border-radius: 8px;
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        width: 115px;
+                        border-radius: 4px;
+                        margin: 0 auto 20px;
+                    }
+                }
+                div.item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p.txt {
+                        font-size: 40px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        @media (max-width: 768px) {
+                            font-size: 16px;
+                        }
+                    }
+                    div.ttl {
+                        font-size: 60px;
+                        font-weight: bold;
+                        position: relative;
+                        z-index: 1;
+                        margin-bottom: 5px;
+                        @media (max-width: 768px) {
+                            font-size: 24px;
+                            margin-bottom: 10px;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 824px;
+                            height: 99px;
+                            background: url("/lp/fudemojiya/img/img_pricetxt_bg.png")
+                                center center / contain no-repeat;
+                            z-index: -1;
+                            @media (max-width: 768px) {
+                                width: 300px;
+                                height: 35px;
+                            }
+                        }
+                        span.ttl-sm {
+                            font-size: 40px;
+                            @media (max-width: 768px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    div.item-price {
+                        display: flex;
+                        align-items: center;
+                        gap: 105px;
+                        margin-bottom: 20px;
+                        @media (max-width: 768px) {
+                            gap: 35px;
+                            margin-bottom: 20px;
+                        }
+                        div.price-left {
+                            font-weight: bold;
+                            span.lg {
+                                font-size: 70px;
+                                position: relative;
+                                width: fit-content;
+                                @media (max-width: 768px) {
+                                    font-size: 30px;
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 60%;
+                                    left: 0;
+                                    transform: translateY(-50%);
+                                    width: 100%;
+                                    height: 4px;
+                                    background: #000;
+                                }
+                            }
+                            span.md {
+                                font-size: 40px;
+                                @media (max-width: 768px) {
+                                    font-size: 16px;
+                                }
+                            }
+                            span.sm {
+                                font-size: 24px;
+                                @media (max-width: 768px) {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                        div.price-right {
+                            font-weight: bold;
+                            position: relative;
+                            z-index: 1;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 60%;
+                                left: -90px;
+                                transform: translateY(-50%);
+                                width: 74px;
+                                height: 43px;
+                                background: url("/lp/fudemojiya/img/icon_arrow.png")
+                                    center center / contain no-repeat;
+                                @media (max-width: 768px) {
+                                    width: 22px;
+                                    height: 20px;
+                                    left: -31px;
+                                }
+                            }
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 53%;
+                                left: -5px;
+                                transform: translateY(-50%);
+                                width: 103%;
+                                height: 90px;
+                                background: #ffef66;
+                                z-index: -1;
+                                @media (max-width: 768px) {
+                                    height: 35px;
+                                }
+                            }
+                            span.lg {
+                                font-size: 80px;
+                                color: var(--red);
+                                @media (max-width: 768px) {
+                                    font-size: 32px;
+                                }
+                            }
+                            span.md {
+                                font-size: 40px;
+                                @media (max-width: 768px) {
+                                    font-size: 16px;
+                                }
+                            }
+                            span.sm {
+                                font-size: 24px;
+                                @media (max-width: 768px) {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                    div.condition {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #000;
+                        padding: 20px 40px;
+                        margin-bottom: 30px;
+                        color: #6a6a6a;
+                        @media (max-width: 768px) {
+                            flex-direction: column;
+                            padding: 10px 12px;
+                            margin: 0 30px 20px;
+                        }
+                        div.left {
+                            font-size: 24px;
+                            font-weight: bold;
+                            @media (max-width: 768px) {
+                                font-size: 12px;
+                                margin-bottom: 7px;
+                            }
+                        }
+                        div.right {
+                            ul {
+                                @media (max-width: 768px) {
+                                    padding-inline-start: 0px;
+                                }
+                                li {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    @media (max-width: 768px) {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        div.item-price {
+                            div.price-left {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 55%;
+                                    left: -80px;
+                                    transform: translateY(-50%);
+                                    width: 70px;
+                                    height: 65px;
+                                    background: url("/lp/fudemojiya/img/img_onepage.png")
+                                        center center / contain no-repeat;
+                                    @media (max-width: 768px) {
+                                        background: url("/lp/fudemojiya/img/img_onepage-sp.png")
+                                            center center / contain no-repeat;
+                                        top: 0%;
+                                        left: 5px;
+                                        transform: translateY(-50%);
+                                        width: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>

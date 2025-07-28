@@ -1,0 +1,73 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.corporate_data);
+---
+
+<Layout
+    title="テンポスフードプレイス | グループ会社一覧"
+    description=""
+    pageUrl="/company/group/"
+    ogimage=""
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/company/">企業情報</a></li>
+                    <li><a href="/company/corporate_data/">会社概要</a></li>
+                </ol>
+            </nav>
+            <section class="add-front__section">
+                <h1 class="add-front__simple">会社概要</h1>
+            </section>
+            <section class="add-contents__section g-wrapper btm-sec">
+                <table class="add-contents__table">
+                    <tr>
+                        <th>社名</th>
+                        <td>株式会社テンポスフードプレイス</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>
+                            〒144-0031<br />
+                            東京都大田区東蒲田2-30-17サンユー東蒲田ビル6F<br />
+                            TEL:050-3174-1366<br />
+                            FAX:03-6774-8579
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>設立年月日</th>
+                        <td>2018年9月28日</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>6,500万円</td>
+                    </tr>
+                    <tr>
+                        <th>代表者</th>
+                        <td>代表取締役　森下篤史</td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>
+                            飲食店の開店・開業支援<br />
+                            ホームページ制作<br />
+                            集客クーポンサイト運営<br />
+                            飲食店の経営・運用支援
+                        </td>
+                    </tr>
+                </table>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d411.61243571258854!2d139.72483643866698!3d35.561355451988206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601861eec6170653%3A0xe45ab992d03f52f!2z5qCq5byP5Lya56S-44OG44Oz44Od44K544OV44O844OJ44OX44Os44Kk44K5!5e0!3m2!1sja!2sjp!4v1682577909543!5m2!1sja!2sjp"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </article>
+</Layout>

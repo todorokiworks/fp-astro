@@ -1,0 +1,130 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pageUrl: string;
+  markup: string;
+}
+
+const { title, description, pageUrl, markup } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="業務用厨房機器の買取はテンポスにお任せください。全国各地の買取担当が無料見積、出張買取いたします。"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="canonical"
+      href="https://support.tenpos.com/management/kaitori.html"
+    />
+
+    <!--ファビコン、IOSタイコン-->
+    <link rel="icon" href="https://support.tenpos.com/asset/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://support.tenpos.com/asset/apple-touch-icon.png"
+    />
+
+    <!-- OGP -->
+    <meta
+      property="og:title"
+      content="業務用厨房機器・店舗用品の買取 | テンポスドットコム"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://support.tenpos.com/management/kaitori.html"
+    />
+    <meta property="og:image" content="/img/fp-kaitori-ogp.jpg" />
+    <meta property="og:site_name" content="テンポスドットコム" />
+    <meta
+      property="og:description"
+      content="業務用厨房機器の買取はテンポスにお任せください。全国各地の買取担当が無料見積、出張買取いたします。"
+    />
+
+    <!--twitter OGP-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@tenposfoodplace" />
+    <!--twitter OGP end-->
+    <link rel="stylesheet" href="/lp/kaitori/style/reset.css" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global lang="scss">
+  :root {
+    --red: #d30000;
+    --orange: #ff5a00;
+    --green: #06c755;
+    --yellow: #fff600;
+    --pink: #fbe5e5;
+  }
+  html {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro",
+      "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック",
+      "MS PGothic", sans-serif;
+  }
+  .contents__inner {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .header_02 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #003761;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    @media (max-width: 768px) {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 5px;
+      background: var(--red);
+      @media (max-width: 768px) {
+        width: 50px;
+        height: 2.5px;
+        bottom: -10px;
+      }
+    }
+  }
+  .pc {
+    display: block;
+    position: relative;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .sp {
+    display: none;
+    position: relative;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+</style>

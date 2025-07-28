@@ -1,0 +1,78 @@
+<div class="bnr">
+    <a
+        class="fixedContactBtn"
+        href="https://forms.gle/Bs7QeupeXw559UXSA"
+        target="_blank"
+        >ご登録はこちら
+    </a>
+</div>
+
+<script is:inline>
+    //スクロール時のイベントを追加
+    window.addEventListener("scroll", function () {
+        //すべての.itemを取得
+        const item = document.querySelectorAll(".bnr");
+
+        //querySelectorAll('.item')は配列になるので、for構文で取得
+        //配列は0から始まるのでi = 0
+        //i < item.lengthで配列の要素よりも数が小さい時　i++(インクリメント)1つずつ増加
+        for (let i = 0; i < item.length; i++) {
+            //.itemのオフセットの高さを取得
+            var targetTop = item[i].offsetTop;
+
+            //画面のスクロール量 + 300px > .itemのオフセットの高さを取得
+            if (window.scrollY + 300 > targetTop) {
+                //書くitemにクラスshowを追加
+                item[i].classList.add("show");
+            } else {
+                item[i].classList.remove("show");
+            }
+        }
+    });
+</script>
+
+<style lang="scss">
+    .bnr {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        padding: 10px;
+        display: none;
+        opacity: 0;
+        transition: all 0.3s;
+        @media (max-width: 768px) {
+            display: block;
+        }
+        &.show {
+            opacity: 1;
+        }
+    }
+    a.fixedContactBtn {
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        background: var(--red);
+        border-radius: 50px;
+        width: 100%;
+        padding: 12px 0px 12px 0;
+        letter-spacing: 2px;
+        text-align: center;
+        z-index: 9999;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 45px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 9999px;
+            background: url("/lp/tourism-volunteer/img/icon_arrow.png") center
+                center / cover no-repeat;
+        }
+    }
+</style>

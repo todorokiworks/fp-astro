@@ -1,0 +1,1063 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import PageForm from "../../../components/common/PageForm.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.wasteOil);
+---
+
+<Layout
+    title="廃油の無料回収業者を紹介！全国対応｜テンポスフードプレイス"
+    description="飲食店・事業所から排出される廃油を無料で回収している会社をご紹介。全国どの地域のお引取も一括で窓口となり、新規出店・営業中店舗問わず臨機応変に対応可能。"
+    pageUrl="/hygiene/waste-oil/"
+    ogimage="/asset/images/waste-oil/ogp_waste-oil.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/hygiene/">衛生管理</a></li>
+                    <li>廃油無料回収</li>
+                </ol>
+            </nav>
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>廃油無料回収</span>
+                </h1>
+                <p class="tp-front__caption">
+                    飲食店や食品工場から出る廃油を無料で回収！<br />
+                    専門容器も無料で貸し出し可能
+                </p>
+
+                <!-- 202501 add -->
+                <p class="cap_txt_small">
+                    ※廃ガソリン等の工業用油脂は引取対象外となります
+                </p>
+                <!-- 202501 add end -->
+
+                <p class="tp-front__contact">
+                    <a href="#consultant_form" class="tp-front__contact-link"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <!-- こんなお悩みありませんか？ -->
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        廃油を産業廃棄物として<span class="tp-bglg"
+                            >お金を払って</span
+                        >捨てている
+                    </li>
+                    <li>
+                        廃油処理にかかる<span class="tp-bglg">時間を短縮</span
+                        >したい
+                    </li>
+                    <li>
+                        現在契約している業者がなかなか<span class="tp-bglg"
+                            >回収してくれない</span
+                        >
+                    </li>
+                    <li>
+                        <span class="tp-bglg">環境に良いリサイクル</span
+                        >を検討している
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-oil-introduction__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスでは、無料で廃油を回収している<br class="pc" />
+                    会社を紹介しております。
+                </h2>
+            </section>
+
+            <!-- 日本全国でお取引可能！ -->
+            <section
+                class="tp-oil-introduction__section tp-merit tp-sec tp-wrapper"
+            >
+                <h2 class="tp-ttl __center __num01 tp-wrapper__m">
+                    日本全国の廃油を無料で回収！
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    全国どの地域のお取引も一括で窓口となり、営業中店舗だけでなく新規出店も対応。個人店からチェーン店までお気軽にご相談ください。
+                </p>
+                <div class="content">
+                    <h2 class="tp-ttl __center">
+                        窓口一元管理システムで<br class="sp" />負担を軽減
+                    </h2>
+                    <div class="merit-compare merit-compare01">
+                        <picture class="imgBox">
+                            <source
+                                srcset="/asset/images/waste-oil/img_waste-oil_01.png"
+                                media="(max-width: 768px)"
+                            />
+                            <img
+                                class="__width85"
+                                src="/asset/images/waste-oil/img_waste-oil_01.png"
+                                alt=""
+                                width="493"
+                                height="427"
+                            />
+                        </picture>
+                        <div class="txtBox">
+                            <p class="txtTtl">通常</p>
+                            <ul>
+                                <li class="txtDescrip">
+                                    ①新規店舗開店時の業者選定及び、<br
+                                    />契約書締結の心配
+                                </li>
+                                <li class="txtDescrip">
+                                    ②支払い・数量の取りまとめ
+                                </li>
+                                <li class="txtDescrip">
+                                    ③各店舗からの相談・トラブル対応
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="merit-compare merit-compare02">
+                        <picture class="imgBox">
+                            <source
+                                srcset="/asset/images/waste-oil/img_waste-oil_02.png"
+                                media="(max-width: 768px)"
+                            />
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_02.png"
+                                alt=""
+                                width="586"
+                                height="276"
+                            />
+                        </picture>
+                        <div class="txtBox">
+                            <p class="txtTtl">弊社</p>
+                            <ul>
+                                <li class="txtDescrip">
+                                    ①<span class="tp-bglg"
+                                        >契約窓口の一本化</span
+                                    >
+                                </li>
+                                <li class="txtDescrip">
+                                    ②<span class="tp-bglg"
+                                        >支払・報告書の一本化</span
+                                    >
+                                </li>
+                                <li class="txtDescrip">
+                                    ③<span class="tp-bglg"
+                                        >各店舗様からの相談・トラブルのご対応</span
+                                    >
+                                </li>
+                                <li class="txtDescrip">
+                                    ④<span class="tp-bglg"
+                                        >新店舗開店時のお引取り手配対応</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SDGsの実現 -->
+            <section class="tp-merit01__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num02 tp-wrapper__s">
+                    SDGsの実現
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    お引取からバイオ燃料のBDF
+                    の製造・販売まで一貫して行うことで、CSR活動・ローカルSDGsの実現が可能
+                </p>
+
+                <div class="SDGs_flowBox">
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">廃食用油排出</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_03.jpg"
+                                alt="廃食用油排出"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">お引き取り</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_04.jpg"
+                                alt="お引き取り"
+                                width="269"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">一時保存</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_05.jpg"
+                                alt="一時保存"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">バイオ燃料製造</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_06.jpg"
+                                alt="バイオ燃料製造"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">燃料利用</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_07.jpg"
+                                alt="燃料利用"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- コストメリットの実現 -->
+            <section class="tp-merit01__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num03 tp-wrapper__s">
+                    コストメリットの実現
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    廃食用油の無料回収により明確なコストメリットの実現が可能
+                </p>
+            </section>
+
+            <div class="PageForm contact-inside-page"></div>
+
+            <!-- tp-storage__section -->
+            <section class="tp-storage__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">廃食用油の保管方法</span
+                    >
+                </h2>
+
+                <div class="strageBox01">
+                    <div class="strageCard">
+                        <p class="strage_ttl">一斗缶</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_08.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            一斗缶で保管されている場合は、缶ごとお引取りします
+                        </p>
+                    </div>
+                    <div class="strageCard">
+                        <p class="strage_ttl">ペール缶等</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_09.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            一斗缶以外の容器の場合は油のみお引取りします
+                        </p>
+                    </div>
+                    <div class="strageCard">
+                        <p class="strage_ttl">ドラム缶</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_10.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            油の量が多い場合はドラム缶（ 200L ）を貸出可能です
+                        </p>
+                    </div>
+                </div>
+
+                <p class="strageArrowTxt">引取車両<br />2〜4トン車</p>
+
+                <div class="truckImg01">
+                    <img
+                        src="/asset/images/waste-oil/img_waste-oil_11.jpg"
+                        alt=""
+                        width="880"
+                        height="508"
+                    />
+                </div>
+
+                <div class="strageBox02">
+                    <div class="strageCard">
+                        <p class="strage_ttl">タンク</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_12.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            大型貯蔵タンクからのお引取りも可能です
+                        </p>
+                    </div>
+                    <div class="strageCard">
+                        <p class="strage_ttl">専用ステンレス製タンク</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_13.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            ご要望に応じて専用タンクの手配が可能です
+                        </p>
+                    </div>
+                </div>
+
+                <p class="strageArrowTxt">引取車両<br />2〜4トン車</p>
+
+                <div class="truckImg01">
+                    <img
+                        src="/asset/images/waste-oil/img_waste-oil_14.jpg"
+                        alt=""
+                        width="880"
+                        height="472"
+                    />
+                </div>
+            </section>
+
+            <!-- ご利用までの流れ -->
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    完全無料のため、少し
+                                    でもご興味がある方はまずはお問い合わせください。<br
+                                    />
+                                    担当スタッフがお電話にてヒアリングいたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先よりご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    サービスの内容を説明し、お客様に合ったプランをご提案します。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">ご契約</h3>
+                            <div class="Local">
+                                <p>
+                                    回収時間・回収頻度などすり合わせた上で契約いただきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">廃油の回収</h3>
+                            <div class="Local">
+                                <p>
+                                    ご契約後お客様の状況に合わせて回収を行います。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- よくある質問 -->
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>回収の時間はおおよそ何時くらいですか？</dt>
+                        <dd>早朝5時～午後14時を目安に伺います。</dd>
+                    </dl>
+                    <dl>
+                        <dt>廃油はどんな種類でも回収できますか？</dt>
+                        <dd>
+                            植物用油、動物性油脂のお引取が可能です。<br
+                            />廃ガソリン等の工業用油脂は引取対象外となります。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <PageForm />
+            <ContactArea />
+            <!-- その他関連サービス -->
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/management/kaitori/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_management_kaitori@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_management_kaitori.png"
+                                        srcset="/asset/images/common/img_kanren_management_kaitori.png 1x,/asset/images/common/2x/img_kanren_management_kaitori@2x.png 2x"
+                                        alt="SNS運用代行"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">厨房機器買取</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="./shop_cleaning/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_shop_cleaning@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_shop_cleaning.png"
+                                        srcset="/asset/images/common/img_kanren_service_shop_cleaning.png 1x,/asset/images/common/2x/img_kanren_service_shop_cleaning@2x.png 2x"
+                                        alt="SNS運用代行"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">飲食店清掃</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="./garbage-collection/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_garbage-collection@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_garbage-collection.png"
+                                        srcset="/asset/images/common/img_kanren_service_garbage-collection.png 1x,/asset/images/common/2x/img_kanren_service_garbage-collection@2x.png 2x"
+                                        alt="SNS運用代行"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">ゴミ回収</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "UTF-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/waste-oil/mv-waste-oil.jpg);
+    }
+
+    /*-----------------------
+tp-oil-introduction__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .tp-ttl {
+            width: 100%;
+        }
+    }
+
+    .tp-oil-introduction__section .content {
+        margin-top: 64px;
+        margin-top: 4rem;
+        border: 3px var(--MAIN_ORANGE) solid;
+        border-radius: 20px;
+        padding: 30px;
+        position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .content {
+            margin-top: 3rem;
+            border: 0;
+            padding: 0px;
+        }
+    }
+
+    .tp-oil-introduction__section .content .tp-ttl {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        top: -25px;
+        width: 28rem;
+        z-index: 500;
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .content .tp-ttl {
+            position: relative;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(0);
+            transform: translate(0);
+            width: 100%;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare01 {
+        background-color: var(--BG_GRAY);
+        border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 3rem 2rem 3rem 2rem;
+        position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare01 {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding: 2rem 2rem 3rem 2rem;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare01::before {
+        background-color: var(--MAIN_ORANGE);
+        bottom: 20px;
+        content: "";
+        display: block;
+        height: 2.3rem;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        width: 4.5rem;
+    }
+
+    .tp-oil-introduction__section .merit-compare01::after {
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-style: solid;
+        border-width: 30px 60px 0 60px;
+        bottom: -1rem;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        width: 0;
+    }
+
+    .tp-oil-introduction__section .merit-compare01 .imgBox {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare01 .imgBox {
+            width: 100%;
+            order: 2;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare02 .imgBox {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare02 .imgBox {
+            width: 100%;
+            order: 2;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare .imgBox img {
+        -o-object-fit: contain;
+        -o-object-position: center;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+    }
+
+    .tp-oil-introduction__section .merit-compare .imgBox img.__width85 {
+        width: 85%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare .imgBox img.__width85 {
+            width: 100%;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare01 .txtBox {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-left: 2rem;
+    }
+
+    .tp-oil-introduction__section .merit-compare02 .txtBox {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-left: 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare01 .txtBox {
+            margin-left: 0;
+        }
+
+        .tp-oil-introduction__section .merit-compare02 .txtBox {
+            margin-left: 0;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare .txtTtl {
+        background-color: var(--MAIN_ORANGE);
+        border-radius: 10px;
+        color: #fff;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare .txtTtl {
+            font-size: 1rem;
+            padding: 0.6rem 2rem;
+            text-align: center;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare01 .txtTtl {
+        background-color: var(--TTL_BG_GRAY);
+        color: #fff;
+    }
+
+    .tp-oil-introduction__section .merit-compare .txtDescrip {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+        text-indent: -1em;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare .txtDescrip {
+            font-size: 1rem;
+            line-height: 1.7;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+    }
+
+    .tp-oil-introduction__section .merit-compare02 {
+        background-color: var(--BG_ORANGE);
+        border-radius: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 2rem;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-oil-introduction__section .merit-compare02 {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding: 2rem;
+        }
+    }
+
+    .tp-oil-introduction__section .tp-bglg {
+        background: var(--MAIN_YELLOW);
+    }
+
+    /*-----------------------
+SDGsの実現
+-----------------------*/
+
+    .tp-merit01__section .SDGs_flowBox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_flowBox {
+            flex-wrap: wrap;
+        }
+    }
+
+    .tp-merit01__section .SDGs_card {
+        position: relative;
+        width: calc(20%);
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_card {
+            width: calc(50% - 0.5rem);
+            margin-bottom: 1rem;
+        }
+    }
+
+    .tp-merit01__section .SDGs_ttl {
+        position: relative;
+        background-color: var(--MAIN_ORANGE);
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_ttl {
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+    .tp-merit01__section .SDGs_ttl::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        margin: auto;
+        border-style: solid;
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-width: 5px 5px 0 5px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_flowBox::before {
+            display: none;
+        }
+
+        .tp-merit01__section .SDGs_flowBox::after {
+            display: none;
+        }
+    }
+
+    .tp-merit01__section .SDGs_card:not(:first-of-type) {
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-merit01__section .SDGs_card:not(:first-of-type) {
+            margin-left: 0px;
+        }
+
+        .tp-merit01__section .SDGs_card:nth-child(2n) {
+            margin-left: 1rem;
+        }
+    }
+
+    .tp-merit01__section .SDGs_imgBox {
+        width: 100%;
+    }
+
+    .tp-merit01__section .SDGs_imgBox img {
+        -o-object-fit: cover;
+        -o-object-position: center;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    /*-----------------------
+ tp-storage__section
+-----------------------*/
+
+    .tp-storage__section .trnsctin-flow {
+        margin-top: 64px;
+        margin-top: 4rem;
+    }
+
+    .tp-storage__section .strageBox01 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageBox01 {
+            flex-wrap: wrap;
+        }
+    }
+
+    .tp-storage__section .strageBox01::before {
+        background-color: var(--MAIN_ORANGE);
+        bottom: -2rem;
+        content: "";
+        display: block;
+        height: 3.2rem;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        width: 10rem;
+    }
+
+    .tp-storage__section .strageBox01::after {
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-style: solid;
+        border-width: 3rem 7rem 0 7rem;
+        bottom: -5rem;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        width: 0;
+    }
+
+    .tp-storage__section .strageCard {
+        width: 480px;
+        width: 30rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageCard {
+            width: calc(50% - 0.5rem);
+            margin-bottom: 1rem;
+        }
+    }
+
+    .tp-storage__section .strageCard:not(:first-of-type) {
+        margin-left: 0.7rem;
+    }
+
+    .tp-storage__section .strageCard .strage_ttl {
+        background-color: var(--MAIN_ORANGE);
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageCard .strage_ttl {
+            font-size: 0.8rem;
+            padding: 0.2rem 0;
+        }
+    }
+
+    .tp-storage__section .strageCard .imgBox {
+        width: 100%;
+    }
+
+    .tp-storage__section .strageCard .imgBox img {
+        -o-object-fit: cover;
+        -o-object-position: center;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    .tp-storage__section .strageCard .strageTxt {
+        color: #666;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .tp-storage__section .strageArrowTxt {
+        color: #fff;
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 88px;
+        margin-top: 3.3rem;
+        position: relative;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .tp-storage__section .truckImg01 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        width: 25rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .truckImg01 {
+            width: 90%;
+        }
+    }
+
+    .tp-storage__section .truckImg01 img {
+        -o-object-fit: cover;
+        -o-object-position: center;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+
+    .tp-storage__section .strageBox02 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 4rem;
+        position: relative;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tp-storage__section .strageBox02 {
+            width: 100%;
+        }
+    }
+
+    .tp-storage__section .strageBox02::before {
+        background-color: var(--MAIN_ORANGE);
+        bottom: -48px;
+        bottom: -2rem;
+        content: "";
+        display: block;
+        height: 3.2rem;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        width: 10rem;
+    }
+
+    .tp-storage__section .strageBox02::after {
+        border-color: var(--MAIN_ORANGE) transparent transparent transparent;
+        border-style: solid;
+        border-width: 3rem 7rem 0 7rem;
+        bottom: -5rem;
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        width: 0;
+    }
+
+    /*-----------------------
+ contactarea
+-----------------------*/
+    .contactarea:first-of-type {
+        margin-bottom: 80px;
+    }
+
+    .contactarea section:nth-child(2) {
+        display: none;
+    }
+
+    /* 202501 add */
+    p.cap_txt_small {
+        font-size: 0.9rem;
+        transform: translateY(-30px);
+        text-shadow: 1px 1px 3px #fff;
+    }
+    @media screen and (max-width: 767px) {
+        p.cap_txt_small {
+            font-size: 0.8rem;
+            transform: translateY(-15px);
+            line-height: 1.5;
+        }
+    }
+</style>

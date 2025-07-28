@@ -1,0 +1,133 @@
+<section id="price">
+    <div class="cInner">
+        <h2 class="h02">
+            <span class="pc">Hidden Japan Customized Day Tour</span>
+            <span class="sp">Hidden Japan Customized<br />Day Tour</span>
+        </h2>
+        <p class="price-txt">
+            We‘ll determine the best places to visit and the<br
+                class="sp"
+            />activities
+            <br class="pc" /> you'd like to experience. Our itinerary will be flexible!<br
+            />
+            <span>Enjoy an awesome time in Japan!</span>
+        </p>
+        <div class="price-box">
+            Price：<span> Contact us!</span>
+        </div>
+    </div>
+
+    <style lang="scss">
+        section#price {
+            padding: 0px 0 80px;
+            background: var(--grey);
+            @media (max-width: 768px) {
+                padding: 0px 0 25px;
+            }
+            div.cInner {
+                background: #fff;
+                padding: 60px 110px 60px;
+                border-radius: 10px;
+                position: relative;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+                @media (max-width: 768px) {
+                    padding: 40px 15px 30px;
+                    margin: 0 15px;
+                }
+                h2.h02 {
+                    font-weight: 900;
+                    letter-spacing: -1px;
+                    font-size: 52px;
+                    margin-bottom: 15px;
+                    @media (max-width: 768px) {
+                        margin-bottom: 25px;
+                        font-size: 25px;
+                        border-bottom: 0;
+                        position: relative;
+                        width: fit-content;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -7px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 90%;
+                            height: 3px;
+                            background: var(--red);
+                        }
+                    }
+                }
+                p.price-txt {
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        line-height: 1.5;
+                    }
+                    span {
+                        color: var(--red);
+                    }
+                }
+                div.price-box {
+                    font-size: 46px;
+                    color: var(--red);
+                    text-align: center;
+                    background: url("/lp/japan-travel-planner/img/img_intro_frame.png")
+                        center center / cover no-repeat;
+                    height: 160px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media (max-width: 768px) {
+                        background: url("/lp/japan-travel-planner/img/img_intro_frame-sp.png")
+                            center center / cover no-repeat;
+                        font-size: 23px;
+                        height: 80px;
+                    }
+                    span {
+                        font-weight: 900;
+                    }
+                }
+                dl {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 90px;
+                    margin-bottom: 30px;
+                    dt {
+                        font-size: 30px;
+                        font-weight: bold;
+                        width: 280px;
+                        text-align: right;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: -60px;
+                            transform: translateY(-50%);
+                            width: 18px;
+                            height: 35px;
+                            background: url("/lp/japan-travel-planner/img/icon_arrow-red.png")
+                                center center / cover no-repeat;
+                        }
+                    }
+                    dd {
+                        font-size: 26px;
+                        width: calc(100% - 370px);
+                        span.dot {
+                            color: var(--red);
+                            font-size: 40px;
+                            font-weight: bold;
+                            vertical-align: middle;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</section>

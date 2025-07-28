@@ -1,0 +1,117 @@
+<section id="sec_merit">
+    <div class="inner">
+        <h2 class="ttl_02">つながるテレフォンを導入するメリット</h2>
+        <ul class="list">
+            <li class="list__item">
+                <div class="list__ico">
+                    メリット<span class="txt_l">１</span>
+                </div>
+                <p class="list__txt">商談後の<br class="pc" />電話がつながる</p>
+            </li>
+            <li class="list__item">
+                <div class="list__ico">
+                    メリット<span class="txt_l">２</span>
+                </div>
+                <p class="list__txt">
+                    先方が問い合わせ<br class="pc" />しやすくなる
+                </p>
+            </li>
+            <li class="list__item">
+                <div class="list__ico">
+                    メリット<span class="txt_l">３</span>
+                </div>
+                <p class="list__txt">行き違いを防げる</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<style>
+    #sec_merit {
+        padding-bottom: 45px;
+    }
+    #sec_merit .ttl_02 {
+        margin-bottom: 105px;
+    }
+    #sec_merit .list {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec_merit .list__item {
+        width: 30.7%;
+        aspect-ratio: 100 / 64;
+        border: 2px solid #158efe;
+        border-radius: 10px;
+        padding: 35px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    #sec_merit .list__ico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        aspect-ratio: 1 / 1;
+        background: #158efe;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        font-size: min(1.6vw, 16px);
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #sec_merit .list__ico .txt_l {
+        font-size: min(3vw, 30px);
+        line-height: 1;
+    }
+    #sec_merit .list__txt {
+        font-size: 30px;
+        font-weight: bold;
+        color: #158efe;
+        line-height: 1.33;
+    }
+    @media screen and (max-width: 767px) {
+        #sec_merit {
+            padding-bottom: 32px;
+        }
+        #sec_merit .ttl_02 {
+            margin-bottom: 27px;
+        }
+        #sec_merit .list {
+            flex-direction: column;
+            gap: 20px;
+        }
+        #sec_merit .list__item {
+            width: 100%;
+            aspect-ratio: unset;
+            min-height: 84px;
+            border-radius: 7px;
+            padding: 9px;
+            justify-content: flex-start;
+            text-align: left;
+        }
+        #sec_merit .list__ico {
+            width: 62px;
+            border: none;
+            font-size: 12px;
+            position: static;
+            transform: translate(0);
+            margin-right: 13px;
+        }
+        #sec_merit .list__ico .txt_l {
+            font-size: 22px;
+        }
+        #sec_merit .list__txt {
+            width: calc(100% - 62px);
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+</style>

@@ -1,0 +1,145 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import structuredDataMarkup from "../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.promotion);
+---
+
+<Layout title="" description="" pageUrl="" ogimage="" markup={markup}>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/promotion/">販促デザイン</a></li>
+                </ol>
+            </nav>
+            <section class="btm-front__section promotion">
+                <h1 class="btm-front__ttl font_m_plus">
+                    <span>販促デザイン</span>
+                </h1>
+            </section>
+            <section class="kg-open__section btm-sec tp-wrapper">
+                <p class="kg-open__caption">
+                    飲食店に必要なメニュー表、チラシ、ポスター、名刺、<br
+                        class="pc"
+                    />
+                    ショップカード、のれん、タペストリーなどの作成や、<br
+                        class="pc"
+                    />
+                    掲載に必要な写真の撮影手配、<br class="pc" />
+                    ロゴ作成もテンポスにお任せください。
+                </p>
+            </section>
+            <section class="kg-support__section btm-sec tp-wrapper">
+                <div class="kg-flex__contents">
+                    <p class="kg-flex__contents__thumb support">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/promotion/sp/img_promotion01.jpg"
+                            />
+                            <img
+                                src="/asset/images/promotion/img_promotion01.jpg"
+                                srcset="/asset/images/promotion/img_promotion01.jpg 1x,/asset/images/promotion/2x/img_promotion01.jpg 2x"
+                                alt="開業支援"
+                                width="300"
+                                height="180"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                    <p class="kg-flex__contents__txt">
+                        <span class="kg-link__caption"
+                            >お店にピッタリの『集客販促方法』を無料診断！</span
+                        ><br />
+                        <br />
+                        「なかなかお客さんが集まらなくて困っている…。」<br
+                            class="pc"
+                        />
+                        「お店も打ち出し方が合っているのかわからない…。」<br
+                            class="pc"
+                        />
+                        そんな方には、どの方法を使って集客発信をしたら良いか、無料診断も行っています。<br
+                            class="pc"
+                        />
+                        お気軽にご相談ください。
+                    </p>
+                </div>
+                <ul class="kg-link__list purchase-thumb02">
+                    <li>
+                        <a href="/promotion/logo_creation/">
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/promotion/sp/img_promotion02.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/promotion/img_promotion02.jpg"
+                                        srcset="/asset/images/promotion/img_promotion02.jpg 1x,/asset/images/promotion/2x/img_promotion02.jpg 2x"
+                                        alt="ロゴ作成"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">ロゴ作成</h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/promotion/promotional_design/">
+                            <p class="kg-link__thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/promotion/sp/img_promotion03.jpg"
+                                    />
+                                    <img
+                                        src="/asset/images/promotion/img_promotion03.jpg"
+                                        srcset="/asset/images/promotion/img_promotion03.jpg 1x,/asset/images/promotion/2x/img_promotion03.jpg 2x"
+                                        alt="販促物作成"
+                                        width="113"
+                                        height="113"
+                                        loading="lazy"
+                                        class="imgauto-h"
+                                    />
+                                </picture>
+                            </p>
+                            <div class="kg-link__container">
+                                <h3 class="kg-link__caption">販促物作成</h3>
+                                <p class="btm-link">詳しく見る</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+							<a href="/promotion/makemovie/">
+								<p class="kg-link__thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/promotion/sp/img_promotion04.jpg">
+										<img src="/asset/images/promotion/img_promotion04.jpg"
+											srcset="/asset/images/promotion/img_promotion04.jpg 1x,/asset/images/promotion/2x/img_promotion04.jpg 2x"
+											alt="動画作成" width="113" height="113" loading="lazy" class="imgauto-h">
+									</picture>
+								</p>
+								<div class="kg-link__container">
+									<h3 class="kg-link__caption">動画作成</h3>
+									<p class="btm-link">
+										詳しく見る
+									</p>
+								</div>
+							</a>
+						</li> -->
+                </ul>
+            </section>
+        </div>
+    </article>
+</Layout>

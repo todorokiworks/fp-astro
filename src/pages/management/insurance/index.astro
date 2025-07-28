@@ -1,0 +1,409 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.insurance);
+---
+
+<Layout
+    title="飲食店専用保険 | テンポスフードプレイス"
+    description="火災や地震以外にも、お客様の洋服を汚してしまった、食中毒が発生してしまった等飲食店のトラブルやリスクを飲食店に合った保険でカバーしませんか？"
+    pageUrl="/management/insurance/"
+    ogimage="/asset/images/insurance/ogp_insurance.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/management/">店舗運営支援</a></li>
+                    <li>店舗用保険</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>店舗用保険</span>
+                </h1>
+                <p class="tp-front__caption">
+                    火災や地震、大雨などの浸水被害のほか、<br class="pc" />
+                    お客様の洋服を汚してしまった、食中毒が発生してしまった等<br
+                        class="pc"
+                    />
+                    飲食店のトラブルやリスクをカバーしませんか？
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=23"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        昨今の<span class="tp-bglg">大雨・台風の浸水被害</span
+                        >が不安
+                    </li>
+                    <li><span class="tp-bglg">不測の事態</span>に備えたい</li>
+                    <li>
+                        <span class="tp-bglg">食中毒</span
+                        >などが発生したときが不安
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    テンポスではお客様のご要望に沿った保険を<br class="pc" />
+                    提案できる会社をご紹介いたします。
+                </h2>
+                <div class="tp-design__contents flex">
+                    <div class="tp-local__wrap">
+                        <p class="tp-local">
+                            飲食店の経営には、さまざまなリスクが取り巻いています。<br
+                            />
+                            火災や地震、水漏れや食中毒など気を付けていても発生してしまうことがあります。
+                        </p>
+                        <p class="tp-local">
+                            ちょっとしたトラブルが大きな損失を生むことも十分に考えられますので、あらゆるリスクに備えるためにも保険に加入することで大切です。
+                        </p>
+                    </div>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/insurance/2x/img_insurance_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/insurance/img_insurance_design.png"
+                                srcset="/asset/images/insurance/img_insurance_design.png 1x,/asset/images/insurance/2x/img_insurance_design@2x.png 2x"
+                                alt=""
+                                width="200"
+                                height="243"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">保険に加入するメリット</h2>
+                <ul class="tp-check__list tp-wrapper__l tp-mgb__s">
+                    <li>
+                        火災や水害などの<span class="tp-bglg"
+                            >損害リスクを軽減</span
+                        >できる
+                    </li>
+                    <li>
+                        食中毒や接客中に起きたトラブルなどの<span
+                            class="tp-bglg">賠償リスクを軽減</span
+                        >できる
+                    </li>
+                    <li>
+                        予想外の<span class="tp-bglg">休業リスク</span
+                        >を軽減できる
+                    </li>
+                </ul>
+                <p class="tp-want__thumb width-85">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/insurance/2x/img_insurance_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/insurance/img_insurance_want.png"
+                            srcset="/asset/images/insurance/img_insurance_want.png 1x,/asset/images/insurance/2x/img_insurance_want@2x.png 2x"
+                            alt=""
+                            width="636"
+                            height="91"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-point__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">サービスの特徴</span>
+                </h2>
+                <ul class="tp-point__list __1clm">
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >HACCPアプリを無料で利用可能</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            テンポスが紹介するUSENの保険に加入するとHACCPアプリを無料で利用することができます。<br
+                            />
+                            HACCPを導入することで、食中毒を防げるだけでなく、事故やクレームが減少します！
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >事故が起こった際の現地訪問</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            万が一トラブルや事故が起こった際はスタッフが現地に駆けつけてくれます！
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >お客様のご要望に合った保険を提案</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            現地訪問を通し、火災保険や食中毒に対応している保険などお客様のご要望に合った保険を提案いたします！
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">無料相談・お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    ご相談は無料です。保険に加入するか悩んでいるといった場合も、まずはお気軽にお問い合わせください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">フードプレイスよりご連絡</h3>
+                            <div class="Local">
+                                <p>電話でお客様のご相談内容を伺います。</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先からのご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    電話や現地への訪問を通じてサービス内容や料金プランをご提案します。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">契約</h3>
+                            <div class="Local">
+                                <p>
+                                    サービス内容や料金など、お客様のご要望と相違がなければ契約になります。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">保険適用開始</h3>
+                            <div class="Local">
+                                <p>
+                                    契約が完了しましたら、保険が適用されます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>費用はどれくらいかかるの？</dt>
+                        <dd>
+                            法律上、募集人資格があるものからでないと詳細をお伝えできない為、提携会社より詳しくご説明させていただきます。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            テイクアウトやデリバリーの食中毒も対応できるの？
+                        </dt>
+                        <dd>
+                            プランにより対応可能です。詳しくは提携会社より説明させていただきます。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>デリバリーする時に起きた事故などは保証あるの？</dt>
+                        <dd>
+                            デリバリー手段が、徒歩・自転車またはバイク・自動車などにより異なります。詳しくは提携会社よりご説明させていただきます。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/management/tax-accountant/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_tax-accountant@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_tax-accountant.png"
+                                        srcset="/asset/images/common/img_kanren_service_tax-accountant.png 1x,/asset/images/common/2x/img_kanren_service_tax-accountant@2x.png 2x"
+                                        alt="飲食専門税理士紹介"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">飲食専門税理士紹介</h3>
+                        </a>
+                    </article>
+                    <!-- <article>
+							<a href="/management/q-navi/">
+								<p class="Thumb">
+									<picture>
+										<source media="(max-width:767px)"
+											srcset="/asset/images/common/2x/img_kanren_service_q-navi@2x.png">
+										<img src="/asset/images/common/img_kanren_service_q-navi.png"
+											srcset="/asset/images/common/img_kanren_service_q-navi.png 1x,/asset/images/common/2x/img_kanren_service_q-navi@2x.png 2x"
+											alt="店舗トラブル解決アプリ" width="304" height="231" loading="lazy" class="imgauto">
+									</picture>
+								</p>
+								<h3 class="Ttl">
+									店舗トラブル解決アプリ
+								</h3>
+							</a>
+						</article> -->
+                    <article>
+                        <a href="/management/consultant/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_consultant@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_consultant.png"
+                                        srcset="/asset/images/common/img_kanren_service_consultant.png 1x,/asset/images/common/2x/img_kanren_service_consultant@2x.png 2x"
+                                        alt="飲食コンサルタントマッチング"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">
+                                飲食コンサルタント<br />
+                                マッチング
+                            </h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/insurance/mv_insurance.jpg);
+    }
+
+    /*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+    .tp-worries__section .tp-check__list > li {
+        display: block;
+    }
+
+    /*-----------------------
+tp-design__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-design__section .tp-design__thumb {
+            width: 50%;
+        }
+    }
+
+    /*-----------------------
+tp-want__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__thumb {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point06.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point32.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point52.png) no-repeat center
+            center / contain;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-point__section .tp-point__list > li > .Ttl:before {
+            width: 45px;
+            margin-right: 15px;
+        }
+        .tp-point__section .tp-point__list .Ttl__txt {
+            width: calc(100% - 60px);
+        }
+    }
+</style>

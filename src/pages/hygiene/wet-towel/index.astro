@@ -1,0 +1,741 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import PageForm from "../../../components/common/PageForm.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.wetTowel);
+---
+
+<Layout
+    title="廃油の無料回収業者を紹介！全国対応｜テンポスフードプレイス"
+    description="飲食店・事業所から排出される廃油を無料で回収している会社をご紹介。全国どの地域のお引取も一括で窓口となり、新規出店・営業中店舗問わず臨機応変に対応可能。"
+    pageUrl="/hygiene/waste-oil/"
+    ogimage="/asset/images/waste-oil/ogp_waste-oil.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/hygiene/">衛生管理</a></li>
+                    <li>廃油無料回収</li>
+                </ol>
+            </nav>
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>廃油無料回収</span>
+                </h1>
+                <p class="tp-front__caption">
+                    飲食店や食品工場から出る廃油を無料で回収！<br />
+                    専門容器も無料で貸し出し可能
+                </p>
+
+                <!-- 202501 add -->
+                <p class="cap_txt_small">
+                    ※廃ガソリン等の工業用油脂は引取対象外となります
+                </p>
+                <!-- 202501 add end -->
+
+                <p class="tp-front__contact">
+                    <a href="#consultant_form" class="tp-front__contact-link"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <!-- こんなお悩みありませんか？ -->
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        廃油を産業廃棄物として<span class="tp-bglg"
+                            >お金を払って</span
+                        >捨てている
+                    </li>
+                    <li>
+                        廃油処理にかかる<span class="tp-bglg">時間を短縮</span
+                        >したい
+                    </li>
+                    <li>
+                        現在契約している業者がなかなか<span class="tp-bglg"
+                            >回収してくれない</span
+                        >
+                    </li>
+                    <li>
+                        <span class="tp-bglg">環境に良いリサイクル</span
+                        >を検討している
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-oil-introduction__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスでは、無料で廃油を回収している<br class="pc" />
+                    会社を紹介しております。
+                </h2>
+            </section>
+
+            <!-- 日本全国でお取引可能！ -->
+            <section
+                class="tp-oil-introduction__section tp-merit tp-sec tp-wrapper"
+            >
+                <h2 class="tp-ttl __center __num01 tp-wrapper__m">
+                    日本全国の廃油を無料で回収！
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    全国どの地域のお取引も一括で窓口となり、営業中店舗だけでなく新規出店も対応。個人店からチェーン店までお気軽にご相談ください。
+                </p>
+                <div class="content">
+                    <h2 class="tp-ttl __center">
+                        窓口一元管理システムで<br class="sp" />負担を軽減
+                    </h2>
+                    <div class="merit-compare merit-compare01">
+                        <picture class="imgBox">
+                            <source
+                                srcset="/asset/images/waste-oil/img_waste-oil_01.png"
+                                media="(max-width: 768px)"
+                            />
+                            <img
+                                class="__width85"
+                                src="/asset/images/waste-oil/img_waste-oil_01.png"
+                                alt=""
+                                width="493"
+                                height="427"
+                            />
+                        </picture>
+                        <div class="txtBox">
+                            <p class="txtTtl">通常</p>
+                            <ul>
+                                <li class="txtDescrip">
+                                    ①新規店舗開店時の業者選定及び、<br
+                                    />契約書締結の心配
+                                </li>
+                                <li class="txtDescrip">
+                                    ②支払い・数量の取りまとめ
+                                </li>
+                                <li class="txtDescrip">
+                                    ③各店舗からの相談・トラブル対応
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="merit-compare merit-compare02">
+                        <picture class="imgBox">
+                            <source
+                                srcset="/asset/images/waste-oil/img_waste-oil_02.png"
+                                media="(max-width: 768px)"
+                            />
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_02.png"
+                                alt=""
+                                width="586"
+                                height="276"
+                            />
+                        </picture>
+                        <div class="txtBox">
+                            <p class="txtTtl">弊社</p>
+                            <ul>
+                                <li class="txtDescrip">
+                                    ①<span class="tp-bglg"
+                                        >契約窓口の一本化</span
+                                    >
+                                </li>
+                                <li class="txtDescrip">
+                                    ②<span class="tp-bglg"
+                                        >支払・報告書の一本化</span
+                                    >
+                                </li>
+                                <li class="txtDescrip">
+                                    ③<span class="tp-bglg"
+                                        >各店舗様からの相談・トラブルのご対応</span
+                                    >
+                                </li>
+                                <li class="txtDescrip">
+                                    ④<span class="tp-bglg"
+                                        >新店舗開店時のお引取り手配対応</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SDGsの実現 -->
+            <section class="tp-merit01__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num02 tp-wrapper__s">
+                    SDGsの実現
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    お引取からバイオ燃料のBDF
+                    の製造・販売まで一貫して行うことで、CSR活動・ローカルSDGsの実現が可能
+                </p>
+
+                <div class="SDGs_flowBox">
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">廃食用油排出</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_03.jpg"
+                                alt="廃食用油排出"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">お引き取り</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_04.jpg"
+                                alt="お引き取り"
+                                width="269"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">一時保存</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_05.jpg"
+                                alt="一時保存"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">バイオ燃料製造</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_06.jpg"
+                                alt="バイオ燃料製造"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                    <div class="SDGs_card">
+                        <p class="SDGs_ttl">燃料利用</p>
+                        <div class="SDGs_imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_07.jpg"
+                                alt="燃料利用"
+                                width="268"
+                                height="180"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- コストメリットの実現 -->
+            <section class="tp-merit01__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center __num03 tp-wrapper__s">
+                    コストメリットの実現
+                </h2>
+                <p class="tp-local tp-mgb__s tp-wrapper__s">
+                    廃食用油の無料回収により明確なコストメリットの実現が可能
+                </p>
+            </section>
+
+            <PageForm />
+            <ContactArea />
+
+            <!-- tp-storage__section -->
+            <section class="tp-storage__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">廃食用油の保管方法</span
+                    >
+                </h2>
+
+                <div class="strageBox01">
+                    <div class="strageCard">
+                        <p class="strage_ttl">一斗缶</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_08.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            一斗缶で保管されている場合は、缶ごとお引取りします
+                        </p>
+                    </div>
+                    <div class="strageCard">
+                        <p class="strage_ttl">ペール缶等</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_09.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            一斗缶以外の容器の場合は油のみお引取りします
+                        </p>
+                    </div>
+                    <div class="strageCard">
+                        <p class="strage_ttl">ドラム缶</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_10.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            油の量が多い場合はドラム缶（ 200L ）を貸出可能です
+                        </p>
+                    </div>
+                </div>
+
+                <p class="strageArrowTxt">引取車両<br />2〜4トン車</p>
+
+                <div class="truckImg01">
+                    <img
+                        src="/asset/images/waste-oil/img_waste-oil_11.jpg"
+                        alt=""
+                        width="880"
+                        height="508"
+                    />
+                </div>
+
+                <div class="strageBox02">
+                    <div class="strageCard">
+                        <p class="strage_ttl">タンク</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_12.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            大型貯蔵タンクからのお引取りも可能です
+                        </p>
+                    </div>
+                    <div class="strageCard">
+                        <p class="strage_ttl">専用ステンレス製タンク</p>
+                        <div class="imgBox">
+                            <img
+                                src="/asset/images/waste-oil/img_waste-oil_13.jpg"
+                                alt=""
+                                width="422"
+                                height="282"
+                            />
+                        </div>
+                        <p class="strageTxt">
+                            ご要望に応じて専用タンクの手配が可能です
+                        </p>
+                    </div>
+                </div>
+
+                <p class="strageArrowTxt">引取車両<br />2〜4トン車</p>
+
+                <div class="truckImg01">
+                    <img
+                        src="/asset/images/waste-oil/img_waste-oil_14.jpg"
+                        alt=""
+                        width="880"
+                        height="472"
+                    />
+                </div>
+            </section>
+
+            <!-- ご利用までの流れ -->
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    完全無料のため、少し
+                                    でもご興味がある方はまずはお問い合わせください。<br
+                                    />
+                                    担当スタッフがお電話にてヒアリングいたします。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先よりご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    サービスの内容を説明し、お客様に合ったプランをご提案します。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">ご契約</h3>
+                            <div class="Local">
+                                <p>
+                                    回収時間・回収頻度などすり合わせた上で契約いただきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">廃油の回収</h3>
+                            <div class="Local">
+                                <p>
+                                    ご契約後お客様の状況に合わせて回収を行います。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- よくある質問 -->
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>回収の時間はおおよそ何時くらいですか？</dt>
+                        <dd>早朝5時～午後14時を目安に伺います。</dd>
+                    </dl>
+                    <dl>
+                        <dt>廃油はどんな種類でも回収できますか？</dt>
+                        <dd>
+                            植物用油、動物性油脂のお引取が可能です。<br
+                            />廃ガソリン等の工業用油脂は引取対象外となります。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section
+                id="consultant_form"
+                class="tp-form__section tp-sec tp-wrapper"
+            >
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">お問い合わせ</span>
+                </h2>
+                <form
+                    action="https://business.form-mailer.jp/fm/service/Forms/confirm"
+                    method="post"
+                    name="form1"
+                    enctype="multipart/form-data"
+                    accept-charset="UTF-8"
+                >
+                    <input type="hidden" name="key" value="02c1cfff243385" />
+                    <table class="add-contents__form">
+                        <tr>
+                            <th>
+                                <p>営業中or新規開業<span>必須</span></p>
+                            </th>
+                            <td class="radio">
+                                <p>
+                                    <input
+                                        id="radio01"
+                                        name="field_4091416"
+                                        type="radio"
+                                        value="0"
+                                    /><label for="radio01">営業中</label>
+                                </p>
+                                <p>
+                                    <input
+                                        id="radio02"
+                                        name="field_4091416"
+                                        type="radio"
+                                        value="1"
+                                    /><label for="radio02">新規開業</label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>店舗名・屋号<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4091417"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="店舗名・屋号"
+                                />
+                                <p>
+                                    ※店舗名が未定の場合は「未定」とご入力ください。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>法人名・会社名</p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4091418"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="法人名・会社名"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お名前<span>必須</span></p>
+                            </th>
+                            <td class="name">
+                                <input
+                                    name="field_4091419"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="山田 太郎"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お名前(フリガナ）<span>必須</span></p>
+                            </th>
+                            <td class="name">
+                                <input
+                                    name="field_4091420"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    placeholder="ヤマダ タロウ"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>連絡先電話番号<span>必須</span></p>
+                            </th>
+                            <td
+                                ><input
+                                    name="field_4091421"
+                                    type="text"
+                                    value=""
+                                    size="30"
+                                    minlength="1"
+                                    placeholder="半角数字、ハイフンなしでご入力ください"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>メールアドレス</p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4091422"
+                                    type="text"
+                                    size="30"
+                                    placeholder="info@example.com"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お店の都道府県<span>必須</span></p>
+                            </th>
+                            <td>
+                                <select name="field_4091423">
+                                    <option value="">------</option>
+                                    <option value="0">北海道</option>
+                                    <option value="1">青森県</option>
+                                    <option value="2">岩手県</option>
+                                    <option value="3">宮城県</option>
+                                    <option value="4">秋田県</option>
+                                    <option value="5">山形県</option>
+                                    <option value="6">福島県</option>
+                                    <option value="7">茨城県</option>
+                                    <option value="8">栃木県</option>
+                                    <option value="9">群馬県</option>
+                                    <option value="10">埼玉県</option>
+                                    <option value="11">千葉県</option>
+                                    <option value="12">東京都</option>
+                                    <option value="13">神奈川県</option>
+                                    <option value="14">新潟県</option>
+                                    <option value="15">富山県</option>
+                                    <option value="16">石川県</option>
+                                    <option value="17">福井県</option>
+                                    <option value="18">山梨県</option>
+                                    <option value="19">長野県</option>
+                                    <option value="20">岐阜県</option>
+                                    <option value="21">静岡県</option>
+                                    <option value="22">愛知県</option>
+                                    <option value="23">三重県</option>
+                                    <option value="24">滋賀県</option>
+                                    <option value="25">京都府</option>
+                                    <option value="26">大阪府</option>
+                                    <option value="27">兵庫県</option>
+                                    <option value="28">奈良県</option>
+                                    <option value="29">和歌山県</option>
+                                    <option value="30">鳥取県</option>
+                                    <option value="31">島根県</option>
+                                    <option value="32">岡山県</option>
+                                    <option value="33">広島県</option>
+                                    <option value="34">山口県</option>
+                                    <option value="35">徳島県</option>
+                                    <option value="36">香川県</option>
+                                    <option value="37">愛媛県</option>
+                                    <option value="38">高知県</option>
+                                    <option value="39">福岡県</option>
+                                    <option value="40">佐賀県</option>
+                                    <option value="41">長崎県</option>
+                                    <option value="42">熊本県</option>
+                                    <option value="43">大分県</option>
+                                    <option value="44">宮崎県</option>
+                                    <option value="45">鹿児島県</option>
+                                    <option value="46">沖縄県</option>
+                                    <option value="47">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>お店の市区町村・番地<span>必須</span></p>
+                            </th>
+                            <td>
+                                <input
+                                    name="field_4091424"
+                                    type="text"
+                                    placeholder="市区町村番地"
+                                />
+                                <p class="cap_txt_01">
+                                    ※住所未定の方は、出店予定の市町村区までご入力ください。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>備考</p>
+                            </th>
+                            <td>
+                                <textarea
+                                    name="field_4091427"
+                                    cols="30"
+                                    rows="5"
+                                    placeholder="お問い合わせ内容をご入力ください。"
+                                ></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <input
+                        class="contact-btn"
+                        name="submit"
+                        type="submit"
+                        value="確認画面へ"
+                    />
+                    <input type="hidden" name="code" value="utf8" />
+                </form>
+            </section>
+
+            <ContactArea />
+
+            <!-- その他関連サービス -->
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/management/kaitori/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_management_kaitori@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_management_kaitori.png"
+                                        srcset="/asset/images/common/img_kanren_management_kaitori.png 1x,/asset/images/common/2x/img_kanren_management_kaitori@2x.png 2x"
+                                        alt="SNS運用代行"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">厨房機器買取</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="./shop_cleaning/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_shop_cleaning@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_shop_cleaning.png"
+                                        srcset="/asset/images/common/img_kanren_service_shop_cleaning.png 1x,/asset/images/common/2x/img_kanren_service_shop_cleaning@2x.png 2x"
+                                        alt="SNS運用代行"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">飲食店清掃</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="./garbage-collection/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_garbage-collection@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_garbage-collection.png"
+                                        srcset="/asset/images/common/img_kanren_service_garbage-collection.png 1x,/asset/images/common/2x/img_kanren_service_garbage-collection@2x.png 2x"
+                                        alt="SNS運用代行"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">ゴミ回収</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>

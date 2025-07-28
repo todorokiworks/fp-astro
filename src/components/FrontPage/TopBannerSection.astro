@@ -1,0 +1,317 @@
+<section class="top-banner__section generalsec flex">
+    <a href="/before_opening/" class="top-banner __beginner linkbox">
+        <h2 class="Thumb">
+            <span class="Img_01">
+                <picture>
+                    <source
+                        media="(max-width:767px)"
+                        srcset="/asset/images/top/sp/ms_beginner_human_sp.png"
+                    />
+                    <img
+                        src="/asset/images/top/ms_beginner_human.png"
+                        srcset="/asset/images/top/ms_beginner_human.png 1x,/asset/images/top/2x/ms_beginner_human@2x.png 2x"
+                        alt=""
+                        width="63"
+                        height="92"
+                        loading="lazy"
+                        class="imgauto-h"
+                    />
+                </picture>
+            </span>
+            <span class="Txt">
+                <span class="Txt__top">飲食店開業前</span><br />
+                <span class="Txt__bottom">の方はこちら</span>
+            </span>
+            <span class="Img_02">
+                <picture>
+                    <source
+                        media="(max-width:767px)"
+                        srcset="/asset/images/top/sp/ms_beginner_balloon_sp.png"
+                    />
+                    <img
+                        src="/asset/images/top/ms_beginner_balloon.png"
+                        srcset="/asset/images/top/ms_beginner_balloon.png 1x,/asset/images/top/2x/ms_beginner_balloon@2x.png 2x"
+                        alt=""
+                        width="61"
+                        height="61"
+                        loading="lazy"
+                        class="imgauto"
+                    />
+                </picture>
+            </span>
+        </h2>
+        <ul class="top-banner__list fxw">
+            <li class="top-banner__listItem" data-url="/open/">開業相談</li>
+            <li class="top-banner__listItem" data-url="/telecom/">
+                店舗インフラ
+            </li>
+            <li class="top-banner__listItem" data-url="/promotion/">
+                販促デザイン
+            </li>
+        </ul>
+    </a>
+    <a href="/after_opening/" class="top-banner __veteran linkbox">
+        <h2 class="Thumb">
+            <span class="Img_01">
+                <picture>
+                    <source
+                        media="(max-width:767px)"
+                        srcset="/asset/images/top/sp/msg_veteran_human_sp.png"
+                    />
+                    <img
+                        src="/asset/images/top/msg_veteran_human.png"
+                        srcset="/asset/images/top/msg_veteran_human.png 1x,/asset/images/top/2x/msg_veteran_human@2x.png 2x"
+                        alt=""
+                        width="59"
+                        height="105"
+                        loading="lazy"
+                        class="imgauto-h"
+                    />
+                </picture>
+            </span>
+            <span class="Txt">
+                <span class="Txt__top">飲食店開業後</span><br />
+                <span class="Txt__bottom">の方はこちら</span>
+            </span>
+            <span class="Img_02">
+                <picture>
+                    <source
+                        media="(max-width:767px)"
+                        srcset="/asset/images/top/sp/msg_veteran_balloon_sp.png"
+                    />
+                    <img
+                        src="/asset/images/top/msg_veteran_balloon.png"
+                        srcset="/asset/images/top/msg_veteran_balloon.png 1x,/asset/images/top/2x/msg_veteran_balloon@2x.png 2x"
+                        alt=""
+                        width="61"
+                        height="61"
+                        loading="lazy"
+                        class="imgauto"
+                    />
+                </picture>
+            </span>
+        </h2>
+        <ul class="top-banner__list fxw">
+            <li class="top-banner__listItem" data-url="/marketing/">集客</li>
+            <li class="top-banner__listItem" data-url="/cost/">経費削減</li>
+            <li class="top-banner__listItem" data-url="/management/">
+                店舗運営支援
+            </li>
+        </ul>
+    </a>
+</section>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+        const beginnerBanner = document.querySelector(
+            ".top-banner__section .top-banner.__beginner",
+        );
+        const veteranBanner = document.querySelector(
+            ".top-banner__section .top-banner.__veteran",
+        );
+        const bannerItems = document.querySelectorAll(
+            ".top-banner__section .top-banner__listItem",
+        );
+
+        const beginnerURL = beginnerBanner
+            ? beginnerBanner.getAttribute("href")
+            : "";
+        const veteranURL = veteranBanner
+            ? veteranBanner.getAttribute("href")
+            : "";
+
+        bannerItems.forEach((item) => {
+            item.addEventListener("mouseenter", function () {
+                let changeURL = this.getAttribute("data-url");
+                let parentBanner = this.closest(".top-banner");
+                if (parentBanner && changeURL) {
+                    parentBanner.setAttribute("href", changeURL);
+                }
+            });
+
+            item.addEventListener("mouseleave", function () {
+                let parentBanner = this.closest(".top-banner");
+                if (parentBanner) {
+                    if (parentBanner.classList.contains("__beginner")) {
+                        parentBanner.setAttribute("href", beginnerURL);
+                    } else if (parentBanner.classList.contains("__veteran")) {
+                        parentBanner.setAttribute("href", veteranURL);
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+<style lang="scss">
+    /* -------------------- top-banner__section ------------------- */
+    .top-banner__section {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .top-banner {
+        background-color: var(--MAIN_WHITE);
+        border-radius: 20px;
+        transition: 0.4s;
+    }
+
+    .top-banner .Thumb {
+        margin-bottom: 10px;
+        aspect-ratio: 350/115;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .top-banner .Thumb .Img_01 {
+        width: 18%;
+        margin-right: 2.8%;
+        height: 90%;
+    }
+
+    .top-banner .Thumb .Img_01 img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .top-banner .Thumb .Txt {
+        text-align: center;
+        width: 59.4%;
+        font-family: "ab-kokoro-no3", sans-serif;
+        letter-spacing: -0.3em;
+    }
+
+    .top-banner .Thumb .Txt > * {
+        display: inline-block;
+        line-height: 1;
+    }
+
+    .top-banner .Thumb .Txt__top {
+        font-size: min(2.78vw, 36px);
+        margin-bottom: 0.34em;
+    }
+
+    .top-banner.__beginner .Thumb .Txt__top {
+        color: #28be6e;
+    }
+
+    .top-banner.__veteran .Thumb .Txt__top {
+        color: #ffb400;
+    }
+
+    .top-banner .Thumb .Txt__bottom {
+        font-size: min(2.2vw, 28px);
+        padding-bottom: 0.23em;
+        background-image: linear-gradient(
+            to bottom,
+            transparent 60%,
+            #ffdc00 60%
+        );
+    }
+
+    .top-banner .Thumb .Img_02 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 17%;
+        aspect-ratio: 1/1;
+    }
+
+    .top-banner__list {
+        justify-content: center;
+        row-gap: 0.2em;
+        column-gap: 1em;
+    }
+
+    .top-banner .top-banner__list > li {
+        font-size: var(--fnts_local);
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: var(--SERVICE_BLACK);
+    }
+
+    .top-banner .top-banner__list > li:after {
+        content: "";
+        width: 1em;
+        aspect-ratio: 1/1;
+        display: block;
+        margin-left: 5px;
+    }
+
+    .top-banner.__beginner .top-banner__list > li:after {
+        background: url(/asset/images/top/icon_next_green.svg) no-repeat center
+            center / contain;
+    }
+
+    .top-banner.__veteran .top-banner__list > li:after {
+        background: url(/asset/images/top/icon_next_slider.svg) no-repeat center
+            center / contain;
+    }
+
+    .linkbox {
+        position: relative;
+    }
+
+    .top-banner__section > .top-banner {
+        border: 1px solid #b4b4b4;
+    }
+
+    @media screen and (min-width: 768px) {
+        .top-banner__section > .top-banner {
+            width: 50%;
+        }
+
+        .top-banner {
+            padding: 4% 3%;
+        }
+
+        .top-banner:hover {
+            box-shadow: var(--hover_shadow);
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .top-banner .Thumb .Txt__top {
+            font-size: min(4.15vw, 39px);
+        }
+
+        .top-banner .Thumb .Txt__bottom {
+            font-size: min(3.06vw, 29px);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .top-banner__section {
+            flex-flow: column;
+        }
+
+        .top-banner {
+            padding: 6%;
+        }
+
+        .top-banner .Thumb .Img_01 {
+            width: 18.6%;
+            margin-right: 2%;
+            height: 87%;
+        }
+
+        .top-banner .Thumb .Txt {
+            width: 56.4%;
+            white-space: nowrap;
+        }
+
+        .top-banner .Thumb .Txt__top {
+            font-size: 8vw;
+        }
+
+        .top-banner .Thumb .Txt__bottom {
+            font-size: 5.86vw;
+        }
+
+        .top-banner .Thumb .Img_02 {
+            width: 21%;
+        }
+    }
+</style>

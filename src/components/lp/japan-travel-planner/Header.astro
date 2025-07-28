@@ -1,0 +1,87 @@
+<header>
+    <div class="cInner">
+        <div class="logo">
+            <img src="/lp/japan-travel-planner/img/logo.png" alt="" />
+        </div>
+        <a
+            class="contactBtn"
+            href="https://forms.gle/AigVVixdUn1byRKZA"
+            target="_blank"
+            >Click here to apply!
+        </a>
+    </div>
+</header>
+
+<style lang="scss">
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        background: #fff;
+        z-index: 99999999;
+        div.cInner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0 15px;
+            z-index: 9990;
+            @media (max-width: 768px) {
+                padding: 12px 10px;
+            }
+            div.logo {
+                width: 120px;
+                margin-left: 40px;
+                @media (max-width: 768px) {
+                    width: 70px;
+                    margin-left: 10px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .contactBtn {
+                display: block;
+                font-size: 28px;
+                font-weight: bold;
+                color: #fff;
+                background: var(--red);
+                position: relative;
+                width: 400px;
+                padding: 12px 10px 16px 0;
+                text-align: center;
+                border-radius: 10px;
+                transition: all 0.3s;
+                margin-right: 40px;
+                @media (max-width: 768px) {
+                    width: 180px;
+                    font-size: 12px;
+                    padding: 7px 10px 7px 0;
+                    border-radius: 2px;
+                    margin-right: 0px;
+                }
+                &:hover {
+                    background: #dd4444;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    width: 19px;
+                    height: 35px;
+                    border-radius: 9999px;
+                    background: url("/lp/japan-travel-planner/img/icon_arrow.png")
+                        center center / cover no-repeat;
+                    @media (max-width: 768px) {
+                        width: 10px;
+                        height: 20px;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+    }
+</style>

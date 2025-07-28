@@ -1,0 +1,204 @@
+<section class="top-news__section generalsec">
+    <div class="top-news__ttlbox">
+        <h2 class="top-news__ttl g-ttl">お知らせ</h2>
+        <p class="Caselink pc">
+            <!-- <a href="https://support.tenpos.com/news/">全てのお知らせを見る</a> -->
+            <a href="/news/">全てのお知らせを見る</a>
+        </p>
+    </div>
+    <div class="top-news__container">
+        <ul class="top-news__list">
+            <li>
+                <a href="./news/20250201/">
+                    <span class="Date"
+                        ><time itemprop="datePublished" datetime="2025.02.01"
+                            >2025.02.01</time
+                        ></span
+                    >
+                    <span class="Caption">
+                        株式会社テンポスドットコムの事業譲渡に関しますお知らせ
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://support.tenpos.com/lp/service/ad_service/">
+                    <span class="Date"
+                        ><time itemprop="datePublished" datetime="2024.09.17"
+                            >2024.09.17</time
+                        ></span
+                    >
+                    <span class="Caption">
+                        飲食店向け広告掲載サービスを開始いたしました。
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://support.tenpos.com/resources/web-sns_check/">
+                    <span class="Date"
+                        ><time itemprop="datePublished" datetime="2024.08.22"
+                            >2024.08.22</time
+                        ></span
+                    >
+                    <span class="Caption">
+                        Web・SNSチェックサービスを開始いたしました。
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/management/sharosi/">
+                    <span class="Date"
+                        ><time itemprop="datePublished" datetime="2024.06.16"
+                            >2024.06.16</time
+                        ></span
+                    >
+                    <span class="Caption">
+                        社労士紹介を開始いたしました。
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/telecom/cashless-machine/">
+                    <span class="Date"
+                        ><time itemprop="datePublished" datetime="2024.05.20"
+                            >2024.05.20</time
+                        ></span
+                    >
+                    <span class="Caption">
+                        キャッシュレス券売機のご紹介を開始いたしました。
+                    </span>
+                </a>
+            </li>
+            <!-- お知らせ ここまで -->
+        </ul>
+    </div>
+    <p class="top-news__Caselink sp">
+        <a href="/news/">全てのお知らせを見る</a>
+    </p>
+</section>
+
+<style lang="scss">
+    /* -------------------- top-news__section ------------------- */
+    .top-news__ttlbox {
+        position: relative;
+    }
+
+    .top-news__ttlbox .Caselink {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-weight: bold;
+        font-size: var(--fnts_local);
+    }
+
+    .top-news__Caselink {
+        bottom: 0;
+        right: 0;
+        font-weight: bold;
+        font-size: var(--fnts_local);
+    }
+
+    .top-news__Caselink a,
+    .top-news__ttlbox .Caselink a {
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+    }
+
+    .top-news__Caselink a {
+        justify-content: flex-end;
+    }
+
+    .top-news__Caselink a:after,
+    .top-news__ttlbox .Caselink a:after {
+        display: inline-block;
+        content: "";
+        width: var(--icon_circle_size);
+        aspect-ratio: 1/1;
+        transition: 0.4s;
+        background: url(/asset/images/top/icon_next_slider.svg) no-repeat center
+            center / contain;
+        margin-left: 5px;
+    }
+
+    .top-news__ttlbox .Caselink a:hover {
+        transform: translateX(5px);
+    }
+
+    .top-news__ttlbox .Caselink a:hover:after {
+        background: url(/asset/images/top/icon_next_active.svg) no-repeat center
+            center / contain;
+    }
+
+    .top-news__container {
+        background-color: var(--MAIN_WHITE);
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .top-news__list > li > a {
+        padding: 2em 4em 2em 2em;
+        display: block;
+        position: relative;
+    }
+
+    .top-news__list > li > a:after {
+        position: absolute;
+        content: "";
+        width: var(--icon_circle_size);
+        aspect-ratio: 1/1;
+        transition: 0.4s;
+        background: url(/asset/images/top/icon_next_news.svg) no-repeat center
+            center / contain;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
+    }
+
+    .top-news__list > li:not(:last-child) {
+        border-bottom: 1px solid var(--MAIN_BLACK);
+    }
+
+    @media screen and (min-width: 768px) {
+        .top-news__container {
+            padding: 40px;
+        }
+
+        .top-news__list .Date:after {
+            display: inline-block;
+            content: "";
+            width: 1.5px;
+            height: 1.2em;
+            background-color: var(--MAIN_BLACK);
+            margin: 0 1em;
+            vertical-align: middle;
+        }
+
+        .top-news__Caselink:hover:after,
+        .top-news__ttlbox .Caselink:hover::after {
+            background: url(/asset/images/top/icon_next_active.svg) no-repeat
+                center center / contain;
+            margin-right: -5px;
+        }
+
+        .top-news__list > li > a:hover {
+            color: var(--MAIN_ORANGE);
+        }
+
+        .top-news__list > li > a:hover:after {
+            background: url(/asset/images/top/icon_next_slider.svg) no-repeat
+                center center / contain;
+            right: calc(5% - 5px);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .top-news__container {
+            padding: 0 30px;
+            margin-bottom: 20px;
+        }
+
+        .top-news__list span {
+            display: block;
+        }
+    }
+</style>

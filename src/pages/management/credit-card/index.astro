@@ -1,0 +1,580 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.creditCard);
+---
+
+<Layout
+    title="テンポスクレジットカード発行| テンポスフードプレイス"
+    description="年会費無料！個人と仕事の経費精算を分けて効率よくポイントを貯めましょう。またカードに入会していただくとテンポスグループでご利用いただける1500円のクーポン券をプレゼント！"
+    pageUrl="/management/credit-card/"
+    ogimage="/asset/images/credit-card/ogp_credit-card.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/management/">店舗運営支援</a></li>
+                    <li>テンポスクレジットカード発行</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>テンポスクレジットカード</span>
+                </h1>
+                <p class="tp-front__caption">
+                    テンポスのクレジットカード<br />
+                    「APLUS CARD with TENPOS」のご紹介
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=44"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        個人と仕事の<span class="tp-bglg"
+                            >経費精算を分けたい</span
+                        >
+                    </li>
+                    <li>
+                        <span class="tp-bglg">従業員にも</span
+                        >カードを持たせたい
+                    </li>
+                    <li>
+                        効率よく<span class="tp-bglg">ポイントを貯めたい</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-design__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    そんな方へテンポスのクレジットカード<br class="pc" />
+                    「APLUS CARD with TENPOS」がお勧めです。
+                </h2>
+                <div class="tp-design__contents flex">
+                    <p class="tp-local">
+                        テンポスのクレジットカードは、個人と仕事の経費精算が分けられるので事務作業時間を削減できます。<br
+                        />
+                        各種公共料金などのお支払いにクレジットカードを登録しておけば、毎月の面倒なお支払い手続きは不要です。<br
+                        />
+                        振込手数料のコストも削減でき、ポイントも貯まります。
+                    </p>
+                    <p class="tp-design__thumb">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/credit-card/2x/img_credit-card_design@2x.png"
+                            />
+                            <img
+                                src="/asset/images/credit-card/img_credit-card_design.png"
+                                srcset="/asset/images/credit-card/img_credit-card_design.png 1x,/asset/images/credit-card/2x/img_credit-card_design@2x.png 2x"
+                                alt=""
+                                width="225"
+                                height="143"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                    </p>
+                </div>
+                <div class="btn_credit-card__wrap">
+                    <a
+                        href="https://www.aplus.co.jp/creditcard/use/tenpos/?utm_source=tenpos&utm_medium=hp"
+                        target="_blank"
+                        class="btn_credit-card"
+                        >APLUS CARD with TENPOS<br
+                        />クレジットカードの詳細はこちら</a
+                    >
+                    <p class="txt_caution">※アプラスのページに遷移します</p>
+                </div>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    ポイントも貯められて<br
+                        class="pc"
+                    />スムーズにお会計をしたいあなたへ
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l tp-mgb__s">
+                    <li>
+                        入会特典としてテンポスバスターズの店頭で使える1,500円分のクーポン券をプレゼント
+                    </li>
+                    <li>QUICPay（クイックペイ）でスムーズな会計が可能</li>
+                    <li>ポイントは最大1.0%還元</li>
+                </ul>
+                <p class="tp-want__thumb width-55">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/credit-card/2x/img_credit-card_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/credit-card/img_credit-card_want.png"
+                            srcset="/asset/images/credit-card/img_credit-card_want.png 1x,/asset/images/credit-card/2x/img_credit-card_want@2x.png 2x"
+                            alt=""
+                            width="384"
+                            height="179"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <section class="tp-point__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-point__ttl__span"
+                        >テンポスクレジットカードの</span
+                    >
+                    <span class="tp-ttl__balloon__span"
+                        ><span>3</span>つの特徴</span
+                    >
+                </h2>
+                <ul class="tp-point__list __1clm">
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">お得な特典付き</span>
+                        </h3>
+                        <p class="Local">
+                            カードご入会特典として、テンポスグループでご利用いただける1,500円分のクーポン券をプレゼント！
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >ポイントは最大1.0%還元！</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            カードショッピングご利用金額合計200円につき、1ポイント（1円相当分）貯まります。<br
+                            />
+                            通常、0.5％のポイント還元のところ、<span
+                                class="tp-text__orange"
+                                >ご利用金額が合計5万円（税込）以上の場合</span
+                            >、さらに0.5％を追加して、1.0％ポイント還元！<br />
+                            ※ポイントは、当月のご利用明細書に記載のカードショッピングのご利用金額合計単位で計算され、翌月に進呈されます。<br
+                            />
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"
+                                >3回払いまで手数料は無料！</span
+                            >
+                        </h3>
+                        <p class="Local">
+                            「APLUS CARD with
+                            TENPOS」をご利用の際は、テンポスバスターズの店頭のみ3回払いまで手数料無料でご利用いただけます。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-attention__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">価&emsp;格</span>
+                </h2>
+                <h3 class="tp-attention__price">年会費永年無料！</h3>
+                <div class="btn_credit-card__wrap">
+                    <a
+                        href="https://www.aplus.co.jp/creditcard/use/tenpos/?utm_source=tenpos&utm_medium=hp"
+                        target="_blank"
+                        class="btn_credit-card"
+                        >APLUS CARD with TENPOS<br
+                        />クレジットカードの詳細はこちら</a
+                    >
+                    <p class="txt_caution">※アプラスのページに遷移します</p>
+                </div>
+            </section>
+
+            <section class="tp-credit-card_contact__section tp-sec tp-wrapper">
+                <div class="tp-contact__container">
+                    <h2 class="tp-ttl">
+                        <span class="tp-ttl__balloon__span"
+                            >お申込みの前に相談したい場合</span
+                        >
+                    </h2>
+                    <p class="txt_lead">テンポスカスタマーサポート</p>
+                    <ul class="tp-contact__list flex">
+                        <li class="__phone">
+                            <a class="Btn" href="tel:050-3174-1366">
+                                <span>電話で相談する</span>
+                                <span
+                                    >050-3174-1366<span class="txt__s"
+                                        >(有料)</span
+                                    ></span
+                                >
+                                <span>平日9:00〜18:00（土日祝除く）</span>
+                            </a>
+                            <p class="txt_caution">
+                                ※時間帯などによっては回答にお時間を要する場合がございます。
+                            </p>
+                        </li>
+                        <li class="__mail">
+                            <a class="Btn" href="/contact/?checked=44">
+                                <span>メール</span>
+                                <span>で相談する</span>
+                            </a>
+                        </li>
+                        <li class="__credit-card">
+                            <a
+                                href="https://www.aplus.co.jp/creditcard/use/tenpos/?utm_source=tenpos&utm_medium=hp"
+                                target="_blank"
+                                class="btn_credit-card"
+                            >
+                                APLUS CARD with TENPOS<br />
+                                カード内容に関するお問い合わせはこちら
+                            </a>
+                            <p class="txt_caution">
+                                ※アプラスのページに遷移します
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>
+                            クレジットカードの申込みにはどれくらい時間がかかりますか？
+                        </dt>
+                        <dd>Webでのお申込みで5分程度です。</dd>
+                    </dl>
+                    <dl>
+                        <dt>貯めたポイントはどこで使えますか？</dt>
+                        <dd>
+                            ポイント交換ページから、人気の電子ギフト、マイルやその他商品券のほかアプラスが厳選した素敵な賞品の中からお好きな商品と交換いただけます。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="tp-others__section tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/telecom/internetline/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_internetline@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_internetline.png"
+                                        srcset="/asset/images/common/img_kanren_service_internetline.png 1x,/asset/images/common/2x/img_kanren_service_internetline@2x.png 2x"
+                                        alt="インターネット回線"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">インターネット回線</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/telecom/cashless/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_cashless@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_cashless.png"
+                                        srcset="/asset/images/common/img_kanren_service_cashless.png 1x,/asset/images/common/2x/img_kanren_service_cashless@2x.png 2x"
+                                        alt="キャッシュレス決済"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">キャッシュレス決済</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/management/tax-accountant/">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_tax-accountant@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_tax-accountant.png"
+                                        srcset="/asset/images/common/img_kanren_service_tax-accountant.png 1x,/asset/images/common/2x/img_kanren_service_tax-accountant@2x.png 2x"
+                                        alt="飲食専門税理士紹介"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">飲食専門税理士紹介</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>
+
+<style>
+    @charset "utf-8";
+
+    /*-----------------------
+common
+-----------------------*/
+    /*--- btn_credit-card ---*/
+    .btn_credit-card {
+        position: relative;
+        display: flex;
+        max-width: 520px;
+        padding: 6px 35px;
+        margin: 0 auto;
+        justify-content: center;
+        color: var(--MAIN_BLACK);
+        border-radius: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.35;
+        min-height: 85px;
+        flex-flow: column;
+        background: var(--MAIN_YELLOW);
+    }
+    .btn_credit-card:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        right: 23px;
+        width: 10px;
+        aspect-ratio: 1/1;
+        background: url(/asset/images/common/icon_arrow_black.svg) no-repeat
+            center center/contain;
+    }
+    .btn_credit-card:hover {
+        background: var(--MAIN_YELLOW_HOVER);
+    }
+    .btn_credit-card + .txt_caution {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+    @media screen and (max-width: 767px) {
+        .btn_credit-card {
+            font-size: 15px;
+        }
+        .btn_credit-card:after {
+            right: 15px;
+        }
+        .btn_credit-card + .txt_caution {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    /*-----------------------
+mv tp-front__section
+-----------------------*/
+    .tp-front__section {
+        background-image: url(/asset/images/credit-card/mv_credit-card.jpg);
+    }
+
+    /*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+    .tp-worries__section .tp-check__list > li {
+        display: block;
+    }
+
+    /*-----------------------
+tp-design__section
+-----------------------*/
+    .tp-design__section .btn_credit-card__wrap {
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 767px) {
+        .tp-design__section .btn_credit-card__wrap {
+            margin-top: 30px;
+        }
+    }
+
+    /*-----------------------
+tp-want__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-want__section .tp-want__thumb {
+            max-width: 300px;
+            width: 80%;
+        }
+    }
+
+    /*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+    .tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+        background: url(/asset/images/common/icon_point45.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+        background: url(/asset/images/common/icon_point46.png) no-repeat center
+            center / contain;
+    }
+    .tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+        background: url(/asset/images/common/icon_point07.png) no-repeat center
+            center / contain;
+    }
+    @media screen and (min-width: 768px) {
+        .tp-point__section .tp-point__list > li > .Ttl:before {
+            width: 50px;
+            margin-right: 17px;
+        }
+        .tp-point__section .tp-point__list .Ttl__txt {
+            width: calc(100% - 67px);
+        }
+    }
+
+    /*-----------------------
+価格 tp-attention__section
+-----------------------*/
+    @media screen and (max-width: 767px) {
+        .tp-attention__section .tp-attention__price {
+            font-size: min(8.5vw, 46px);
+        }
+        .tp-attention__section .btn_credit-card__wrap {
+            margin-top: 30px;
+        }
+    }
+
+    /*-----------------------
+tp-credit-card_contact__section
+-----------------------*/
+    .tp-credit-card_contact__section .tp-contact__container {
+        background: var(--MAIN_WHITE);
+        border: 2px solid var(--MAIN_ORANGE);
+    }
+    .tp-credit-card_contact__section .txt_lead {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    .tp-credit-card_contact__section .tp-contact__list {
+        row-gap: 12px;
+    }
+    .tp-credit-card_contact__section .tp-contact__list > li {
+        width: 255px;
+        padding-top: 0;
+    }
+    .tp-credit-card_contact__section .tp-contact__list li.__mail {
+        margin-bottom: 32px;
+    }
+    .tp-credit-card_contact__section .tp-contact__list li.__credit-card {
+        width: 520px;
+    }
+    .tp-credit-card_contact__section .tp-contact__list .Btn {
+        height: unset;
+        min-height: 85px;
+    }
+    .tp-credit-card_contact__section .tp-contact__list > li.__phone > .Btn {
+        background: var(--CONTACT_RED)
+            url(/asset/images/common/icon_phone_white.svg) no-repeat 11% 50%/20px;
+    }
+    .tp-credit-card_contact__section
+        .tp-contact__list
+        > li.__phone
+        > .Btn
+        > span:first-child {
+        font-size: 15px;
+        margin: 0;
+    }
+    .tp-credit-card_contact__section
+        .tp-contact__list
+        > li.__phone
+        > .Btn
+        > span:nth-child(2) {
+        font-size: 20px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .tp-credit-card_contact__section
+        .tp-contact__list
+        > li.__phone
+        > .Btn
+        > span:nth-child(2)
+        .txt__s {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .tp-credit-card_contact__section
+        .tp-contact__list
+        > li.__phone
+        .txt_caution {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.33;
+        text-indent: -1em;
+        padding-left: 1em;
+        margin: 10px auto 0;
+        width: 80%;
+    }
+    @media screen and (min-width: 1151px) {
+        .tp-credit-card_contact__section .tp-contact__container:after {
+            top: -25px;
+            right: 5px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1150px) {
+        .tp-credit-card_contact__section .tp-contact__container:after {
+            right: 5px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tp-credit-card_contact__section .txt_lead {
+            font-size: 16px;
+        }
+        .tp-credit-card_contact__section .tp-contact__list li.__credit-card {
+            max-width: 520px;
+        }
+    }
+    @media screen and (max-width: 369px) {
+        .tp-credit-card_contact__section .tp-contact__list > li.__phone > .Btn {
+            background: var(--CONTACT_RED)
+                url(/asset/images/common/icon_phone_white.svg) no-repeat 3% 50%/20px;
+        }
+        .tp-credit-card_contact__section
+            .tp-contact__list
+            > li.__phone
+            > .Btn
+            > span:last-child {
+            font-size: 12px;
+        }
+    }
+</style>

@@ -1,0 +1,62 @@
+<article class="top-important__section">
+    <p class="top-important__ttl">
+        【重要】<br class="sp" />
+        年末年始休業のお知らせ
+    </p>
+    <p class="top-important__txt">
+        誠に勝手ながら、<span class="Txt__red Txt__bold"
+            >12月28日(土)～1月5日(日)</span
+        >は休業とさせていただきます。
+        期間中に頂いたお問合せへの回答は、翌営業日以降順次の対応となります。お急ぎのお客様はお早めのご連絡をお願いします。
+        お客様にはご迷惑をお掛けいたしますが、何卒ご理解賜りますようお願い申し上げます。
+    </p>
+</article>
+
+<style lang="scss">
+    /* -------------------- top-important__section ------------------- */
+    .top-important__section {
+        margin: -30px 0 30px;
+        padding: 24px 20px 22px;
+        background: var(--MAIN_WHITE);
+        border-radius: 20px;
+    }
+
+    .top-important__ttl {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #af1f24;
+        margin-bottom: 7px;
+        font-feature-settings: "palt";
+    }
+
+    .top-important__txt {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.625;
+        color: var(--MAIN_BLACK);
+    }
+
+    .top-important__txt .Txt__red {
+        color: var(--MAIN_RED);
+    }
+
+    .top-important__txt .Txt__bold {
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 767px) {
+        .top-important__section {
+            margin: 10px 0 30px;
+            padding: 20px;
+        }
+
+        .top-important__ttl {
+            font-size: 18px;
+        }
+
+        .top-important__txt {
+            font-size: 14px;
+        }
+    }
+</style>

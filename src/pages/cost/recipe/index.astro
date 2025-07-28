@@ -1,0 +1,652 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactArea from "../../../components/common/ContactArea.astro";
+import structuredDataMarkup from "../../../data/data.json";
+const markup = JSON.stringify(structuredDataMarkup.recipe);
+---
+
+<Layout
+    title="レシピ/原価管理 ｜テンポスフードプレイス"
+    description="飲食店のメニュー開発において、原価率の管理・改善も大切です。テンポスでは原価率の改善も可能な業務用レシピ原価管理アプリをご紹介しております。"
+    pageUrl="/cost/recipe/"
+    ogimage="/asset/images/recipe/ogp_recipe.jpg"
+    markup={markup}
+>
+    <article id="mainarea">
+        <div class="tp-border sans">
+            <nav class="tp-nav">
+                <ol class="tp-nav__list flex">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/cost/">経費削減</a></li>
+                    <li>レシピ原価管理</li>
+                </ol>
+            </nav>
+
+            <section class="tp-front__section">
+                <h1 class="tp-front__ttl font_m_plus">
+                    <span>レシピ原価管理</span>
+                </h1>
+                <p class="tp-front__caption">
+                    原価率の改善も可能な<br />
+                    業務用レシピ原価管理システム
+                </p>
+                <p class="tp-front__contact">
+                    <a class="click_link_mail" href="/contact/?checked=41"
+                        >お問い合わせはこちら</a
+                    >
+                </p>
+            </section>
+
+            <section class="tp-worries__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __border">
+                    <span></span>こんなお悩みありませんか？<span></span>
+                </h2>
+                <ul class="tp-check__list tp-wrapper__l">
+                    <li>
+                        <span class="tp-bglg">スタッフ間でレシピの共有</span
+                        >ができていない
+                    </li>
+                    <li>
+                        正確に食材の原価を<span class="tp-bglg">管理したい</span
+                        >
+                    </li>
+                    <li>
+                        管理にかかる時間を<span class="tp-bglg">短縮したい</span
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-want__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl __center">
+                    テンポスでは<br />
+                    レシピ原価管理システムをご紹介しています。
+                </h2>
+                <p class="tp-want__thumb width-55">
+                    <picture>
+                        <source
+                            media="(max-width:767px)"
+                            srcset="/asset/images/recipe/2x/img_recipe_want@2x.png"
+                        />
+                        <img
+                            src="/asset/images/recipe/img_recipe_want.png"
+                            srcset="/asset/images/recipe/img_recipe_want.png 1x,/asset/images/recipe/2x/img_recipe_want@2x.png 2x"
+                            alt=""
+                            width="408"
+                            height="225"
+                            loading="lazy"
+                            class="imgauto"
+                        />
+                    </picture>
+                </p>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-result__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">導入効果</span>
+                </h2>
+                <div class="tp-result__cnt __top">
+                    <h3 class="tp-result__cntTtl">情報共有</h3>
+                    <ul class="ShareList tp-3c2r__list">
+                        <li>
+                            <div class="ShareList__img">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/recipe/2x/img_recipe_result_ShareList_01@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/recipe/img_recipe_result_ShareList_01.png"
+                                        srcset="/asset/images/recipe/img_recipe_result_ShareList_01.png 1x,/asset/images/recipe/2x/img_recipe_result_ShareList_01@2x.png 2x"
+                                        alt=""
+                                        width="220"
+                                        height="220"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="ShareList__txt">レシピ教育に</p>
+                        </li>
+                        <li>
+                            <div class="ShareList__img">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/recipe/2x/img_recipe_result_ShareList_02@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/recipe/img_recipe_result_ShareList_02.png"
+                                        srcset="/asset/images/recipe/img_recipe_result_ShareList_02.png 1x,/asset/images/recipe/2x/img_recipe_result_ShareList_02@2x.png 2x"
+                                        alt=""
+                                        width="220"
+                                        height="220"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="ShareList__txt">スタッフ間の情報共有に</p>
+                        </li>
+                        <li>
+                            <div class="ShareList__img">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/recipe/2x/img_recipe_result_ShareList_03@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/recipe/img_recipe_result_ShareList_03.png"
+                                        srcset="/asset/images/recipe/img_recipe_result_ShareList_03.png 1x,/asset/images/recipe/2x/img_recipe_result_ShareList_03@2x.png 2x"
+                                        alt=""
+                                        width="220"
+                                        height="220"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </div>
+                            <p class="ShareList__txt">新しいレシピ作りに</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tp-result__cnt __bottom">
+                    <h3 class="tp-result__cntTtl">コスト削減</h3>
+                    <div class="Cost__top">
+                        <p class="Cost__txtLead">
+                            <span></span>
+                            価格変動に合わせて<br
+                                class="sp"
+                            />レシピを簡単に調整
+                            <span></span>
+                        </p>
+                        <div class="Flow">
+                            <p class="Flow__item">
+                                <span class="Flow__txt"
+                                    >例えば月売上200万円の店舗で導入すると…</span
+                                >
+                                <span class="Flow__img">
+                                    <picture>
+                                        <source
+                                            media="(max-width:767px)"
+                                            srcset="/asset/images/recipe/2x/img_recipe_result_Cost_01@2x.png"
+                                        />
+                                        <img
+                                            src="/asset/images/recipe/img_recipe_result_Cost_01.png"
+                                            srcset="/asset/images/recipe/img_recipe_result_Cost_01.png 1x,/asset/images/recipe/2x/img_recipe_result_Cost_01@2x.png 2x"
+                                            alt=""
+                                            width="170"
+                                            height="98"
+                                            loading="lazy"
+                                            class="imgauto"
+                                        />
+                                    </picture>
+                                </span>
+                            </p>
+                            <p class="Flow__item">原価率2%の改善</p>
+                            <p class="Flow__item">
+                                <span class="Balloon"
+                                    >年間<span class="txt__strong">48</span
+                                    >万円！</span
+                                >
+                                <span class="Local"
+                                    ><span class="txt__bg"
+                                        >月<span class="txt__strong">4</span
+                                        >万円の利益</span
+                                    >が出せる計算！</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Cost__bottom">
+                        <p class="Cost__bottomLeft">
+                            <span class="Txt">日々変化する食材原価</span>
+                            <span class="Img">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/recipe/2x/img_recipe_result_Cost_02@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/recipe/img_recipe_result_Cost_02.png"
+                                        srcset="/asset/images/recipe/img_recipe_result_Cost_02.png 1x,/asset/images/recipe/2x/img_recipe_result_Cost_02@2x.png 2x"
+                                        alt=""
+                                        width="299"
+                                        height="131"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </span>
+                        </p>
+                        <p class="Cost__bottomRight">
+                            <span class="txt__bg"
+                                >失われている利益を取り戻せる!</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tp-point__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span"
+                        ><span>4</span>つのシンプルな機能</span
+                    >
+                </h2>
+                <ul class="tp-point__list">
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">レシピを作る</span>
+                        </h3>
+                        <p class="Local">
+                            より簡単によりクリエイティブにレシピ作りが行えます。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">レシピを見る</span>
+                        </h3>
+                        <p class="Local">
+                            もう紙のレシピは要りません。<br
+                            />スタッフ間で共有いただけます。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt">メニューブック</span>
+                        </h3>
+                        <p class="Local">
+                            食材データとの連携で原価の変動を素早くキャッチ。
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="Ttl">
+                            <span class="Ttl__txt"> 減価率の変動 </span>
+                        </h3>
+                        <p class="Local">
+                            メニューブックに登録したレシピの総合的な原価率も参照可能です。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-recipe_case__section tp-sec tp-wrapper__m">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">導入事例</span>
+                </h2>
+                <ul class="tp-recipe_case__list">
+                    <li class="tp-recipe_case__listItem">
+                        <span class="tp-recipe_case__listTtl"
+                            >事例<span class="txt__l">01</span></span
+                        >
+                        <p class="tp-recipe_case__listTxt">
+                            新店舗のメニュー原価率を 35% で設定 <br
+                            />食材価格の変動により実際は38%~40%
+                            に上がってしまっていた
+                        </p>
+                        <p class="tp-recipe_case__listArrow">導入することで…</p>
+                        <p class="tp-recipe_case__listTxt tp-text__orange">
+                            「実際の原価率」を把握。食材分量・代替え食材への変更、<br
+                            />シミュレーションを行い、従来の設定原価率に戻りました。
+                        </p>
+                    </li>
+                    <li class="tp-recipe_case__listItem">
+                        <span class="tp-recipe_case__listTtl"
+                            >事例<span class="txt__l">02</span></span
+                        >
+                        <p class="tp-recipe_case__listTxt">
+                            突然、調理担当者が退職してしまい引き継ぎができていない
+                        </p>
+                        <p class="tp-recipe_case__listArrow">導入することで…</p>
+                        <p class="tp-recipe_case__listTxt tp-text__orange">
+                            調理をしながらレシピを入力。難しい操作は不要でスムーズに<br
+                            />登録できます。タブレットでどこからでも登録したレシピを共有可能。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-function__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">多彩な機能</span>
+                </h2>
+                <ul class="tp-function__list tp-4c2r__list tp-mgb__s">
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_01@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_01.png"
+                                srcset="/asset/images/recipe/img_recipe_function_01.png 1x,/asset/images/recipe/2x/img_recipe_function_01@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">権限管理</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_02@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_02.png"
+                                srcset="/asset/images/recipe/img_recipe_function_02.png 1x,/asset/images/recipe/2x/img_recipe_function_02@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">編集機能</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_03@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_03.png"
+                                srcset="/asset/images/recipe/img_recipe_function_03.png 1x,/asset/images/recipe/2x/img_recipe_function_03@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">作り方登録</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_04@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_04.png"
+                                srcset="/asset/images/recipe/img_recipe_function_04.png 1x,/asset/images/recipe/2x/img_recipe_function_04@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">レシピ管理</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_05@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_05.png"
+                                srcset="/asset/images/recipe/img_recipe_function_05.png 1x,/asset/images/recipe/2x/img_recipe_function_05@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">食材アラート</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_06@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_06.png"
+                                srcset="/asset/images/recipe/img_recipe_function_06.png 1x,/asset/images/recipe/2x/img_recipe_function_06@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">メニューブック</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_07@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_07.png"
+                                srcset="/asset/images/recipe/img_recipe_function_07.png 1x,/asset/images/recipe/2x/img_recipe_function_07@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">アレルギー登録</p>
+                    </li>
+                    <li class="tp-function__listItem">
+                        <picture>
+                            <source
+                                media="(max-width:767px)"
+                                srcset="/asset/images/recipe/2x/img_recipe_function_08@2x.png"
+                            />
+                            <img
+                                src="/asset/images/recipe/img_recipe_function_08.png"
+                                srcset="/asset/images/recipe/img_recipe_function_08.png 1x,/asset/images/recipe/2x/img_recipe_function_08@2x.png 2x"
+                                alt=""
+                                width="170"
+                                height="170"
+                                loading="lazy"
+                                class="imgauto"
+                            />
+                        </picture>
+                        <p class="tp-function__listTxt">データ共有</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tp-frow__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">ご利用までの流れ</span>
+                </h2>
+                <div class="tp-flow__list">
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">お問い合わせ</h3>
+                            <div class="Local">
+                                <p>
+                                    少しでもご興味がある方はまずはお問い合わせください。<br
+                                    />担当スタッフがお電話にてヒアリングさせていただきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">提携先よりご連絡</h3>
+                            <div class="Local">
+                                <p>
+                                    サービスについて詳細をご説明させていただきます。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">導入準備</h3>
+                            <div class="Local">
+                                <p>
+                                    アカウント作成、使用開始の準備を行います。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">レクチャー</h3>
+                            <div class="Local">
+                                <p>
+                                    使用方法、運用方法のレクチャーを行います。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tp-flow__listL">
+                            <p>STEP</p>
+                        </div>
+                        <div class="tp-frow__listR">
+                            <h3 class="Ttl">2ヶ月トライアル</h3>
+                            <div class="Local">
+                                <p>
+                                    トライアルの段階では費用は発生いたしません。お気軽にお問い合わせください。
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="tp-faq__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">よくある質問</span>
+                </h2>
+                <div class="g-acodion">
+                    <dl>
+                        <dt>PCの操作が苦手なスタッフが多いのですが</dt>
+                        <dd>
+                            レシプロはタブレット、スマートフォンからも操作可能ですので、安心してご利用いただけます。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>レシピの共有は可能ですか？</dt>
+                        <dd>
+                            クラウドでデータを管理しておりますので、即時共有が可能です。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>費用はいくらくらいかかるのか？</dt>
+                        <dd>月額12,000円で1店舗ご利用いただけます。</dd>
+                    </dl>
+                    <dl>
+                        <dt>トライアル期間に料金は発生しませんか？</dt>
+                        <dd>
+                            2ヶ月のトライアル期間に費用は一切発生いたしません。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>導入しても使えるか不安</dt>
+                        <dd>
+                            担当営業が、運用サポートを行いますのでご安心ください。
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+
+            <ContactArea />
+
+            <section class="tp-others__section tp-sec tp-wrapper">
+                <h2 class="tp-ttl">
+                    <span class="tp-ttl__balloon__span">その他関連サービス</span
+                    >
+                </h2>
+                <div class="tp-others__list">
+                    <article>
+                        <a href="/hygiene/waste-oil.html">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_waste-oil@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_waste-oil.png"
+                                        srcset="/asset/images/common/img_kanren_service_waste-oil.png 1x,/asset/images/common/2x/img_kanren_service_waste-oil@2x.png 2x"
+                                        alt="廃油無料回収"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">廃油無料回収</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/cost/electricity.html">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_electricity@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_electricity.png"
+                                        srcset="/asset/images/common/img_kanren_service_electricity.png 1x,/asset/images/common/2x/img_kanren_service_electricity@2x.png 2x"
+                                        alt="電気代削減"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">電気代削減</h3>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="/cost/gas-bill.html">
+                            <p class="Thumb">
+                                <picture>
+                                    <source
+                                        media="(max-width:767px)"
+                                        srcset="/asset/images/common/2x/img_kanren_service_gas-bill@2x.png"
+                                    />
+                                    <img
+                                        src="/asset/images/common/img_kanren_service_gas-bill.png"
+                                        srcset="/asset/images/common/img_kanren_service_gas-bill.png 1x,/asset/images/common/2x/img_kanren_service_gas-bill@2x.png 2x"
+                                        alt="ガス代削減"
+                                        width="304"
+                                        height="231"
+                                        loading="lazy"
+                                        class="imgauto"
+                                    />
+                                </picture>
+                            </p>
+                            <h3 class="Ttl">ガス代削減</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+</Layout>

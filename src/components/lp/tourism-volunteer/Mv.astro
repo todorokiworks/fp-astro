@@ -1,0 +1,187 @@
+---
+import Slider from "./Slider.astro";
+---
+
+<section id="mv">
+    <div class="mvInner">
+        <div class="ttl__wrapper">
+            <h1 class="ttl">
+                <picture>
+                    <source
+                        srcset="/lp/tourism-volunteer/img/img_title-sp.png"
+                        media="(max-width:768px)"
+                    />
+                    <img
+                        src="/lp/tourism-volunteer/img/img_title.png"
+                        alt="訪日外国人向け"
+                    />
+                </picture>
+                <span class="txt">観光案内<br />ボランティア募集</span>
+            </h1>
+            <a
+                class="contactBtn"
+                href="https://forms.gle/Bs7QeupeXw559UXSA"
+                target="_blank"
+                >ご登録はこちら
+            </a>
+        </div>
+        <Slider />
+    </div>
+</section>
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from "swiper";
+    import { Autoplay } from "swiper/modules";
+    // import Swiper and modules styles
+    import "swiper/css";
+    import "swiper/css/navigation";
+
+    // init Swiper:
+    const swiper = new Swiper(".swiper", {
+        // configure Swiper to use modules
+        modules: [Autoplay],
+        direction: "vertical",
+        loop: true,
+        speed: 6000,
+        autoplay: {
+            delay: 0,
+        },
+        slidesPerView: 2,
+        spaceBetween: 40,
+        breakpoints: {
+            320: {
+                direction: "horizontal",
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                direction: "vertical",
+            },
+        },
+    });
+</script>
+
+<style lang="scss">
+    section#mv {
+        width: 100%;
+        height: 800px;
+        background: var(--yellow);
+        padding-top: 0px;
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            height: 590px;
+            padding-top: 50px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 480px;
+            background: url("/lp/tourism-volunteer/img/img_mv_illust.png")
+                center center / cover no-repeat;
+            z-index: 999;
+            @media (max-width: 768px) {
+                background: url("/lp/tourism-volunteer/img/img_mv_illust-sp.png")
+                    center center / cover no-repeat;
+                height: 130px;
+            }
+        }
+        .mvInner {
+            max-width: 1680px;
+            margin: 0 auto;
+            position: relative;
+        }
+        div.ttl__wrapper {
+            position: absolute;
+            top: 115px;
+            left: 20%;
+            z-index: 99999;
+
+            @media (max-width: 768px) {
+                position: relative;
+                top: 20px;
+                left: auto;
+                margin-bottom: 45px;
+            }
+            h1.ttl {
+                font-family: var(--kokoro);
+                text-align: center;
+                picture {
+                    width: 450px;
+                    margin: 0 auto 20px;
+                    @media (max-width: 768px) {
+                        width: 260px;
+                        margin: 0 auto 10px;
+                        transform: translateX(0px);
+                    }
+                    source {
+                    }
+                    img {
+                    }
+                }
+                .txt {
+                    color: #e60012;
+                    font-size: 72px;
+                    font-weight: 100;
+                    line-height: 1.1;
+                    letter-spacing: -10px;
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                    }
+                }
+            }
+            .contactBtn {
+                display: block;
+                margin: 20px auto 0;
+                font-size: 36px;
+                font-weight: 500;
+                color: #fff;
+                background: linear-gradient(
+                    -90deg,
+                    rgba(253, 100, 79, 1) 33%,
+                    rgba(230, 0, 18, 1) 100%
+                );
+                font-family: var(--kokoro);
+                letter-spacing: 5px;
+                position: relative;
+                width: 515px;
+                padding: 12px 10px 16px 0;
+                text-align: center;
+                border-radius: 50px;
+                box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+                transition: all 0.3s;
+                @media (max-width: 768px) {
+                    width: 260px;
+                    font-size: 20px;
+                    padding: 8px 0px 8px 0;
+                    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+                    margin: 10px auto 0;
+                }
+                &:hover {
+                    box-shadow: unset;
+                    transform: translateY(10px);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    transform: translateY(-50%);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 9999px;
+                    background: url("/lp/tourism-volunteer/img/icon_arrow.png")
+                        center center / cover no-repeat;
+                    @media (max-width: 768px) {
+                        width: 15px;
+                        height: 15px;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+    }
+</style>

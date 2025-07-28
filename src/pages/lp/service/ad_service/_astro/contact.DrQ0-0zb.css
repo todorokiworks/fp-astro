@@ -1,0 +1,379 @@
+@font-face {
+    font-family: Noto Sans Javanese Variable;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400 700;
+    src: url(noto-sans-javanese-javanese-wght-normal.kaVH-UFi.woff2) format("woff2-variations");
+    unicode-range: U+200C-200D, U+25CC, U+A980-A9DF
+}
+
+@font-face {
+    font-family: Noto Sans Javanese Variable;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400 700;
+    src: url(noto-sans-javanese-latin-ext-wght-normal.D6nlu3Ck.woff2) format("woff2-variations");
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: Noto Sans Javanese Variable;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400 700;
+    src: url(noto-sans-javanese-latin-wght-normal.BWYsUbgJ.woff2) format("woff2-variations");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+:root {
+    --txtPink: #ff6547;
+    --orange: #fc5a3d
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-family: Noto Sans Javanese Variable, sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.txt-pink {
+    color: var(--txtPink)
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.header__02_sm {
+    font-size: 40px
+}
+
+@media (max-width: 768px) {
+    .header__02_sm {
+        font-size: 20px
+    }
+}
+
+.contents__inner {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+@media (max-width: 768px) {
+    .contents__inner {
+        max-width: 100%;
+        padding: 0 10px
+    }
+}
+
+.u-desktop {
+    display: block
+}
+
+@media (max-width: 768px) {
+    .u-desktop {
+        display: none
+    }
+}
+
+.u-mobile {
+    display: none
+}
+
+@media (max-width: 768px) {
+    .u-mobile {
+        display: block
+    }
+}
+
+.header[data-astro-cid-3ef6ksr2] {
+    height: 5.25rem;
+    box-shadow: 0 3px 6px #0000001a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999
+}
+
+@media (max-width: 768px) {
+    .header[data-astro-cid-3ef6ksr2] {
+        height: auto;
+        padding: 10px
+    }
+}
+
+.inner[data-astro-cid-3ef6ksr2].header__inner {
+    height: inherit;
+    padding: 0 4.125rem 0 3.125rem
+}
+
+@media (max-width: 768px) {
+    .inner[data-astro-cid-3ef6ksr2].header__inner {
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+.header__body[data-astro-cid-3ef6ksr2] {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between
+}
+
+.header__img[data-astro-cid-3ef6ksr2] {
+    width: 11.25rem
+}
+
+@media (max-width: 768px) {
+    .header__img[data-astro-cid-3ef6ksr2] {
+        width: 80px
+    }
+}
+
+.header__btn[data-astro-cid-3ef6ksr2] {
+    width: 300px;
+    background: var(--orange);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    border-radius: 50px;
+    padding: 15px 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@media (max-width: 768px) {
+    .header__btn[data-astro-cid-3ef6ksr2] {
+        width: 250px;
+        padding: 15px 0 5px;
+    }
+}
+
+.header__btn[data-astro-cid-3ef6ksr2] span[data-astro-cid-3ef6ksr2] {
+    width: 25px;
+    display: block;
+    margin: 0 15px 8px 0
+}
+
+.inner[data-astro-cid-3ef6ksr2] {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%
+}
+
+footer[data-astro-cid-sz7xmlte] {
+    position: relative;
+    width: 100%
+}
+
+footer[data-astro-cid-sz7xmlte] .footer_box[data-astro-cid-sz7xmlte] {
+    background-color: #333;
+    padding: 2.5rem 0
+}
+
+@media (max-width: 768px) {
+    footer[data-astro-cid-sz7xmlte] .footer_box[data-astro-cid-sz7xmlte] {
+        padding: 30px 20px 40px
+    }
+}
+
+footer[data-astro-cid-sz7xmlte] .inner[data-astro-cid-sz7xmlte] {
+    color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    width: 980px
+}
+
+@media (max-width: 768px) {
+    footer[data-astro-cid-sz7xmlte] .inner[data-astro-cid-sz7xmlte] {
+        max-width: 100%
+    }
+}
+
+footer[data-astro-cid-sz7xmlte] .flexbox[data-astro-cid-sz7xmlte] {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.footer_profile[data-astro-cid-sz7xmlte] {
+    border-right: .0625rem solid #fff;
+    padding-right: 3.75rem;
+    width: 26.25rem
+}
+
+@media (max-width: 768px) {
+    .footer_profile[data-astro-cid-sz7xmlte] {
+        border-right: 0;
+        padding-right: 20px
+    }
+}
+
+.footer_logo[data-astro-cid-sz7xmlte] {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.25rem
+}
+
+@media (max-width: 768px) {
+    .footer_logo[data-astro-cid-sz7xmlte] {
+        padding-bottom: 10px;
+        border-bottom: 1px solid red;
+        justify-content: flex-start
+    }
+}
+
+.footer_logo[data-astro-cid-sz7xmlte] p[data-astro-cid-sz7xmlte] {
+    font-size: .875rem
+}
+
+.footer_logo[data-astro-cid-sz7xmlte] img[data-astro-cid-sz7xmlte] {
+    height: auto;
+    width: 6.75rem
+}
+
+@media (max-width: 768px) {
+    .footer_logo[data-astro-cid-sz7xmlte] img[data-astro-cid-sz7xmlte] {
+        margin-right: 20px
+    }
+}
+
+.footer_address[data-astro-cid-sz7xmlte] {
+    font-size: .8125rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    text-align: left
+}
+
+@media (max-width: 768px) {
+    .footer_address[data-astro-cid-sz7xmlte] {
+        margin-bottom: 0
+    }
+}
+
+.footer_menu[data-astro-cid-sz7xmlte] {
+    padding-left: 0;
+    width: auto
+}
+
+.footer_menu[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte] {
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: .9375rem;
+    position: relative
+}
+
+.footer_menu[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte]:before {
+    border-bottom: .25rem solid transparent;
+    border-left: .3125rem solid #888;
+    border-right: .3125rem solid transparent;
+    border-top: .25rem solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    left: 0;
+    margin-top: -.25rem;
+    position: absolute;
+    top: 50%;
+    width: 0
+}
+
+.footer_menu[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte] {
+    color: #fff;
+    text-decoration: none
+}
+
+.footer_menu[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.footer_sns[data-astro-cid-sz7xmlte] {
+    padding-left: 1.875rem;
+    width: 18.125rem
+}
+
+@media (max-width: 768px) {
+    .footer_sns[data-astro-cid-sz7xmlte] {
+        width: 100%;
+        padding-left: 0
+    }
+}
+
+.footer_sns[data-astro-cid-sz7xmlte] .sns_li[data-astro-cid-sz7xmlte] {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center
+}
+
+@media (max-width: 768px) {
+    .footer_sns[data-astro-cid-sz7xmlte] .sns_li[data-astro-cid-sz7xmlte] {
+        margin-bottom: 10px
+    }
+}
+
+.footer_sns[data-astro-cid-sz7xmlte] span[data-astro-cid-sz7xmlte] {
+    display: inline-block;
+    font-size: .875rem;
+    margin-right: 0
+}
+
+.footer_sns[data-astro-cid-sz7xmlte] .ico_list[data-astro-cid-sz7xmlte] {
+    display: inline-block;
+    vertical-align: sub;
+    padding-inline-start: 20px
+}
+
+@media (max-width: 768px) {
+    .footer_sns[data-astro-cid-sz7xmlte] .ico_list[data-astro-cid-sz7xmlte] {
+        margin-block-start: 0;
+        margin-block-end: 0
+    }
+}
+
+.footer_sns[data-astro-cid-sz7xmlte] .ico_list[data-astro-cid-sz7xmlte] li[data-astro-cid-sz7xmlte] {
+    display: inline-block;
+    margin-right: .625rem
+}
+
+.footer_sns[data-astro-cid-sz7xmlte] .ico_list[data-astro-cid-sz7xmlte] img[data-astro-cid-sz7xmlte] {
+    width: 1.875rem
+}
+
+.footer_copy[data-astro-cid-sz7xmlte] {
+    color: #595959 !important
+}
+
+.footer_copy[data-astro-cid-sz7xmlte] {
+    display: block;
+    font-size: .625rem
+}

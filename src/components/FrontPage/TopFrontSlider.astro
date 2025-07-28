@@ -1,0 +1,126 @@
+---
+//トップページのスライダー
+const topFrontSliders = [
+    {
+        src: "/asset/images/top/front03.png",
+        srcset: "/asset/images/top/front03.png 1x,/asset/images/top/2x/front03.png 2x",
+        srcsetSp: "/asset/images/top/sp/front03.png",
+        link: "/marketing/homepage/",
+        alt: "ホームページ制作",
+    },
+    {
+        src: "/asset/images/top/front02_2.png",
+        srcset: "/asset/images/top/front02_2.png 1x,/asset/images/top/2x/front02_2.png 2x",
+        srcsetSp: "/asset/images/top/sp/front02_2.png",
+        link: "/promotion/promotional_design/",
+        alt: "販促デザイン制作",
+    },
+    {
+        src: "/asset/images/top/front05.png",
+        srcset: "/asset/images/top/front05.png 1x,/asset/images/top/2x/front05.png 2x",
+        srcsetSp: "/asset/images/top/sp/front05.png",
+        link: "/telecom/cashless/",
+        alt: "キャッシュレス",
+    },
+    {
+        src: "/asset/images/top/front06.png",
+        srcset: "/asset/images/top/front06.png 1x,/asset/images/top/2x/front06.png 2x",
+        srcsetSp: "/asset/images/top/sp/front06.png",
+        link: "/cost/",
+        alt: "経費削減",
+    },
+    {
+        src: "/asset/images/top/front04.png",
+        srcset: "/asset/images/top/front04.png 1x,/asset/images/top/2x/front04.png 2x",
+        srcsetSp: "/asset/images/top/sp/front04.png",
+        link: "/promotion/logo_creation/",
+        alt: "ロゴ制作",
+    },
+    {
+        src: "/asset/images/top/front07.png",
+        srcset: "/asset/images/top/front07.png 1x,/asset/images/top/2x/front07.png 2x",
+        srcsetSp: "/asset/images/top/sp/front07.png",
+        link: "/management/tax-accountant/",
+        alt: "税理士紹介",
+    },
+    /* {
+        src: "/asset/images/top/front08.png",
+        srcset: "/asset/images/top/front08.png 1x,/asset/images/top/2x/front08.png 2x",
+        srcsetSp: "/asset/images/top/sp/front08.png",
+        link: "/lp/service/influencer-pr/",
+        alt: "インフルエンサー活用",
+    },*/
+];
+---
+
+<div class="top-front__slider__cont">
+    <div class="swiper top-front__slider">
+        <div class="swiper-wrapper">
+            {
+                topFrontSliders.map((slide) => (
+                    <article class="swiper-slide">
+                        <a href={slide.link} class="click_slide_banner">
+                            <picture>
+                                <source
+                                    media="(max-width:767px)"
+                                    srcset={slide.srcsetSp}
+                                />
+                                <img
+                                    src={slide.src}
+                                    srcset={slide.srcset}
+                                    alt={slide.alt}
+                                    width="338"
+                                    height="190"
+                                    class="imgauto"
+                                />
+                            </picture>
+                        </a>
+                    </article>
+                ))
+            }
+        </div>
+    </div>
+
+    <div class="swiper-pagination top_front_slider_pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!--スライダーのJS -->
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from "swiper";
+    import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
+    // import Swiper and modules styles
+    import "swiper/css";
+    import "swiper/css/navigation";
+    import "swiper/css/pagination";
+
+    // init Swiper:
+    const swiper = new Swiper(".swiper", {
+        // configure Swiper to use modules
+        modules: [Autoplay, Navigation, Pagination],
+
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 2000,
+        },
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+    });
+</script>
+<style lang="scss"></style>

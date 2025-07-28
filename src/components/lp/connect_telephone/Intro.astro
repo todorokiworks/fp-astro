@@ -1,0 +1,197 @@
+<section id="sec_intro">
+    <div class="inner">
+        <h2 class="ttl">
+            商談後にお電話をしても<br class="sp" />なかなか繋がらない！<br
+            />ということはありませんか？
+        </h2>
+        <ol class="list">
+            <li class="list__item">
+                <div class="list__img_wrap">
+                    <img
+                        src="/lp/connect_telephone/img/img_sec_intro_01.png"
+                        alt=""
+                        width="345"
+                        height="265"
+                    />
+                </div>
+                <p class="list__txt">
+                    商談時の名刺交換だけでは<br />電話番号を登録してもらえない
+                </p>
+            </li>
+            <li class="list__item">
+                <div class="list__img_wrap">
+                    <img
+                        src="/lp/connect_telephone/img/img_sec_intro_02.png"
+                        alt=""
+                        class="pc"
+                        width="249"
+                        height="266"
+                    />
+                    <img
+                        src="/lp/connect_telephone/img/img_sec_intro_02_sp.png"
+                        alt=""
+                        class="sp"
+                        width="316"
+                        height="187"
+                    />
+                </div>
+                <p class="list__txt">
+                    商談後でも登録をしていない<br class="pc" />電話番号からの<br
+                    />電話に出るのを躊躇してしまう
+                </p>
+            </li>
+            <li class="list__item">
+                <div class="list__img_wrap">
+                    <img
+                        src="/lp/connect_telephone/img/img_sec_intro_03.png"
+                        alt=""
+                        width="220"
+                        height="255"
+                    />
+                </div>
+                <p class="list__txt">
+                    電話には出ず、<br />折り返しもしてもらえない
+                </p>
+            </li>
+        </ol>
+        <p class="txt_lead">
+            名刺交換まで進んだのに、<br />貴重な成約機会を失ってしまいます。
+        </p>
+    </div>
+</section>
+
+<style>
+    #sec_intro {
+        padding: 84px 0;
+    }
+    #sec_intro .ttl {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 1.43;
+        margin-bottom: 66px;
+    }
+    #sec_intro .list {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    #sec_intro .list__item {
+        position: relative;
+    }
+    #sec_intro .list__item:nth-child(1) {
+        width: 36%;
+        margin-right: min(10vw, 100px);
+    }
+    #sec_intro .list__item:nth-child(2) {
+        width: 26%;
+        margin-right: min(4.5vw, 45px);
+    }
+    #sec_intro .list__item:nth-child(3) {
+        width: 23%;
+        padding-top: 12px;
+    }
+    #sec_intro .list__item:after {
+        content: "";
+        display: block;
+        border-left: 27px solid #158efe;
+        border-top: 22px solid transparent;
+        border-bottom: 22px solid transparent;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #sec_intro .list__item:nth-child(1):after {
+        left: calc(100% + min(10vw, 100px) / 2);
+    }
+    #sec_intro .list__item:nth-child(2):after {
+        left: calc(100% + min(4.5vw, 45px) / 2);
+    }
+    #sec_intro .list__item:nth-child(3):after {
+        content: none;
+    }
+    #sec_intro .list__img_wrap {
+        margin-bottom: 15px;
+    }
+    #sec_intro .list__txt {
+        text-align: center;
+    }
+    #sec_intro .list__item:nth-child(3) .list__txt {
+        padding-left: min(2vw, 20px);
+    }
+    #sec_intro .txt_lead {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.95;
+        color: #158efe;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 22px;
+    }
+
+    @media screen and (max-width: 767px) {
+        #sec_intro {
+            padding: 57px 0 75px;
+        }
+        #sec_intro .ttl {
+            font-size: 25px;
+            margin-bottom: 38px;
+        }
+        #sec_intro .list {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        #sec_intro .list__item:nth-child(1) {
+            width: 100%;
+            margin: 0 0 80px;
+        }
+        #sec_intro .list__item:nth-child(2) {
+            width: 100%;
+            margin: 0 0 80px;
+        }
+        #sec_intro .list__item:nth-child(3) {
+            width: 100%;
+            padding: 0;
+        }
+        #sec_intro .list__img_wrap {
+            margin: 0 auto 15px;
+        }
+        #sec_intro .list__item:nth-child(1) .list__img_wrap {
+            max-width: 324px;
+        }
+        #sec_intro .list__item:nth-child(2) .list__img_wrap {
+            max-width: 316px;
+        }
+        #sec_intro .list__item:nth-child(3) .list__img_wrap {
+            max-width: 170px;
+        }
+        #sec_intro .list__item:after {
+            border-top: 27px solid #158efe;
+            border-left: 22px solid transparent;
+            border-right: 22px solid transparent;
+            border-bottom: none;
+            top: calc(100% + 80px / 2);
+            transform: translate(-50%, -50%);
+        }
+        #sec_intro .list__item:nth-child(1):after {
+            left: 50%;
+        }
+        #sec_intro .list__item:nth-child(2):after {
+            left: 50%;
+        }
+        #sec_intro .list__item:nth-child(3):after {
+            content: none;
+        }
+        #sec_intro .list__txt {
+            font-size: 15px;
+        }
+        #sec_intro .list__item:nth-child(3) .list__txt {
+            padding-left: 0;
+        }
+        #sec_intro .txt_lead {
+            font-size: 26px;
+            text-underline-offset: 12px;
+        }
+    }
+</style>

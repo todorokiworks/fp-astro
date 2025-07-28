@@ -1,0 +1,109 @@
+---
+import Layout from "../../../layouts/lp/kaitori/Layout.astro";
+import Header from "../../../components/lp/kaitori/Header.astro";
+import Mv from "../../../components/lp/kaitori/Mv.astro";
+import Intro from "../../../components/lp/kaitori/Intro.astro";
+import KaitoriList from "../../../components/lp/kaitori/KaitoriList.astro";
+import Banner from "../../../components/lp/kaitori/Banner.astro";
+import KaitoriPoint from "../../../components/lp/kaitori/KaitoriPoint.astro";
+import KaitoriFlow from "../../../components/lp/kaitori/KaitoriFlow.astro";
+import KaitoriHinmoku from "../../../components/lp/kaitori/KaitoriHinmoku.astro";
+import Maker from "../../../components/lp/kaitori/Maker.astro";
+import QandA from "../../../components/lp/kaitori/QandA.astro";
+import Footer from "../../../components/lp/kaitori/Footer.astro";
+import FloatingBnr from "../../../components/lp/kaitori/FloatingBnr.astro";
+---
+
+<Layout title="買取お問合せ完了 | テンポスフードプレイス">
+  <Header />
+  <section id="thanks">
+    <div class="contents__inner">
+      <h2 class="header_02">お問合せありがとうございます</h2>
+      <p>
+        厨房機器買取についてお問合せいただき<br
+          class="sp"
+        />誠にありがとうございます。<br />
+        担当よりご連絡いたしますので
+        <br class="sp" />今しばらくお待ちくださいませ。
+      </p>
+      <a href="/kaitori/" class="btn">トップに戻る</a>
+    </div>
+  </section>
+  <Footer />
+
+  <style lang="scss">
+    section#thanks {
+      margin-top: 200px;
+      width: 100%;
+      min-height: 55vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        margin-top: 150px;
+      }
+      div.contents__inner {
+        @media (max-width: 768px) {
+          min-height: 40vh;
+        }
+        h2.header_02 {
+          &::before {
+            content: none;
+          }
+        }
+        p {
+          text-align: center;
+        }
+        a.btn {
+          margin: 60px auto 0;
+          color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 365px;
+          padding: 25px 25px;
+          border-radius: 10px;
+          transition: all 0.3s;
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          position: relative;
+          @media (max-width: 768px) {
+            margin: 60px auto 60px;
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+            min-width: 355px;
+            max-width: 360px;
+            padding: 0 12px;
+            height: 60px;
+            border-radius: 6px;
+          }
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 30px;
+            width: 13px;
+            height: 2px;
+            border-radius: 9999px;
+            background-color: #000000;
+            transform-origin: 1px 50%;
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  </style>
+</Layout>

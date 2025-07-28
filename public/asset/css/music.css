@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*-----------------------
+mv tp-front__section
+-----------------------*/
+.tp-front__section {
+  background-image: url(../images/music/mv_music.jpg);
+}
+
+/*-----------------------
+こんなお悩みありませんか？ tp-worries__section
+-----------------------*/
+.tp-worries__section .tp-check__list > li {
+  display: block;
+}
+
+/*-----------------------
+tp-design__section
+-----------------------*/
+@media screen and (max-width: 767px) {
+  .tp-design__section .tp-design__thumb {
+    width: 50%;
+  }  
+}
+
+/*-----------------------
+tp-want__section
+-----------------------*/
+.tp-want__section .tp-check__list > li {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .tp-want__section .tp-want__thumb {
+    width: 100%;
+    max-width: 500px;
+  }  
+}
+
+/*-----------------------
+3つの特徴 tp-point__section
+-----------------------*/
+.tp-point__section .tp-point__list > li:nth-child(1) > .Ttl::before {
+  background: url(../images/common/icon_point30.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(2) > .Ttl::before {
+  background: url(../images/common/icon_point14.png) no-repeat center center / contain;
+}
+.tp-point__section .tp-point__list > li:nth-child(3) > .Ttl::before {
+  background: url(../images/common/icon_point34.png) no-repeat center center / contain;
+}
+@media screen and (min-width: 768px) {
+  .tp-point__section .tp-point__list > li > .Ttl:before {
+    width: 60px;
+  }
+  .tp-point__section .tp-point__list .Ttl__txt {
+    width: calc(100% - 70px);
+  }  
+}

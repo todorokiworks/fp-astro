@@ -1,0 +1,347 @@
+<section id="sec_form">
+    <div class="inner">
+        <form
+            action="https://business.form-mailer.jp/fm/service/Forms/confirm"
+            method="post"
+            name="form1"
+            enctype="multipart/form-data"
+            accept-charset="UTF-8"
+            class="form_01"
+        >
+            <input type="hidden" name="key" value="48d58198211470" />
+
+            <div class="table__wrapper">
+                <table class="form_01__tbl">
+                    <tr class="form_01__tr required">
+                        <th class="form_01__th">法人名・会社名</th>
+                        <td class="form_01__td">
+                            <input
+                                type="text"
+                                name="field_3544965"
+                                placeholder="株式会社テンポスフードプレイス"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="form_01__tr required">
+                        <th class="form_01__th">お名前</th>
+                        <td class="form_01__td">
+                            <input
+                                type="text"
+                                name="field_3544966"
+                                placeholder="テンポス　太郎"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="form_01__tr required">
+                        <th class="form_01__th">お名前（フリガナ）</th>
+                        <td class="form_01__td">
+                            <input
+                                type="text"
+                                name="field_3544967"
+                                placeholder="テンポス　タロウ"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="form_01__tr required">
+                        <th class="form_01__th">連絡先電話番号</th>
+                        <td class="form_01__td">
+                            <input
+                                type="text"
+                                name="field_3544969"
+                                placeholder=""
+                            />
+                        </td>
+                    </tr>
+                    <tr class="form_01__tr required">
+                        <th class="form_01__th">メールアドレス</th>
+                        <td class="form_01__td">
+                            <input
+                                type="text"
+                                name="field_3544970"
+                                placeholder="tenpos@exmple.com"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="form_01__tr required">
+                        <th class="form_01__th">ご住所</th>
+                        <td class="form_01__td">
+                            <input
+                                type="text"
+                                name="field_3544971"
+                                placeholder=""
+                            />
+                        </td>
+                    </tr>
+                    <tr class="form_01__tr">
+                        <th class="form_01__th">備考</th>
+                        <td class="form_01__td">
+                            <textarea
+                                name="field_3544972"
+                                cols="30"
+                                rows="5"
+                                placeholder=""></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form_01__submit_wrap">
+                <input
+                    name="submit"
+                    type="submit"
+                    value="確認する"
+                    class="form_01__submit"
+                />
+            </div>
+            <input type="hidden" name="code" value="utf8" />
+        </form>
+    </div>
+</section>
+
+<style>
+    #sec_form {
+        padding: 75px 0 225px;
+    }
+    @media screen and (max-width: 767px) {
+        #sec_form {
+            padding: 50px 0 60px;
+        }
+    }
+
+    .form_01__tbl {
+        width: 100%;
+        border: 1px solid #cacaca;
+        border-bottom: none;
+        margin-bottom: 15px;
+    }
+    .form_01__tr {
+        border-bottom: 1.5px solid #cacaca;
+    }
+    .form_01__th {
+        background: #007bee;
+        border-right: 1px solid #cacaca;
+        color: #fff;
+        font-size: 18px;
+        text-align: left;
+        padding: 13px;
+        position: relative;
+        width: 330px;
+    }
+    .form_01__tr.required .form_01__th:after {
+        content: "必須";
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1;
+        color: #fff;
+        background: #ff0000;
+        padding: 4px 9px;
+        position: absolute;
+        top: 50%;
+        right: 13px;
+        transform: translateY(-50%);
+    }
+    .form_01__td {
+        padding: 13px;
+    }
+    .form_01 input:-webkit-autofill {
+        box-shadow: 0 0 0 1000px white inset;
+    }
+    .form_01 select {
+        cursor: pointer;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    .form_01 input:not([type="checkbox"]),
+    .form_01 select,
+    .form_01 textarea {
+        padding: 10px;
+        background: #fff;
+        vertical-align: initial;
+        border: 1px solid #cacaca;
+        width: 100%;
+    }
+    .form_01 input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    .form_01 input.long {
+        width: 300px;
+    }
+    .form_01 input.middle {
+        width: 192px;
+    }
+    .form_01 input.short {
+        width: 100px;
+    }
+    .form_01 select {
+        cursor: pointer;
+        line-height: 1.38;
+    }
+    .form_01 .select_wrap {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .form_01 .select_wrap:after {
+        content: "";
+        display: block;
+        border-top: 10px solid #cacaca;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        pointer-events: none;
+    }
+    .form_01 textarea {
+        height: 200px;
+        vertical-align: middle;
+    }
+    .form_01__check_list {
+        margin-bottom: -15px;
+    }
+    .form_01__check_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: #717171;
+    }
+    .form_01__check_item a {
+        color: #717171;
+        text-decoration: underline;
+        text-underline-offset: 0.4em;
+    }
+    .form_01 input[type="checkbox"] {
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        padding-left: 25px;
+        position: relative;
+    }
+    .form_01 input[type="checkbox"]::before,
+    .form_01 input[type="checkbox"]::after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    .form_01 input[type="checkbox"]::before {
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+        border: 2px solid #aeaeae;
+    }
+    .form_01 input[type="checkbox"]::after {
+        border-bottom: 3px solid #666464;
+        border-left: 3px solid #666464;
+        opacity: 0;
+        height: 8px;
+        width: 12px;
+        transform: translate(-70%, -75%) rotate(-45deg);
+        top: 50%;
+        left: 50%;
+    }
+    .form_01 input[type="checkbox"]:checked::after {
+        opacity: 1;
+    }
+    .form_01__submit_wrap {
+        position: relative;
+        max-width: 375px;
+        margin: 55px auto 0;
+        border-radius: 100px;
+        box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+        transition: 0.2s;
+    }
+    .form_01 input[type="submit"] {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1;
+        background: #007bee;
+        color: #fff;
+        width: 100%;
+        border-radius: 100px;
+        padding: 25px 50px 25px 25px;
+    }
+    .form_01__submit_wrap:before,
+    .form_01__submit_wrap:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 5px;
+        background: #fff;
+        border-radius: 50px;
+        transform-origin: right center;
+        position: absolute;
+        top: 50%;
+        right: 29.5%;
+        pointer-events: none;
+        z-index: 11;
+    }
+    .form_01__submit_wrap:before {
+        transform: rotate(45deg) translateX(2px);
+    }
+    .form_01__submit_wrap:after {
+        transform: rotate(-45deg) translateX(2px);
+    }
+    .form_01__submit_wrap:hover {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(5px);
+    }
+    @media screen and (max-width: 767px) {
+        .form_01__tbl {
+            margin-bottom: 25px;
+        }
+        .form_01__tr {
+            border-bottom: 1px solid #cacaca;
+        }
+        .form_01__th {
+            border-bottom: 1px solid #cacaca;
+            border-right: none;
+            font-size: 16px;
+            padding: 17px;
+            display: block;
+            width: 100%;
+        }
+        .form_01__td {
+            padding: 10px 8px;
+            display: block;
+        }
+        .form_01__check_list {
+            margin-bottom: -10px;
+        }
+        .form_01__check_item {
+            margin-bottom: 14px;
+        }
+        .form_01__submit_wrap {
+            max-width: 264px;
+        }
+        .form_01 input[type="submit"] {
+            font-size: 16px;
+            padding: 16px 33px 16px 16px;
+        }
+        .form_01__submit_wrap {
+            margin-top: 50px;
+        }
+        .form_01__submit_wrap:before,
+        .form_01__submit_wrap:after {
+            width: 9px;
+            height: 3px;
+        }
+        .form_01__submit_wrap:before {
+            transform: rotate(45deg) translateX(1px);
+        }
+        .form_01__submit_wrap:after {
+            transform: rotate(-45deg) translateX(1px);
+        }
+    }
+</style>
