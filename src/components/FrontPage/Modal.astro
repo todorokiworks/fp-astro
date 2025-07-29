@@ -1,0 +1,112 @@
+<!-- 税務サポートバナーモーダル -->
+<div id="popup-modal-taxation" style="display: flex;">
+    <div class="popup-modal-overlay"></div>
+    <div class="popup-modal-banner">
+        <button class="popup-modal-close" aria-label="閉じる">&times;</button>
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeZjwBQcUB8DtdDtK3OX_txuteblG3QV_nDWZz1UEPLLRYpRw/viewform"
+            target="_blank"
+            class="click_popup_modal_bnr"
+        >
+            <picture>
+                <img
+                    src="/asset/images/common/bnr_popup_taxation.png?ver=2025052216"
+                    srcset="/asset/images/common/bnr_popup_taxation.png?ver=2025052216 1x,/asset/images/common/2x/bnr_popup_taxation@2x.png?ver=2025052216 2x"
+                    alt="AI記帳、顧問、月次決算、税務サポートがぜんぶ揃って、月額10,000円（税込）"
+                    width="500"
+                    height="409"
+                    loading="eager"
+                    class="popup-modal-img"
+                />
+            </picture>
+        </a>
+    </div>
+</div>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("popup-modal-taxation");
+        const overlay = modal.querySelector(".popup-modal-overlay");
+        const closeBtn = modal.querySelector(".popup-modal-close");
+
+        // モーダル表示
+        modal.style.display = "flex";
+
+        // 閉じる処理
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        overlay.addEventListener("click", closeModal);
+        closeBtn.addEventListener("click", closeModal);
+    });
+</script>
+
+<style lang="scss">
+    #popup-modal-taxation {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .popup-modal-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+
+    .popup-modal-banner {
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+
+    .popup-modal-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .popup-modal-close {
+        position: absolute;
+        top: -40px;
+        right: 8px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 2;
+        transition: background 0.2s;
+    }
+
+    .popup-modal-close:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+</style>

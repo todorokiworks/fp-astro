@@ -8,7 +8,7 @@ import TopNewsSection from "../components/FrontPage/TopNewsSection.astro"; //お
 import TopPurposeSection from "../components/FrontPage/TopPurposeSection.astro"; //目的に合わせてサービスを選ぶ
 import ImportantNews from "../components/FrontPage/ImportantNews.astro"; //重要なお知らせ
 import AskOperator from "../components/FrontPage/AskOperator.astro"; //「オペレーターに質問する」
-
+import Modal from "../components/FrontPage/Modal.astro";
 import structuredDataMarkup from "../data/data.json";
 const markup = JSON.stringify(structuredDataMarkup.top);
 ---
@@ -37,6 +37,7 @@ const markup = JSON.stringify(structuredDataMarkup.top);
 	<!--<AskOperator /> -->
 	<!-- 「オペレーターに質問する」非表示ここまで -->
 	<TopPurposeSection />
+	<Modal />
 </Layout>
 
 <style lang="scss" is:global>
