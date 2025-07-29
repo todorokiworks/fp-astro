@@ -1229,6 +1229,24 @@
             }
         ]
     },
+    "contact": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "飲食店開業・経営・集客支援サイト | テンポスフードプレイス",
+                "item": "https://support.tenpos.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "テンポスフードプレイス | お問い合わせ",
+                "item": "https://support.tenpos.com/contact/"
+            }
+        ]
+    },
     "gmb_contact_kantan": {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",

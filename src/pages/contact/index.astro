@@ -434,7 +434,7 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                                         </p>
                                     </div>
 
-                                    <p class="band accordion-header service-04">
+                                    <!-- <p class="band accordion-header service-04">
                                         集客
                                     </p>
                                     <div class="accordion-content">
@@ -467,12 +467,12 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                                             /><label for="check11"
                                                 >Googleビジネスプロフィール運用サポート</label
                                             >
-                                        </p>
-                                        <!--<p>
+                                        </p> -->
+                                    <!--<p>
                         <input id="check12" name="field_4575181" type="checkbox" value="12" /><label
                           for="check12">SNS運用サポート</label>
                       </p>-->
-                                        <!-- <p>
+                                    <!-- <p>
                         <input id="check13" name="field_4575181" type="checkbox" value="13" /><label
                           for="check13">インフルエンサー集客</label>
                       </p>
@@ -484,25 +484,25 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                         <input id="check15" name="field_4575181" type="checkbox" value="15" /><label
                           for="check15">公式LINE運用代行</label>
                       </p> -->
-                                        <p>
-                                            <input
-                                                id="check56"
-                                                name="field_4575181"
-                                                type="checkbox"
-                                                value="56"
-                                            /><label for="check56"
-                                                >満席レビュー</label
-                                            >
-                                        </p>
-                                        <!-- <p><input id="check66" name="field_4575181" type="checkbox" value="66"><label
+                                    <!-- <p>
+                                        <input
+                                            id="check56"
+                                            name="field_4575181"
+                                            type="checkbox"
+                                            value="56"
+                                        /><label for="check56"
+                                            >満席レビュー</label
+                                        >
+                                    </p> -->
+                                    <!-- <p><input id="check66" name="field_4575181" type="checkbox" value="66"><label
                           for="check66">集客あんしんサポート</label></p> -->
-                                    </div>
+                                    <!-- </div> -->
 
-                                    <p class="band accordion-header service-05">
+                                    <!-- <p class="band accordion-header service-05">
                                         販促デザイン
-                                    </p>
-                                    <div class="accordion-content">
-                                        <p>
+                                    </p> -->
+                                    <!-- <div class="accordion-content"> -->
+                                    <!-- <p>
                                             <input
                                                 id="check61"
                                                 name="field_4575181"
@@ -511,8 +511,8 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                                             /><label for="check61"
                                                 >すべての販促デザイン</label
                                             >
-                                        </p>
-                                        <p>
+                                        </p> -->
+                                    <!-- <p>
                                             <input
                                                 id="check17"
                                                 name="field_4575181"
@@ -531,12 +531,12 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                                             /><label for="check16"
                                                 >販促物作成</label
                                             >
-                                        </p>
-                                        <!-- <p>
+                                        </p> -->
+                                    <!-- <p>
                         <input id="check18" name="field_4575181" type="checkbox" value="18" /><label
                           for="check18">動画作成</label>
                       </p> -->
-                                    </div>
+                                    <!-- </div> -->
                                     <!-- 
                     <p class="band accordion-header service-06">人材・求人</p>
                     <div class="accordion-content">
@@ -642,7 +642,7 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                                                 >電気代削減</label
                                             >
                                         </p>
-                                        <p>
+                                        <!--   <p>
                                             <input
                                                 id="check22"
                                                 name="field_4575181"
@@ -651,7 +651,7 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
                                             /><label for="check22"
                                                 >ガス代削減</label
                                             >
-                                        </p>
+                                        </p> -->
                                         <!-- <p>
                         <input id="check41" name="field_4575181" type="checkbox" value="41" /><label
                           for="check41">レシピ/原価管理</label>
@@ -796,103 +796,103 @@ const markup = JSON.stringify(structuredDataMarkup.contact);
             </section>
         </div>
     </article>
-</Layout>
 
-<style lang="scss">
-    .accordion-header {
-        position: relative;
-    }
+    <style lang="scss">
+        .accordion-header {
+            position: relative;
+        }
 
-    .accordion-header::before {
-        /* 閉じている時 */
-        content: "＋";
-        position: absolute;
-        right: 20px;
-    }
+        .accordion-header::before {
+            /* 閉じている時 */
+            content: "＋";
+            position: absolute;
+            right: 20px;
+        }
 
-    .accordion-header.active::before {
-        /* 開いている時 */
-        content: "－";
-    }
+        .accordion-header.active::before {
+            /* 開いている時 */
+            content: "－";
+        }
 
-    .accordion-content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5em 1em;
-    }
+        .accordion-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em 1em;
+        }
 
-    .p-contact__line__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5em 1em;
-        padding: 45px 0;
-        margin-bottom: 50px;
-        border: 2px solid #f07d00;
-        border-radius: 15px;
-    }
-
-    @media screen and (max-width: 768px) {
         .p-contact__line__container {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 0;
-            padding: 0px;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5em 1em;
+            padding: 45px 0;
             margin-bottom: 50px;
-            border: none;
+            border: 2px solid #f07d00;
+            border-radius: 15px;
         }
-    }
 
-    .p-contact__line__qr {
-        text-align: center;
-        border-right: 1px solid #b9bbbc;
-    }
+        @media screen and (max-width: 768px) {
+            .p-contact__line__container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0;
+                padding: 0px;
+                margin-bottom: 50px;
+                border: none;
+            }
+        }
 
-    .p-contact__line__qr img {
-        max-width: 180px;
-        margin: 0 auto;
-    }
+        .p-contact__line__qr {
+            text-align: center;
+            border-right: 1px solid #b9bbbc;
+        }
 
-    .p-contact__line__btn {
-        text-align: center;
-    }
+        .p-contact__line__qr img {
+            max-width: 180px;
+            margin: 0 auto;
+        }
 
-    .p-balloon__linebtn {
-        height: 75%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        .p-contact__line__btn {
+            text-align: center;
+        }
 
-    .c-linebtn {
-        background-color: #05b702;
-        color: #fff;
-        font-size: 1.5rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 25px 10px;
-        border-radius: 0.375rem;
-        width: 230px;
-        margin: 1.125rem auto 0;
-    }
+        .p-balloon__linebtn {
+            height: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .c-linebtn::before {
-        content: "";
-        background: url(/asset/images/contact/icon-line.svg) no-repeat center /
-            contain;
-        width: 3rem;
-        height: 3rem;
-        margin-right: 1rem;
-    }
+        .c-linebtn {
+            background-color: #05b702;
+            color: #fff;
+            font-size: 1.5rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 25px 10px;
+            border-radius: 0.375rem;
+            width: 230px;
+            margin: 1.125rem auto 0;
+        }
 
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-</style>
+        .c-linebtn::before {
+            content: "";
+            background: url(/asset/images/contact/icon-line.svg) no-repeat
+                center / contain;
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</Layout>
