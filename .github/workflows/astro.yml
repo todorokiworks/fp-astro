@@ -5,6 +5,10 @@ on:
   push:
     branches: ["main"]
 
+  # microCMSのWebhookからのリクエスト時に実行
+  repository_dispatch:
+    types: [microcms-update]
+
   # 手動実行を許可
   workflow_dispatch:
 
@@ -28,6 +32,9 @@ jobs:
         
       - name: Build Project
         run: npm run build
+        env:
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
         
       - name: Deploy to Xserver via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4

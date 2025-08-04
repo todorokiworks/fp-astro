@@ -23,6 +23,12 @@ MICROCMS_API_KEY=your-api-key
 
 **重要**: `.env`ファイルは`.gitignore`に含まれており、Gitにコミットされません。本番環境では適切に環境変数を設定してください。
 
+### 3. 自動デプロイ設定（オプション）
+
+microCMSのコンテンツ更新時に自動的にビルド・デプロイを実行するには、Webhook設定が必要です。
+
+詳細な設定手順は [`docs/microcms-webhook-setup.md`](./docs/microcms-webhook-setup.md) を参照してください。
+
 ### 2. microCMSのコンテンツ設定
 
 microCMSで以下のコンテンツタイプを作成してください：
