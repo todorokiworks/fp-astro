@@ -1,0 +1,1 @@
+import{S as e,A as i}from"./autoplay.Bo2AKgAE.js";/* empty css                   */new e(".swiper",{modules:[i],direction:"vertical",loop:!0,speed:6e3,autoplay:{delay:0},slidesPerView:2,spaceBetween:40,breakpoints:{320:{direction:"horizontal",slidesPerView:1,spaceBetween:0},768:{direction:"vertical"}}});

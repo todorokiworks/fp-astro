@@ -1,15 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { getNewsById } from "../../lib/microcms";
+import { getAllNews } from "../../lib/microcms";
 
-// サーバーサイドレンダリングを有効化
-export const prerender = false;
+// 静的サイト生成のためのパス生成
+export async function getStaticPaths() {
+    try {
+        // 全てのお知らせを取得
+        const { contents: newsList } = await getAllNews(100, 0);
 
-// URLパラメータから記事IDを取得
-const { id } = Astro.params;
+        // 各記事のパスを生成
+        return newsList.map((news) => ({
+            params: { id: news.id },
+            props: { news },
+        }));
+    } catch (error) {
+        console.error("Error generating static paths:", error);
+        return [];
+    }
+}
 
-// 記事データを取得
-const news = id ? await getNewsById(id) : null;
+// 記事データをpropsから取得
+const { news } = Astro.props;
 
 // 記事が見つからない場合は404ページにリダイレクト
 if (!news) {
@@ -20,7 +31,7 @@ if (!news) {
 <Layout
     title={`${news.title} ｜テンポスフードプレイス`}
     description=""
-    pageUrl={`/news/${id}/`}
+    pageUrl={`/news/${news.id || ""}/`}
     ogimage=""
 >
     <article id="mainarea">
