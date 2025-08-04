@@ -2,8 +2,38 @@
 
 ローカルにクローンした際に最初に書きコマンドを入力
 ```
-npm insall
+npm install
 ```
+
+## microCMS設定
+
+このプロジェクトはmicroCMSと連携しており、お知らせ機能を動的に表示します。
+
+### 1. 環境変数の設定
+
+プロジェクトルートに`.env`ファイルを作成し、以下の内容を設定してください：
+
+```env
+MICROCMS_SERVICE_DOMAIN=your-service-domain
+MICROCMS_API_KEY=your-api-key
+```
+
+- `MICROCMS_SERVICE_DOMAIN`: microCMSのサービスドメイン（例：`example`）
+- `MICROCMS_API_KEY`: microCMSのAPIキー（例：`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`）
+
+**重要**: `.env`ファイルは`.gitignore`に含まれており、Gitにコミットされません。本番環境では適切に環境変数を設定してください。
+
+### 2. microCMSのコンテンツ設定
+
+microCMSで以下のコンテンツタイプを作成してください：
+
+**コンテンツタイプ名**: `news`
+
+**フィールド設定**:
+- `title` (テキストフィールド): お知らせのタイトル
+- `content` (リッチエディタ): お知らせの本文
+- `publishedAt` (日時): 公開日時（自動設定）
+- `updatedAt` (日時): 更新日時（自動設定）
 
 ## 🚀 構造図
 

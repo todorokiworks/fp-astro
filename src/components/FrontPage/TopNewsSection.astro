@@ -1,74 +1,52 @@
+---
+import { getLatestNews } from "../../lib/microcms";
+
+// 最新のお知らせを取得
+const latestNews = await getLatestNews(5);
+---
+
 <section class="top-news__section generalsec">
     <div class="top-news__ttlbox">
         <h2 class="top-news__ttl g-ttl">お知らせ</h2>
         <p class="Caselink pc">
-            <!-- <a href="https://support.tenpos.com/news/">全てのお知らせを見る</a> -->
             <a href="/news/">全てのお知らせを見る</a>
         </p>
     </div>
     <div class="top-news__container">
         <ul class="top-news__list">
-            <li>
-                <a href="./news/20250201/">
-                    <span class="Date"
-                        ><time itemprop="datePublished" datetime="2025.02.01"
-                            >2025.02.01</time
-                        ></span
-                    >
-                    <span class="Caption">
-                        株式会社テンポスドットコムの事業譲渡に関しますお知らせ
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="https://support.tenpos.com/lp/service/ad_service/">
-                    <span class="Date"
-                        ><time itemprop="datePublished" datetime="2024.09.17"
-                            >2024.09.17</time
-                        ></span
-                    >
-                    <span class="Caption">
-                        飲食店向け広告掲載サービスを開始いたしました。
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="https://support.tenpos.com/resources/web-sns_check/">
-                    <span class="Date"
-                        ><time itemprop="datePublished" datetime="2024.08.22"
-                            >2024.08.22</time
-                        ></span
-                    >
-                    <span class="Caption">
-                        Web・SNSチェックサービスを開始いたしました。
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="/management/sharosi/">
-                    <span class="Date"
-                        ><time itemprop="datePublished" datetime="2024.06.16"
-                            >2024.06.16</time
-                        ></span
-                    >
-                    <span class="Caption">
-                        社労士紹介を開始いたしました。
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="/telecom/cashless-machine/">
-                    <span class="Date"
-                        ><time itemprop="datePublished" datetime="2024.05.20"
-                            >2024.05.20</time
-                        ></span
-                    >
-                    <span class="Caption">
-                        キャッシュレス券売機のご紹介を開始いたしました。
-                    </span>
-                </a>
-            </li>
-            <!-- お知らせ ここまで -->
+            {
+                latestNews.length > 0 ? (
+                    latestNews.map((news) => (
+                        <li>
+                            <a href={`/news/${news.id}/`}>
+                                <span class="Date">
+                                    <time
+                                        itemprop="datePublished"
+                                        datetime={
+                                            new Date(news.publishedAt)
+                                                .toISOString()
+                                                .split("T")[0]
+                                        }
+                                    >
+                                        {new Date(news.publishedAt)
+                                            .toLocaleDateString("ja-JP", {
+                                                year: "numeric",
+                                                month: "2-digit",
+                                                day: "2-digit",
+                                            })
+                                            .replace(/\//g, ".")}
+                                    </time>
+                                </span>
+                                <span class="Caption">{news.title}</span>
+                            </a>
+                        </li>
+                    ))
+                ) : (
+                    <li>
+                        <span class="Caption">お知らせはありません</span>
+                    </li>
+                )
+            }
         </ul>
     </div>
     <p class="top-news__Caselink sp">

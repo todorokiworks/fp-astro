@@ -1,5 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { getAllNews } from "../../lib/microcms";
+
+// ページネーション用のパラメータ
+const page = parseInt(Astro.url.searchParams.get("page") || "1");
+const limit = 20;
+const offset = (page - 1) * limit;
+
+// お知らせデータを取得
+const { contents: newsList, totalCount } = await getAllNews(limit, offset);
+const totalPages = Math.ceil(totalCount / limit);
 ---
 
 <Layout
@@ -31,986 +41,132 @@ import Layout from "../../layouts/Layout.astro";
                 <!-- 情報一覧追加　ここから -->
                 <div class="top-news__container">
                     <ul class="top-news__list_2">
-                        <li>
-                            <a href="./20250201/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2025.02.01">2025.02.01</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    株式会社テンポスフードプレイスの事業譲渡に関しますお知らせ
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/lp/service/ad_service/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.09.17">2024.09.17</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    飲食店向け広告掲載サービスを開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/resources/web-sns_check/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.08.22">2024.08.22</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    Web・SNSチェックサービスを開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/management/sharosi/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.06.16">2024.06.16</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    社労士紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/telecom/cashless-machine/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.05.20">2024.05.20</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    キャッシュレス券売機のご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/menu/wain-pro/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.04.17">2024.04.17</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    ワイン通販のご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/resources/staffing/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.03.21">2024.03.21</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    人材派遣のご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/resources/job-ads/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.02.29">2024.02.29</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    求人広告のご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/news/20240422/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.01.09">2024.02.20</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    ホームページリニューアルのお知らせ
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/lp/service/order_gate/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2024.01.09">2024.01.09</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    食材仕入れ価格削減＆WEB発注サービスのご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/service/wain-pro/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.12.15">2023.12.15</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    飲食店専門ワイン仕入れサービスのご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/lp/service/op-celebration/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.11.24">2023.11.24</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    味の素調味料セットプレゼントのご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/lp/service/influencer/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.10.19">2023.10.19</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    テンポスインフルエンサーの募集を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://support.tenpos.com/service/credit-card/"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.09.20">2023.09.20</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    テンポスクレジットカードのご紹介を開始いたしました。
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/marketing/homepage/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.08.29">2023.08.29</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    ホームページ作成事例を公開いたしました。
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/promotion/logo_creation/jirei/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.05.18">2023.05.18</time
-                                    ></span
-                                >
-                                <span class="Caption">
-                                    ロゴ制作事例を公開いたしました。
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/cost/recipe/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.04.26">2023.04.26</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >レシピ/原価管理のご紹介を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.02.16">2023.02.16</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >【終了いたしました】インバウンド対策に活用できる補助金の締め切りは3月31日まで
-                                    です。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/telecom/music/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2023.01.18">2023.01.18</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >店舗BGM導入のご紹介を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/marketing/officialline-support/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.10.18">2022.10.18</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >公式LINE登録・運用代行「omakase」のご紹介を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.08.26">2022.08.26</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >メニュー表作成サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/open/interior/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.08.16">2022.08.16</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店内装工事のご紹介を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/management/q-navi/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.07.29">2022.07.29</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >店舗トラブル解決アプリ緊Qナビゲーションの紹介を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/open/ghost-restaurant/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.07.13">2022.07.13</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >ゴーストレストラン紹介サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/open/bukken/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.07.11">2022.07.11</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >物件紹介サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/marketing/influencer-marketing/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.07.04">2022.07.04</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >インフルエンサー集客サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.tenpos.com/food-search/"
-                                target="_blank"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.06.01">2022.06.01</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店食材マッチングサイト「テンポスフードサーチ」を公開しました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./20220511/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.05.11">2022.05.11</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >バンタンの「レコールバンタン・キャリアカレッジ」の案内を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.04.25">2022.04.25</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >ロゴ作成サービス料金変更のお知らせ</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.03.11">2022.03.11</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >【新サービス】プレスリリース作成配信サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./20220217/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.02.17">2022.02.17</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店の開業支援を目的とした「飲食店開業支援プロジェクト」に参画</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.tenpos.com/food-search/"
-                                target="_blank"
-                            >
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.01.20">2022.01.20</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店専門学校のご紹介を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2022.01.05">2022.01.05</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >新年あけましておめでとうございます。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.12.29">2021.12.29</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店公式LINE登録・運用サポート内容を更新いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.12.15">2021.12.15</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店専門　助成金無料診断ぺージを公開いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.12.15">2021.12.15</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >ロゴ制作事例ぺージを公開いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/open/cloud-kitchen/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.12.07">2021.12.07</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >キッチンカー開業支援を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.12.01">2021.12.01</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >【12/1～2/28】飲食店川柳コンテスト開催！豪華景品も！</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.10.25">2021.10.25</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >ホームぺージ作成サービスのプランが変更となりました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./20211010/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.10.10">2021.10.10</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >メディア掲載：リサイクル通信『女性活躍』で品川社長が取材を受けました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/management/consultant/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.08.02">2021.08.02</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食コンサルタントマッチングサービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://support.tenpos.com/mailmagazine/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.07.28">2021.07.28</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店開業・経営に役立つLINEメルマガ配信を開始いたしました【購読会員募集中】</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.06.29">2021.06.29</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >一歩目クーポンの「飲食店応援企画」について”宇都宮くらし”で取り上げられました</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/open/lp_line-diagnosis/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.04.30">2021.04.30</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >「LINEで簡単　開業診断」サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.04.26">2021.04.26</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >「Googleマイビジネス登録・運用代行」サービスの初回月額料金無料キャンペーン</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.04.26">2021.04.26</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >ステータスステッカーの発行サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.04.19">22021.04.19</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >Googleマイビジネス（MEO）の登録・代行サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.04.12">2021.04.12</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >ロゴ作成サービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/promotion/promotional_design/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.04.12">2021.04.12</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >販促デザインセミオーダーセットのご提供を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.03.15">2021.03.15</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >飲食店オーナー様のお悩みを診断形式でサポートするサービスを開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2021.01.05">2021.01.05</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >LINE公式アカウント登録・運用代行サービスを開始しました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/company/recruit/">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2020.11.16">2020.11.16</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >パート募集を開始いたしました。</span
-                                >
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="disabled">
-                                <span class="Date"
-                                    ><time
-                                        itemprop="datePublished"
-                                        datetime="2020.10.20">2020.10.20</time
-                                    ></span
-                                >
-                                <span class="Caption"
-                                    >サービスを公開いたしました。</span
-                                >
-                            </a>
-                        </li>
+                        {
+                            newsList.length > 0 ? (
+                                newsList.map((news) => (
+                                    <li>
+                                        <a href={`./${news.id}/`}>
+                                            <span class="Date">
+                                                <time
+                                                    itemprop="datePublished"
+                                                    datetime={
+                                                        new Date(
+                                                            news.publishedAt,
+                                                        )
+                                                            .toISOString()
+                                                            .split("T")[0]
+                                                    }
+                                                >
+                                                    {new Date(news.publishedAt)
+                                                        .toLocaleDateString(
+                                                            "ja-JP",
+                                                            {
+                                                                year: "numeric",
+                                                                month: "2-digit",
+                                                                day: "2-digit",
+                                                            },
+                                                        )
+                                                        .replace(/\//g, ".")}
+                                                </time>
+                                            </span>
+                                            <span class="Caption">
+                                                {news.title}
+                                            </span>
+                                        </a>
+                                    </li>
+                                ))
+                            ) : (
+                                <li>
+                                    <span class="Caption">
+                                        お知らせはありません
+                                    </span>
+                                </li>
+                            )
+                        }
                     </ul>
                 </div>
+
+                <!-- ページネーション -->
+                {
+                    totalPages > 1 && (
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                {page > 1 && (
+                                    <li class="pagination__item">
+                                        <a
+                                            href={`?page=${page - 1}`}
+                                            class="pagination__link"
+                                        >
+                                            前へ
+                                        </a>
+                                    </li>
+                                )}
+
+                                {Array.from(
+                                    { length: totalPages },
+                                    (_, i) => i + 1,
+                                ).map((pageNum) => (
+                                    <li class="pagination__item">
+                                        <a
+                                            href={`?page=${pageNum}`}
+                                            class={`pagination__link ${pageNum === page ? "pagination__link--active" : ""}`}
+                                        >
+                                            {pageNum}
+                                        </a>
+                                    </li>
+                                ))}
+
+                                {page < totalPages && (
+                                    <li class="pagination__item">
+                                        <a
+                                            href={`?page=${page + 1}`}
+                                            class="pagination__link"
+                                        >
+                                            次へ
+                                        </a>
+                                    </li>
+                                )}
+                            </ul>
+                        </div>
+                    )
+                }
+                <!-- 情報一覧追加　ここまで -->
             </section>
         </div>
     </article>
 </Layout>
 
-<style>
-    @charset "utf-8";
-
-    :root {
-        --fnts_local: 16px;
-        --fnts_caption_min: 26px;
-        --fnts_caption_sub: 20px;
-        --fnts_section_ttl: 30px;
-    }
-
-    /* -------------------- news-section ------------------- */
-    /* ----- ★　/news/index/ 新着情報一覧ページsp用 ここから ----- */
-    /* 見出し部分 */
-    .kg-news__caption {
-        --border_color: var(--MAIN_BLACK);
-        color: var(--MAIN_ORANGE);
+<style lang="scss">
+    .pagination {
+        margin-top: 2rem;
         text-align: center;
-        font-size: 26px;
-        margin-top: -10px;
     }
 
-    /* 文字周りの余白 */
-    .top-news__list_2 > li > a {
-        padding: 2em 0.5em 2em 2em;
-        display: block;
-        position: relative;
-    }
-
-    /* ニュース項目前のicon表示とアニメ pc用 */
-    .top-news__list_2 > li > a:before {
-        position: absolute;
-        content: "";
-        width: var(--icon_circle_size);
-        aspect-ratio: 1/1;
-        transition: 0.4s;
-        background: url(/asset/images/news/icon_next_slider.svg) no-repeat
-            center center / contain;
-        top: 40%;
-        transform: translateY(-50%);
-        left: 5%;
-        transform: translateX(-2em);
-    }
-
-    /* リンクの無効化 */
-    a.disabled {
-        pointer-events: none;
-    }
-
-    /* 横並び pc用　ここから */
-    ul.news__List_3 {
+    .pagination__list {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
     }
 
-    ul.news__List_3 > li.Date {
-        width: 100px;
-    }
+    .pagination__link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--MAIN_BLACK);
+        text-decoration: none;
+        color: var(--MAIN_BLACK);
+        transition: all 0.3s ease;
 
-    ul.news__List_3 > li.Caption {
-        width: auto;
-    }
-
-    /* 横並び pc用　ここまで */
-
-    /* アンダーライン */
-    .top-news__list_2 > li:not(:last-child) {
-        border-bottom: 1px solid var(--MAIN_BLACK);
-    }
-
-    /* ----- ★　/news/index/ 新着情報一覧ページsp用 ここまで ----- */
-
-    @media screen and (min-width: 768px) {
-        .top-news__container {
-            padding: 40px;
+        &:hover {
+            background-color: var(--MAIN_BLACK);
+            color: var(--MAIN_WHITE);
         }
 
-        .top-news__list_2 .Date {
-            margin: 0 1em 0 0;
-        }
-
-        .top-news__list_2 > li > a:hover {
-            color: var(--MAIN_ORANGE);
-        }
-
-        .top-news__list_2 > li > a:hover:before {
-            background: url(/asset/images/news/icon_next_active.svg) no-repeat
-                center center / contain;
-            left: calc(5% + 5px);
+        &--active {
+            background-color: var(--MAIN_BLACK);
+            color: var(--MAIN_WHITE);
         }
     }
-
-    @media screen and (max-width: 767px) {
-        .top-news__container {
-            padding: 0 30px;
-            margin-bottom: 10px;
-        }
-
-        .top-news__list_2 span {
-            display: block;
-        }
-
-        /* 見出し部分 */
-        .kg-news__caption {
-            /* text-align: center; */
-            font-size: 20px;
-            max-width: 400px;
-            margin-inline: auto;
-            margin-bottom: 5px;
-        }
-
-        /* ニュース項目前のicon表示 sp用 */
-        .top-news__list_2 > li > a:before {
-            transform: translateX(-1em);
-        }
-
-        /* 横並び解除 sp用　ここから */
-        ul.news__List_3 {
-            display: block;
-        }
-
-        ul.news__List_3 > li.Date {
-            width: auto;
-        }
-
-        /* 横並び sp用　ここまで */
-    }
-
-    /* -------------------- 新着情報詳細ページ ------------------- */
-    /* -----　news/index/　新着情報一覧ページ　PC(min-width: 768px)用mv　----- */
-
-    /* -----　新着情報詳細ページ　PC(min-width: 768px)用mv　----- */
-    .btm-front__section.news-detail {
-        background-image: url(/asset/images/news/mv_news-detail.jpg);
-        background-position: 45% 5%;
-    }
-
-    .news-detail__subttl {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 40px;
-        width: 100%;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #ccc;
-    }
-    .news-detail__center {
-        text-align: center;
-    }
-
-    @media screen and (max-width: 767px) {
-        .news-detail__subttl {
-            font-size: 1.3rem;
-            line-height: 1.3;
-        }
-    }
-
-    /* 本文 */
-    .news-detail__article dt {
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin-top: 50px;
-        margin-bottom: 15px;
-    }
-    .news-detail__article dt h3 {
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin-top: 50px;
-        margin-bottom: 15px;
-    }
-    @media screen and (max-width: 767px) {
-        .news-detail__article dt {
-            /* font-size: 1.2rem; */
-            line-height: 1.3;
-        }
-    }
-
-    ul.mbt_30 li {
-        margin-bottom: 30px;
-    }
-
-    .mbt_50 {
-        margin-bottom: 50px;
-    }
-
-    /* ----- リンク部分 調整中ここから ----- */
-    .news-detail-link {
-        position: relative;
-        padding-right: 25px;
-        /* display: flex; */
-        font-weight: bold;
-        /* ↓ .btm-linkと異なる設定 */
-        width: fit-content;
-        display: inline-flex;
-        color: var(--MAIN_ORANGE);
-        text-decoration: underline;
-        font-weight: normal;
-        /* word-break: normal; */
-        flex-wrap: wrap;
-    }
-
-    .news-detail-link:after {
-        position: absolute;
-        content: "";
-        aspect-ratio: 1/1;
-        width: 1.2em;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        background: url(/asset/images/common/icon_next.svg) no-repeat center
-            center / contain;
-        transition: 0.8s;
-    }
-
-    a:hover .news-detail-link:after,
-    a.news-detail-link:hover:after {
-        right: -5px;
-        background: url(/asset/images/common/icon_next_active.svg) no-repeat
-            center center / contain;
-    }
-
-    /* ----- リンク部分 調整中ここまで ----- */
-    /* ----- 20250218 add ----- */
-    body.__wave span.txt_r {
-        display: block;
-        text-align: right;
-        margin-top: 15px;
-        line-height: 1.2;
-    }
-    body.__wave dl.news-detail__article span.txt_r {
-        margin-top: 30px;
-    }
-
-    body.__wave h2 {
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    body.__wave h2.no_border {
-        border-bottom: 0px;
-        transform: translateY(20px);
-    }
-
-    dd.letter_01 {
-        letter-spacing: -0.5px;
-    }
-    /* ----- 20250218 add ----- */
-
-    /* -------------------- ------------------- */
-    /* -------------------- ------------------- */
 </style>
