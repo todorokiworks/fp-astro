@@ -7,7 +7,7 @@ on:
 
   # microCMSのWebhookからのリクエスト時に実行
   repository_dispatch:
-    types: [microcms-update]
+    types: [microcms]
 
   # 手動実行を許可
   workflow_dispatch:
