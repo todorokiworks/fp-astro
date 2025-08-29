@@ -1,5 +1,5 @@
 <!-- 税務サポートバナーモーダル -->
-<div id="popup-modal-taxation" style="display: flex;">
+<div id="popup-modal-taxation" style="display: none;">
     <div class="popup-modal-overlay"></div>
     <div class="popup-modal-banner">
         <button class="popup-modal-close" aria-label="閉じる">&times;</button>
@@ -23,24 +23,7 @@
     </div>
 </div>
 
-<script is:inline>
-    document.addEventListener("DOMContentLoaded", function () {
-        const modal = document.getElementById("popup-modal-taxation");
-        const overlay = modal.querySelector(".popup-modal-overlay");
-        const closeBtn = modal.querySelector(".popup-modal-close");
-
-        // モーダル表示
-        modal.style.display = "flex";
-
-        // 閉じる処理
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        overlay.addEventListener("click", closeModal);
-        closeBtn.addEventListener("click", closeModal);
-    });
-</script>
+<script src="/asset/js/modal-control.js" is:inline></script>
 
 <style lang="scss">
     #popup-modal-taxation {
